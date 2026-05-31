@@ -42,24 +42,39 @@ class SuginamiCityScraper(BaseScraper):
             or soup
         )
 
+        # 新着ページはサイト全体のイベントを集約するため、詳細URLは /event/ 配下とは
+        # 限らない。そこで「日付を伴う内部リンク（=新着リストの行）」のみを採用する。
+        # グローバルナビ等は日付を持たないため自然に除外される。
+        page_path = PAGE_URL.rsplit("/", 1)[0]  # .../event
+        raw = 0
         for a in container.find_all("a", href=True):
             href = a["href"].strip()
             title = a.get_text(strip=True)
             if not title or len(title) < 4:
                 continue
-            # イベント詳細ページらしいリンクに絞る
-            if "/event/" not in href:
-                continue
             url = absolute_url(PAGE_URL, href)
-            if url in seen or url.rstrip("/") == PAGE_URL.rstrip("/"):
+            # 杉並区公式サイト内のページのみ
+            if "city.suginami.tokyo.jp" not in url:
                 continue
-            seen.add(url)
+            # 一覧ページ自身・添付ファイル等は除外
+            if url.rstrip("/") == PAGE_URL.rstrip("/"):
+                continue
+            if url in seen:
+                continue
+            raw += 1
 
-            # 近傍テキストから日付を拾う
-            li = a.find_parent(["li", "dd", "tr", "p"])
-            context = li.get_text(" ", strip=True) if li else title
+            # 行コンテキスト（親 li/dd/tr と直前の dt 等）から日付を探す
+            row = a.find_parent(["li", "dd", "tr"]) or a.parent
+            context = row.get_text(" ", strip=True) if row else title
+            prev = row.find_previous_sibling() if row else None
+            if prev:
+                context = prev.get_text(" ", strip=True) + " " + context
             published = _extract_date(context)
+            # 日付が取れない＝新着リストの項目ではない（ナビ等）→ 除外
+            if not published:
+                continue
 
+            seen.add(url)
             items.append(
                 Item(
                     source=SOURCE,
@@ -72,5 +87,5 @@ class SuginamiCityScraper(BaseScraper):
                 )
             )
 
-        logger.info("[%s] %d件取得", SOURCE_KEY, len(items))
+        logger.info("[%s] %d件取得（候補リンク%d）", SOURCE_KEY, len(items), raw)
         return items
