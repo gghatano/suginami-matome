@@ -23,6 +23,7 @@ class Item:
     published_at: str = ""
     fetched_at: str = field(default_factory=lambda: date.today().isoformat())
     category: str = ""
+    image: str = ""  # サムネイル画像URL（取得できれば。なければ空文字）
 
     @property
     def id(self) -> str:
@@ -41,6 +42,7 @@ class Item:
             "published_at": self.published_at,
             "fetched_at": self.fetched_at,
             "category": self.category,
+            "image": self.image,
         }
 
 

@@ -64,6 +64,7 @@ suginami-events/
 | `published_at` | string | | `YYYY-MM-DD`。取得できなければ `fetched_at` で代替 |
 | `fetched_at` | string | ✅ | `YYYY-MM-DD`。スクレイプ実行日 |
 | `category` | string | | "イベント" / "お知らせ" / "講座" 等 |
+| `image` | string | | サムネイル画像URL（取得できれば。なければ空文字。フロントはファビコン/文字アバターにフォールバック） |
 
 ---
 

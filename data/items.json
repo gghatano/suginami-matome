@@ -9,7 +9,8 @@
     "summary": "",
     "published_at": "2026-05-15",
     "fetched_at": "2026-05-31",
-    "category": "イベント"
+    "category": "イベント",
+    "image": ""
   },
   {
     "id": "sesion_11aa22bb",
@@ -21,7 +22,8 @@
     "summary": "地域で活躍する演奏家によるクラシックコンサートを開催します。入場無料・予約不要。",
     "published_at": "2026-05-10",
     "fetched_at": "2026-05-31",
-    "category": "イベント"
+    "category": "イベント",
+    "image": ""
   },
   {
     "id": "mypl_33cc44dd",
@@ -33,7 +35,8 @@
     "summary": "阿佐ヶ谷の商店街で手作り作家が集まるマーケットを開催。アクセサリーや雑貨が並びます。",
     "published_at": "2026-05-05",
     "fetched_at": "2026-05-31",
-    "category": "イベント"
+    "category": "イベント",
+    "image": ""
   },
   {
     "id": "jmty_55ee66ff",
@@ -45,7 +48,8 @@
     "summary": "未就学児とその保護者を対象にした英語あそびの会です。参加費無料。",
     "published_at": "2026-04-28",
     "fetched_at": "2026-05-31",
-    "category": "イベント"
+    "category": "イベント",
+    "image": ""
   },
   {
     "id": "sugisyakyo_77aa88bb",
@@ -57,7 +61,8 @@
     "summary": "地域でのボランティア活動を始めたい方向けの入門講座です。",
     "published_at": "2026-04-22",
     "fetched_at": "2026-05-31",
-    "category": "講座"
+    "category": "講座",
+    "image": ""
   },
   {
     "id": "goguynet_abc12345",
@@ -69,6 +74,7 @@
     "summary": "4月25日・26日の2日間、高円寺駅周辺で第18回びっくり大道芸が開催されます。プロのパフォーマーが集結し、街全体がステージに。",
     "published_at": "2026-04-20",
     "fetched_at": "2026-05-31",
-    "category": "イベント"
+    "category": "イベント",
+    "image": ""
   }
 ]
