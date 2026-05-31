@@ -21,6 +21,27 @@ def _strip_html(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
+def _extract_image(entry) -> str:
+    """RSSエントリからサムネイル画像URLを取得する（追加リクエストなし）。"""
+    # media:content / media:thumbnail
+    for key in ("media_content", "media_thumbnail"):
+        media = getattr(entry, key, None)
+        if media:
+            url = media[0].get("url")
+            if url:
+                return url
+    # enclosure（画像）
+    for link in getattr(entry, "links", []):
+        if link.get("rel") == "enclosure" and "image" in link.get("type", ""):
+            return link.get("href", "")
+    # 本文中の最初の <img>
+    content = getattr(entry, "summary", "")
+    m = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', content)
+    if m:
+        return m.group(1)
+    return ""
+
+
 def _parse_date(entry) -> str:
     """feedparser の published_parsed から YYYY-MM-DD を作る。"""
     parsed = getattr(entry, "published_parsed", None) or getattr(
@@ -60,6 +81,7 @@ class GoguynetScraper(BaseScraper):
                     summary=summary,
                     published_at=_parse_date(entry),
                     category="イベント",
+                    image=_extract_image(entry),
                 )
             )
         logger.info("[%s] %d件取得", SOURCE_KEY, len(items))

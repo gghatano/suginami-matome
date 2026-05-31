@@ -4,18 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>杉並区イベントまとめ</title>
-  <meta name="description" content="杉並区のイベント情報を複数サイトからまとめて表示します。">
+  <meta name="description" content="杉並区のイベント・お知らせ情報を複数サイトからまとめて毎日お届けします。">
   <style>
     :root {
-      --bg: #f5f6f8;
+      --bg: #f3f4f6;
       --card: #ffffff;
       --text: #1f2330;
       --muted: #6b7280;
       --border: #e5e7eb;
       --accent: #2563eb;
-      --shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+      --accent-dark: #1d4ed8;
+      --shadow: 0 1px 2px rgba(16, 24, 40, 0.06), 0 1px 3px rgba(16, 24, 40, 0.1);
+      --shadow-hover: 0 6px 16px rgba(16, 24, 40, 0.12);
     }
     * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
@@ -23,190 +26,419 @@
       color: var(--text);
       line-height: 1.6;
     }
-    header {
-      background: var(--accent);
-      color: #fff;
-      padding: 20px 16px;
-    }
-    header .inner { max-width: 860px; margin: 0 auto; }
-    header h1 { margin: 0; font-size: 1.4rem; }
-    header p { margin: 4px 0 0; font-size: 0.85rem; opacity: 0.9; }
-    main { max-width: 860px; margin: 0 auto; padding: 16px; }
+    a { color: inherit; }
 
-    .filters {
+    /* ===== ヘッダー ===== */
+    header.site {
+      background: linear-gradient(135deg, #2563eb 0%, #1e3a8a 100%);
+      color: #fff;
+      padding: 22px 16px 18px;
+    }
+    header.site .inner { max-width: 920px; margin: 0 auto; }
+    header.site h1 { margin: 0; font-size: 1.45rem; letter-spacing: 0.02em; }
+    header.site h1 .pin { margin-right: 6px; }
+    header.site p { margin: 6px 0 0; font-size: 0.85rem; opacity: 0.92; }
+    header.site .updated { margin-top: 8px; font-size: 0.75rem; opacity: 0.85; }
+
+    /* ===== スティッキー操作バー ===== */
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    }
+    .toolbar .inner {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 10px 16px;
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
-      margin-bottom: 16px;
-      background: var(--card);
-      padding: 14px 16px;
-      border-radius: 10px;
-      box-shadow: var(--shadow);
+      gap: 10px;
+      align-items: center;
     }
-    .filters .group { display: flex; flex-direction: column; gap: 4px; flex: 1 1 160px; }
-    .filters label { font-size: 0.75rem; color: var(--muted); font-weight: 600; }
-    .filters select {
-      padding: 8px 10px;
+    .search {
+      flex: 1 1 220px;
+      position: relative;
+      min-width: 160px;
+    }
+    .search input {
+      width: 100%;
+      padding: 9px 12px 9px 34px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      font-size: 0.9rem;
+      background: #fff;
+      color: var(--text);
+    }
+    .search input:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+    .search .icon {
+      position: absolute; left: 12px; top: 50%; transform: translateY(-50%);
+      color: var(--muted); font-size: 0.95rem; pointer-events: none;
+    }
+    .toolbar select {
+      padding: 9px 10px;
       border: 1px solid var(--border);
       border-radius: 8px;
       background: #fff;
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       color: var(--text);
     }
-    .count { font-size: 0.8rem; color: var(--muted); margin-bottom: 12px; }
 
+    /* ===== ソース絞り込みチップ ===== */
+    .chips {
+      max-width: 920px;
+      margin: 14px auto 0;
+      padding: 0 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .chip {
+      border: 1px solid var(--border);
+      background: #fff;
+      color: var(--text);
+      padding: 5px 12px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s;
+    }
+    .chip:hover { border-color: var(--accent); }
+    .chip[aria-pressed="true"] {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+    .chip .dot { width: 8px; height: 8px; border-radius: 50%; }
+    .chip .n { opacity: 0.7; font-size: 0.72rem; }
+
+    main { max-width: 920px; margin: 0 auto; padding: 14px 16px 40px; }
+    .count { font-size: 0.8rem; color: var(--muted); margin: 14px 2px 12px; }
+
+    /* ===== カード ===== */
     .cards { display: grid; gap: 12px; }
     .card {
       background: var(--card);
-      border-radius: 10px;
-      padding: 16px;
-      box-shadow: var(--shadow);
+      border-radius: 12px;
       border: 1px solid var(--border);
-    }
-    .card .meta {
+      box-shadow: var(--shadow);
       display: flex;
-      flex-wrap: wrap;
-      align-items: center;
+      gap: 14px;
+      padding: 14px;
+      transition: box-shadow 0.18s, transform 0.18s;
+    }
+    .card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
+
+    /* 左カラム: 取得日 + サムネイル */
+    .card .left {
+      flex: 0 0 84px;
+      display: flex;
+      flex-direction: column;
       gap: 8px;
-      margin-bottom: 6px;
+      align-items: center;
+    }
+    .datechip {
+      width: 100%;
+      border-radius: 10px;
+      background: #eef2ff;
+      color: var(--accent-dark);
+      text-align: center;
+      padding: 6px 2px 5px;
+      line-height: 1.1;
+      border: 1px solid #dbe3ff;
+    }
+    .datechip .label { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.08em; opacity: 0.8; }
+    .datechip .day { font-size: 1.25rem; font-weight: 800; }
+    .datechip .year { font-size: 0.62rem; opacity: 0.75; }
+
+    .thumb-wrap {
+      width: 84px; height: 84px;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      background: var(--c, #94a3b8);
+      display: flex; align-items: center; justify-content: center;
+      flex: 0 0 auto;
+    }
+    .thumb-letter {
+      color: #fff; font-weight: 800; font-size: 1.6rem;
+      user-select: none;
+    }
+    .thumb-img {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      background: #fff;
+    }
+    /* ファビコンは小さいので中央寄せ */
+    .thumb-img.is-favicon {
+      object-fit: contain;
+      padding: 22px;
+      background: #fff;
+    }
+
+    /* 右カラム: 本文 */
+    .card .body { flex: 1 1 auto; min-width: 0; }
+    .card .meta {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 6px;
+      margin-bottom: 5px;
     }
     .badge {
-      font-size: 0.72rem;
-      font-weight: 700;
-      padding: 2px 8px;
-      border-radius: 999px;
-      background: #eef2ff;
-      color: var(--accent);
+      font-size: 0.7rem; font-weight: 700;
+      padding: 2px 9px; border-radius: 999px;
       white-space: nowrap;
+      color: #fff;
     }
-    .badge.cat { background: #ecfdf5; color: #059669; }
-    .date { font-size: 0.78rem; color: var(--muted); margin-left: auto; }
-    .card h2 { margin: 0 0 6px; font-size: 1.05rem; line-height: 1.4; }
+    .badge.cat { background: #ecfdf5; color: #059669; border: 1px solid #a7f3d0; }
+    .badge.new { background: #ef4444; color: #fff; }
+    .card h2 { margin: 0 0 3px; font-size: 1.04rem; line-height: 1.45; }
     .card h2 a { color: var(--text); text-decoration: none; }
     .card h2 a:hover { color: var(--accent); text-decoration: underline; }
-    .card .summary { margin: 0; font-size: 0.88rem; color: #374151; }
+    .card .domain { font-size: 0.72rem; color: var(--muted); margin: 0 0 5px; display: flex; align-items: center; gap: 4px; }
+    .card .summary {
+      margin: 0; font-size: 0.86rem; color: #374151;
+      display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
 
     .empty, .error {
-      text-align: center;
-      color: var(--muted);
-      padding: 40px 16px;
+      text-align: center; color: var(--muted); padding: 48px 16px;
+      background: #fff; border-radius: 12px; border: 1px dashed var(--border);
     }
-    .error { color: #b91c1c; }
+    .error { color: #b91c1c; border-color: #fecaca; }
+
+    /* 上に戻るボタン */
+    #toTop {
+      position: fixed; right: 18px; bottom: 18px;
+      width: 44px; height: 44px; border-radius: 50%;
+      background: var(--accent); color: #fff; border: none;
+      box-shadow: var(--shadow-hover); cursor: pointer;
+      font-size: 1.1rem; display: none; z-index: 20;
+    }
+    #toTop.show { display: block; }
 
     footer {
-      max-width: 860px;
-      margin: 24px auto 40px;
-      padding: 0 16px;
-      font-size: 0.75rem;
-      color: var(--muted);
-      text-align: center;
+      max-width: 920px; margin: 8px auto 40px; padding: 0 16px;
+      font-size: 0.74rem; color: var(--muted); text-align: center;
     }
-    @media (max-width: 480px) {
-      .date { margin-left: 0; width: 100%; }
+
+    @media (max-width: 520px) {
+      .card { gap: 10px; padding: 12px; }
+      .card .left { flex-basis: 68px; }
+      .thumb-wrap { width: 68px; height: 68px; }
+      .datechip .day { font-size: 1.05rem; }
+      .card h2 { font-size: 1rem; }
     }
   </style>
 </head>
 <body>
-  <header>
+  <header class="site">
     <div class="inner">
-      <h1>杉並区イベントまとめ</h1>
-      <p>区内の複数サイトのイベント・お知らせを毎日まとめて掲載しています。</p>
+      <h1><span class="pin">📍</span>杉並区イベントまとめ</h1>
+      <p>区内の複数サイトのイベント・お知らせ・講座情報を毎日まとめて掲載しています。</p>
+      <div class="updated" id="updated"></div>
     </div>
   </header>
 
-  <main>
-    <div class="filters">
-      <div class="group">
-        <label for="source-filter">サイト</label>
-        <select id="source-filter">
-          <option value="">すべて</option>
-        </select>
+  <div class="toolbar">
+    <div class="inner">
+      <div class="search">
+        <span class="icon">🔍</span>
+        <input type="search" id="search" placeholder="キーワードで絞り込み（例: 高円寺、講座）" autocomplete="off">
       </div>
-      <div class="group">
-        <label for="category-filter">カテゴリ</label>
-        <select id="category-filter">
-          <option value="">すべて</option>
-        </select>
-      </div>
+      <select id="category-filter" aria-label="カテゴリで絞り込み">
+        <option value="">すべてのカテゴリ</option>
+      </select>
     </div>
+  </div>
 
+  <div class="chips" id="source-chips"></div>
+
+  <main>
     <div class="count" id="count"></div>
     <div class="cards" id="cards"></div>
   </main>
 
+  <button id="toTop" title="上に戻る" aria-label="上に戻る">↑</button>
+
   <footer>
-    データは各配信元サイトの公開情報を集約したものです。詳細・最新情報は各リンク先をご確認ください。
+    データは各配信元サイトの公開情報を集約したものです。詳細・最新情報は各リンク先をご確認ください。<br>
+    アイコンは各サイトのファビコンを表示しています。
   </footer>
 
   <script>
-    const state = { items: [], source: "", category: "" };
+    // ソースごとのブランドカラー
+    const SOURCE_COLORS = {
+      goguynet: "#e8403a",
+      suginami_city: "#1f7a3d",
+      sesion: "#6c4bb6",
+      mypl: "#ef8a00",
+      jmty: "#ff7700",
+      sugisyakyo: "#2563eb",
+    };
+    const DEFAULT_COLOR = "#64748b";
 
-    function escapeHtml(s) {
+    const state = { items: [], source: "", category: "", q: "", newestPub: "" };
+
+    function esc(s) {
       return (s ?? "").replace(/[&<>"']/g, c => ({
         "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
       }[c]));
     }
 
-    function formatDate(s) {
-      if (!s) return "";
-      const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(s);
-      return m ? `${m[1]}年${Number(m[2])}月${Number(m[3])}日` : s;
+    function hostOf(url) {
+      try { return new URL(url).hostname; } catch { return ""; }
     }
 
-    function populateFilters(items) {
-      const sources = new Map();   // source_key -> source
-      const categories = new Set();
-      for (const it of items) {
-        if (it.source_key) sources.set(it.source_key, it.source || it.source_key);
-        if (it.category) categories.add(it.category);
+    function color(key) { return SOURCE_COLORS[key] || DEFAULT_COLOR; }
+
+    function parseDate(s) {
+      const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(s || "");
+      return m ? { y: +m[1], mo: +m[2], d: +m[3] } : null;
+    }
+    function fmtFull(s) {
+      const d = parseDate(s);
+      return d ? `${d.y}年${d.mo}月${d.d}日` : (s || "");
+    }
+    function daysBetween(a, b) {
+      const da = parseDate(a), db = parseDate(b);
+      if (!da || !db) return Infinity;
+      return Math.abs((Date.UTC(da.y, da.mo - 1, da.d) - Date.UTC(db.y, db.mo - 1, db.d)) / 86400000);
+    }
+
+    // 取得日チップ（fetched_at を表示）
+    function dateChip(it) {
+      const d = parseDate(it.fetched_at) || parseDate(it.published_at);
+      if (!d) return "";
+      return `<div class="datechip" title="取得日: ${esc(fmtFull(it.fetched_at))}">
+        <div class="label">取得</div>
+        <div class="day">${d.mo}/${d.d}</div>
+        <div class="year">${d.y}</div>
+      </div>`;
+    }
+
+    // サムネイル: 記事画像 → ファビコン → 文字アバター の3段フォールバック
+    function thumb(it) {
+      const c = color(it.source_key);
+      const letter = esc((it.source || "?").trim().charAt(0));
+      const host = hostOf(it.url) || hostOf(it.source_url);
+      const favicon = host ? `https://www.google.com/s2/favicons?domain=${encodeURIComponent(host)}&sz=128` : "";
+      let imgTag = "";
+      if (it.image) {
+        imgTag = `<img class="thumb-img" loading="lazy" alt="" src="${esc(it.image)}"
+                   data-fallback="${esc(favicon)}" onerror="thumbErr(this)">`;
+      } else if (favicon) {
+        imgTag = `<img class="thumb-img is-favicon" loading="lazy" alt="" src="${esc(favicon)}"
+                   onerror="thumbErr(this)">`;
       }
-      const sel = document.getElementById("source-filter");
-      for (const [key, label] of sources) {
+      return `<div class="thumb-wrap" style="--c:${c}">
+        <span class="thumb-letter">${letter}</span>${imgTag}
+      </div>`;
+    }
+
+    // フォールバック処理（記事画像→ファビコン→アバター）
+    window.thumbErr = function (img) {
+      const fb = img.getAttribute("data-fallback");
+      if (fb) {
+        img.removeAttribute("data-fallback");
+        img.classList.add("is-favicon");
+        img.src = fb;
+      } else {
+        img.style.display = "none"; // 文字アバターを表示
+      }
+    };
+
+    function buildChips() {
+      const counts = new Map();   // key -> {label, n}
+      for (const it of state.items) {
+        if (!it.source_key) continue;
+        const e = counts.get(it.source_key) || { label: it.source || it.source_key, n: 0 };
+        e.n++;
+        counts.set(it.source_key, e);
+      }
+      const wrap = document.getElementById("source-chips");
+      const all = document.createElement("button");
+      all.className = "chip";
+      all.setAttribute("aria-pressed", "true");
+      all.dataset.key = "";
+      all.innerHTML = `すべて <span class="n">${state.items.length}</span>`;
+      wrap.appendChild(all);
+      for (const [key, e] of counts) {
+        const b = document.createElement("button");
+        b.className = "chip";
+        b.setAttribute("aria-pressed", "false");
+        b.dataset.key = key;
+        b.innerHTML = `<span class="dot" style="background:${color(key)}"></span>${esc(e.label)} <span class="n">${e.n}</span>`;
+        wrap.appendChild(b);
+      }
+      wrap.addEventListener("click", (ev) => {
+        const chip = ev.target.closest(".chip");
+        if (!chip) return;
+        state.source = chip.dataset.key;
+        wrap.querySelectorAll(".chip").forEach(c =>
+          c.setAttribute("aria-pressed", c === chip ? "true" : "false"));
+        render();
+      });
+    }
+
+    function buildCategoryFilter() {
+      const cats = new Set();
+      for (const it of state.items) if (it.category) cats.add(it.category);
+      const sel = document.getElementById("category-filter");
+      for (const cat of [...cats].sort()) {
         const opt = document.createElement("option");
-        opt.value = key;
-        opt.textContent = label;
+        opt.value = cat; opt.textContent = cat;
         sel.appendChild(opt);
-      }
-      const csel = document.getElementById("category-filter");
-      for (const cat of [...categories].sort()) {
-        const opt = document.createElement("option");
-        opt.value = cat;
-        opt.textContent = cat;
-        csel.appendChild(opt);
       }
     }
 
     function render() {
       const cards = document.getElementById("cards");
-      const countEl = document.getElementById("count");
+      const q = state.q.trim().toLowerCase();
       const filtered = state.items.filter(it =>
         (!state.source || it.source_key === state.source) &&
-        (!state.category || it.category === state.category)
+        (!state.category || it.category === state.category) &&
+        (!q || (`${it.title} ${it.summary} ${it.source}`).toLowerCase().includes(q))
       );
 
-      // published_at 降順（fetched_at で代替済み想定）
       filtered.sort((a, b) =>
         (b.published_at || b.fetched_at || "").localeCompare(a.published_at || a.fetched_at || "")
       );
 
-      countEl.textContent = `${filtered.length}件のイベント`;
+      document.getElementById("count").textContent = `${filtered.length}件のイベント・お知らせ`;
 
       if (filtered.length === 0) {
-        cards.innerHTML = '<div class="empty">該当するイベントはありません。</div>';
+        cards.innerHTML = '<div class="empty">該当する情報はありません。条件を変えてお試しください。</div>';
         return;
       }
 
-      cards.innerHTML = filtered.map(it => `
+      cards.innerHTML = filtered.map(it => {
+        const isNew = state.newestPub && daysBetween(it.published_at || it.fetched_at, state.newestPub) <= 7;
+        const host = hostOf(it.url);
+        return `
         <article class="card">
-          <div class="meta">
-            <span class="badge">${escapeHtml(it.source)}</span>
-            ${it.category ? `<span class="badge cat">${escapeHtml(it.category)}</span>` : ""}
-            <span class="date">${escapeHtml(formatDate(it.published_at || it.fetched_at))}</span>
+          <div class="left">
+            ${dateChip(it)}
+            ${thumb(it)}
           </div>
-          <h2><a href="${escapeHtml(it.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(it.title)}</a></h2>
-          ${it.summary ? `<p class="summary">${escapeHtml(it.summary)}</p>` : ""}
-        </article>
-      `).join("");
+          <div class="body">
+            <div class="meta">
+              <span class="badge" style="background:${color(it.source_key)}">${esc(it.source)}</span>
+              ${it.category ? `<span class="badge cat">${esc(it.category)}</span>` : ""}
+              ${isNew ? `<span class="badge new">NEW</span>` : ""}
+            </div>
+            <h2><a href="${esc(it.url)}" target="_blank" rel="noopener noreferrer">${esc(it.title)}</a></h2>
+            ${host ? `<p class="domain">🔗 ${esc(host)}</p>` : ""}
+            ${it.summary ? `<p class="summary">${esc(it.summary)}</p>` : ""}
+          </div>
+        </article>`;
+      }).join("");
     }
 
     async function init() {
@@ -217,19 +449,32 @@
         const data = await res.json();
         state.items = Array.isArray(data) ? data : [];
       } catch (e) {
-        cards.innerHTML = `<div class="error">データの読み込みに失敗しました。（${escapeHtml(e.message)}）</div>`;
+        cards.innerHTML = `<div class="error">データの読み込みに失敗しました。（${esc(e.message)}）</div>`;
         return;
       }
 
-      populateFilters(state.items);
-      document.getElementById("source-filter").addEventListener("change", e => {
-        state.source = e.target.value; render();
-      });
-      document.getElementById("category-filter").addEventListener("change", e => {
-        state.category = e.target.value; render();
-      });
+      // 最新の公開日・取得日を算出
+      state.newestPub = state.items.reduce((m, it) =>
+        (it.published_at || it.fetched_at || "") > m ? (it.published_at || it.fetched_at || "") : m, "");
+      const newestFetched = state.items.reduce((m, it) =>
+        (it.fetched_at || "") > m ? it.fetched_at : m, "");
+      if (newestFetched) {
+        document.getElementById("updated").textContent = `最終更新: ${fmtFull(newestFetched)}・全${state.items.length}件`;
+      }
+
+      buildChips();
+      buildCategoryFilter();
+
+      document.getElementById("search").addEventListener("input", e => { state.q = e.target.value; render(); });
+      document.getElementById("category-filter").addEventListener("change", e => { state.category = e.target.value; render(); });
+
       render();
     }
+
+    // 上に戻る
+    const toTop = document.getElementById("toTop");
+    window.addEventListener("scroll", () => toTop.classList.toggle("show", window.scrollY > 600));
+    toTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 
     init();
   </script>
