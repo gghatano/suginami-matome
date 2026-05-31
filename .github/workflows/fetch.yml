@@ -2,7 +2,7 @@ name: Fetch Events
 
 on:
   schedule:
-    - cron: "0 0 * * *"   # UTC 00:00 = JST 09:00
+    - cron: "0 14 * * *"   # UTC 14:00 = JST 23:00（その日の投稿をまとめて取得）
   workflow_dispatch:        # 手動実行も可能
 
 jobs:
