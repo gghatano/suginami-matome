@@ -19,6 +19,8 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    # workflow_run 経由の場合は Fetch Events が成功したときのみデプロイ
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     permissions:
       pages: write
       id-token: write
@@ -31,6 +33,10 @@ jobs:
         with:
           ref: main   # 常に最新の main（fetch のコミット後）を取得
       - uses: actions/configure-pages@v5
+        with:
+          # Pages を「GitHub Actions」ビルドタイプで自動有効化
+          # （Source が未設定 / ブランチ公開になっていても切り替える）
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: "."
