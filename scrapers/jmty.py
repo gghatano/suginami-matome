@@ -33,21 +33,23 @@ class JmtyScraper(BaseScraper):
         items: list[Item] = []
         seen: set[str] = set()
 
-        # 投稿一覧の各記事ブロック
-        articles = soup.select("li.p-articles-list-item, .p-item-list li, article")
-        if not articles:
-            articles = soup.find_all("a", href=True)
-
-        for node in articles:
-            a = node if node.name == "a" else node.find("a", href=True)
-            if not a or not a.get("href"):
-                continue
+        # 投稿詳細は /article/{数字} を含むURL。ページ構造変更に強いよう
+        # 全アンカーから該当リンクを直接拾う。
+        article_re = re.compile(r"/article/\d+")
+        anchors = soup.find_all("a", href=True)
+        for a in anchors:
             href = a["href"].strip()
-            # 投稿詳細は /tokyo/.../数字 形式
-            if not re.search(r"/\d+$", href):
+            if not article_re.search(href):
                 continue
-            title = a.get("title") or a.get_text(strip=True)
-            title = (title or "").strip()
+            # タイトル: title属性 → 自身のテキスト → 内包する見出し
+            title = (a.get("title") or a.get_text(" ", strip=True) or "").strip()
+            if len(title) < 4:
+                node = a.find_parent(["li", "article", "div"])
+                if node:
+                    h = node.find(["h2", "h3"])
+                    if h:
+                        title = h.get_text(" ", strip=True)
+            title = title.strip()
             if not title or len(title) < 4:
                 continue
             url = absolute_url(PAGE_URL, href)
@@ -55,7 +57,8 @@ class JmtyScraper(BaseScraper):
                 continue
             seen.add(url)
 
-            context = node.get_text(" ", strip=True) if node.name != "a" else title
+            node = a.find_parent(["li", "article", "div"])
+            context = node.get_text(" ", strip=True) if node else title
             published = _extract_date(context)
 
             items.append(
@@ -70,5 +73,7 @@ class JmtyScraper(BaseScraper):
                 )
             )
 
-        logger.info("[%s] %d件取得", SOURCE_KEY, len(items))
+        logger.info(
+            "[%s] %d件取得（アンカー総数%d）", SOURCE_KEY, len(items), len(anchors)
+        )
         return items
