@@ -1,0 +1,38 @@
+name: Deploy to GitHub Pages
+
+on:
+  # main へのプッシュ（マージ含む）で即デプロイ
+  push:
+    branches: [main]
+  # 日次の Fetch Events 完了後（データ更新のコミット後）にデプロイ
+  workflow_run:
+    workflows: ["Fetch Events"]
+    types: [completed]
+  # 手動実行も可能
+  workflow_dispatch:
+
+# 同時デプロイは1つに制限（実行中のものは完了させる）
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+      contents: read
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main   # 常に最新の main（fetch のコミット後）を取得
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: "."
+      - uses: actions/deploy-pages@v4
+        id: deployment
