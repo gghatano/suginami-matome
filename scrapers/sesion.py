@@ -35,13 +35,17 @@ class SesionScraper(BaseScraper):
 
         container = soup.find("main") or soup
 
-        # イベント詳細へのリンクを拾う
+        # イベント詳細へのリンクのみを拾う。
+        # 個別ページは /event/{カテゴリ}/{数字ID} 形式。
+        # カテゴリ一覧(/eventcat/)や「前の月へ/次の月へ」等のページ送り
+        # (?postyear=...&postmonth=... クエリ) は除外する。
+        detail_re = re.compile(r"/event/[^/?]+/\d+")
         for a in container.find_all("a", href=True):
             href = a["href"].strip()
             title = a.get_text(strip=True)
             if not title or len(title) < 4:
                 continue
-            if "/event" not in href:
+            if not detail_re.search(href):
                 continue
             url = absolute_url(PAGE_URL, href)
             if url in seen or url.rstrip("/") == PAGE_URL.rstrip("/"):

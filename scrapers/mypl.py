@@ -35,13 +35,16 @@ class MyplScraper(BaseScraper):
 
         container = soup.find("main") or soup
 
+        # イベント詳細ページのみ拾う。
+        # 個別ページは /event/{数字ID}/ または /event/detail/{ID} 形式。
+        # 「詳細検索へ」(/event/list) 等の一覧・検索リンクは除外する。
+        detail_re = re.compile(r"/event/(?:\d+|detail/)")
         for a in container.find_all("a", href=True):
             href = a["href"].strip()
             title = a.get_text(strip=True)
             if not title or len(title) < 4:
                 continue
-            # 詳細ページ /event/detail/ 等
-            if "/event/" not in href or href.rstrip("/").endswith("/event"):
+            if not detail_re.search(href):
                 continue
             url = absolute_url(PAGE_URL, href)
             if url in seen or url.rstrip("/") == PAGE_URL.rstrip("/"):
