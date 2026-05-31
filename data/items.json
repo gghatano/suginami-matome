@@ -1,0 +1,74 @@
+[
+  {
+    "id": "suginami_city_def67890",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "杉並区 子育て応援フェスタ2026",
+    "url": "https://www.city.suginami.tokyo.jp/event/kosodate-festa2026.html",
+    "summary": "",
+    "published_at": "2026-05-15",
+    "fetched_at": "2026-05-31",
+    "category": "イベント"
+  },
+  {
+    "id": "sesion_11aa22bb",
+    "source": "セシオン杉並",
+    "source_key": "sesion",
+    "source_url": "https://www.sesion-suginami.jp/",
+    "title": "セシオン杉並 春のクラシックコンサート",
+    "url": "https://www.sesion-suginami.jp/event/classic-spring-2026",
+    "summary": "地域で活躍する演奏家によるクラシックコンサートを開催します。入場無料・予約不要。",
+    "published_at": "2026-05-10",
+    "fetched_at": "2026-05-31",
+    "category": "イベント"
+  },
+  {
+    "id": "mypl_33cc44dd",
+    "source": "まいぷれ杉並区",
+    "source_key": "mypl",
+    "source_url": "https://suginami.mypl.net/",
+    "title": "阿佐ヶ谷ハンドメイドマーケット",
+    "url": "https://suginami.mypl.net/event/detail/3344",
+    "summary": "阿佐ヶ谷の商店街で手作り作家が集まるマーケットを開催。アクセサリーや雑貨が並びます。",
+    "published_at": "2026-05-05",
+    "fetched_at": "2026-05-31",
+    "category": "イベント"
+  },
+  {
+    "id": "jmty_55ee66ff",
+    "source": "ジモティー杉並区",
+    "source_key": "jmty",
+    "source_url": "https://jmty.jp/",
+    "title": "【無料】杉並区 親子で楽しむ英語あそびの会",
+    "url": "https://jmty.jp/tokyo/eve-all/article/12345678",
+    "summary": "未就学児とその保護者を対象にした英語あそびの会です。参加費無料。",
+    "published_at": "2026-04-28",
+    "fetched_at": "2026-05-31",
+    "category": "イベント"
+  },
+  {
+    "id": "sugisyakyo_77aa88bb",
+    "source": "杉並区社会福祉協議会",
+    "source_key": "sugisyakyo",
+    "source_url": "https://www.sugisyakyo.com/",
+    "title": "ボランティア入門講座 受講者募集のお知らせ",
+    "url": "https://www.sugisyakyo.com/news/volunteer-nyumon-2026",
+    "summary": "地域でのボランティア活動を始めたい方向けの入門講座です。",
+    "published_at": "2026-04-22",
+    "fetched_at": "2026-05-31",
+    "category": "講座"
+  },
+  {
+    "id": "goguynet_abc12345",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "高円寺びっくり大道芸2026が開催",
+    "url": "https://suginami.goguynet.jp/2026/04/21/koenji-daidogei2026/",
+    "summary": "4月25日・26日の2日間、高円寺駅周辺で第18回びっくり大道芸が開催されます。プロのパフォーマーが集結し、街全体がステージに。",
+    "published_at": "2026-04-20",
+    "fetched_at": "2026-05-31",
+    "category": "イベント"
+  }
+]
