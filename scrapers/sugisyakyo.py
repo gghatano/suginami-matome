@@ -38,6 +38,10 @@ class SugisyakyoScraper(BaseScraper):
             ".news li, .topics li, .information li, dl.news dd, li"
         )
 
+        # 新着・お知らせ記事のみ拾う。
+        # 記事は WordPress 投稿 (/wp/?p=NNNN) または /news/ 配下。
+        # サイト共通メニュー（/about/ /purpose/ /kanri/ 等の固定ページ）は除外する。
+        news_re = re.compile(r"/wp/.*[?&]p=\d+|/news/")
         for node in nodes:
             a = node.find("a", href=True)
             if not a:
@@ -48,6 +52,8 @@ class SugisyakyoScraper(BaseScraper):
                 continue
             # 外部・トップ・アンカーは除外
             if href.startswith("#") or href.startswith("javascript"):
+                continue
+            if not news_re.search(href):
                 continue
             url = absolute_url(PAGE_URL, href)
             if url in seen or url.rstrip("/") == SOURCE_URL.rstrip("/"):
