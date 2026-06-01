@@ -24,6 +24,49 @@ def _extract_date(text: str) -> str:
     return ""
 
 
+# プレースホルダ／ロゴ等として除外したい画像URLのパターン
+_SKIP_IMG_RE = re.compile(
+    r"(logo|icon|sprite|blank|spacer|no[-_]?image|noimage|dummy|loading)", re.I
+)
+
+
+def _extract_image(card, link) -> str:
+    """イベントカードからサムネイル画像URLを抽出する。失敗時は空文字。
+
+    タイトルリンクの直近の親に画像が無いこともあるため、祖先を数段
+    たどって最初に見つかった有効な画像を返す。
+    """
+    candidates = []
+    if card is not None:
+        candidates.append(card)
+    node = link
+    for _ in range(4):  # 祖先を最大4段たどる
+        if node is None:
+            break
+        candidates.append(node)
+        node = node.parent
+
+    for scope in candidates:
+        for img in scope.find_all("img"):
+            # 遅延読み込み属性を優先的に見る
+            src = (
+                img.get("data-src")
+                or img.get("data-original")
+                or img.get("data-lazy-src")
+                or img.get("src")
+                or ""
+            ).strip()
+            if not src and img.get("srcset"):
+                # srcset の先頭URLを使う
+                src = img["srcset"].split(",")[0].strip().split(" ")[0]
+            if not src or src.startswith("data:"):
+                continue
+            if _SKIP_IMG_RE.search(src):
+                continue
+            return absolute_url(PAGE_URL, src)
+    return ""
+
+
 class SesionScraper(BaseScraper):
     def fetch(self) -> list[Item]:
         soup = get_soup(PAGE_URL)
@@ -55,6 +98,7 @@ class SesionScraper(BaseScraper):
             card = a.find_parent(["article", "li", "div"])
             context = card.get_text(" ", strip=True) if card else title
             published = _extract_date(context)
+            image = _extract_image(card, a)
 
             items.append(
                 Item(
@@ -65,6 +109,7 @@ class SesionScraper(BaseScraper):
                     url=url,
                     published_at=published,
                     category="イベント",
+                    image=image,
                 )
             )
 
