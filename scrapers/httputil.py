@@ -35,3 +35,27 @@ def absolute_url(base: str, href: str) -> str:
     from urllib.parse import urljoin
 
     return urljoin(base, href)
+
+
+# og:image 等として参照するメタタグ（優先順）
+_OG_IMAGE_SELECTORS = [
+    ("meta", {"property": "og:image"}),
+    ("meta", {"property": "og:image:url"}),
+    ("meta", {"property": "og:image:secure_url"}),
+    ("meta", {"name": "og:image"}),
+    ("meta", {"name": "twitter:image"}),
+    ("meta", {"name": "twitter:image:src"}),
+    ("meta", {"property": "twitter:image"}),
+]
+
+
+def get_og_image(url: str) -> str:
+    """記事ページから og:image / twitter:image を取得する。失敗時は空文字。"""
+    soup = get_soup(url)
+    if soup is None:
+        return ""
+    for name, attrs in _OG_IMAGE_SELECTORS:
+        tag = soup.find(name, attrs=attrs)
+        if tag and tag.get("content", "").strip():
+            return absolute_url(url, tag["content"].strip())
+    return ""

@@ -10,6 +10,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from base import BaseScraper  # noqa: E402
+from httputil import get_og_image  # noqa: E402
 from goguynet import GoguynetScraper  # noqa: E402
 from suginami_city import SuginamiCityScraper  # noqa: E402
 from sesion import SesionScraper  # noqa: E402
@@ -31,6 +32,13 @@ MAX_ITEMS = 500
 
 # スクレイパー間のリクエスト間隔（秒）
 SLEEP_BETWEEN = 2
+
+# サムネイル画像の補完（記事ページの og:image）設定
+ENRICH_IMAGES = True          # image が空のアイテムを og:image で補完する
+MAX_ENRICH_PER_RUN = 80       # 1回の実行で記事ページを取得する最大件数（負荷抑制）
+ENRICH_SLEEP = 1              # 補完リクエスト間のインターバル（秒）
+# 補完対象外のソース（anti-bot 等で取得できないもの）
+ENRICH_SKIP_SOURCES = {"jmty"}
 
 # 実行するスクレイパー一覧（実装順）
 SCRAPERS: list[BaseScraper] = [
@@ -103,6 +111,32 @@ def main() -> int:
             "保持件数 %d > %d のため古いものを削除", len(all_items), MAX_ITEMS
         )
         all_items = all_items[:MAX_ITEMS]
+
+    # サムネイル画像の補完: image が空のアイテムを記事ページの og:image で埋める。
+    # 新規・既存を問わず（＝既存アイテムへのバックフィルも兼ねる）、新しい順に
+    # 最大 MAX_ENRICH_PER_RUN 件まで記事ページを取得する。
+    if ENRICH_IMAGES:
+        attempts = 0
+        enriched = 0
+        for d in all_items:
+            if attempts >= MAX_ENRICH_PER_RUN:
+                break
+            if d.get("image") or d.get("source_key") in ENRICH_SKIP_SOURCES:
+                continue
+            url = d.get("url")
+            if not url:
+                continue
+            attempts += 1
+            try:
+                img = get_og_image(url)
+            except Exception as e:  # noqa: BLE001
+                logger.warning("og:image取得失敗 %s: %s", url, e)
+                img = ""
+            if img:
+                d["image"] = img
+                enriched += 1
+            time.sleep(ENRICH_SLEEP)
+        logger.info("画像補完: %d件成功 / %d件試行", enriched, attempts)
 
     DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
     with DATA_PATH.open("w", encoding="utf-8") as f:
