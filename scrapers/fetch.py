@@ -10,7 +10,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from base import BaseScraper  # noqa: E402
-from httputil import get_og_image  # noqa: E402
+from httputil import get_article_image, PLACEHOLDER_IMG_RE  # noqa: E402
 from goguynet import GoguynetScraper  # noqa: E402
 from suginami_city import SuginamiCityScraper  # noqa: E402
 from sesion import SesionScraper  # noqa: E402
@@ -112,8 +112,9 @@ def main() -> int:
         )
         all_items = all_items[:MAX_ITEMS]
 
-    # サムネイル画像の補完: image が空のアイテムを記事ページの og:image で埋める。
-    # 新規・既存を問わず（＝既存アイテムへのバックフィルも兼ねる）、新しい順に
+    # サムネイル画像の補完: 記事ページから「個別の」画像を取得して埋める。
+    # 対象は image が空、またはロゴ/共通OGP等のプレースホルダ画像のもの。
+    # 新規・既存を問わず（＝既存アイテムへのバックフィル/置換も兼ねる）、新しい順に
     # 最大 MAX_ENRICH_PER_RUN 件まで記事ページを取得する。
     if ENRICH_IMAGES:
         attempts = 0
@@ -121,22 +122,30 @@ def main() -> int:
         for d in all_items:
             if attempts >= MAX_ENRICH_PER_RUN:
                 break
-            if d.get("image") or d.get("source_key") in ENRICH_SKIP_SOURCES:
+            if d.get("source_key") in ENRICH_SKIP_SOURCES:
+                continue
+            cur = d.get("image", "")
+            # 既に「個別の」画像が入っているものはスキップ
+            if cur and not PLACEHOLDER_IMG_RE.search(cur):
                 continue
             url = d.get("url")
             if not url:
                 continue
             attempts += 1
             try:
-                img = get_og_image(url)
+                img = get_article_image(url)
             except Exception as e:  # noqa: BLE001
-                logger.warning("og:image取得失敗 %s: %s", url, e)
+                logger.warning("画像取得失敗 %s: %s", url, e)
                 img = ""
-            if img:
-                d["image"] = img
-                enriched += 1
+            # プレースホルダ画像しか得られなければ空にして（フロントは
+            # ファビコン表示にフォールバック）、全カード同一画像を避ける
+            new_img = img if (img and not PLACEHOLDER_IMG_RE.search(img)) else ""
+            if new_img != cur:
+                d["image"] = new_img
+                if new_img:
+                    enriched += 1
             time.sleep(ENRICH_SLEEP)
-        logger.info("画像補完: %d件成功 / %d件試行", enriched, attempts)
+        logger.info("画像補完: %d件取得 / %d件試行", enriched, attempts)
 
     DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
     with DATA_PATH.open("w", encoding="utf-8") as f:
