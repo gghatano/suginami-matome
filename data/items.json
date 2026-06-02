@@ -1,5 +1,57 @@
 [
   {
+    "id": "mypl_91735c90",
+    "source": "まいぷれ杉並区",
+    "source_key": "mypl",
+    "source_url": "https://suginami.mypl.net/",
+    "title": "防災フェスタ",
+    "url": "https://suginami.mypl.net/event/00000471681/",
+    "summary": "スクール、体験 防災フェスタ",
+    "published_at": "2026-06-02",
+    "fetched_at": "2026-06-02",
+    "category": "イベント",
+    "image": "https://img2.mypl.net/image.php?id=353800&p=bti&s=500_730&op="
+  },
+  {
+    "id": "goguynet_87614fc6",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】知る人ぞ知るからあげ専門店　「からあげ屋そらいろ」のからあげ弁当はコスパ最強で絶品。ビールのお供にもグー！",
+    "url": "https://suginami.goguynet.jp/2026/06/02/sorairo/",
+    "summary": "下井草と阿佐ヶ谷のちょうど間あたり、下井草一丁目バス停から歩いて2分ほどの早稲田通り沿いのサミット向いにある「からあげ屋 そらいろ」。 「からあげ屋 そらいろ」は、テイクアウトのからあげ専門店で、からあげ単体とからあげを [&#8230;]",
+    "published_at": "2026-06-01",
+    "fetched_at": "2026-06-02",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_4962-1024x767.jpeg"
+  },
+  {
+    "id": "suginami_city_4983d5b4",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "杉並区多文化共生推進懇談会",
+    "url": "https://www.city.suginami.tokyo.jp/s030/event/27004.html",
+    "summary": "",
+    "published_at": "2026-06-01",
+    "fetched_at": "2026-06-02",
+    "category": "イベント",
+    "image": ""
+  },
+  {
+    "id": "suginami_city_081ef1cb",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "古民家での囲炉裏当番を体験してみよう（6月開催）（郷土博物館）",
+    "url": "https://www.city.suginami.tokyo.jp/s113/event/26075.html",
+    "summary": "",
+    "published_at": "2026-06-01",
+    "fetched_at": "2026-06-02",
+    "category": "イベント",
+    "image": ""
+  },
+  {
     "id": "sesion_493ca9c5",
     "source": "セシオン杉並",
     "source_key": "sesion",
@@ -258,6 +310,19 @@
     "fetched_at": "2026-06-01",
     "category": "イベント",
     "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/20260513140055_ページ_1.jpg"
+  },
+  {
+    "id": "suginami_city_e0242886",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "小児救急講座　新米パパママへ　小児科医からのメッセージ（荻窪保健センター）",
+    "url": "https://www.city.suginami.tokyo.jp/s048/event/26376.html",
+    "summary": "",
+    "published_at": "2026-05-31",
+    "fetched_at": "2026-06-02",
+    "category": "イベント",
+    "image": ""
   },
   {
     "id": "goguynet_32902f2d",
@@ -2117,6 +2182,19 @@
     "fetched_at": "2026-05-31",
     "category": "イベント",
     "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5987.jpeg"
+  },
+  {
+    "id": "suginami_city_c409a36c",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "【申し込み期間延長】子ども博物館教室「七夕馬を作ろう」（郷土博物館）",
+    "url": "https://www.city.suginami.tokyo.jp/s113/event/25422.html",
+    "summary": "",
+    "published_at": "2026-05-29",
+    "fetched_at": "2026-06-02",
+    "category": "イベント",
+    "image": ""
   },
   {
     "id": "suginami_city_42c5aeca",
