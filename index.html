@@ -315,6 +315,11 @@
     };
     const DEFAULT_COLOR = "#64748b";
 
+    // 個別画像が無いソースに使うフォールバックアイコン（ローカルアセット）
+    const SOURCE_FALLBACK_IMAGE = {
+      suginami_city: "assets/icons/suginami_city.svg",
+    };
+
     const state = { items: [], source: "", category: "", q: "", period: "", newestPub: "", newestFetched: "" };
 
     function esc(s) {
@@ -354,15 +359,20 @@
       </div>`;
     }
 
-    // サムネイル: 記事画像 → ファビコン → 文字アバター の3段フォールバック
+    // サムネイル: 記事画像 → ソース専用アイコン → ファビコン → 文字アバター
     function thumb(it) {
       const c = color(it.source_key);
       const letter = esc((it.source || "?").trim().charAt(0));
       const host = hostOf(it.url) || hostOf(it.source_url);
       const favicon = host ? `https://www.google.com/s2/favicons?domain=${encodeURIComponent(host)}&sz=128` : "";
+      const fallbackIcon = SOURCE_FALLBACK_IMAGE[it.source_key] || "";
       let imgTag = "";
       if (it.image) {
         imgTag = `<img class="thumb-img" loading="lazy" alt="" src="${esc(it.image)}"
+                   data-fallback="${esc(favicon)}" onerror="thumbErr(this)">`;
+      } else if (fallbackIcon) {
+        // ソース専用アイコン（杉並区など）。読み込み失敗時はファビコン→文字アバター
+        imgTag = `<img class="thumb-img" loading="lazy" alt="" src="${esc(fallbackIcon)}"
                    data-fallback="${esc(favicon)}" onerror="thumbErr(this)">`;
       } else if (favicon) {
         imgTag = `<img class="thumb-img is-favicon" loading="lazy" alt="" src="${esc(favicon)}"

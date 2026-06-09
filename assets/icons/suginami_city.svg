@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="杉並区">
+  <rect width="128" height="128" rx="20" fill="#1f7a3d"/>
+  <rect x="6" y="6" width="116" height="116" rx="15" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="2"/>
+  <text x="64" y="62" text-anchor="middle" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="34" font-weight="700" fill="#ffffff">杉並区</text>
+  <text x="64" y="92" text-anchor="middle" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="13" letter-spacing="2" fill="#d6f0de">SUGINAMI</text>
+</svg>
