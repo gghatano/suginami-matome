@@ -1,5 +1,44 @@
 [
   {
+    "id": "suginami_city_17caeb5c",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "作ろう、遊ぼう　冒険クラフト（カトリック荻窪教会）",
+    "url": "https://www.city.suginami.tokyo.jp/s059/event/25160.html",
+    "summary": "",
+    "published_at": "2026-06-10",
+    "fetched_at": "2026-06-10",
+    "category": "イベント",
+    "image": ""
+  },
+  {
+    "id": "goguynet_3ffd6b9b",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】新高円寺の立ち食いそば・うどん「伊藤松吉商店」が5月12日(火)をもって閉店していました。",
+    "url": "https://suginami.goguynet.jp/2026/06/10/itoumatsuyoshisyouten/",
+    "summary": "丸ノ内線の新高円寺駅から歩いて4分ほどの高南通りのミニストップの隣にある立ち食いそばのお店「伊藤松吉商店(いとうまつきちしょうてん)」。こちらの閉店情報をいただき、実際に行ってみました。 お店の扉には閉店のお知らせが貼ら [&#8230;]",
+    "published_at": "2026-06-09",
+    "fetched_at": "2026-06-10",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5812-1024x767.jpeg"
+  },
+  {
+    "id": "suginami_city_21576949",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "建築審査会",
+    "url": "https://www.city.suginami.tokyo.jp/s092/event/25658.html",
+    "summary": "",
+    "published_at": "2026-06-09",
+    "fetched_at": "2026-06-10",
+    "category": "イベント",
+    "image": ""
+  },
+  {
     "id": "goguynet_e3332782",
     "source": "号外NET杉並区",
     "source_key": "goguynet",
