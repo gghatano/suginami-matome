@@ -1,5 +1,31 @@
 [
   {
+    "id": "suginami_city_fd2d0c23",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "マンション管理無料相談（令和8年7月）",
+    "url": "https://www.city.suginami.tokyo.jp/s093/event/26459.html",
+    "summary": "管理組合の運営や大規模修繕など分譲マンションの管理に関する問題について、マンション管理士が区役所1階ロビーにて月1回（第2木曜日）相談に応じます。（祝日は除く）",
+    "published_at": "2026-06-11",
+    "fetched_at": "2026-06-11",
+    "category": "イベント",
+    "image": ""
+  },
+  {
+    "id": "goguynet_634d1609",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】西荻高架下で2026年6月13日(土)に「西荻高架下マルシェ vol.3」が開催されます！",
+    "url": "https://suginami.goguynet.jp/2026/06/11/nishiogikokashitamarche-vol3/",
+    "summary": "西荻窪駅から吉祥寺駅方面に歩いて5分ほどのところにある西荻高架下で2026年6月13日(土)に「西荻高架下マルシェ vol.3」が開催されます！ 【開催日】2026年6月13日(土) 【開催時間】11時〜17時 マルシェ [&#8230;]",
+    "published_at": "2026-06-10",
+    "fetched_at": "2026-06-11",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_6173-798x767.jpeg"
+  },
+  {
     "id": "suginami_city_17caeb5c",
     "source": "杉並区公式",
     "source_key": "suginami_city",
