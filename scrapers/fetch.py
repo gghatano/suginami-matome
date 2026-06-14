@@ -17,6 +17,7 @@ from sesion import SesionScraper  # noqa: E402
 from mypl import MyplScraper  # noqa: E402
 from jmty import JmtyScraper  # noqa: E402
 from sugisyakyo import SugisyakyoScraper  # noqa: E402
+from x_honancho import XHonanchoScraper  # noqa: E402
 
 logging.basicConfig(
     level=logging.INFO,
@@ -37,8 +38,8 @@ SLEEP_BETWEEN = 2
 ENRICH_IMAGES = True          # image が空のアイテムを og:image で補完する
 MAX_ENRICH_PER_RUN = 80       # 1回の実行で記事ページを取得する最大件数（負荷抑制）
 ENRICH_SLEEP = 1              # 補完リクエスト間のインターバル（秒）
-# 補完対象外のソース（anti-bot 等で取得できないもの）
-ENRICH_SKIP_SOURCES = {"jmty"}
+# 補完対象外のソース（anti-bot 等で取得できない / フィードに画像が含まれるもの）
+ENRICH_SKIP_SOURCES = {"jmty", "x_honancho"}
 
 # 実行するスクレイパー一覧（実装順）
 SCRAPERS: list[BaseScraper] = [
@@ -48,6 +49,7 @@ SCRAPERS: list[BaseScraper] = [
     MyplScraper(),
     JmtyScraper(),
     SugisyakyoScraper(),
+    XHonanchoScraper(),
 ]
 
 

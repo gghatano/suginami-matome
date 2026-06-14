@@ -112,6 +112,16 @@ suginami-events/
 - 取得方法: `requests` + `BeautifulSoup`
 - 取得対象: 新着・イベント情報（タイトル・リンク・日付）
 
+### フェーズ3（X / SNS）
+
+#### 7. X @gg_hatano（方南町）
+- `source_key`: `x_honancho`
+- トップURL: `https://x.com/gg_hatano`
+- フィード: rss.app で生成した検索フィード（`from:gg_hatano #方南町`）のRSS
+- 取得方法: `feedparser` でRSS取得
+- 抽出条件: 本文に「#方南町 / 方南町」を含み、**リツイート・リプライは除外**
+- 画像: フィードの media/enclosure を使用（記事ページの og:image 補完は対象外）
+
 ---
 
 ## スクレイパー基底クラス — `scrapers/base.py`
