@@ -1,5 +1,44 @@
 [
   {
+    "id": "suginami_city_33ba1885",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "地元の魅力再発見　杉並ハイキング（善福寺川緑地公園）",
+    "url": "https://www.city.suginami.tokyo.jp/s059/event/27170.html",
+    "summary": "",
+    "published_at": "2026-06-16",
+    "fetched_at": "2026-06-16",
+    "category": "イベント",
+    "image": ""
+  },
+  {
+    "id": "goguynet_cbfa8644",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】井荻の「トラットリ家 えるビス」のランチはコスパ最強で豊富なメニューを楽しめます！",
+    "url": "https://suginami.goguynet.jp/2026/06/16/elvis-iogi/",
+    "summary": "西武新宿線井荻駅から徒歩1分ほどの場所にある「串焼と手造料理トラットリ家 えるビス」。こちらでランチをいただいてきました♪ 店内は、テーブル席やカウンター席、奥にお座敷もあって広々としていました！週末のお昼時でしたので子 [&#8230;]",
+    "published_at": "2026-06-15",
+    "fetched_at": "2026-06-16",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5491-1024x767.jpeg"
+  },
+  {
+    "id": "suginami_city_772e7ec5",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "登校についての心配事、話してみませんか？「ほわっ」と安心、「ゆるっ」とつながる保護者の集い Vol.2（杉並区役所）",
+    "url": "https://www.city.suginami.tokyo.jp/s110/event/27100.html",
+    "summary": "子どもの「行きたくない。」… どう対応すればいい？学校のことは？将来は？ そんな思いを、同じ境遇の保護者同士で話してみませんか？ ただ聞くだけの参加もOKです。",
+    "published_at": "2026-06-15",
+    "fetched_at": "2026-06-16",
+    "category": "イベント",
+    "image": ""
+  },
+  {
     "id": "goguynet_40a1648e",
     "source": "号外NET杉並区",
     "source_key": "goguynet",
