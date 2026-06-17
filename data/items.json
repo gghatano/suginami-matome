@@ -1,5 +1,44 @@
 [
   {
+    "id": "mypl_2151285d",
+    "source": "まいぷれ杉並区",
+    "source_key": "mypl",
+    "source_url": "https://suginami.mypl.net/",
+    "title": "モダンバレエレッスン体験会",
+    "url": "https://suginami.mypl.net/event/00000472054/",
+    "summary": "スクール、体験 モダンバレエレッスン体験会",
+    "published_at": "2026-06-17",
+    "fetched_at": "2026-06-17",
+    "category": "イベント",
+    "image": "https://img2.mypl.net/image.php?id=354190&p=bti&s=500_730&op="
+  },
+  {
+    "id": "goguynet_8e00ab9e",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】荻窪にピアノとヴァイオリンの音楽教室「イル・チェーロ音楽教室」が6月1日(月)オープンしました！6月30日(火)まで無料体験レッスン実施中です♪",
+    "url": "https://suginami.goguynet.jp/2026/06/17/ilcielo-ogikubo/",
+    "summary": "JR中央・総武線荻窪駅から徒歩3分の場所に、ピアノとヴァイオリンの音楽教室「イル・チェーロ音楽教室」が2026年6月1日(月)オープンしたそうです。 知識ゼロからでも「安心」のマンツーマン 楽譜が読めなくても、楽器を持っ [&#8230;]",
+    "published_at": "2026-06-16",
+    "fetched_at": "2026-06-17",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_6444-1024x767.jpeg"
+  },
+  {
+    "id": "goguynet_d44a13d8",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】東高円寺に24時間営業のラーメン店の誕生♪「なぎちゃんラーメン 東高円寺」のオープン日が決まった模様です！",
+    "url": "https://suginami.goguynet.jp/2026/06/17/nagichanramen-higashikoenji-2/",
+    "summary": "5月22日の号外ネット杉並区で東高円寺駅の「ガッツリうどん」の跡地に「なぎちゃんラーメン 東高円寺」が6月5日以降に開店するとお伝えしました。 【杉並区】東高円寺の「ガッツリうどん高円寺店」跡地が新装工事中。次のお店は？ [&#8230;]",
+    "published_at": "2026-06-16",
+    "fetched_at": "2026-06-17",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_6188-1024x767.jpeg"
+  },
+  {
     "id": "suginami_city_33ba1885",
     "source": "杉並区公式",
     "source_key": "suginami_city",
