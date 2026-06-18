@@ -1,5 +1,44 @@
 [
   {
+    "id": "suginami_city_611e7e96",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "令和8年7月の専門家による空き家の総合無料相談（杉並区役所ほか）",
+    "url": "https://www.city.suginami.tokyo.jp/s093/event/26458.html",
+    "summary": "空き家の維持管理や税金、相続に関すること。空き家の賃貸、リフォームや建替え、売却に関する悩み。また空き家になったら何から始めたらいいのかなど、空き家に関するさまざまな悩みを複数の専門家（弁護士、司法書士、建築士、税理士および宅建士）に同時に相談・質問することができます。なお、希望者はオンライン相談も可能です。",
+    "published_at": "2026-06-18",
+    "fetched_at": "2026-06-18",
+    "category": "イベント",
+    "image": ""
+  },
+  {
+    "id": "mypl_087fe20f",
+    "source": "まいぷれ杉並区",
+    "source_key": "mypl",
+    "source_url": "https://suginami.mypl.net/",
+    "title": "方南町ビールまつり",
+    "url": "https://suginami.mypl.net/event/00000472358/",
+    "summary": "商店街、ショップ 方南町ビールまつり",
+    "published_at": "2026-06-18",
+    "fetched_at": "2026-06-18",
+    "category": "イベント",
+    "image": "https://img2.mypl.net/image.php?id=354515&p=bti&s=500_730&op="
+  },
+  {
+    "id": "goguynet_cc0f301c",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】「西荻高架下」が2026年6月27日(土)ついにグランドオープンします！オープン記念イベントもありますよ♪",
+    "url": "https://suginami.goguynet.jp/2026/06/18/nishiogikoukashita-2/",
+    "summary": "JR中央・総武線西荻窪駅から吉祥寺駅間の高架下施設「西荻高架下」。2026年6月26日(金)午前10時からパンフレット持参者向けのプレオープンを経て、6月27日(土)午前10時にグランドオープンすることがわかりました！ [&#8230;]",
+    "published_at": "2026-06-17",
+    "fetched_at": "2026-06-18",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_6437-1024x767.jpeg"
+  },
+  {
     "id": "mypl_2151285d",
     "source": "まいぷれ杉並区",
     "source_key": "mypl",
