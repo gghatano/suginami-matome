@@ -257,6 +257,81 @@
       .today .go { display: none; }
       .today .big { font-size: 1.4rem; }
     }
+
+    /* ===== カレンダー ===== */
+    .cal-wrap { max-width: 920px; margin: 14px auto 0; padding: 0 16px; }
+    .cal {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      padding: 14px 16px 16px;
+    }
+    .cal-head {
+      display: flex; align-items: center; justify-content: center; gap: 14px;
+      margin-bottom: 10px;
+    }
+    .cal-head .title { font-size: 1.05rem; font-weight: 800; min-width: 8.5em; text-align: center; }
+    .cal-nav {
+      width: 34px; height: 34px; border-radius: 8px;
+      border: 1px solid var(--border); background: #fff; color: var(--text);
+      cursor: pointer; font-size: 1.1rem; line-height: 1;
+    }
+    .cal-nav:hover { border-color: var(--accent); color: var(--accent); }
+    .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+    .cal-dow {
+      text-align: center; font-size: 0.72rem; font-weight: 700; color: var(--muted);
+      padding: 4px 0;
+    }
+    .cal-dow.sun { color: #dc2626; }
+    .cal-dow.sat { color: #2563eb; }
+    .cal-cell { aspect-ratio: 1 / 1; }
+    .cal-day {
+      width: 100%; height: 100%;
+      border: 1px solid transparent; border-radius: 10px;
+      background: transparent; color: var(--text);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 2px; cursor: default; position: relative;
+      font: inherit; padding: 0;
+    }
+    .cal-day .d { font-size: 0.9rem; }
+    .cal-day.sun .d { color: #dc2626; }
+    .cal-day.sat .d { color: #2563eb; }
+    .cal-day.today { border-color: #f97316; }
+    .cal-day.has {
+      cursor: pointer;
+      background: #eef2ff; border-color: #dbe3ff; color: var(--accent-dark);
+    }
+    .cal-day.has .d { color: var(--accent-dark); font-weight: 800; }
+    .cal-day.has:hover { background: #e0e7ff; border-color: var(--accent); }
+    .cal-day .cnt {
+      font-size: 0.6rem; font-weight: 800; line-height: 1;
+      background: var(--accent); color: #fff;
+      border-radius: 999px; padding: 1px 5px; min-width: 14px;
+    }
+    .cal-day.sel { background: var(--accent); border-color: var(--accent); }
+    .cal-day.sel .d, .cal-day.sel .cnt { color: #fff; }
+    .cal-day.sel .cnt { background: rgba(255,255,255,0.28); }
+    .cal-selected {
+      margin-top: 12px; display: none;
+      align-items: center; gap: 10px; flex-wrap: wrap;
+      font-size: 0.85rem; color: var(--accent-dark);
+    }
+    .cal-selected.show { display: flex; }
+    .cal-selected .clear {
+      border: 1px solid var(--border); background: #fff; color: var(--muted);
+      border-radius: 999px; padding: 3px 12px; cursor: pointer; font-size: 0.78rem;
+    }
+    .cal-selected .clear:hover { border-color: var(--accent); color: var(--accent); }
+    .cal-hint { margin-top: 10px; font-size: 0.72rem; color: var(--muted); text-align: center; }
+
+    /* イベント日バッジ（カード内） */
+    .badge.ev { background: #eef2ff; color: var(--accent-dark); border: 1px solid #dbe3ff; }
+
+    @media (max-width: 520px) {
+      .cal { padding: 12px 10px 14px; }
+      .cal-day .d { font-size: 0.8rem; }
+    }
   </style>
 </head>
 <body>
@@ -269,6 +344,8 @@
   </header>
 
   <div class="hero" id="hero"></div>
+
+  <div class="cal-wrap" id="cal-wrap"></div>
 
   <div class="toolbar">
     <div class="inner">
@@ -321,7 +398,13 @@
       suginami_city: "assets/icons/suginami_city.svg",
     };
 
-    const state = { items: [], source: "", category: "", q: "", period: "", newestPub: "", newestFetched: "" };
+    const state = {
+      items: [], source: "", category: "", q: "", period: "",
+      newestPub: "", newestFetched: "",
+      day: "",            // 選択中のイベント日（ISO） — カレンダー連動
+      calY: 0, calM: 0,   // 表示中のカレンダー年・月（1-12）
+      eventCount: new Map(), // ISO日付 -> イベント件数
+    };
 
     function esc(s) {
       return (s ?? "").replace(/[&<>"']/g, c => ({
@@ -456,6 +539,7 @@
       document.getElementById("today-btn").addEventListener("click", () => {
         state.period = active ? "" : "today";
         document.getElementById("period-filter").value = state.period;
+        if (state.period && state.day) { selectDay(""); return; }
         render();
       });
     }
@@ -471,12 +555,116 @@
       }
     }
 
+    // ===== カレンダー =====
+    const WEEKDAYS = ["日", "月", "火", "水", "木", "金", "土"];
+
+    function fmtMD(iso) {
+      const d = parseDate(iso);
+      return d ? `${d.mo}/${d.d}` : iso;
+    }
+
+    // 各イベント日の件数を集計（カレンダーのハイライト用）
+    function buildEventIndex() {
+      const cnt = new Map();
+      for (const it of state.items) {
+        for (const iso of (it.event_dates || [])) {
+          cnt.set(iso, (cnt.get(iso) || 0) + 1);
+        }
+      }
+      state.eventCount = cnt;
+    }
+
+    // カレンダー描画（state.calY / state.calM の月を表示）
+    function renderCalendar() {
+      const wrap = document.getElementById("cal-wrap");
+      const y = state.calY, m = state.calM;
+      const first = new Date(y, m - 1, 1);
+      const startDow = first.getDay();
+      const daysInMonth = new Date(y, m, 0).getDate();
+      const today = new Date();
+      const todayIso = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`;
+
+      let cells = "";
+      for (let i = 0; i < startDow; i++) cells += `<div class="cal-cell"></div>`;
+      for (let d = 1; d <= daysInMonth; d++) {
+        const iso = `${y}-${String(m).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
+        const dow = (startDow + d - 1) % 7;
+        const n = state.eventCount.get(iso) || 0;
+        const cls = [
+          "cal-day",
+          dow === 0 ? "sun" : dow === 6 ? "sat" : "",
+          n > 0 ? "has" : "",
+          iso === state.day ? "sel" : "",
+          iso === todayIso ? "today" : "",
+        ].filter(Boolean).join(" ");
+        const clickable = n > 0 ? `data-date="${iso}"` : "";
+        const aria = n > 0 ? `aria-pressed="${iso === state.day}" title="${fmtFull(iso)}・${n}件"` : "";
+        cells += `<div class="cal-cell"><button class="${cls}" ${clickable} ${aria}>
+            <span class="d">${d}</span>${n > 0 ? `<span class="cnt">${n}</span>` : ""}
+          </button></div>`;
+      }
+
+      const dow = WEEKDAYS.map((w, i) =>
+        `<div class="cal-dow ${i === 0 ? "sun" : i === 6 ? "sat" : ""}">${w}</div>`).join("");
+
+      wrap.innerHTML = `
+        <section class="cal" aria-label="イベントカレンダー">
+          <div class="cal-head">
+            <button class="cal-nav" id="cal-prev" aria-label="前の月">‹</button>
+            <div class="title">${y}年${m}月</div>
+            <button class="cal-nav" id="cal-next" aria-label="次の月">›</button>
+          </div>
+          <div class="cal-grid">${dow}${cells}</div>
+          <div class="cal-selected ${state.day ? "show" : ""}" id="cal-selected">
+            <span>📅 <b>${state.day ? fmtFull(state.day) : ""}</b> のイベントを表示中</span>
+            <button class="clear" id="cal-clear">解除</button>
+          </div>
+          <div class="cal-hint">記事に日付の記載があるイベントを色付きで表示。クリックでその日の記事を絞り込みます。</div>
+        </section>`;
+
+      document.getElementById("cal-prev").addEventListener("click", () => shiftMonth(-1));
+      document.getElementById("cal-next").addEventListener("click", () => shiftMonth(1));
+      const clearBtn = document.getElementById("cal-clear");
+      if (clearBtn) clearBtn.addEventListener("click", () => selectDay(""));
+      wrap.querySelectorAll(".cal-day[data-date]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const iso = btn.dataset.date;
+          selectDay(iso === state.day ? "" : iso);
+        });
+      });
+    }
+
+    function shiftMonth(delta) {
+      let m = state.calM + delta, y = state.calY;
+      if (m < 1) { m = 12; y--; }
+      else if (m > 12) { m = 1; y++; }
+      state.calY = y; state.calM = m;
+      renderCalendar();
+    }
+
+    // イベント日を選択（""で解除）。選択時は取得日ベースの期間フィルタは解除する。
+    function selectDay(iso) {
+      state.day = iso;
+      if (iso) {
+        const d = parseDate(iso);
+        state.calY = d.y; state.calM = d.mo;
+        state.period = "";
+        document.getElementById("period-filter").value = "";
+      }
+      renderCalendar();
+      render();
+      if (iso) {
+        document.querySelector("main").scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+
     function render() {
       const cards = document.getElementById("cards");
       const q = state.q.trim().toLowerCase();
       const filtered = state.items.filter(it =>
         (!state.source || it.source_key === state.source) &&
         (!state.category || it.category === state.category) &&
+        (!state.day || (it.event_dates || []).includes(state.day)) &&
         inPeriod(it) &&
         (!q || (`${it.title} ${it.summary} ${it.source}`).toLowerCase().includes(q))
       );
@@ -486,7 +674,9 @@
       );
 
       renderHero();
-      document.getElementById("count").textContent = `${filtered.length}件のイベント・お知らせ`;
+      document.getElementById("count").textContent = state.day
+        ? `${fmtFull(state.day)}のイベント・お知らせ ${filtered.length}件`
+        : `${filtered.length}件のイベント・お知らせ`;
 
       if (filtered.length === 0) {
         cards.innerHTML = '<div class="empty">該当する情報はありません。条件を変えてお試しください。</div>';
@@ -496,6 +686,14 @@
       cards.innerHTML = filtered.map(it => {
         const isNew = state.newestPub && daysBetween(it.published_at || it.fetched_at, state.newestPub) <= 7;
         const host = hostOf(it.url);
+        const evDates = it.event_dates || [];
+        let evBadge = "";
+        if (evDates.length) {
+          const label = evDates.length > 1
+            ? `${fmtMD(evDates[0])}〜${fmtMD(evDates[evDates.length - 1])}`
+            : fmtMD(evDates[0]);
+          evBadge = `<span class="badge ev" title="記事から抽出したイベント日">📅 ${esc(label)}</span>`;
+        }
         return `
         <article class="card">
           <div class="left">
@@ -506,6 +704,7 @@
             <div class="meta">
               <span class="badge" style="background:${color(it.source_key)}">${esc(it.source)}</span>
               ${it.category ? `<span class="badge cat">${esc(it.category)}</span>` : ""}
+              ${evBadge}
               ${isNew ? `<span class="badge new">NEW</span>` : ""}
             </div>
             <h2><a href="${esc(it.url)}" target="_blank" rel="noopener noreferrer">${esc(it.title)}</a></h2>
@@ -539,10 +738,34 @@
 
       buildChips();
       buildCategoryFilter();
+      buildEventIndex();
+
+      // カレンダーの初期表示月: 今日の月。今月にイベントが無ければ、
+      // 今日に最も近いイベント日の月を表示する。
+      const today = new Date();
+      state.calY = today.getFullYear();
+      state.calM = today.getMonth() + 1;
+      const curPrefix = `${state.calY}-${String(state.calM).padStart(2, "0")}`;
+      const hasThisMonth = [...state.eventCount.keys()].some(iso => iso.startsWith(curPrefix));
+      if (!hasThisMonth && state.eventCount.size) {
+        const todayMs = Date.UTC(today.getFullYear(), today.getMonth(), today.getDate());
+        let best = null, bestDiff = Infinity;
+        for (const iso of state.eventCount.keys()) {
+          const d = parseDate(iso);
+          const diff = Math.abs(Date.UTC(d.y, d.mo - 1, d.d) - todayMs);
+          if (diff < bestDiff) { bestDiff = diff; best = d; }
+        }
+        if (best) { state.calY = best.y; state.calM = best.mo; }
+      }
+      renderCalendar();
 
       document.getElementById("search").addEventListener("input", e => { state.q = e.target.value; render(); });
       document.getElementById("category-filter").addEventListener("change", e => { state.category = e.target.value; render(); });
-      document.getElementById("period-filter").addEventListener("change", e => { state.period = e.target.value; render(); });
+      document.getElementById("period-filter").addEventListener("change", e => {
+        state.period = e.target.value;
+        if (state.period) selectDay("");  // 期間フィルタを使ったら日付選択は解除
+        else render();
+      });
 
       render();
     }

@@ -10,7 +10,8 @@
     "published_at": "2026-06-18",
     "fetched_at": "2026-06-18",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "mypl_087fe20f",
@@ -23,7 +24,8 @@
     "published_at": "2026-06-18",
     "fetched_at": "2026-06-18",
     "category": "イベント",
-    "image": "https://img2.mypl.net/image.php?id=354515&p=bti&s=500_730&op="
+    "image": "https://img2.mypl.net/image.php?id=354515&p=bti&s=500_730&op=",
+    "event_dates": []
   },
   {
     "id": "goguynet_cc0f301c",
@@ -36,7 +38,11 @@
     "published_at": "2026-06-17",
     "fetched_at": "2026-06-18",
     "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_6437-1024x767.jpeg"
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_6437-1024x767.jpeg",
+    "event_dates": [
+      "2026-06-26",
+      "2026-06-27"
+    ]
   },
   {
     "id": "mypl_2151285d",
@@ -49,7 +55,8 @@
     "published_at": "2026-06-17",
     "fetched_at": "2026-06-17",
     "category": "イベント",
-    "image": "https://img2.mypl.net/image.php?id=354190&p=bti&s=500_730&op="
+    "image": "https://img2.mypl.net/image.php?id=354190&p=bti&s=500_730&op=",
+    "event_dates": []
   },
   {
     "id": "goguynet_8e00ab9e",
@@ -62,7 +69,11 @@
     "published_at": "2026-06-16",
     "fetched_at": "2026-06-17",
     "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_6444-1024x767.jpeg"
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_6444-1024x767.jpeg",
+    "event_dates": [
+      "2026-06-01",
+      "2026-06-30"
+    ]
   },
   {
     "id": "goguynet_d44a13d8",
@@ -75,7 +86,11 @@
     "published_at": "2026-06-16",
     "fetched_at": "2026-06-17",
     "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_6188-1024x767.jpeg"
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_6188-1024x767.jpeg",
+    "event_dates": [
+      "2026-05-22",
+      "2026-06-05"
+    ]
   },
   {
     "id": "suginami_city_33ba1885",
@@ -88,7 +103,8 @@
     "published_at": "2026-06-16",
     "fetched_at": "2026-06-16",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "goguynet_cbfa8644",
@@ -101,7 +117,8 @@
     "published_at": "2026-06-15",
     "fetched_at": "2026-06-16",
     "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5491-1024x767.jpeg"
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5491-1024x767.jpeg",
+    "event_dates": []
   },
   {
     "id": "suginami_city_772e7ec5",
@@ -114,7 +131,8 @@
     "published_at": "2026-06-15",
     "fetched_at": "2026-06-16",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "goguynet_40a1648e",
@@ -127,7 +145,10 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-15",
     "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_6269-1024x767.jpeg"
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_6269-1024x767.jpeg",
+    "event_dates": [
+      "2026-03-30"
+    ]
   },
   {
     "id": "x_honancho_156cebf7",
@@ -140,7 +161,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "方南町",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_464a283d",
@@ -153,7 +175,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_4e9e92f4",
@@ -166,7 +189,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_07873c6f",
@@ -179,7 +203,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_8bdf5a65",
@@ -192,7 +217,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_21656b27",
@@ -205,7 +231,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_68ea134a",
@@ -218,7 +245,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_838c717d",
@@ -231,7 +259,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_70e24ab8",
@@ -244,7 +273,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_464116c2",
@@ -257,7 +287,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_18e36224",
@@ -270,7 +301,10 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": [
+      "2026-06-25"
+    ]
   },
   {
     "id": "suginami_city_335e873d",
@@ -283,7 +317,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/27077/ultraman.png"
+    "image": "https://www.city.suginami.tokyo.jp/images/27077/ultraman.png",
+    "event_dates": []
   },
   {
     "id": "suginami_city_23a1a42e",
@@ -296,7 +331,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_751296dc",
@@ -309,7 +345,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_9dd4bbb2",
@@ -322,7 +359,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_e620e036",
@@ -335,7 +373,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_5723614a",
@@ -348,7 +387,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_d8d76970",
@@ -361,7 +401,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_1f7d3198",
@@ -374,7 +415,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_59cec502",
@@ -387,7 +429,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_ba187013",
@@ -400,7 +443,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_cff77668",
@@ -413,7 +457,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_55395a48",
@@ -426,7 +471,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_4b576a23",
@@ -439,7 +485,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_4ed2ca86",
@@ -452,7 +499,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_136094e7",
@@ -465,7 +513,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_802a290e",
@@ -478,7 +527,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_5a56073f",
@@ -491,7 +541,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_3692856e",
@@ -504,7 +555,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/26273/orangenamisuke.png"
+    "image": "https://www.city.suginami.tokyo.jp/images/26273/orangenamisuke.png",
+    "event_dates": []
   },
   {
     "id": "suginami_city_712677fb",
@@ -517,7 +569,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/26293/orangenamisuke.png"
+    "image": "https://www.city.suginami.tokyo.jp/images/26293/orangenamisuke.png",
+    "event_dates": []
   },
   {
     "id": "suginami_city_ab7bbe18",
@@ -530,7 +583,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_d5d9087e",
@@ -543,7 +597,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_215926ea",
@@ -556,7 +611,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_7838228d",
@@ -569,7 +625,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_8dc0b5f6",
@@ -582,7 +639,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_f6913c12",
@@ -595,7 +653,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_78f009f2",
@@ -608,7 +667,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_98001df2",
@@ -621,7 +681,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_6a2f6808",
@@ -634,7 +695,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_10bf18f2",
@@ -647,7 +709,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_5a01efe5",
@@ -660,7 +723,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_a2d766c8",
@@ -673,7 +737,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_5212e07d",
@@ -686,7 +751,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_26d8db19",
@@ -699,7 +765,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_1c944461",
@@ -712,7 +779,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_442c712f",
@@ -725,7 +793,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/25393/jpo_atsushi_yamaguchi.jpg"
+    "image": "https://www.city.suginami.tokyo.jp/images/25393/jpo_atsushi_yamaguchi.jpg",
+    "event_dates": []
   },
   {
     "id": "suginami_city_28c1e617",
@@ -738,7 +807,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/26319/photo_tanabata.png"
+    "image": "https://www.city.suginami.tokyo.jp/images/26319/photo_tanabata.png",
+    "event_dates": []
   },
   {
     "id": "suginami_city_ac91be98",
@@ -751,7 +821,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/26320/kadokawateien.jpg"
+    "image": "https://www.city.suginami.tokyo.jp/images/26320/kadokawateien.jpg",
+    "event_dates": []
   },
   {
     "id": "suginami_city_d9f13840",
@@ -764,7 +835,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_baac75fc",
@@ -777,7 +849,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_b332b088",
@@ -790,7 +863,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_c944e62f",
@@ -803,7 +877,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_6ce6262f",
@@ -816,7 +891,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_f2e64bf1",
@@ -829,7 +905,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_40870c46",
@@ -842,7 +919,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_6c633f98",
@@ -855,7 +933,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_af168d19",
@@ -868,7 +947,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_d284a2fd",
@@ -881,7 +961,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_c9fabaae",
@@ -894,7 +975,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/26266/cooking_class.png"
+    "image": "https://www.city.suginami.tokyo.jp/images/26266/cooking_class.png",
+    "event_dates": []
   },
   {
     "id": "suginami_city_985807ee",
@@ -907,7 +989,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/26145/ws.png"
+    "image": "https://www.city.suginami.tokyo.jp/images/26145/ws.png",
+    "event_dates": []
   },
   {
     "id": "suginami_city_da3bc22f",
@@ -920,7 +1003,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_9808b279",
@@ -933,7 +1017,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/26168/yunesuko.jpg"
+    "image": "https://www.city.suginami.tokyo.jp/images/26168/yunesuko.jpg",
+    "event_dates": []
   },
   {
     "id": "suginami_city_4dd735ae",
@@ -946,7 +1031,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/26169/unesco_0712.png"
+    "image": "https://www.city.suginami.tokyo.jp/images/26169/unesco_0712.png",
+    "event_dates": []
   },
   {
     "id": "suginami_city_34dbaf3a",
@@ -959,7 +1045,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/26337/sc1days.jpg"
+    "image": "https://www.city.suginami.tokyo.jp/images/26337/sc1days.jpg",
+    "event_dates": []
   },
   {
     "id": "suginami_city_df95ef37",
@@ -972,7 +1059,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/26356/sc1day.jpg"
+    "image": "https://www.city.suginami.tokyo.jp/images/26356/sc1day.jpg",
+    "event_dates": []
   },
   {
     "id": "suginami_city_79be99ea",
@@ -985,7 +1073,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_fd8c18e7",
@@ -998,7 +1087,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/26170/tanabata_kominka.jpg"
+    "image": "https://www.city.suginami.tokyo.jp/images/26170/tanabata_kominka.jpg",
+    "event_dates": []
   },
   {
     "id": "suginami_city_69e55cfc",
@@ -1011,7 +1101,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_d4f0a03a",
@@ -1024,7 +1115,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_52c9fcb8",
@@ -1037,7 +1129,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_e3b97539",
@@ -1050,7 +1143,8 @@
     "published_at": "2026-06-14",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "goguynet_721e519e",
@@ -1063,7 +1157,10 @@
     "published_at": "2026-06-13",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_6233.jpeg"
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_6233.jpeg",
+    "event_dates": [
+      "2026-06-21"
+    ]
   },
   {
     "id": "goguynet_dda1907f",
@@ -1076,7 +1173,10 @@
     "published_at": "2026-06-12",
     "fetched_at": "2026-06-13",
     "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_6158-1024x767.jpeg"
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_6158-1024x767.jpeg",
+    "event_dates": [
+      "2026-05-29"
+    ]
   },
   {
     "id": "goguynet_12dd17fc",
@@ -1089,7 +1189,10 @@
     "published_at": "2026-06-11",
     "fetched_at": "2026-06-12",
     "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_6169-1024x720.png"
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_6169-1024x720.png",
+    "event_dates": [
+      "2026-06-16"
+    ]
   },
   {
     "id": "suginami_city_57e630e5",
@@ -1102,7 +1205,8 @@
     "published_at": "2026-06-11",
     "fetched_at": "2026-06-12",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_fd2d0c23",
@@ -1115,7 +1219,8 @@
     "published_at": "2026-06-11",
     "fetched_at": "2026-06-11",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "goguynet_634d1609",
@@ -1128,7 +1233,10 @@
     "published_at": "2026-06-10",
     "fetched_at": "2026-06-11",
     "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_6173-798x767.jpeg"
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_6173-798x767.jpeg",
+    "event_dates": [
+      "2026-06-13"
+    ]
   },
   {
     "id": "suginami_city_17caeb5c",
@@ -1141,7 +1249,8 @@
     "published_at": "2026-06-10",
     "fetched_at": "2026-06-10",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "goguynet_3ffd6b9b",
@@ -1154,7 +1263,10 @@
     "published_at": "2026-06-09",
     "fetched_at": "2026-06-10",
     "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5812-1024x767.jpeg"
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5812-1024x767.jpeg",
+    "event_dates": [
+      "2026-05-12"
+    ]
   },
   {
     "id": "suginami_city_21576949",
@@ -1167,7 +1279,8 @@
     "published_at": "2026-06-09",
     "fetched_at": "2026-06-10",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "goguynet_e3332782",
@@ -1180,7 +1293,8 @@
     "published_at": "2026-06-08",
     "fetched_at": "2026-06-09",
     "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5023-1024x767.jpeg"
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5023-1024x767.jpeg",
+    "event_dates": []
   },
   {
     "id": "suginami_city_55ce7216",
@@ -1193,7 +1307,8 @@
     "published_at": "2026-06-08",
     "fetched_at": "2026-06-09",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "goguynet_4e4b3032",
@@ -1206,7 +1321,10 @@
     "published_at": "2026-06-07",
     "fetched_at": "2026-06-08",
     "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5962-1024x767.jpeg"
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5962-1024x767.jpeg",
+    "event_dates": [
+      "2026-06-09"
+    ]
   },
   {
     "id": "suginami_city_073ee8f2",
@@ -1219,7 +1337,8 @@
     "published_at": "2026-06-07",
     "fetched_at": "2026-06-07",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "sesion_4007023e",
@@ -1232,7 +1351,8 @@
     "published_at": "2026-06-07",
     "fetched_at": "2026-06-07",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/26年6月ランチタイム販売-圧縮-1.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/26年6月ランチタイム販売-圧縮-1.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_21966f59",
@@ -1245,7 +1365,8 @@
     "published_at": "2026-06-07",
     "fetched_at": "2026-06-07",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/26年6月ランチタイム販売-圧縮-1.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/26年6月ランチタイム販売-圧縮-1.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_661b068f",
@@ -1258,7 +1379,8 @@
     "published_at": "2026-06-07",
     "fetched_at": "2026-06-07",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/26年6月ランチタイム販売-圧縮-1.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/26年6月ランチタイム販売-圧縮-1.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_06fcd520",
@@ -1271,7 +1393,8 @@
     "published_at": "2026-06-07",
     "fetched_at": "2026-06-07",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/26年6月ランチタイム販売-圧縮-1.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/26年6月ランチタイム販売-圧縮-1.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_a29c0912",
@@ -1284,7 +1407,8 @@
     "published_at": "2026-06-07",
     "fetched_at": "2026-06-07",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/26年6月ランチタイム販売-圧縮-1.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/26年6月ランチタイム販売-圧縮-1.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_26ab692a",
@@ -1297,7 +1421,8 @@
     "published_at": "2026-06-07",
     "fetched_at": "2026-06-07",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/26年6月ランチタイム販売-圧縮-1.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/26年6月ランチタイム販売-圧縮-1.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_a03b220e",
@@ -1310,7 +1435,8 @@
     "published_at": "2026-06-07",
     "fetched_at": "2026-06-07",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/26年6月ランチタイム販売-圧縮-1.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/26年6月ランチタイム販売-圧縮-1.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_94745d0d",
@@ -1323,7 +1449,8 @@
     "published_at": "2026-06-07",
     "fetched_at": "2026-06-07",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/26年6月ランチタイム販売-圧縮-1.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/26年6月ランチタイム販売-圧縮-1.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_9c7d4e4a",
@@ -1336,7 +1463,8 @@
     "published_at": "2026-06-07",
     "fetched_at": "2026-06-07",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/26年6月ランチタイム販売-圧縮-1.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/26年6月ランチタイム販売-圧縮-1.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_abebf13b",
@@ -1349,7 +1477,8 @@
     "published_at": "2026-06-07",
     "fetched_at": "2026-06-07",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/26年6月ランチタイム販売-圧縮-1.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/26年6月ランチタイム販売-圧縮-1.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_1e86bcb1",
@@ -1362,7 +1491,8 @@
     "published_at": "2026-06-07",
     "fetched_at": "2026-06-07",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/26年6月ランチタイム販売-圧縮-1.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/26年6月ランチタイム販売-圧縮-1.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_db266a21",
@@ -1375,7 +1505,8 @@
     "published_at": "2026-06-07",
     "fetched_at": "2026-06-07",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/26年6月ランチタイム販売-圧縮-1.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/26年6月ランチタイム販売-圧縮-1.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_29040cd9",
@@ -1388,7 +1519,8 @@
     "published_at": "2026-06-07",
     "fetched_at": "2026-06-07",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/26年6月ランチタイム販売-圧縮-1.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/26年6月ランチタイム販売-圧縮-1.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_ac26418e",
@@ -1401,7 +1533,8 @@
     "published_at": "2026-06-07",
     "fetched_at": "2026-06-07",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/26年6月ランチタイム販売-圧縮-1.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/26年6月ランチタイム販売-圧縮-1.jpg",
+    "event_dates": []
   },
   {
     "id": "goguynet_6fa7f5ca",
@@ -1414,7 +1547,10 @@
     "published_at": "2026-06-06",
     "fetched_at": "2026-06-07",
     "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_6210-1024x767.jpeg"
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_6210-1024x767.jpeg",
+    "event_dates": [
+      "2026-06-05"
+    ]
   },
   {
     "id": "goguynet_1472e5c5",
@@ -1427,7 +1563,10 @@
     "published_at": "2026-06-05",
     "fetched_at": "2026-06-06",
     "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_5626-1024x767.jpeg"
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_5626-1024x767.jpeg",
+    "event_dates": [
+      "2026-06-07"
+    ]
   },
   {
     "id": "goguynet_1ae8f506",
@@ -1440,7 +1579,8 @@
     "published_at": "2026-06-04",
     "fetched_at": "2026-06-05",
     "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_4981-1024x767.jpeg"
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_4981-1024x767.jpeg",
+    "event_dates": []
   },
   {
     "id": "goguynet_6807157e",
@@ -1453,7 +1593,10 @@
     "published_at": "2026-06-04",
     "fetched_at": "2026-06-05",
     "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_5760-1024x767.jpeg"
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_5760-1024x767.jpeg",
+    "event_dates": [
+      "2026-06-07"
+    ]
   },
   {
     "id": "mypl_ac3288db",
@@ -1466,7 +1609,8 @@
     "published_at": "2026-06-04",
     "fetched_at": "2026-06-04",
     "category": "イベント",
-    "image": "https://img2.mypl.net/image.php?id=353884&p=bti&s=375_250&op="
+    "image": "https://img2.mypl.net/image.php?id=353884&p=bti&s=375_250&op=",
+    "event_dates": []
   },
   {
     "id": "goguynet_6e2591d4",
@@ -1479,7 +1623,10 @@
     "published_at": "2026-06-03",
     "fetched_at": "2026-06-04",
     "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_6164.jpeg"
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_6164.jpeg",
+    "event_dates": [
+      "2026-06-06"
+    ]
   },
   {
     "id": "goguynet_c2c8ed0d",
@@ -1492,7 +1639,10 @@
     "published_at": "2026-06-02",
     "fetched_at": "2026-06-03",
     "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5599-1024x767.jpeg"
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5599-1024x767.jpeg",
+    "event_dates": [
+      "2026-05-09"
+    ]
   },
   {
     "id": "mypl_91735c90",
@@ -1505,7 +1655,8 @@
     "published_at": "2026-06-02",
     "fetched_at": "2026-06-02",
     "category": "イベント",
-    "image": "https://img2.mypl.net/image.php?id=353800&p=bti&s=500_730&op="
+    "image": "https://img2.mypl.net/image.php?id=353800&p=bti&s=500_730&op=",
+    "event_dates": []
   },
   {
     "id": "suginami_city_72d9bb09",
@@ -1518,7 +1669,8 @@
     "published_at": "2026-06-01",
     "fetched_at": "2026-06-03",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "goguynet_87614fc6",
@@ -1531,7 +1683,8 @@
     "published_at": "2026-06-01",
     "fetched_at": "2026-06-02",
     "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_4962-1024x767.jpeg"
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_4962-1024x767.jpeg",
+    "event_dates": []
   },
   {
     "id": "suginami_city_4983d5b4",
@@ -1544,7 +1697,8 @@
     "published_at": "2026-06-01",
     "fetched_at": "2026-06-02",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_081ef1cb",
@@ -1557,7 +1711,8 @@
     "published_at": "2026-06-01",
     "fetched_at": "2026-06-02",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "sesion_493ca9c5",
@@ -1570,7 +1725,8 @@
     "published_at": "2026-06-01",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "sesion_3c84e349",
@@ -1583,7 +1739,8 @@
     "published_at": "2026-06-01",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/260603-05アスパラ-圧縮-scaled.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/260603-05アスパラ-圧縮-scaled.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_6f122260",
@@ -1596,7 +1753,8 @@
     "published_at": "2026-06-01",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/03/【確定版】デジタルなんでも相談窓口周知用チラシ表面）.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/03/【確定版】デジタルなんでも相談窓口周知用チラシ表面）.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_bc06f7b1",
@@ -1609,7 +1767,8 @@
     "published_at": "2026-06-01",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/★_DSC3610-300x200.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/★_DSC3610-300x200.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_28611834",
@@ -1622,7 +1781,8 @@
     "published_at": "2026-06-01",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/HJULaQmaAAAZTYI.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/HJULaQmaAAAZTYI.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_1568db20",
@@ -1635,7 +1795,8 @@
     "published_at": "2026-06-01",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/20260530171916_ページ_1.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/20260530171916_ページ_1.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_91730aec",
@@ -1648,7 +1809,8 @@
     "published_at": "2026-06-01",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/samplebosaiFes26o_260424img.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/samplebosaiFes26o_260424img.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_68cf05a9",
@@ -1661,7 +1823,8 @@
     "published_at": "2026-06-01",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "sesion_91e19a66",
@@ -1674,7 +1837,8 @@
     "published_at": "2026-06-01",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/新宿フィル.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/新宿フィル.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_09aa68ce",
@@ -1687,7 +1851,8 @@
     "published_at": "2026-06-01",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/04/260613料理教室-1-scaled.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/04/260613料理教室-1-scaled.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_31f282b7",
@@ -1700,7 +1865,8 @@
     "published_at": "2026-06-01",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/20260525154852_ページ_1.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/20260525154852_ページ_1.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_6c1d2c8b",
@@ -1713,7 +1879,8 @@
     "published_at": "2026-06-01",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/04/20260416101759.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/04/20260416101759.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_b81b141b",
@@ -1726,7 +1893,8 @@
     "published_at": "2026-06-01",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/04/20260615ピアノ試奏会omote-scaled.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/04/20260615ピアノ試奏会omote-scaled.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_e6dda93c",
@@ -1739,7 +1907,8 @@
     "published_at": "2026-06-01",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/20260511131032.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/20260511131032.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_aaa27c02",
@@ -1752,7 +1921,8 @@
     "published_at": "2026-06-01",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/04/20260410115747_ページ_1.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/04/20260410115747_ページ_1.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_01e0471c",
@@ -1765,7 +1935,8 @@
     "published_at": "2026-06-01",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/20260513140039.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/20260513140039.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_082ac24b",
@@ -1778,7 +1949,8 @@
     "published_at": "2026-06-01",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/＜最終稿-624参鶏湯チラシ＞-002-scaled.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/＜最終稿-624参鶏湯チラシ＞-002-scaled.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_ac27069f",
@@ -1791,7 +1963,8 @@
     "published_at": "2026-06-01",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/タンザニア修正-scaled.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/タンザニア修正-scaled.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_168b9716",
@@ -1804,7 +1977,8 @@
     "published_at": "2026-06-01",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/04/チラシ_ページ_1-scaled.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/04/チラシ_ページ_1-scaled.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_109e4cfc",
@@ -1817,7 +1991,8 @@
     "published_at": "2026-06-01",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/20260513140055_ページ_1.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/05/20260513140055_ページ_1.jpg",
+    "event_dates": []
   },
   {
     "id": "suginami_city_e0242886",
@@ -1830,7 +2005,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-02",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "goguynet_32902f2d",
@@ -1843,7 +2019,10 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5887-1024x767.jpeg"
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5887-1024x767.jpeg",
+    "event_dates": [
+      "2026-05-10"
+    ]
   },
   {
     "id": "suginami_city_5bb61081",
@@ -1856,7 +2035,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_85bd3bcb",
@@ -1869,7 +2049,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_b96eed80",
@@ -1882,7 +2063,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_476f161d",
@@ -1895,7 +2077,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_4b53aeb8",
@@ -1908,7 +2091,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_42cc05e6",
@@ -1921,7 +2105,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_4594fcb5",
@@ -1934,7 +2119,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/26892/ishiwaka.jpg"
+    "image": "https://www.city.suginami.tokyo.jp/images/26892/ishiwaka.jpg",
+    "event_dates": []
   },
   {
     "id": "suginami_city_e0609458",
@@ -1947,7 +2133,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_249d6a73",
@@ -1960,7 +2147,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_112c65f0",
@@ -1973,7 +2161,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_4f89392b",
@@ -1986,7 +2175,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_deddb0f8",
@@ -1999,7 +2189,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_6d96d654",
@@ -2012,7 +2203,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_6adce2e7",
@@ -2025,7 +2217,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/26064/robi.jpg"
+    "image": "https://www.city.suginami.tokyo.jp/images/26064/robi.jpg",
+    "event_dates": []
   },
   {
     "id": "suginami_city_33000712",
@@ -2038,7 +2231,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_db8582c1",
@@ -2051,7 +2245,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_5b025b88",
@@ -2064,7 +2259,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_735168d0",
@@ -2077,7 +2273,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_79442c95",
@@ -2090,7 +2287,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_c044fff2",
@@ -2103,7 +2301,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_70eb9a97",
@@ -2116,7 +2315,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_82501d25",
@@ -2129,7 +2329,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_407252ab",
@@ -2142,7 +2343,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/26120/ishikawa02.jpg"
+    "image": "https://www.city.suginami.tokyo.jp/images/26120/ishikawa02.jpg",
+    "event_dates": []
   },
   {
     "id": "suginami_city_277a69bb",
@@ -2155,7 +2357,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_ea0ee361",
@@ -2168,7 +2371,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/26132/nagaoakira.png"
+    "image": "https://www.city.suginami.tokyo.jp/images/26132/nagaoakira.png",
+    "event_dates": []
   },
   {
     "id": "suginami_city_b594dab0",
@@ -2181,7 +2385,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_1268f25c",
@@ -2194,7 +2399,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/26687/nishiogiotona.jpg"
+    "image": "https://www.city.suginami.tokyo.jp/images/26687/nishiogiotona.jpg",
+    "event_dates": []
   },
   {
     "id": "suginami_city_574d3150",
@@ -2207,7 +2413,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_4504ff44",
@@ -2220,7 +2427,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_12d6add7",
@@ -2233,7 +2441,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_f6330512",
@@ -2246,7 +2455,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_69c3ed8d",
@@ -2259,7 +2469,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_ebcd0635",
@@ -2272,7 +2483,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_d0bb0117",
@@ -2285,7 +2497,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_d7755c57",
@@ -2298,7 +2511,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_f2d440af",
@@ -2311,7 +2525,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_12b6f22e",
@@ -2324,7 +2539,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_9a7cfd00",
@@ -2337,7 +2553,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/26109/r6natsunosyuukaku.jpg"
+    "image": "https://www.city.suginami.tokyo.jp/images/26109/r6natsunosyuukaku.jpg",
+    "event_dates": []
   },
   {
     "id": "suginami_city_e58639e0",
@@ -2350,7 +2567,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_143c89d6",
@@ -2363,7 +2581,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_7e1d33a7",
@@ -2376,7 +2595,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_f01b9e5b",
@@ -2389,7 +2609,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_2a3f3c8d",
@@ -2402,7 +2623,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_201791f8",
@@ -2415,7 +2637,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_90f0f3f6",
@@ -2428,7 +2651,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_7d98d394",
@@ -2441,7 +2665,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/26036/kamitakaido.jpg"
+    "image": "https://www.city.suginami.tokyo.jp/images/26036/kamitakaido.jpg",
+    "event_dates": []
   },
   {
     "id": "suginami_city_1bcf4df2",
@@ -2454,7 +2679,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_5dea1396",
@@ -2467,7 +2693,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/26043/tairumozaiku.jpg"
+    "image": "https://www.city.suginami.tokyo.jp/images/26043/tairumozaiku.jpg",
+    "event_dates": []
   },
   {
     "id": "suginami_city_975490f2",
@@ -2480,7 +2707,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_e1a23fbc",
@@ -2493,7 +2721,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_4ec6c8a6",
@@ -2506,7 +2735,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_37f6dad6",
@@ -2519,7 +2749,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_79b88336",
@@ -2532,7 +2763,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_31f94154",
@@ -2545,7 +2777,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_6b71580e",
@@ -2558,7 +2791,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_544fb0ea",
@@ -2571,7 +2805,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_86e7c28e",
@@ -2584,7 +2819,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_f4abea68",
@@ -2597,7 +2833,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_7cbc7273",
@@ -2610,7 +2847,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/26114/orangenamisuke.png"
+    "image": "https://www.city.suginami.tokyo.jp/images/26114/orangenamisuke.png",
+    "event_dates": []
   },
   {
     "id": "suginami_city_07f85e2b",
@@ -2623,7 +2861,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/24936/koishisyasinn2.jpg"
+    "image": "https://www.city.suginami.tokyo.jp/images/24936/koishisyasinn2.jpg",
+    "event_dates": []
   },
   {
     "id": "suginami_city_0670d6a7",
@@ -2636,7 +2875,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_9d0a8ac2",
@@ -2649,7 +2889,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_0a783b15",
@@ -2662,7 +2903,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_ec997977",
@@ -2675,7 +2917,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_c4c818ae",
@@ -2688,7 +2931,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_bc6b6081",
@@ -2701,7 +2945,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_0c34f771",
@@ -2714,7 +2959,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_b917499d",
@@ -2727,7 +2973,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_298aaf29",
@@ -2740,7 +2987,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_3bc4f19c",
@@ -2753,7 +3001,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_957308ff",
@@ -2766,7 +3015,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_30196806",
@@ -2779,7 +3029,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/25296/3.jpg"
+    "image": "https://www.city.suginami.tokyo.jp/images/25296/3.jpg",
+    "event_dates": []
   },
   {
     "id": "suginami_city_32d1b741",
@@ -2792,7 +3043,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_3bd0c775",
@@ -2805,7 +3057,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_0901ca55",
@@ -2818,7 +3071,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_c8f4dc6b",
@@ -2831,7 +3085,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/26204/wadapomp.jpg"
+    "image": "https://www.city.suginami.tokyo.jp/images/26204/wadapomp.jpg",
+    "event_dates": []
   },
   {
     "id": "suginami_city_ef84e1a3",
@@ -2844,7 +3099,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_fdab0c11",
@@ -2857,7 +3113,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_3fc3dab5",
@@ -2870,7 +3127,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_c807426c",
@@ -2883,7 +3141,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_12a629ed",
@@ -2896,7 +3155,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/26030/080601_kodomonoboushi.png"
+    "image": "https://www.city.suginami.tokyo.jp/images/26030/080601_kodomonoboushi.png",
+    "event_dates": []
   },
   {
     "id": "suginami_city_1eac4c99",
@@ -2909,7 +3169,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_d52c2c46",
@@ -2922,7 +3183,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_d6531b37",
@@ -2935,7 +3197,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_3c484951",
@@ -2948,7 +3211,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_21039e5e",
@@ -2961,7 +3225,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_46360f72",
@@ -2974,7 +3239,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_950a7ae0",
@@ -2987,7 +3253,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/25009/kaikotakeshi_ame.jpg"
+    "image": "https://www.city.suginami.tokyo.jp/images/25009/kaikotakeshi_ame.jpg",
+    "event_dates": []
   },
   {
     "id": "suginami_city_fee68bc7",
@@ -3000,7 +3267,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_90787087",
@@ -3013,7 +3281,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_d3f49362",
@@ -3026,7 +3295,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_d826424a",
@@ -3039,7 +3309,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_f96b6516",
@@ -3052,7 +3323,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "sesion_af761d7b",
@@ -3065,7 +3337,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_833a95b0",
@@ -3078,7 +3351,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_e90f0767",
@@ -3091,7 +3365,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_8e68fc76",
@@ -3104,7 +3379,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_c0841b8e",
@@ -3117,7 +3393,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_28a82e03",
@@ -3130,7 +3407,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_458b974b",
@@ -3143,7 +3421,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_ee098e37",
@@ -3156,7 +3435,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_77b64eca",
@@ -3169,7 +3449,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_1c3c7e76",
@@ -3182,7 +3463,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_a0f82b15",
@@ -3195,7 +3477,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_b7912c7c",
@@ -3208,7 +3491,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_e477309a",
@@ -3221,7 +3505,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_7513d776",
@@ -3234,7 +3519,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_184e9fad",
@@ -3247,7 +3533,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_09eb5d41",
@@ -3260,7 +3547,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_55422a4d",
@@ -3273,7 +3561,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_ac71a221",
@@ -3286,7 +3575,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_11ef0105",
@@ -3299,7 +3589,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_152df792",
@@ -3312,7 +3603,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_dc884346",
@@ -3325,7 +3617,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_810147a9",
@@ -3338,7 +3631,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_ac9d4f53",
@@ -3351,7 +3645,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_6947793a",
@@ -3364,7 +3659,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_cd52838c",
@@ -3377,7 +3673,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_3254fe5f",
@@ -3390,7 +3687,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_7d522c5c",
@@ -3403,7 +3701,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_0964e549",
@@ -3416,7 +3715,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_deda2509",
@@ -3429,7 +3729,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_103bfd20",
@@ -3442,7 +3743,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_96a8e70f",
@@ -3455,7 +3757,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_1101e9da",
@@ -3468,7 +3771,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_6a85c3d4",
@@ -3481,7 +3785,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_1e6e893f",
@@ -3494,7 +3799,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_ef627533",
@@ -3507,7 +3813,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_e5729621",
@@ -3520,7 +3827,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_4e69c0f6",
@@ -3533,7 +3841,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_21799ed1",
@@ -3546,7 +3855,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_08671548",
@@ -3559,7 +3869,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_28c3e0e8",
@@ -3572,7 +3883,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_bcf32159",
@@ -3585,7 +3897,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_7ff7dedf",
@@ -3598,7 +3911,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "sesion_1e967ed8",
@@ -3611,7 +3925,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg"
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/themes/suginami/ogp.jpg",
+    "event_dates": []
   },
   {
     "id": "mypl_488d0d12",
@@ -3624,7 +3939,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "mypl_49fcfe37",
@@ -3637,7 +3953,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "http://img2.mypl.net/image.php?id=352268&p=bti&s=1000_1000&op="
+    "image": "http://img2.mypl.net/image.php?id=352268&p=bti&s=1000_1000&op=",
+    "event_dates": []
   },
   {
     "id": "mypl_5be57871",
@@ -3650,7 +3967,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "http://img2.mypl.net/image.php?id=352914&p=bti&s=1000_1000&op="
+    "image": "http://img2.mypl.net/image.php?id=352914&p=bti&s=1000_1000&op=",
+    "event_dates": []
   },
   {
     "id": "mypl_7d2372a2",
@@ -3663,7 +3981,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "http://img2.mypl.net/image.php?id=353626&p=bti&s=1000_1000&op="
+    "image": "http://img2.mypl.net/image.php?id=353626&p=bti&s=1000_1000&op=",
+    "event_dates": []
   },
   {
     "id": "sugisyakyo_6afe3277",
@@ -3676,7 +3995,8 @@
     "published_at": "2026-05-31",
     "fetched_at": "2026-05-31",
     "category": "お知らせ",
-    "image": "https://www.sugisyakyo.com/images/og_fb.png"
+    "image": "https://www.sugisyakyo.com/images/og_fb.png",
+    "event_dates": []
   },
   {
     "id": "goguynet_665f8847",
@@ -3689,7 +4009,10 @@
     "published_at": "2026-05-30",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5987.jpeg"
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5987.jpeg",
+    "event_dates": [
+      "2026-06-01"
+    ]
   },
   {
     "id": "suginami_city_c409a36c",
@@ -3702,7 +4025,8 @@
     "published_at": "2026-05-29",
     "fetched_at": "2026-06-02",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_42c5aeca",
@@ -3715,7 +4039,8 @@
     "published_at": "2026-05-29",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "goguynet_ea41a675",
@@ -3728,7 +4053,10 @@
     "published_at": "2026-05-29",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5564-1024x767.jpeg"
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5564-1024x767.jpeg",
+    "event_dates": [
+      "2026-05-16"
+    ]
   },
   {
     "id": "suginami_city_dad3941e",
@@ -3741,7 +4069,8 @@
     "published_at": "2026-05-28",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_d3e37251",
@@ -3754,7 +4083,8 @@
     "published_at": "2026-05-28",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_dfd2359c",
@@ -3767,7 +4097,8 @@
     "published_at": "2026-05-28",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_93e19dbc",
@@ -3780,7 +4111,8 @@
     "published_at": "2026-05-28",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_050cb990",
@@ -3793,7 +4125,8 @@
     "published_at": "2026-05-28",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "suginami_city_62908109",
@@ -3806,7 +4139,8 @@
     "published_at": "2026-05-28",
     "fetched_at": "2026-06-01",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "goguynet_79ef0d80",
@@ -3819,7 +4153,10 @@
     "published_at": "2026-05-28",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5924-1024x767.jpeg"
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5924-1024x767.jpeg",
+    "event_dates": [
+      "2026-05-29"
+    ]
   },
   {
     "id": "sesion_a828687f",
@@ -3832,7 +4169,8 @@
     "published_at": "2026-05-27",
     "fetched_at": "2026-06-14",
     "category": "イベント",
-    "image": ""
+    "image": "",
+    "event_dates": []
   },
   {
     "id": "goguynet_918d156e",
@@ -3845,7 +4183,11 @@
     "published_at": "2026-05-27",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5955-rotated.jpeg"
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5955-rotated.jpeg",
+    "event_dates": [
+      "2026-05-08",
+      "2026-06-01"
+    ]
   },
   {
     "id": "goguynet_a7ec5620",
@@ -3858,7 +4200,10 @@
     "published_at": "2026-05-26",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5913-1024x767.jpeg"
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5913-1024x767.jpeg",
+    "event_dates": [
+      "2026-05-17"
+    ]
   },
   {
     "id": "goguynet_a8e3fff3",
@@ -3871,7 +4216,10 @@
     "published_at": "2026-05-25",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/04/IMG_5484-1024x767.jpeg"
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/04/IMG_5484-1024x767.jpeg",
+    "event_dates": [
+      "2026-04-20"
+    ]
   },
   {
     "id": "goguynet_540d910f",
@@ -3884,7 +4232,10 @@
     "published_at": "2026-05-24",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_4999-1024x767.jpeg"
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_4999-1024x767.jpeg",
+    "event_dates": [
+      "2026-03-11"
+    ]
   },
   {
     "id": "goguynet_387e1054",
@@ -3897,7 +4248,10 @@
     "published_at": "2026-05-23",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5758-1024x767.jpeg"
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5758-1024x767.jpeg",
+    "event_dates": [
+      "2026-06-15"
+    ]
   },
   {
     "id": "goguynet_b42f0d16",
@@ -3910,7 +4264,10 @@
     "published_at": "2026-05-22",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5510-1024x767.jpeg"
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5510-1024x767.jpeg",
+    "event_dates": [
+      "2026-04-17"
+    ]
   },
   {
     "id": "goguynet_eb146372",
@@ -3923,6 +4280,9 @@
     "published_at": "2026-05-21",
     "fetched_at": "2026-05-31",
     "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5617-960x767.jpeg"
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5617-960x767.jpeg",
+    "event_dates": [
+      "2026-06-05"
+    ]
   }
 ]
