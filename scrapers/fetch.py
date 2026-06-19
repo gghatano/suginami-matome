@@ -10,6 +10,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from base import BaseScraper  # noqa: E402
+from dateextract import event_dates_for_item  # noqa: E402
 from httputil import get_article_image, PLACEHOLDER_IMG_RE  # noqa: E402
 from goguynet import GoguynetScraper  # noqa: E402
 from suginami_city import SuginamiCityScraper  # noqa: E402
@@ -89,6 +90,8 @@ def main() -> int:
             # published_at が無ければ fetched_at で代替
             if not d.get("published_at"):
                 d["published_at"] = d["fetched_at"]
+            # タイトル・概要からイベント日を抽出（カレンダー表示用）
+            d["event_dates"] = event_dates_for_item(d)
             if d["id"] in known_ids:
                 continue
             known_ids.add(d["id"])
@@ -100,6 +103,15 @@ def main() -> int:
         # 最後のスクレイパー以外はインターバルを挟む
         if i < len(SCRAPERS) - 1:
             time.sleep(SLEEP_BETWEEN)
+
+    # 既存アイテム（event_dates 未付与のもの）にイベント日をバックフィル
+    backfilled = 0
+    for d in all_items:
+        if "event_dates" not in d:
+            d["event_dates"] = event_dates_for_item(d)
+            backfilled += 1
+    if backfilled:
+        logger.info("イベント日バックフィル: %d件", backfilled)
 
     # published_at 降順でソート（同日内は fetched_at 降順）
     all_items.sort(

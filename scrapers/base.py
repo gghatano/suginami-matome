@@ -24,6 +24,7 @@ class Item:
     fetched_at: str = field(default_factory=lambda: date.today().isoformat())
     category: str = ""
     image: str = ""  # サムネイル画像URL（取得できれば。なければ空文字）
+    event_dates: list[str] = field(default_factory=list)  # 本文から抽出したイベント日（ISO）
 
     @property
     def id(self) -> str:
@@ -43,6 +44,7 @@ class Item:
             "fetched_at": self.fetched_at,
             "category": self.category,
             "image": self.image,
+            "event_dates": list(self.event_dates),
         }
 
 
