@@ -1,5 +1,35 @@
 [
   {
+    "id": "mypl_cf024248",
+    "source": "まいぷれ杉並区",
+    "source_key": "mypl",
+    "source_url": "https://suginami.mypl.net/",
+    "title": "みそじん第8回公演「杏仁豆腐のココロ」",
+    "url": "https://suginami.mypl.net/event/00000470507/",
+    "summary": "演劇、ダンス みそじん第8回公演「杏仁豆腐のココロ」",
+    "published_at": "2026-06-20",
+    "fetched_at": "2026-06-20",
+    "category": "イベント",
+    "image": "https://img2.mypl.net/image.php?id=352382&p=bti&s=375_250&op=",
+    "event_dates": []
+  },
+  {
+    "id": "goguynet_1cda1615",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】井荻に「らぁ麺 貝幸屋(かいこうや)」が5月8日(金)に新しくオープンしていました！",
+    "url": "https://suginami.goguynet.jp/2026/06/20/ramen_kaikoya/",
+    "summary": "西武新宿線井荻駅からすぐの商店街西通り沿いのビルの2階に「らぁ麺 貝幸屋(かいこうや)」が2026年5月8日(金)に新しくオープンしていました！ 「らぁ麺 貝幸屋」は、ダイニングバル「井荻バル HALEBALE(ハレバレ [&#8230;]",
+    "published_at": "2026-06-19",
+    "fetched_at": "2026-06-20",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5488-1024x767.jpeg",
+    "event_dates": [
+      "2026-05-08"
+    ]
+  },
+  {
     "id": "goguynet_5e181974",
     "source": "号外NET杉並区",
     "source_key": "goguynet",
