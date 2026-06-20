@@ -10,7 +10,10 @@
     "published_at": "2026-06-18",
     "fetched_at": "2026-06-19",
     "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_6453-1024x767.jpeg"
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_6453-1024x767.jpeg",
+    "event_dates": [
+      "2026-05-26"
+    ]
   },
   {
     "id": "suginami_city_611e7e96",
@@ -175,7 +178,11 @@
     "fetched_at": "2026-06-14",
     "category": "方南町",
     "image": "",
-    "event_dates": []
+    "event_dates": [
+      "2026-06-15",
+      "2026-07-30",
+      "2026-07-31"
+    ]
   },
   {
     "id": "suginami_city_464a283d",
@@ -1593,7 +1600,9 @@
     "fetched_at": "2026-06-05",
     "category": "イベント",
     "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_4981-1024x767.jpeg",
-    "event_dates": []
+    "event_dates": [
+      "2026-07-19"
+    ]
   },
   {
     "id": "goguynet_6807157e",

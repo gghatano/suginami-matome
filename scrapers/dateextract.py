@@ -36,6 +36,9 @@ _RE_MD_RANGE_SAME = re.compile(
 _RE_MD_JP = re.compile(r"(\d{1,2})\s*月\s*(\d{1,2})\s*日")
 # 2026/6/27 または 2026-06-27
 _RE_YMD_SLASH = re.compile(r"(20\d{2})\s*[/\-]\s*(\d{1,2})\s*[/\-]\s*(\d{1,2})")
+# 7/30（年なしスラッシュ・単発）。前後が数字やスラッシュでない＝より長い数値や
+# 年付き表記(2026/7/30)の一部ではないものに限定し、誤検出を抑える。
+_RE_MD_SLASH = re.compile(r"(?<![\d/])(\d{1,2})/(\d{1,2})(?![\d/])")
 
 
 def _valid(y: int, m: int, d: int) -> date | None:
@@ -116,6 +119,15 @@ def extract_event_dates(text: str, reference: str | None = None) -> list[str]:
         if any(s <= mo.start() < e for s, e in consumed):
             continue
         dt = _infer_year(int(mo[1]), int(mo[2]), ref)
+        if dt:
+            found.add(dt)
+
+    # 年なしスラッシュ表記（7/30 等）。月1-12・日1-31 のみ採用し、年は推定。
+    for mo in _RE_MD_SLASH.finditer(text):
+        m, d = int(mo[1]), int(mo[2])
+        if not (1 <= m <= 12 and 1 <= d <= 31):
+            continue
+        dt = _infer_year(m, d, ref)
         if dt:
             found.add(dt)
 
