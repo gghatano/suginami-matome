@@ -1,5 +1,35 @@
 [
   {
+    "id": "suginami_city_183af1e4",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "夏のものづくりワークショップ（産業商工会館）",
+    "url": "https://www.city.suginami.tokyo.jp/s030/event/27230.html",
+    "summary": "",
+    "published_at": "2026-06-21",
+    "fetched_at": "2026-06-21",
+    "category": "イベント",
+    "image": "https://www.city.suginami.tokyo.jp/images/27230/bata-rogo-ws.png",
+    "event_dates": []
+  },
+  {
+    "id": "goguynet_5180c254",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】大人のネオ焼鳥店が高円寺に誕生♪「高円寺おどり鳥」が5月19日(火)にオープンしました！",
+    "url": "https://suginami.goguynet.jp/2026/06/21/odoridori-koenji/",
+    "summary": "高円寺駅北口より徒歩3分ほどの中通り商店街に炭火焼鳥のお店「高円寺おどり鳥」が2026年5月19日(火)に新しくオープンしました。 以前「御菓子司 島田」があった場所が、ガラス張りのテアトルビルに。お店はそちらの2階です [&#8230;]",
+    "published_at": "2026-06-20",
+    "fetched_at": "2026-06-21",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_5889-1024x767.jpeg",
+    "event_dates": [
+      "2026-05-19"
+    ]
+  },
+  {
     "id": "mypl_cf024248",
     "source": "まいぷれ杉並区",
     "source_key": "mypl",
