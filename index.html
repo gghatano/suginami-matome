@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>杉並区イベントまとめ</title>
   <meta name="description" content="杉並区のイベント・お知らせ情報を複数サイトからまとめて毎日お届けします。">
+  <script>
+    // 描画前にテーマを適用してダークモードのちらつきを防ぐ
+    try {
+      var t = localStorage.getItem("theme");
+      if (t !== "dark" && t !== "light") {
+        t = (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) ? "dark" : "light";
+      }
+      document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
   <style>
     :root {
       --bg: #f3f4f6;
@@ -17,6 +27,38 @@
       --shadow: 0 1px 2px rgba(16, 24, 40, 0.06), 0 1px 3px rgba(16, 24, 40, 0.1);
       --shadow-hover: 0 6px 16px rgba(16, 24, 40, 0.12);
     }
+    /* ===== ダークモード ===== */
+    :root[data-theme="dark"] {
+      --bg: #0e131a;
+      --card: #171e27;
+      --text: #e6e8eb;
+      --muted: #94a3b8;
+      --border: #2a3340;
+      --accent: #3b82f6;
+      --accent-dark: #bfdbfe;
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+      --shadow-hover: 0 8px 20px rgba(0, 0, 0, 0.6);
+    }
+    :root[data-theme="dark"] .search input,
+    :root[data-theme="dark"] .toolbar select,
+    :root[data-theme="dark"] .chip,
+    :root[data-theme="dark"] .cal-nav,
+    :root[data-theme="dark"] .cal-selected .clear { background: var(--card); color: var(--text); }
+    :root[data-theme="dark"] .toolbar { background: rgba(14, 19, 26, 0.92); }
+    :root[data-theme="dark"] .datechip { background: #1e293b; border-color: #334155; color: #bfdbfe; }
+    :root[data-theme="dark"] .cal-day.has { background: #1e293b; border-color: #334155; }
+    :root[data-theme="dark"] .cal-day.has .d { color: #bfdbfe; }
+    :root[data-theme="dark"] .cal-day.has:hover { background: #283549; }
+    :root[data-theme="dark"] .badge.ev { background: #1e293b; border-color: #334155; color: #bfdbfe; }
+    :root[data-theme="dark"] .badge.cat { background: #06281f; border-color: #0b5e46; color: #6ee7b7; }
+    :root[data-theme="dark"] .card .summary { color: #cbd5e1; }
+    :root[data-theme="dark"] .empty, :root[data-theme="dark"] .error { background: var(--card); }
+    :root[data-theme="dark"] .today {
+      background: linear-gradient(135deg, #2a2010 0%, #3a2c12 100%); border-color: #7c5316;
+    }
+    :root[data-theme="dark"] .up-card,
+    :root[data-theme="dark"] .act { background: var(--card); }
+
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
@@ -334,11 +376,81 @@
       .cal-cell { height: 34px; }
       .cal-day .d { font-size: 0.8rem; }
     }
+
+    /* ===== テーマ切替ボタン ===== */
+    header.site .inner { position: relative; }
+    .theme-toggle {
+      position: absolute; top: -2px; right: 0;
+      width: 38px; height: 38px; border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      background: rgba(255, 255, 255, 0.12);
+      color: #fff; cursor: pointer; font-size: 1.1rem; line-height: 1;
+    }
+    .theme-toggle:hover { background: rgba(255, 255, 255, 0.22); }
+
+    /* ===== エリアチップ ===== */
+    .chips.areas { margin-top: 8px; }
+    .chips.areas .chip { font-size: 0.78rem; }
+    .chips-label {
+      max-width: 920px; margin: 16px auto 0; padding: 0 16px;
+      font-size: 0.72rem; color: var(--muted); font-weight: 700;
+    }
+
+    /* 開催日チップ（取得日チップと差別化してオレンジ系で強調） */
+    .datechip.ev { background: #fff7ed; border-color: #fed7aa; color: #c2410c; }
+    :root[data-theme="dark"] .datechip.ev { background: #2a2010; border-color: #7c5316; color: #fdba74; }
+
+    /* ===== カード内アクション（カレンダー追加・シェア） ===== */
+    .card .actions { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+    .act {
+      display: inline-flex; align-items: center; gap: 4px;
+      font-size: 0.72rem; color: var(--muted); text-decoration: none;
+      border: 1px solid var(--border); border-radius: 999px;
+      padding: 3px 10px; background: #fff; transition: all 0.15s; white-space: nowrap;
+    }
+    .act:hover { border-color: var(--accent); color: var(--accent); }
+    .act.cal:hover { border-color: #f97316; color: #c2410c; }
+
+    /* ===== これからのイベント（横スクロール） ===== */
+    .upcoming-wrap { max-width: 920px; margin: 16px auto 0; padding: 0 16px; }
+    .up-head {
+      display: flex; align-items: baseline; gap: 8px; margin-bottom: 8px;
+    }
+    .up-head .t { font-size: 1rem; font-weight: 800; }
+    .up-head .s { font-size: 0.72rem; color: var(--muted); }
+    .up-rail {
+      display: flex; gap: 10px; overflow-x: auto; padding-bottom: 6px;
+      scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
+    }
+    .up-card {
+      scroll-snap-align: start;
+      flex: 0 0 200px; max-width: 200px;
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 12px; box-shadow: var(--shadow);
+      padding: 12px; text-decoration: none; color: var(--text);
+      display: flex; flex-direction: column; gap: 6px;
+      transition: box-shadow 0.18s, transform 0.18s;
+    }
+    .up-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
+    .up-date {
+      align-self: flex-start;
+      background: #fff7ed; color: #c2410c; border: 1px solid #fed7aa;
+      border-radius: 8px; padding: 3px 9px; font-weight: 800; font-size: 0.82rem;
+    }
+    :root[data-theme="dark"] .up-date { background: #2a2010; border-color: #7c5316; color: #fdba74; }
+    .up-card .up-title {
+      font-size: 0.84rem; font-weight: 700; line-height: 1.4;
+      display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+    }
+    .up-card .up-src { font-size: 0.7rem; color: var(--muted); }
+    .up-rail::-webkit-scrollbar { height: 6px; }
+    .up-rail::-webkit-scrollbar-thumb { background: var(--border); border-radius: 999px; }
   </style>
 </head>
 <body>
   <header class="site">
     <div class="inner">
+      <button class="theme-toggle" id="theme-toggle" aria-label="ダークモード切替" title="ダークモード切替">🌙</button>
       <h1><span class="pin">📍</span>杉並区イベントまとめ</h1>
       <p>区内の複数サイトのイベント・お知らせ・講座情報を毎日まとめて掲載しています。</p>
       <div class="updated" id="updated"></div>
@@ -346,6 +458,8 @@
   </header>
 
   <div class="hero" id="hero"></div>
+
+  <div class="upcoming-wrap" id="upcoming"></div>
 
   <div class="cal-wrap" id="cal-wrap"></div>
 
@@ -369,6 +483,7 @@
   </div>
 
   <div class="chips" id="source-chips"></div>
+  <div class="chips areas" id="area-chips"></div>
 
   <main>
     <div class="count" id="count"></div>
@@ -401,12 +516,79 @@
     };
 
     const state = {
-      items: [], source: "", category: "", q: "", period: "",
+      items: [], source: "", category: "", q: "", period: "", area: "",
       newestPub: "", newestFetched: "",
       day: "",            // 選択中のイベント日（ISO） — カレンダー連動
       calY: 0, calM: 0,   // 表示中のカレンダー年・月（1-12）
       eventCount: new Map(), // ISO日付 -> イベント件数
     };
+
+    // ===== エリア（地名）判定 =====
+    // 代表エリア名 -> 本文中で拾うエイリアス。件数2件以上のエリアのみチップ表示する。
+    const AREAS = [
+      ["高円寺", ["高円寺"]],          // 東高円寺・新高円寺も高円寺エリアに含める
+      ["阿佐ヶ谷", ["阿佐ヶ谷", "阿佐谷", "南阿佐"]],
+      ["荻窪", ["荻窪"]],              // 「西荻窪」は除外して判定（areasOf 参照）
+      ["西荻窪", ["西荻"]],
+      ["方南町", ["方南"]],
+      ["浜田山", ["浜田山"]],
+      ["永福", ["永福"]],
+      ["久我山", ["久我山"]],
+      ["上井草", ["上井草"]],
+      ["下井草", ["下井草"]],
+      ["井荻", ["井荻"]],
+      ["善福寺", ["善福寺"]],
+      ["八幡山", ["八幡山"]],
+      ["上北沢", ["上北沢"]],
+      ["和泉", ["和泉"]],
+      ["富士見ヶ丘", ["富士見ヶ丘", "富士見が丘"]],
+    ];
+
+    // 記事に含まれるエリア名の配列を返す（結果はアイテムにキャッシュ）
+    function areasOf(it) {
+      if (it.__areas) return it.__areas;
+      const t = `${it.title || ""} ${it.summary || ""}`;
+      const tNoNishi = t.split("西荻").join(""); // 「荻窪」判定から西荻窪を除外
+      const res = [];
+      for (const [rep, aliases] of AREAS) {
+        const hit = rep === "荻窪"
+          ? tNoNishi.includes("荻窪")
+          : aliases.some(a => t.includes(a));
+        if (hit) res.push(rep);
+      }
+      it.__areas = res;
+      return res;
+    }
+
+    // ===== シェア / カレンダー追加 URL =====
+    function isoToCompact(iso) { return (iso || "").replace(/-/g, ""); }
+
+    // Googleカレンダー「予定を追加」テンプレートURL（終日イベント）
+    function gcalUrl(it) {
+      const ev = it.event_dates || [];
+      if (!ev.length) return "";
+      const start = isoToCompact(ev[0]);
+      const last = parseDate(ev[ev.length - 1]);
+      const endD = new Date(Date.UTC(last.y, last.mo - 1, last.d + 1)); // 終日は翌日を終端に
+      const end = `${endD.getUTCFullYear()}${String(endD.getUTCMonth() + 1).padStart(2, "0")}${String(endD.getUTCDate()).padStart(2, "0")}`;
+      const u = new URL("https://calendar.google.com/calendar/render");
+      u.searchParams.set("action", "TEMPLATE");
+      u.searchParams.set("text", it.title || "");
+      u.searchParams.set("dates", `${start}/${end}`);
+      u.searchParams.set("details", `${it.summary || ""}\n\n${it.url || ""}`);
+      return u.toString();
+    }
+    function xShareUrl(it) {
+      const u = new URL("https://twitter.com/intent/tweet");
+      u.searchParams.set("text", `${it.title || ""}｜杉並区イベントまとめ`);
+      u.searchParams.set("url", it.url || "");
+      return u.toString();
+    }
+    function lineShareUrl(it) {
+      const u = new URL("https://social-plugins.line.me/lineit/share");
+      u.searchParams.set("url", it.url || "");
+      return u.toString();
+    }
 
     function esc(s) {
       return (s ?? "").replace(/[&<>"']/g, c => ({
@@ -434,8 +616,20 @@
       return Math.abs((Date.UTC(da.y, da.mo - 1, da.d) - Date.UTC(db.y, db.mo - 1, db.d)) / 86400000);
     }
 
-    // 取得日チップ（fetched_at を表示）
+    // 日付チップ: 開催日（event_dates）があればそれを主役に、無ければ取得日を表示
     function dateChip(it) {
+      const ev = it.event_dates || [];
+      if (ev.length) {
+        const d = parseDate(ev[0]);
+        if (d) {
+          const sub = ev.length > 1 ? `他${ev.length - 1}日` : `${d.y}`;
+          return `<div class="datechip ev" title="開催日: ${esc(ev.map(fmtFull).join("、"))}">
+            <div class="label">開催</div>
+            <div class="day">${d.mo}/${d.d}</div>
+            <div class="year">${esc(sub)}</div>
+          </div>`;
+        }
+      }
       const d = parseDate(it.fetched_at) || parseDate(it.published_at);
       if (!d) return "";
       return `<div class="datechip" title="取得日: ${esc(fmtFull(it.fetched_at))}">
@@ -514,6 +708,40 @@
       });
     }
 
+    // エリア（地名）チップ。2件以上のエリアを件数の多い順に表示する。
+    function buildAreaChips() {
+      const counts = new Map();
+      for (const it of state.items) {
+        for (const a of areasOf(it)) counts.set(a, (counts.get(a) || 0) + 1);
+      }
+      const ranked = [...counts.entries()].filter(([, n]) => n >= 2).sort((a, b) => b[1] - a[1]);
+      const wrap = document.getElementById("area-chips");
+      if (!ranked.length) { wrap.style.display = "none"; return; }
+
+      const all = document.createElement("button");
+      all.className = "chip";
+      all.setAttribute("aria-pressed", "true");
+      all.dataset.area = "";
+      all.innerHTML = "📍 エリアすべて";
+      wrap.appendChild(all);
+      for (const [area, n] of ranked) {
+        const b = document.createElement("button");
+        b.className = "chip";
+        b.setAttribute("aria-pressed", "false");
+        b.dataset.area = area;
+        b.innerHTML = `${esc(area)} <span class="n">${n}</span>`;
+        wrap.appendChild(b);
+      }
+      wrap.addEventListener("click", (ev) => {
+        const chip = ev.target.closest(".chip");
+        if (!chip) return;
+        state.area = chip.dataset.area;
+        wrap.querySelectorAll(".chip").forEach(c =>
+          c.setAttribute("aria-pressed", c === chip ? "true" : "false"));
+        render();
+      });
+    }
+
     // 期間フィルタ判定（取得日 fetched_at を基準）
     function inPeriod(it) {
       if (!state.period) return true;
@@ -563,6 +791,37 @@
     function fmtMD(iso) {
       const d = parseDate(iso);
       return d ? `${d.mo}/${d.d}` : iso;
+    }
+    function fmtMDW(iso) {
+      const d = parseDate(iso);
+      if (!d) return iso;
+      const wd = WEEKDAYS[new Date(d.y, d.mo - 1, d.d).getDay()];
+      return `${d.mo}/${d.d}(${wd})`;
+    }
+
+    // 「これからのイベント」: 今日以降の開催日を持つ記事を、開催日が近い順に表示
+    function renderUpcoming() {
+      const wrap = document.getElementById("upcoming");
+      const today = new Date();
+      const todayIso = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`;
+      const list = [];
+      for (const it of state.items) {
+        const future = (it.event_dates || []).filter(d => d >= todayIso).sort();
+        if (future.length) list.push({ it, date: future[0] });
+      }
+      list.sort((a, b) => a.date.localeCompare(b.date));
+      const top = list.slice(0, 12);
+      if (!top.length) { wrap.innerHTML = ""; return; }
+
+      const cards = top.map(({ it, date }) => `
+        <a class="up-card" href="${esc(it.url)}" target="_blank" rel="noopener noreferrer">
+          <span class="up-date">📅 ${esc(fmtMDW(date))}</span>
+          <span class="up-title">${esc(it.title)}</span>
+          <span class="up-src">${esc(it.source)}</span>
+        </a>`).join("");
+      wrap.innerHTML = `
+        <div class="up-head"><span class="t">🎉 これからのイベント</span><span class="s">開催日が近い順・${top.length}件</span></div>
+        <div class="up-rail">${cards}</div>`;
     }
 
     // 各イベント日の件数を集計（カレンダーのハイライト用）
@@ -666,6 +925,7 @@
       const filtered = state.items.filter(it =>
         (!state.source || it.source_key === state.source) &&
         (!state.category || it.category === state.category) &&
+        (!state.area || areasOf(it).includes(state.area)) &&
         (!state.day || (it.event_dates || []).includes(state.day)) &&
         inPeriod(it) &&
         (!q || (`${it.title} ${it.summary} ${it.source}`).toLowerCase().includes(q))
@@ -712,6 +972,11 @@
             <h2><a href="${esc(it.url)}" target="_blank" rel="noopener noreferrer">${esc(it.title)}</a></h2>
             ${host ? `<p class="domain">🔗 ${esc(host)}</p>` : ""}
             ${it.summary ? `<p class="summary">${esc(it.summary)}</p>` : ""}
+            <div class="actions">
+              ${evDates.length ? `<a class="act cal" href="${esc(gcalUrl(it))}" target="_blank" rel="noopener noreferrer" title="Googleカレンダーに追加">📅 カレンダー追加</a>` : ""}
+              <a class="act" href="${esc(xShareUrl(it))}" target="_blank" rel="noopener noreferrer" title="Xでシェア">𝕏 シェア</a>
+              <a class="act" href="${esc(lineShareUrl(it))}" target="_blank" rel="noopener noreferrer" title="LINEでシェア">💬 LINE</a>
+            </div>
           </div>
         </article>`;
       }).join("");
@@ -739,8 +1004,10 @@
       }
 
       buildChips();
+      buildAreaChips();
       buildCategoryFilter();
       buildEventIndex();
+      renderUpcoming();
 
       // カレンダーの初期表示月: 今日の月。今月にイベントが無ければ、
       // 今日に最も近いイベント日の月を表示する。
@@ -771,6 +1038,25 @@
 
       render();
     }
+
+    // ===== ダークモード切替 =====
+    function applyTheme(t) {
+      document.documentElement.dataset.theme = t;
+      const btn = document.getElementById("theme-toggle");
+      if (btn) btn.textContent = t === "dark" ? "☀️" : "🌙";
+    }
+    (function initTheme() {
+      let t = localStorage.getItem("theme");
+      if (t !== "dark" && t !== "light") {
+        t = (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) ? "dark" : "light";
+      }
+      applyTheme(t);
+      document.getElementById("theme-toggle").addEventListener("click", () => {
+        const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+        localStorage.setItem("theme", next);
+        applyTheme(next);
+      });
+    })();
 
     // 上に戻る
     const toTop = document.getElementById("toTop");
