@@ -1,5 +1,51 @@
 [
   {
+    "id": "suginami_city_e57b8808",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "教育委員会",
+    "url": "https://www.city.suginami.tokyo.jp/s107/event/27302.html",
+    "summary": "",
+    "published_at": "2026-06-22",
+    "fetched_at": "2026-06-22",
+    "category": "イベント",
+    "image": "",
+    "event_dates": []
+  },
+  {
+    "id": "suginami_city_e490f728",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "教育委員会",
+    "url": "https://www.city.suginami.tokyo.jp/s107/event/27303.html",
+    "summary": "",
+    "published_at": "2026-06-22",
+    "fetched_at": "2026-06-22",
+    "category": "イベント",
+    "image": "",
+    "event_dates": []
+  },
+  {
+    "id": "goguynet_1704add6",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】中央線に続々と・・・西荻窪駅にホームドアが設置されました！使用開始予定日は、6月29日(月)です。",
+    "url": "https://suginami.goguynet.jp/2026/06/22/platform-doors-nishiogikubo/",
+    "summary": "JR西荻窪駅の中央線快速乗り場の3番線・4番線ホームにホームドアが設置されていました！ 下りの3番線ホームは2026年6月3日(水)、上り4番線ホームドアは6月4日(木)に本体設置が完了していたようです。稼働前ということ [&#8230;]",
+    "published_at": "2026-06-21",
+    "fetched_at": "2026-06-22",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_6258-1024x767.jpeg",
+    "event_dates": [
+      "2026-06-03",
+      "2026-06-04",
+      "2026-06-29"
+    ]
+  },
+  {
     "id": "suginami_city_183af1e4",
     "source": "杉並区公式",
     "source_key": "suginami_city",
