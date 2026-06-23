@@ -1,5 +1,19 @@
 [
   {
+    "id": "goguynet_6ee0bb94",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】鶏料理「なるとキッチン」のキッチンカーが登場。西荻窪と阿佐ヶ谷で出店するそうです！",
+    "url": "https://suginami.goguynet.jp/2026/06/23/narutokitchen-nishiogikubo/",
+    "summary": "鶏を中心とした創作料理や北海道郷土料理のお店「なるとキッチン」。杉並区の西荻窪と阿佐ヶ谷でキッチンカーを出店するという情報提供をいただきました！ 気になるメニューは？ お店でも人気の名物「ももザンギ」や１つ１つ丁寧に下味 [&#8230;]",
+    "published_at": "2026-06-22",
+    "fetched_at": "2026-06-23",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_6244-1024x767.jpeg",
+    "event_dates": []
+  },
+  {
     "id": "suginami_city_e57b8808",
     "source": "杉並区公式",
     "source_key": "suginami_city",
@@ -25,6 +39,20 @@
     "fetched_at": "2026-06-22",
     "category": "イベント",
     "image": "",
+    "event_dates": []
+  },
+  {
+    "id": "suginami_city_44392f24",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "令和8年度杉並区学校給食展示会（杉並区役所）",
+    "url": "https://www.city.suginami.tokyo.jp/s109/event/26994.html",
+    "summary": "",
+    "published_at": "2026-06-21",
+    "fetched_at": "2026-06-23",
+    "category": "イベント",
+    "image": "https://www.city.suginami.tokyo.jp/images/26994/r8gakkoukusyokutenjikai.png",
     "event_dates": []
   },
   {
