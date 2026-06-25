@@ -1,5 +1,47 @@
 [
   {
+    "id": "mypl_6f391509",
+    "source": "まいぷれ杉並区",
+    "source_key": "mypl",
+    "source_url": "https://suginami.mypl.net/",
+    "title": "【阿佐谷】ドキュメンタリー映画「現象 治癒」上映会",
+    "url": "https://suginami.mypl.net/event/00000472550/",
+    "summary": "講演、シンポジウム 【阿佐谷】ドキュメンタリー映画「現象 治癒」上映会",
+    "published_at": "2026-06-25",
+    "fetched_at": "2026-06-25",
+    "category": "イベント",
+    "image": "https://img2.mypl.net/image.php?id=354740&p=bti&s=500_730&op=",
+    "event_dates": []
+  },
+  {
+    "id": "mypl_2703ef70",
+    "source": "まいぷれ杉並区",
+    "source_key": "mypl",
+    "source_url": "https://suginami.mypl.net/",
+    "title": "千日紅花まつり",
+    "url": "https://suginami.mypl.net/event/00000472789/",
+    "summary": "季節のイベント、行事 千日紅花まつり",
+    "published_at": "2026-06-25",
+    "fetched_at": "2026-06-25",
+    "category": "イベント",
+    "image": "https://img2.mypl.net/image.php?id=354988&p=bti&s=375_250&op=",
+    "event_dates": []
+  },
+  {
+    "id": "goguynet_47570f24",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】阿佐ヶ谷パールセンター内にドリンクスタンド「TOKI手作 阿佐ヶ谷店」がオープンしていました！",
+    "url": "https://suginami.goguynet.jp/2026/06/25/toki-asagaya/",
+    "summary": "丸ノ内線南阿佐ヶ谷駅から歩いて3分ほどの阿佐ヶ谷パールセンター内にドリンクスタンド「TOKI手作 阿佐ヶ谷店」がオープンしていました！工事中の時から何屋さんになるんだろう？と読者の方からも情報をお寄せいただいていて筆者も [&#8230;]",
+    "published_at": "2026-06-24",
+    "fetched_at": "2026-06-25",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_6401-1024x767.jpeg",
+    "event_dates": []
+  },
+  {
     "id": "suginami_city_e3d141cc",
     "source": "杉並区公式",
     "source_key": "suginami_city",
