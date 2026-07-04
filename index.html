@@ -128,6 +128,26 @@
       font-size: 0.88rem;
       color: var(--text);
     }
+    /* ソース絞り込みの開閉ボタン */
+    .src-toggle {
+      padding: 9px 12px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: #fff;
+      font-size: 0.88rem;
+      color: var(--text);
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.15s;
+    }
+    .src-toggle:hover { border-color: var(--accent); }
+    .src-toggle[aria-expanded="true"] {
+      background: var(--accent); border-color: var(--accent); color: #fff;
+    }
+    :root[data-theme="dark"] .src-toggle { background: var(--card); color: var(--text); }
+    /* ソース絞り込みが有効なとき（パネルを閉じていても分かるよう強調） */
+    .src-toggle.active { border-color: var(--accent); color: var(--accent); font-weight: 700; }
+    .src-toggle.active[aria-expanded="true"] { color: #fff; }
 
     /* ===== ソース絞り込みチップ ===== */
     .chips {
@@ -138,6 +158,9 @@
       flex-wrap: wrap;
       gap: 8px;
     }
+    /* ソース絞り込みは既定で隠し、詳細ボタンで開く */
+    #source-chips { display: none; }
+    #source-chips.show { display: flex; }
     .chip {
       border: 1px solid var(--border);
       background: #fff;
@@ -278,13 +301,28 @@
       .card h2 { font-size: 1rem; }
     }
 
+    /* ===== 今日の更新 + これからのイベント（横並び） ===== */
+    .top-row {
+      max-width: 920px; margin: 14px auto 0; padding: 0 16px;
+      display: flex; flex-wrap: wrap; gap: 14px; align-items: stretch;
+    }
+    .top-row .hero { flex: 1 1 230px; margin: 0; padding: 0; max-width: none; }
+    .top-row .upcoming-wrap { flex: 3 1 320px; min-width: 0; margin: 0; padding: 0; }
+    .top-row .today { height: 100%; }
+    /* 横並び時はコンパクトにするため誘導テキストを省略 */
+    .top-row .today .go { display: none; }
+    @media (max-width: 640px) {
+      .top-row { gap: 10px; }
+      .top-row .today .go { display: block; }
+    }
+
     /* ===== 今日の更新バナー ===== */
     .hero { max-width: 920px; margin: 14px auto 0; padding: 0 16px; }
     .today {
       display: flex; align-items: center; gap: 14px; width: 100%;
       background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
       border: 1px solid #fed7aa; border-radius: 14px;
-      padding: 14px 18px; cursor: pointer; text-align: left;
+      padding: 12px 16px; cursor: pointer; text-align: left;
       transition: box-shadow 0.18s, transform 0.18s;
     }
     .today:hover { box-shadow: var(--shadow-hover); transform: translateY(-1px); }
@@ -307,27 +345,27 @@
       border: 1px solid var(--border);
       border-radius: 14px;
       box-shadow: var(--shadow);
-      padding: 14px 16px 16px;
+      padding: 10px 14px 12px;
     }
     .cal-head {
       display: flex; align-items: center; justify-content: center; gap: 14px;
-      margin-bottom: 10px;
+      margin-bottom: 6px;
     }
-    .cal-head .title { font-size: 1.05rem; font-weight: 800; min-width: 8.5em; text-align: center; }
+    .cal-head .title { font-size: 0.98rem; font-weight: 800; min-width: 8.5em; text-align: center; }
     .cal-nav {
-      width: 34px; height: 34px; border-radius: 8px;
+      width: 28px; height: 28px; border-radius: 8px;
       border: 1px solid var(--border); background: #fff; color: var(--text);
-      cursor: pointer; font-size: 1.1rem; line-height: 1;
+      cursor: pointer; font-size: 1.05rem; line-height: 1;
     }
     .cal-nav:hover { border-color: var(--accent); color: var(--accent); }
-    .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+    .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 3px; }
     .cal-dow {
-      text-align: center; font-size: 0.72rem; font-weight: 700; color: var(--muted);
-      padding: 4px 0;
+      text-align: center; font-size: 0.7rem; font-weight: 700; color: var(--muted);
+      padding: 1px 0;
     }
     .cal-dow.sun { color: #dc2626; }
     .cal-dow.sat { color: #2563eb; }
-    .cal-cell { height: 40px; }
+    .cal-cell { height: 26px; }
     .cal-day {
       width: 100%; height: 100%;
       border: 1px solid transparent; border-radius: 8px;
@@ -356,7 +394,7 @@
     .cal-day.sel .d, .cal-day.sel .cnt { color: #fff; }
     .cal-day.sel .cnt { background: rgba(255,255,255,0.28); }
     .cal-selected {
-      margin-top: 12px; display: none;
+      margin-top: 8px; display: none;
       align-items: center; gap: 10px; flex-wrap: wrap;
       font-size: 0.85rem; color: var(--accent-dark);
     }
@@ -366,14 +404,14 @@
       border-radius: 999px; padding: 3px 12px; cursor: pointer; font-size: 0.78rem;
     }
     .cal-selected .clear:hover { border-color: var(--accent); color: var(--accent); }
-    .cal-hint { margin-top: 10px; font-size: 0.72rem; color: var(--muted); text-align: center; }
+    .cal-hint { margin-top: 6px; font-size: 0.68rem; color: var(--muted); text-align: center; }
 
     /* イベント日バッジ（カード内） */
     .badge.ev { background: #eef2ff; color: var(--accent-dark); border: 1px solid #dbe3ff; }
 
     @media (max-width: 520px) {
-      .cal { padding: 12px 10px 14px; }
-      .cal-cell { height: 34px; }
+      .cal { padding: 10px 10px 12px; }
+      .cal-cell { height: 26px; }
       .cal-day .d { font-size: 0.8rem; }
     }
 
@@ -389,7 +427,9 @@
     .theme-toggle:hover { background: rgba(255, 255, 255, 0.22); }
 
     /* ===== エリアチップ ===== */
-    .chips.areas { margin-top: 8px; }
+    .chips.areas { margin-top: 12px; }
+    /* ソース絞り込みを開いているときはエリアチップを詰める */
+    #source-chips.show + .chips.areas { margin-top: 8px; }
     .chips.areas .chip { font-size: 0.78rem; }
     .chips-label {
       max-width: 920px; margin: 16px auto 0; padding: 0 16px;
@@ -457,9 +497,10 @@
     </div>
   </header>
 
-  <div class="hero" id="hero"></div>
-
-  <div class="upcoming-wrap" id="upcoming"></div>
+  <div class="top-row" id="top-row">
+    <div class="hero" id="hero"></div>
+    <div class="upcoming-wrap" id="upcoming"></div>
+  </div>
 
   <div class="cal-wrap" id="cal-wrap"></div>
 
@@ -479,6 +520,7 @@
       <select id="category-filter" aria-label="カテゴリで絞り込み">
         <option value="">すべてのカテゴリ</option>
       </select>
+      <button type="button" id="toggle-sources" class="src-toggle" aria-expanded="false" aria-controls="source-chips">🔧 ソース</button>
     </div>
   </div>
 
@@ -704,6 +746,8 @@
         state.source = chip.dataset.key;
         wrap.querySelectorAll(".chip").forEach(c =>
           c.setAttribute("aria-pressed", c === chip ? "true" : "false"));
+        const tg = document.getElementById("toggle-sources");
+        if (tg) tg.classList.toggle("active", !!state.source);
         render();
       });
     }
@@ -1034,6 +1078,14 @@
         state.period = e.target.value;
         if (state.period) selectDay("");  // 期間フィルタを使ったら日付選択は解除
         else render();
+      });
+
+      // ソース絞り込みの開閉（既定は非表示）
+      const srcToggle = document.getElementById("toggle-sources");
+      const srcChips = document.getElementById("source-chips");
+      srcToggle.addEventListener("click", () => {
+        const open = srcChips.classList.toggle("show");
+        srcToggle.setAttribute("aria-expanded", open ? "true" : "false");
       });
 
       render();
