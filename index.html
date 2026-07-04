@@ -294,6 +294,7 @@
       max-width: 920px; margin: 8px auto 40px; padding: 0 16px;
       font-size: 0.74rem; color: var(--muted); text-align: center;
     }
+    footer .updated { margin-bottom: 6px; font-weight: 700; }
 
     @media (max-width: 520px) {
       .card { gap: 10px; padding: 12px; }
@@ -303,19 +304,23 @@
       .card h2 { font-size: 1rem; }
     }
 
-    /* ===== 今日の更新 + これからのイベント（横並び） ===== */
-    .top-row {
+    /* ===== 上部2カラム: 左=カレンダー / 右=今日の更新＋これからのイベント ===== */
+    .top-layout {
       max-width: 920px; margin: 14px auto 0; padding: 0 16px;
-      display: flex; flex-wrap: wrap; gap: 14px; align-items: stretch;
+      display: flex; gap: 14px; align-items: flex-start;
     }
-    .top-row .hero { flex: 1 1 230px; margin: 0; padding: 0; max-width: none; }
-    .top-row .upcoming-wrap { flex: 3 1 320px; min-width: 0; margin: 0; padding: 0; }
-    .top-row .today { height: 100%; }
-    /* 横並び時はコンパクトにするため誘導テキストを省略 */
-    .top-row .today .go { display: none; }
-    @media (max-width: 640px) {
-      .top-row { gap: 10px; }
-      .top-row .today .go { display: block; }
+    .top-layout .col-cal { flex: 1 1 0; min-width: 0; }
+    .top-layout .col-info {
+      flex: 1 1 0; min-width: 0;
+      display: flex; flex-direction: column; gap: 14px;
+    }
+    /* カラム内では各ラッパの max-width / 余白をリセットして幅いっぱいに */
+    .top-layout .cal-wrap,
+    .top-layout .hero,
+    .top-layout .upcoming-wrap { max-width: none; margin: 0; padding: 0; }
+    /* 狭い画面では縦積みにフォールバック */
+    @media (max-width: 720px) {
+      .top-layout { flex-direction: column; gap: 12px; }
     }
 
     /* ===== 今日の更新バナー ===== */
@@ -503,12 +508,15 @@
     </div>
   </header>
 
-  <div class="top-row" id="top-row">
-    <div class="hero" id="hero"></div>
-    <div class="upcoming-wrap" id="upcoming"></div>
+  <div class="top-layout">
+    <div class="col-cal">
+      <div class="cal-wrap" id="cal-wrap"></div>
+    </div>
+    <div class="col-info">
+      <div class="hero" id="hero"></div>
+      <div class="upcoming-wrap" id="upcoming"></div>
+    </div>
   </div>
-
-  <div class="cal-wrap" id="cal-wrap"></div>
 
   <div class="toolbar">
     <div class="inner">
@@ -541,6 +549,7 @@
   <button id="toTop" title="上に戻る" aria-label="上に戻る">↑</button>
 
   <footer>
+    <div class="updated" id="updated"></div>
     データは各配信元サイトの公開情報を集約したものです。詳細・最新情報は各リンク先をご確認ください。<br>
     アイコンは各サイトのファビコンを表示しています。
   </footer>
@@ -1049,6 +1058,9 @@
         (it.published_at || it.fetched_at || "") > m ? (it.published_at || it.fetched_at || "") : m, "");
       state.newestFetched = state.items.reduce((m, it) =>
         (it.fetched_at || "") > m ? it.fetched_at : m, "");
+      if (state.newestFetched) {
+        document.getElementById("updated").textContent = `最終更新: ${fmtFull(state.newestFetched)}・全${state.items.length}件`;
+      }
 
       buildChips();
       buildAreaChips();
