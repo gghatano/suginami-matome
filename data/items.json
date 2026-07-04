@@ -1,5 +1,33 @@
 [
   {
+    "id": "suginami_city_62c87499",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "自転車安全利用講習会（永福和泉地域区民センター）",
+    "url": "https://www.city.suginami.tokyo.jp/s026/event/26741.html",
+    "summary": "",
+    "published_at": "2026-07-04",
+    "fetched_at": "2026-07-04",
+    "category": "イベント",
+    "image": "",
+    "event_dates": []
+  },
+  {
+    "id": "suginami_city_cfd7685b",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "「知って安心！ふろしきで学ぶ結びの裏技」エコから、もしもの備えまで（永福和泉地域区民センター）",
+    "url": "https://www.city.suginami.tokyo.jp/s026/event/27356.html",
+    "summary": "",
+    "published_at": "2026-07-04",
+    "fetched_at": "2026-07-04",
+    "category": "イベント",
+    "image": "",
+    "event_dates": []
+  },
+  {
     "id": "goguynet_354c9a73",
     "source": "号外NET杉並区",
     "source_key": "goguynet",
