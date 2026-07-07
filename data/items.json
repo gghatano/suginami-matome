@@ -1,5 +1,33 @@
 [
   {
+    "id": "suginami_city_53ab0361",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "夏のすぎなみ科学展「あつまれ！すぎなみの森　木のおもちゃ展　日本の木をムダなく使うスゴイ技術」（セシオン杉並）",
+    "url": "https://www.city.suginami.tokyo.jp/s113/event/26869.html",
+    "summary": "",
+    "published_at": "2026-07-07",
+    "fetched_at": "2026-07-07",
+    "category": "イベント",
+    "image": "https://www.city.suginami.tokyo.jp/images/26869/title.png",
+    "event_dates": []
+  },
+  {
+    "id": "goguynet_4b5f8b65",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】高円寺駅南口にある「トリアノン洋菓子店 高円寺本店」でお得にテイクアウトスイーツを楽しんでみました！",
+    "url": "https://suginami.goguynet.jp/2026/07/07/torianon/",
+    "summary": "JR中央・総武線高円寺駅南口にある洋菓子店「トリアノン」。1960年に創業し、今年で66年目になる老舗の洋菓子店です。 店内のショーケースには、色とりどりのケーキやシュークリーム、焼き菓子などがずらり。どれもおいしそうで [&#8230;]",
+    "published_at": "2026-07-06",
+    "fetched_at": "2026-07-07",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/07/IMG_6545-1024x767.jpeg",
+    "event_dates": []
+  },
+  {
     "id": "goguynet_13a00c17",
     "source": "号外NET杉並区",
     "source_key": "goguynet",
