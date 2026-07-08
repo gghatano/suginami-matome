@@ -1,5 +1,35 @@
 [
   {
+    "id": "mypl_876a93f0",
+    "source": "まいぷれ杉並区",
+    "source_key": "mypl",
+    "source_url": "https://suginami.mypl.net/",
+    "title": "夏の紙染めあそび",
+    "url": "https://suginami.mypl.net/event/00000471797/",
+    "summary": "スクール、体験 夏の紙染めあそび",
+    "published_at": "2026-07-08",
+    "fetched_at": "2026-07-08",
+    "category": "イベント",
+    "image": "https://img2.mypl.net/image.php?id=353903&p=bti&s=500_730&op=",
+    "event_dates": []
+  },
+  {
+    "id": "goguynet_2aab094c",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】高井戸にかき氷専門店の「咲奈(さな)」が5月29日(金)新しくオープンしました♪",
+    "url": "https://suginami.goguynet.jp/2026/07/08/sana-takaido/",
+    "summary": "読者様から情報提供いただきました！ 京王井の頭線高井戸駅から徒歩5分ほどのところにかき氷専門店の「咲奈(さな)」が2026年5月29日(金)に新しくオープンしたそうです！ &#160; 「咲奈」は、山梨県・八ヶ岳南麓の湧 [&#8230;]",
+    "published_at": "2026-07-07",
+    "fetched_at": "2026-07-08",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_6564.jpeg",
+    "event_dates": [
+      "2026-05-29"
+    ]
+  },
+  {
     "id": "suginami_city_53ab0361",
     "source": "杉並区公式",
     "source_key": "suginami_city",
