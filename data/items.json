@@ -1,5 +1,35 @@
 [
   {
+    "id": "suginami_city_2b5320bf",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "マンション管理無料相談（令和8年8月）",
+    "url": "https://www.city.suginami.tokyo.jp/s093/event/27029.html",
+    "summary": "管理組合の運営や大規模修繕など分譲マンションの管理に関する問題について、マンション管理士が区役所1階ロビーにて月1回（第2木曜日）相談に応じます。（祝日は除く）",
+    "published_at": "2026-07-09",
+    "fetched_at": "2026-07-09",
+    "category": "イベント",
+    "image": "",
+    "event_dates": []
+  },
+  {
+    "id": "goguynet_f45289e9",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】韓国発！”もっちり”チュロス専門店「STREET CHURROS(ストリート チュロス) 阿佐ヶ谷店」が7月11日(土)に新しくオープンします♪プレオープン日には特別なイベントも・・・！",
+    "url": "https://suginami.goguynet.jp/2026/07/09/street-churros-asagaya/",
+    "summary": "阿佐ヶ谷駅北口にチュロス専門店「STREET CHURROS(ストリート チュロス) 阿佐ヶ谷店」が2026年7月11日(土)に新しくオープンします！ プレスリリース発表があった日に現地に行ってみると、看板に店名の文字を [&#8230;]",
+    "published_at": "2026-07-08",
+    "fetched_at": "2026-07-09",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/07/IMG_6734-1000x767.jpeg",
+    "event_dates": [
+      "2026-07-11"
+    ]
+  },
+  {
     "id": "mypl_876a93f0",
     "source": "まいぷれ杉並区",
     "source_key": "mypl",
