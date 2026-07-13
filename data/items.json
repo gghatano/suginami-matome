@@ -1,5 +1,47 @@
 [
   {
+    "id": "mypl_bbbdd0ed",
+    "source": "まいぷれ杉並区",
+    "source_key": "mypl",
+    "source_url": "https://suginami.mypl.net/",
+    "title": "バブルアイスクリームバー＆キャンディーバスボム作りワークショップ",
+    "url": "https://suginami.mypl.net/event/00000473506/",
+    "summary": "スクール、体験 バブルアイスクリームバー＆キャンディーバスボム作りワークショップ",
+    "published_at": "2026-07-13",
+    "fetched_at": "2026-07-13",
+    "category": "イベント",
+    "image": "https://img2.mypl.net/image.php?id=355691&p=bti&s=500_730&op=",
+    "event_dates": []
+  },
+  {
+    "id": "goguynet_c94f709e",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】悲報・・・サンドイッチのお店「サンドーレ阿佐ヶ谷店」がとうとう閉店に・・・。街のファンの想いが詰まった看板が大切に飾られています。",
+    "url": "https://suginami.goguynet.jp/2026/07/13/sandore/",
+    "summary": "阿佐ヶ谷駅南口の老舗サンドイッチ店「サンドーレ 阿佐ヶ谷店」の解体が始まったという読者様からの情報提供をいただき、実際に現地に行ってみました。 訪問時には既に看板は外されていてテナント募集の文字がシャッターに貼られていま [&#8230;]",
+    "published_at": "2026-07-12",
+    "fetched_at": "2026-07-13",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/07/IMG_6701-1024x767.jpeg",
+    "event_dates": []
+  },
+  {
+    "id": "suginami_city_b15e2e3b",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "杉並区発達障害児地域支援講座第1回講演会（オンライン）",
+    "url": "https://www.city.suginami.tokyo.jp/s036/event/27675.html",
+    "summary": "発達障害への理解を深め、生涯を見据えた子どもとの関わり方を学びます。子どもの成長を支えるために大切な視点や、親子や支援の現場で活かせる実践的なヒントについてお話しします。",
+    "published_at": "2026-07-12",
+    "fetched_at": "2026-07-13",
+    "category": "イベント",
+    "image": "",
+    "event_dates": []
+  },
+  {
     "id": "goguynet_58335b87",
     "source": "号外NET杉並区",
     "source_key": "goguynet",
