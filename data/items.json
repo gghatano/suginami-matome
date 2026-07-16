@@ -1,5 +1,35 @@
 [
   {
+    "id": "suginami_city_e2938d07",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "令和8年8月の専門家による空き家の総合無料相談（杉並区役所ほか）",
+    "url": "https://www.city.suginami.tokyo.jp/s093/event/27027.html",
+    "summary": "空き家の維持管理や税金、相続に関すること。空き家の賃貸、リフォームや建替え、売却に関する悩み。また空き家になったら何から始めたらいいのかなど、空き家に関するさまざまな悩みを複数の専門家（弁護士、司法書士、建築士、税理士および宅建士）に同時に相談・質問することができます。なお、希望者はオンライン相談も可能です。",
+    "published_at": "2026-07-16",
+    "fetched_at": "2026-07-16",
+    "category": "イベント",
+    "image": "",
+    "event_dates": []
+  },
+  {
+    "id": "goguynet_8070ba57",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】屋台にフリマ、ライブにサンバも！「第57回 大人の縁日 夏の陣」が阿佐ヶ谷一番街で7月19日(日)に開催されます。",
+    "url": "https://suginami.goguynet.jp/2026/07/16/otonanoennichi2026/",
+    "summary": "阿佐ヶ谷駅北口の阿佐谷一番街商店街で、恒例イベント「第57回大人の縁日 夏の陣」が2026年7月19日(日)に開催されます！ 【開催日】7月19日(日) 【開催時間】13時〜20時※大雨の場合は中止 【会場】阿佐谷一番街 [&#8230;]",
+    "published_at": "2026-07-15",
+    "fetched_at": "2026-07-16",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/07/IMG_6794-1024x767.jpeg",
+    "event_dates": [
+      "2026-07-19"
+    ]
+  },
+  {
     "id": "sesion_55422a4d",
     "source": "セシオン杉並",
     "source_key": "sesion",
@@ -1497,6 +1527,20 @@
     "fetched_at": "2026-07-07",
     "category": "イベント",
     "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/07/IMG_6545-1024x767.jpeg",
+    "event_dates": []
+  },
+  {
+    "id": "suginami_city_90787087",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "夏休み！子ども博物館教室「勾玉（まがたま）を作ろう！」（郷土博物館）",
+    "url": "https://www.city.suginami.tokyo.jp/s113/event/25689.html",
+    "summary": "",
+    "published_at": "2026-07-05",
+    "fetched_at": "2026-07-16",
+    "category": "イベント",
+    "image": "https://www.city.suginami.tokyo.jp/images/25689/magatama.jpg",
     "event_dates": []
   },
   {
@@ -7050,48 +7094,6 @@
     "source_url": "https://www.city.suginami.tokyo.jp/",
     "title": "歴史講演会「昭和期農家の食生活　年中行事を中心に」（阿佐谷地域区民センター）",
     "url": "https://www.city.suginami.tokyo.jp/s113/event/25586.html",
-    "summary": "",
-    "published_at": "2026-05-31",
-    "fetched_at": "2026-06-01",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_46360f72",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "杉並ぞうれっしゃ合唱団ファミリーコンサート（セシオン杉並）",
-    "url": "https://www.city.suginami.tokyo.jp/s113/event/25788.html",
-    "summary": "音楽、合唱を通して、地域の方々と心をつなぎ合うことの楽しさや、命・平和の大切さを伝える（セシオン杉並ホール）",
-    "published_at": "2026-05-31",
-    "fetched_at": "2026-06-01",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_950a7ae0",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "準常設展「杉並文学館　井伏鱒二と阿佐ヶ谷文士 」特集展示　開高健　杉並での足跡（郷土博物館）",
-    "url": "https://www.city.suginami.tokyo.jp/s113/event/25009.html",
-    "summary": "",
-    "published_at": "2026-05-31",
-    "fetched_at": "2026-06-01",
-    "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/25009/kaikotakeshi_ame.jpg",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_fee68bc7",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "準常設展（杉並文学館）関連イベント「学芸員による展示解説」（郷土博物館）",
-    "url": "https://www.city.suginami.tokyo.jp/s113/event/25450.html",
     "summary": "",
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
