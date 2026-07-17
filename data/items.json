@@ -1,5 +1,21 @@
 [
   {
+    "id": "goguynet_a9f92942",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】ショックです・・・。高円寺の「JULES VERNE COFFEE(ジュールヴェルヌコーヒー)」が8月上旬をもって閉店することが分かりました。",
+    "url": "https://suginami.goguynet.jp/2026/07/17/jules-verne-coffee/",
+    "summary": "高円寺アパートメント内にある自家焙煎コーヒー店「JULES VERNE COFFEE（ジュールヴェルヌコーヒー）」が、2026年8月上旬をもって閉店することが分かりました。お店の方からの情報によると、閉店日は8月10日前 [&#8230;]",
+    "published_at": "2026-07-16",
+    "fetched_at": "2026-07-17",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/07/IMG_6846-1024x767.jpeg",
+    "event_dates": [
+      "2026-08-10"
+    ]
+  },
+  {
     "id": "suginami_city_e2938d07",
     "source": "杉並区公式",
     "source_key": "suginami_city",
@@ -7080,20 +7096,6 @@
     "source_url": "https://www.city.suginami.tokyo.jp/",
     "title": "すぎなみ昆虫たんけん隊！飛んでる？鳴いてる？かくれてる？（都立和田堀公園）",
     "url": "https://www.city.suginami.tokyo.jp/s103/event/26035.html",
-    "summary": "",
-    "published_at": "2026-05-31",
-    "fetched_at": "2026-06-01",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_21039e5e",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "歴史講演会「昭和期農家の食生活　年中行事を中心に」（阿佐谷地域区民センター）",
-    "url": "https://www.city.suginami.tokyo.jp/s113/event/25586.html",
     "summary": "",
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
