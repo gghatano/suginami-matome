@@ -1,5 +1,21 @@
 [
   {
+    "id": "goguynet_864def3e",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】大人の隠れ家barの誕生♪高円寺に「bar laidback(バーレイドバック)」が7月4日(土)に新しくオープンしました！",
+    "url": "https://suginami.goguynet.jp/2026/07/20/bar-laidback/",
+    "summary": "高円寺駅北口から歩いて4分ほどの場所に「bar laidback(バーレイドバック)」が2026年7月4日(土)に新しくオープンしました！ 「bar laidback」は、珍しいウイスキーや日替わりのワインを楽しめる隠れ [&#8230;]",
+    "published_at": "2026-07-19",
+    "fetched_at": "2026-07-20",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/07/IMG_6746-1024x767.jpeg",
+    "event_dates": [
+      "2026-07-04"
+    ]
+  },
+  {
     "id": "goguynet_8783da5f",
     "source": "号外NET杉並区",
     "source_key": "goguynet",
@@ -7086,20 +7102,6 @@
     "source_url": "https://www.city.suginami.tokyo.jp/",
     "title": "布ぞうり作り（環境活動推進センター）",
     "url": "https://www.city.suginami.tokyo.jp/s103/event/26032.html",
-    "summary": "",
-    "published_at": "2026-05-31",
-    "fetched_at": "2026-06-01",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_d52c2c46",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "おもちゃのクリニック（環境活動推進センター）",
-    "url": "https://www.city.suginami.tokyo.jp/s103/event/26033.html",
     "summary": "",
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
