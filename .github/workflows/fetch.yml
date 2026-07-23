@@ -26,4 +26,4 @@ jobs:
           git add data/items.json
           git diff --cached --quiet || git commit -m "chore: update events $(date +%Y-%m-%d)"
           git push
-    # データ更新後のデプロイは pages.yml が workflow_run で引き継ぐ
+    # main への push により本番（Cloudflare Workers）が自動デプロイされる
