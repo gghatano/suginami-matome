@@ -1,5 +1,21 @@
 [
   {
+    "id": "goguynet_436df266",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】高円寺の「こむらや」跡地に動き！クラフトビールが楽しめる立ち呑みスタンド「NOM(ノム)」が7月オープンへ",
+    "url": "https://suginami.goguynet.jp/2026/07/25/nom-koenji/",
+    "summary": "高円寺の庚申通り商店街にある老舗の八百屋「こむらや」が閉店してからもうすぐ1年7ヶ月。 【杉並区】残念…高円寺にある老舗の八百屋「こむらや」が12/31をもって閉店になりました 高円寺にある老舗の八百屋「こむらや」が20 [&#8230;]",
+    "published_at": "2026-07-24",
+    "fetched_at": "2026-07-25",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/07/IMG_7136-1024x767.jpeg",
+    "event_dates": [
+      "2026-12-31"
+    ]
+  },
+  {
     "id": "suginami_city_31d533b0",
     "source": "杉並区公式",
     "source_key": "suginami_city",
@@ -7097,20 +7113,6 @@
     "title": "多言語で世界を広げよう「多言語で子育て、じぶん育て講座」",
     "url": "https://www.city.suginami.tokyo.jp/s053/event/26605.html",
     "summary": "",
-    "published_at": "2026-05-31",
-    "fetched_at": "2026-06-01",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_3bc4f19c",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "子どもの心を育てるコーチング「小学校低・中学年（小学1年～小学4年）」（子ども家庭支援センター）",
-    "url": "https://www.city.suginami.tokyo.jp/s056/event/25795.html",
-    "summary": "ついつい、子どもが失敗しないように先回りして一方通行の会話をしていませんか？",
     "published_at": "2026-05-31",
     "fetched_at": "2026-06-01",
     "category": "イベント",
