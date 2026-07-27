@@ -275,6 +275,8 @@
     }
     /* 長い連続文字列（URL等）でカードが横にはみ出すのを防ぐ */
     .card h2, .card .domain, .card .summary, .up-card .up-title { overflow-wrap: anywhere; }
+    /* バッジ（カテゴリ名・ソース名は data 由来）も、極端に長い場合は折り返して桁溢れを防ぐ */
+    .card .badge { white-space: normal; overflow-wrap: anywhere; }
 
     .empty, .error {
       text-align: center; color: var(--muted); padding: 48px 16px;
