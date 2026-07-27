@@ -273,6 +273,8 @@
       display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
       overflow: hidden;
     }
+    /* 長い連続文字列（URL等）でカードが横にはみ出すのを防ぐ */
+    .card h2, .card .domain, .card .summary, .up-card .up-title { overflow-wrap: anywhere; }
 
     .empty, .error {
       text-align: center; color: var(--muted); padding: 48px 16px;
