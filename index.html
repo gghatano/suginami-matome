@@ -273,6 +273,10 @@
       display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
       overflow: hidden;
     }
+    /* 長い連続文字列（URL等）でカードが横にはみ出すのを防ぐ */
+    .card h2, .card .domain, .card .summary, .up-card .up-title { overflow-wrap: anywhere; }
+    /* バッジ（カテゴリ名・ソース名は data 由来）も、極端に長い場合は折り返して桁溢れを防ぐ */
+    .card .badge { white-space: normal; overflow-wrap: anywhere; }
 
     .empty, .error {
       text-align: center; color: var(--muted); padding: 48px 16px;
@@ -320,7 +324,7 @@
     .top-layout .upcoming-wrap { max-width: none; margin: 0; padding: 0; }
     /* 狭い画面では縦積みにフォールバック */
     @media (max-width: 720px) {
-      .top-layout { flex-direction: column; gap: 12px; }
+      .top-layout { flex-direction: column; gap: 12px; align-items: stretch; }
     }
 
     /* ===== 今日の更新バナー ===== */
