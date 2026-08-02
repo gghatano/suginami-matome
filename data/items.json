@@ -1,5 +1,22 @@
 [
   {
+    "id": "goguynet_229899c5",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】夏の風物詩♪「第70回 阿佐谷七夕まつり」が2026年8月7日(金)から11日(火)までの5日間で開催されます！",
+    "url": "https://suginami.goguynet.jp/2026/08/02/asagayatanabata2026/",
+    "summary": "阿佐谷の夏の風物詩として親しまれている「阿佐谷七夕まつり」が、2026年8月7日(金)から11日(火)までの5日間で開催されます！今年は記念すべき70回目の開催となります！ 【開催日】2026年8月7日(金)～8月11日 [&#8230;]",
+    "published_at": "2026-08-01",
+    "fetched_at": "2026-08-02",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/07/IMG_7204-1024x767.jpeg",
+    "event_dates": [
+      "2026-08-07",
+      "2026-08-11"
+    ]
+  },
+  {
     "id": "sesion_70344947",
     "source": "セシオン杉並",
     "source_key": "sesion",
@@ -7109,20 +7126,6 @@
     "fetched_at": "2026-06-09",
     "category": "イベント",
     "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5023-1024x767.jpeg",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_55ce7216",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "杉並区立図書館協議会",
-    "url": "https://www.city.suginami.tokyo.jp/s116/event/27182.html",
-    "summary": "",
-    "published_at": "2026-06-08",
-    "fetched_at": "2026-06-09",
-    "category": "イベント",
-    "image": "",
     "event_dates": []
   }
 ]
