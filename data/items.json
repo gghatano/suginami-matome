@@ -1,5 +1,36 @@
 [
   {
+    "id": "sesion_c617da86",
+    "source": "セシオン杉並",
+    "source_key": "sesion",
+    "source_url": "https://www.sesion-suginami.jp/",
+    "title": "すぎなみデジタルライフアップセミナー",
+    "url": "https://www.sesion-suginami.jp/event/meeting/7540",
+    "summary": "",
+    "published_at": "2026-08-03",
+    "fetched_at": "2026-08-03",
+    "category": "イベント",
+    "image": "",
+    "event_dates": []
+  },
+  {
+    "id": "goguynet_f2113f6e",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】「高架下ラジオ体操」が8月4日(火)～7日(金)に開催！駅長制服撮影会やなみすけ缶バッジプレゼントも♪",
+    "url": "https://suginami.goguynet.jp/2026/08/03/koukashitaradiotaisou2026/",
+    "summary": "JR阿佐ケ谷駅～高円寺駅間にある「高架下空き倉庫」で、夏休み恒例イベント「高架下ラジオ体操」が2026年8月4日(火)から8月7日(金)まで開催されます。 【開催日】8月4日(火)から8月7日(金) 【時間】各日9：00 [&#8230;]",
+    "published_at": "2026-08-02",
+    "fetched_at": "2026-08-03",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/07/IMG_7291-1024x767.jpeg",
+    "event_dates": [
+      "2026-08-04",
+      "2026-08-07"
+    ]
+  },
+  {
     "id": "goguynet_229899c5",
     "source": "号外NET杉並区",
     "source_key": "goguynet",
@@ -7099,33 +7130,5 @@
     "event_dates": [
       "2026-05-12"
     ]
-  },
-  {
-    "id": "suginami_city_21576949",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "建築審査会",
-    "url": "https://www.city.suginami.tokyo.jp/s092/event/25658.html",
-    "summary": "",
-    "published_at": "2026-06-09",
-    "fetched_at": "2026-06-10",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "goguynet_e3332782",
-    "source": "号外NET杉並区",
-    "source_key": "goguynet",
-    "source_url": "https://suginami.goguynet.jp/",
-    "title": "【杉並区】西永福の「GELATERIA VOLPE (ジェラテリア ボルペ)」では、スパイスやリキュールと旬の素材を組み合わせたフレーバーを楽しめます！",
-    "url": "https://suginami.goguynet.jp/2026/06/09/gelateria-volpe/",
-    "summary": "京王井の頭線西永福駅から歩いて3分ほどのところにある「GELATERIA VOLPE (ジェラテリア ボルペ)」。こちらでジェラートをいただきました！ 「GELATERIA VOLPE (ジェラテリア ボルペ)」は202 [&#8230;]",
-    "published_at": "2026-06-08",
-    "fetched_at": "2026-06-09",
-    "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/05/IMG_5023-1024x767.jpeg",
-    "event_dates": []
   }
 ]
