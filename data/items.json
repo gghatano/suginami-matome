@@ -1,5 +1,21 @@
 [
   {
+    "id": "goguynet_6541ff09",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】西荻窪駅前の「マクドナルド 西荻窪店」が8月16日で閉店へ。46年間の歴史に幕を下ろします。",
+    "url": "https://suginami.goguynet.jp/2026/08/09/mcdonald-nishiogikubo/",
+    "summary": "読者様より情報提供いただきました！ JR西荻窪駅の高架下にある「マクドナルド 西荻窪店」が2026年8月16日(日)をもって閉店するそうです・・・。 お店の入り口の横には、閉店のお知らせと「46年間のご愛顧ありがとうござ [&#8230;]",
+    "published_at": "2026-08-08",
+    "fetched_at": "2026-08-09",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/08/IMG_7400-1024x767.jpeg",
+    "event_dates": [
+      "2026-08-16"
+    ]
+  },
+  {
     "id": "goguynet_f52d72ab",
     "source": "号外NET杉並区",
     "source_key": "goguynet",
@@ -7112,21 +7128,5 @@
     "category": "イベント",
     "image": "",
     "event_dates": []
-  },
-  {
-    "id": "goguynet_721e519e",
-    "source": "号外NET杉並区",
-    "source_key": "goguynet",
-    "source_url": "https://suginami.goguynet.jp/",
-    "title": "【杉並区】残念・・・西荻窪のフラワーショップ「LACA(ラカ)西荻窪店」が6月21日(日)をもって閉店するそうです。",
-    "url": "https://suginami.goguynet.jp/2026/06/14/laca-nishiogikubo/",
-    "summary": "西荻窪駅北口から徒歩1分ほどのスーパー西友の1Fにあるフラワーショップ「LACA(ラカ)西荻窪店」が2026年6月21日(日)をもって閉店するそうです・・・。公式インスタグラムによると、運営会社の経営方針による全店舗での [&#8230;]",
-    "published_at": "2026-06-13",
-    "fetched_at": "2026-06-14",
-    "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_6233.jpeg",
-    "event_dates": [
-      "2026-06-21"
-    ]
   }
 ]
