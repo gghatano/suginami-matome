@@ -284,6 +284,34 @@
     }
     .error { color: #b91c1c; border-color: #fecaca; }
 
+    /* ===== ページ送り ===== */
+    .pager {
+      display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+      gap: 6px; margin: 22px 2px 4px;
+    }
+    .pager:empty { display: none; }
+    .pager button {
+      min-width: 38px; height: 38px; padding: 0 10px;
+      border: 1px solid var(--border); border-radius: 8px;
+      background: var(--card); color: var(--text);
+      font-size: 0.9rem; cursor: pointer;
+      display: inline-flex; align-items: center; justify-content: center;
+      transition: all 0.15s;
+    }
+    .pager button:hover:not(:disabled):not(.current) { border-color: var(--accent); color: var(--accent); }
+    .pager button.current {
+      background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 700;
+      cursor: default;
+    }
+    .pager button:disabled { opacity: 0.4; cursor: default; }
+    .pager .ellipsis {
+      min-width: 24px; text-align: center; color: var(--muted); user-select: none;
+    }
+    :root[data-theme="dark"] .pager button { background: var(--card); }
+    @media (max-width: 520px) {
+      .pager button { min-width: 34px; height: 34px; padding: 0 8px; font-size: 0.85rem; }
+    }
+
     /* 上に戻るボタン */
     #toTop {
       position: fixed; right: 18px; bottom: 18px;
@@ -548,6 +576,7 @@
   <main>
     <div class="count" id="count"></div>
     <div class="cards" id="cards"></div>
+    <nav class="pager" id="pager" aria-label="ページ送り"></nav>
   </main>
 
   <button id="toTop" title="上に戻る" aria-label="上に戻る">↑</button>
@@ -576,12 +605,15 @@
       suginami_city: "assets/icons/suginami_city.svg",
     };
 
+    const PAGE_SIZE = 20; // 1ページあたりの表示件数
+
     const state = {
       items: [], source: "", category: "", q: "", period: "", area: "",
       newestPub: "", newestFetched: "",
       day: "",            // 選択中のイベント日（ISO） — カレンダー連動
       calY: 0, calM: 0,   // 表示中のカレンダー年・月（1-12）
       eventCount: new Map(), // ISO日付 -> イベント件数
+      page: 1,            // 現在のページ（1始まり）
     };
 
     // ===== エリア（地名）判定 =====
@@ -763,6 +795,7 @@
         const chip = ev.target.closest(".chip");
         if (!chip) return;
         state.source = chip.dataset.key;
+        state.page = 1;
         wrap.querySelectorAll(".chip").forEach(c =>
           c.setAttribute("aria-pressed", c === chip ? "true" : "false"));
         const tg = document.getElementById("toggle-sources");
@@ -799,6 +832,7 @@
         const chip = ev.target.closest(".chip");
         if (!chip) return;
         state.area = chip.dataset.area;
+        state.page = 1;
         wrap.querySelectorAll(".chip").forEach(c =>
           c.setAttribute("aria-pressed", c === chip ? "true" : "false"));
         render();
@@ -831,6 +865,7 @@
         </button>`;
       document.getElementById("today-btn").addEventListener("click", () => {
         state.period = active ? "" : "today";
+        state.page = 1;
         document.getElementById("period-filter").value = state.period;
         if (state.period && state.day) { selectDay(""); return; }
         render();
@@ -969,6 +1004,7 @@
     // イベント日を選択（""で解除）。選択時は取得日ベースの期間フィルタは解除する。
     function selectDay(iso) {
       state.day = iso;
+      state.page = 1;
       if (iso) {
         const d = parseDate(iso);
         state.calY = d.y; state.calM = d.mo;
@@ -999,16 +1035,28 @@
       );
 
       renderHero();
-      document.getElementById("count").textContent = state.day
+
+      // ページング: 現在ページを範囲内に丸め、該当ページ分だけ切り出す
+      const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+      if (state.page > totalPages) state.page = totalPages;
+      if (state.page < 1) state.page = 1;
+      const start = (state.page - 1) * PAGE_SIZE;
+      const pageItems = filtered.slice(start, start + PAGE_SIZE);
+
+      const countBase = state.day
         ? `${fmtFull(state.day)}のイベント・お知らせ ${filtered.length}件`
         : `${filtered.length}件のイベント・お知らせ`;
+      document.getElementById("count").textContent = filtered.length > PAGE_SIZE
+        ? `${countBase}（${start + 1}〜${start + pageItems.length}件を表示）`
+        : countBase;
 
       if (filtered.length === 0) {
         cards.innerHTML = '<div class="empty">該当する情報はありません。条件を変えてお試しください。</div>';
+        renderPager(0, 1);
         return;
       }
 
-      cards.innerHTML = filtered.map(it => {
+      cards.innerHTML = pageItems.map(it => {
         const isNew = state.newestPub && daysBetween(it.published_at || it.fetched_at, state.newestPub) <= 7;
         const host = hostOf(it.url);
         const evDates = it.event_dates || [];
@@ -1043,6 +1091,63 @@
           </div>
         </article>`;
       }).join("");
+
+      renderPager(totalPages, state.page);
+    }
+
+    // ページ番号リストを生成: 先頭・末尾・現在ページ周辺を表示し、間は「…」で省略
+    // 例: 1 2 3 4 5 … 10 … 50 … 最後
+    function pageList(cur, total) {
+      const delta = 2; // 現在ページの前後に表示する数
+      const pages = [];
+      for (let i = 1; i <= total; i++) {
+        if (i === 1 || i === total || (i >= cur - delta && i <= cur + delta)) pages.push(i);
+      }
+      const out = [];
+      let prev = 0;
+      for (const p of pages) {
+        if (prev) {
+          if (p - prev === 2) out.push(prev + 1);   // 1つ飛びは番号を補う
+          else if (p - prev > 2) out.push("…");     // それ以上は省略記号
+        }
+        out.push(p);
+        prev = p;
+      }
+      return out;
+    }
+
+    // ページ送りナビを描画（totalPages<=1 のときは非表示）
+    function renderPager(totalPages, cur) {
+      const pager = document.getElementById("pager");
+      if (!pager) return;
+      if (totalPages <= 1) { pager.innerHTML = ""; return; }
+
+      const parts = [];
+      parts.push(`<button data-page="${cur - 1}" ${cur <= 1 ? "disabled" : ""} aria-label="前のページ">‹</button>`);
+      for (const p of pageList(cur, totalPages)) {
+        if (p === "…") {
+          parts.push(`<span class="ellipsis">…</span>`);
+        } else if (p === cur) {
+          parts.push(`<button class="current" aria-current="page" disabled>${p}</button>`);
+        } else if (p === totalPages) {
+          parts.push(`<button data-page="${p}" aria-label="最後のページ">${p}</button>`);
+        } else {
+          parts.push(`<button data-page="${p}">${p}</button>`);
+        }
+      }
+      parts.push(`<button data-page="${cur + 1}" ${cur >= totalPages ? "disabled" : ""} aria-label="次のページ">›</button>`);
+      pager.innerHTML = parts.join("");
+
+      pager.querySelectorAll("button[data-page]").forEach(btn => {
+        btn.addEventListener("click", () => goToPage(Number(btn.dataset.page)));
+      });
+    }
+
+    // 指定ページへ移動して先頭までスクロール
+    function goToPage(p) {
+      state.page = p;
+      render();
+      document.querySelector("main").scrollIntoView({ behavior: "smooth", block: "start" });
     }
 
     async function init() {
@@ -1091,10 +1196,11 @@
       }
       renderCalendar();
 
-      document.getElementById("search").addEventListener("input", e => { state.q = e.target.value; render(); });
-      document.getElementById("category-filter").addEventListener("change", e => { state.category = e.target.value; render(); });
+      document.getElementById("search").addEventListener("input", e => { state.q = e.target.value; state.page = 1; render(); });
+      document.getElementById("category-filter").addEventListener("change", e => { state.category = e.target.value; state.page = 1; render(); });
       document.getElementById("period-filter").addEventListener("change", e => {
         state.period = e.target.value;
+        state.page = 1;
         if (state.period) selectDay("");  // 期間フィルタを使ったら日付選択は解除
         else render();
       });
