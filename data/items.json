@@ -1,5 +1,35 @@
 [
   {
+    "id": "mypl_0a84c428",
+    "source": "まいぷれ杉並区",
+    "source_key": "mypl",
+    "source_url": "https://suginami.mypl.net/",
+    "title": "「なみすけとアニバーサリー」開催",
+    "url": "https://suginami.mypl.net/event/00000475411/",
+    "summary": "デパート、ショッピングモール 「なみすけとアニバーサリー」開催",
+    "published_at": "2026-08-11",
+    "fetched_at": "2026-08-11",
+    "category": "イベント",
+    "image": "https://img2.mypl.net/image.php?id=357984&p=bti&s=375_250&op=",
+    "event_dates": []
+  },
+  {
+    "id": "goguynet_211a6113",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】今年で67回目！「東京高円寺阿波おどり」が8月29日(土)・30日(日)に開催されます！",
+    "url": "https://suginami.goguynet.jp/2026/08/11/awaodori2026/",
+    "summary": "高円寺の夏の風物詩「第67回東京高円寺阿波おどり」が2026年8月29日(土)と30日(日)の2日間で開催されます！ 【開催日】8月29日(土)・30日(日) 【開催時間】午後5時から午後8時 【開催場所】JR高円寺駅や [&#8230;]",
+    "published_at": "2026-08-10",
+    "fetched_at": "2026-08-11",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/08/IMG_7450-1024x767.jpeg",
+    "event_dates": [
+      "2026-08-29"
+    ]
+  },
+  {
     "id": "suginami_city_77d8aa5d",
     "source": "杉並区公式",
     "source_key": "suginami_city",
@@ -7099,34 +7129,6 @@
     "fetched_at": "2026-06-14",
     "category": "イベント",
     "image": "https://www.city.suginami.tokyo.jp/images/26170/tanabata_kominka.jpg",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_69e55cfc",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "家庭教育講座「成績表の見方から始まる！怒らない夏休みの過ごし方」（セシオン杉並）",
-    "url": "https://www.city.suginami.tokyo.jp/s111/event/26327.html",
-    "summary": "",
-    "published_at": "2026-06-14",
-    "fetched_at": "2026-06-14",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_d4f0a03a",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "家庭教育講座「新・不登校の子どもの気持ちを感じられますか？」",
-    "url": "https://www.city.suginami.tokyo.jp/s111/event/26329.html",
-    "summary": "保護者や大人たちが不登校や予備軍である子どもたちの気持ちを受け止め、寄り添うとはどういうことか一緒に考えていく講座です。",
-    "published_at": "2026-06-14",
-    "fetched_at": "2026-06-14",
-    "category": "イベント",
-    "image": "",
     "event_dates": []
   }
 ]
