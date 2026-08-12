@@ -1,5 +1,49 @@
 [
   {
+    "id": "suginami_city_a752116e",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "講演会「公認心理師に聴いてみよう！」生きづらさを抱えた子どもと信頼関係を築くために（セシオン杉並）",
+    "url": "https://www.city.suginami.tokyo.jp/s042/event/28156.html",
+    "summary": "公認心理師の徳丸享氏・齋藤ユリ氏によるミニ講演会の後、公認心理師を囲んで、ひきこもり状態の子どもを持つ家族同士が、今悩んでいることや困りごとを自由に話し合える懇談会を開催します。",
+    "published_at": "2026-08-12",
+    "fetched_at": "2026-08-12",
+    "category": "イベント",
+    "image": "",
+    "event_dates": []
+  },
+  {
+    "id": "mypl_b17e24e1",
+    "source": "まいぷれ杉並区",
+    "source_key": "mypl",
+    "source_url": "https://suginami.mypl.net/",
+    "title": "劇団金馬車オムニバス公演「Campus #01」",
+    "url": "https://suginami.mypl.net/event/00000475274/",
+    "summary": "演劇、ダンス 劇団金馬車オムニバス公演「Campus #01」",
+    "published_at": "2026-08-12",
+    "fetched_at": "2026-08-12",
+    "category": "イベント",
+    "image": "https://img2.mypl.net/image.php?id=357819&p=bti&s=375_250&op=",
+    "event_dates": []
+  },
+  {
+    "id": "goguynet_f2681218",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】残念です・・・阿佐ヶ谷の「地産マルシェ 阿佐ヶ谷店」が8月15日(土)をもって閉店することがわかりました。",
+    "url": "https://suginami.goguynet.jp/2026/08/12/chisanmarche-asagaya/",
+    "summary": "読者様から情報提供いただきありがとうございました！ 阿佐ヶ谷北口のマルシェが閉店だそうです なんですと！ということで早速現地にいってみました。 お店のガラスには、閉店のお知らせとともに、17年間営業できたことへの感謝の言 [&#8230;]",
+    "published_at": "2026-08-11",
+    "fetched_at": "2026-08-12",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/08/IMG_7842-1024x767.jpeg",
+    "event_dates": [
+      "2026-08-15"
+    ]
+  },
+  {
     "id": "mypl_0a84c428",
     "source": "まいぷれ杉並区",
     "source_key": "mypl",
@@ -7087,48 +7131,6 @@
     "fetched_at": "2026-06-14",
     "category": "イベント",
     "image": "https://www.city.suginami.tokyo.jp/images/26337/sc1days.jpg",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_df95ef37",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "令和8年度中学生フューチャーサイエンスクラブ（イマジナス）",
-    "url": "https://www.city.suginami.tokyo.jp/s113/event/26356.html",
-    "summary": "",
-    "published_at": "2026-06-14",
-    "fetched_at": "2026-06-14",
-    "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/26356/sc1day.jpg",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_79be99ea",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "子ども向け藍染め教室（郷土博物館）",
-    "url": "https://www.city.suginami.tokyo.jp/s113/event/26074.html",
-    "summary": "",
-    "published_at": "2026-06-14",
-    "fetched_at": "2026-06-14",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_fd8c18e7",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "年中行事「七夕」（郷土博物館）",
-    "url": "https://www.city.suginami.tokyo.jp/s113/event/26170.html",
-    "summary": "",
-    "published_at": "2026-06-14",
-    "fetched_at": "2026-06-14",
-    "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/26170/tanabata_kominka.jpg",
     "event_dates": []
   }
 ]
