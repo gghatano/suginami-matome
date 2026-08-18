@@ -1,5 +1,19 @@
 [
   {
+    "id": "goguynet_8085f462",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】暑い日にぴったり！高円寺 「パティシエ ジュン ホンマ」のソフトクリームを食べてみました。",
+    "url": "https://suginami.goguynet.jp/2026/08/18/jun-honma-koenji/",
+    "summary": "高円寺駅南口から徒歩約2分の場所にある洋菓子店「パティシエ ジュン ホンマ 高円寺駅前店」。吉祥寺で2011年8月に開業した洋菓子店「パティシエ ジュン ホンマ」の2号店として、2014年にオープンしました。 「究極のマ [&#8230;]",
+    "published_at": "2026-08-17",
+    "fetched_at": "2026-08-18",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/08/IMG_7875-1024x767.jpeg",
+    "event_dates": []
+  },
+  {
     "id": "goguynet_70724960",
     "source": "号外NET杉並区",
     "source_key": "goguynet",
@@ -3190,6 +3204,22 @@
     "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/07/IMG_6856-1024x767.jpeg",
     "event_dates": [
       "2026-08-01"
+    ]
+  },
+  {
+    "id": "mypl_e90403a1",
+    "source": "まいぷれ杉並区",
+    "source_key": "mypl",
+    "source_url": "https://suginami.mypl.net/",
+    "title": "スクール、体験エシカルネイル＆キャンディーバスボム作りワークショップ2026年8月27日(木)東京都世田谷区赤堤5丁目33-6",
+    "url": "https://suginami.mypl.net/event/00000475247/",
+    "summary": "開催予定のイベントが中止・延期になっている場合がございます。おでかけの際は、事前にご確認ください。 イベント情報掲載しませんか？（無料) イベントカレンダー 杉並区の本日以降のイベントをカレンダーで紹介！ 本日以降のイベント 詳細検索へ カテゴリを選択 すべて ショッピング、グルメ 食のイベント 飲食店のイベント デパート、ショッピングモール 商店街、ショップ 市、フリーマーケット 物産展 名所、",
+    "published_at": "2026-07-25",
+    "fetched_at": "2026-08-18",
+    "category": "イベント",
+    "image": "",
+    "event_dates": [
+      "2026-08-27"
     ]
   },
   {
@@ -7094,33 +7124,5 @@
     "event_dates": [
       "2026-05-31"
     ]
-  },
-  {
-    "id": "suginami_city_c9972905",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "【開催中止】杉並区立こども発達センター　第1回療育講座",
-    "url": "https://www.city.suginami.tokyo.jp/s036/event/26473.html",
-    "summary": "",
-    "published_at": "2026-06-25",
-    "fetched_at": "2026-06-26",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "mypl_6f391509",
-    "source": "まいぷれ杉並区",
-    "source_key": "mypl",
-    "source_url": "https://suginami.mypl.net/",
-    "title": "【阿佐谷】ドキュメンタリー映画「現象 治癒」上映会",
-    "url": "https://suginami.mypl.net/event/00000472550/",
-    "summary": "講演、シンポジウム 【阿佐谷】ドキュメンタリー映画「現象 治癒」上映会",
-    "published_at": "2026-06-25",
-    "fetched_at": "2026-06-25",
-    "category": "イベント",
-    "image": "https://img2.mypl.net/image.php?id=354740&p=bti&s=500_730&op=",
-    "event_dates": []
   }
 ]
