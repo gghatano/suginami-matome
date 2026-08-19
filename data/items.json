@@ -1,5 +1,33 @@
 [
   {
+    "id": "mypl_4940a2b0",
+    "source": "まいぷれ杉並区",
+    "source_key": "mypl",
+    "source_url": "https://suginami.mypl.net/",
+    "title": "HONANエイサー＆ミュージックフェス",
+    "url": "https://suginami.mypl.net/event/00000474438/",
+    "summary": "音楽イベント、コンサート、ライブ HONANエイサー＆ミュージックフェス",
+    "published_at": "2026-08-19",
+    "fetched_at": "2026-08-19",
+    "category": "イベント",
+    "image": "https://img2.mypl.net/image.php?id=356855&p=bti&s=500_730&op=",
+    "event_dates": []
+  },
+  {
+    "id": "goguynet_ccaec27e",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】「予約が取れない」と話題に！西荻窪「メイプリル」の人気かき氷が9月に追加開催されます！",
+    "url": "https://suginami.goguynet.jp/2026/08/19/mapril-hanagori/",
+    "summary": "西荻窪でフルオーダーメイドスイーツを手がける「スイーツデザインスタジオ メイプリル」で、夏季限定として登場したかき氷シリーズ『パティシエのつくる夏花氷』が大好評につき、今度は『パティシエのつくる秋花氷』として9月に追加開 [&#8230;]",
+    "published_at": "2026-08-18",
+    "fetched_at": "2026-08-19",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/08/IMG_8055.jpeg",
+    "event_dates": []
+  },
+  {
     "id": "goguynet_8085f462",
     "source": "号外NET杉並区",
     "source_key": "goguynet",
@@ -7091,38 +7119,6 @@
     "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_6510-1024x767.jpeg",
     "event_dates": [
       "2026-06-06"
-    ]
-  },
-  {
-    "id": "goguynet_3474a25b",
-    "source": "号外NET杉並区",
-    "source_key": "goguynet",
-    "source_url": "https://suginami.goguynet.jp/",
-    "title": "【杉並区】食べたら思わず踊りだしたくなる♪「シェケバカレー」が6月5日(金)阿佐ヶ谷に移転オープンしました！",
-    "url": "https://suginami.goguynet.jp/2026/06/27/shekeba-curry/",
-    "summary": "阿佐ヶ谷北口駅前にある老舗のジャズバー「Jazz and Wine KLAVIER」のランチ営業として「SHEKEBA CURRY（シェケバカレー)」が2026年6月5日(金)にオープンしました！ View this p [&#8230;]",
-    "published_at": "2026-06-26",
-    "fetched_at": "2026-06-27",
-    "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_3251-1024x767.jpeg",
-    "event_dates": [
-      "2026-06-05"
-    ]
-  },
-  {
-    "id": "goguynet_c627a316",
-    "source": "号外NET杉並区",
-    "source_key": "goguynet",
-    "source_url": "https://suginami.goguynet.jp/",
-    "title": "【杉並区】悲報・・・方南町の旬采料理「すてふぁにー」が5月31日(日)をもって閉店していました。",
-    "url": "https://suginami.goguynet.jp/2026/06/26/stefany-hounanchou/",
-    "summary": "丸ノ内線の方南町駅東口から徒歩1分ほどの方南通り沿い「峰」バス停前にある旬采料理「すてふぁにー」が2026年5月31日(日)をもって閉店していました・・・。 お店の前に貼られていた閉店のお知らせには、&#8221;長い間 [&#8230;]",
-    "published_at": "2026-06-25",
-    "fetched_at": "2026-06-26",
-    "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_6284-1024x767.jpeg",
-    "event_dates": [
-      "2026-05-31"
     ]
   }
 ]
