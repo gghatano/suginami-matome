@@ -1,5 +1,22 @@
 [
   {
+    "id": "goguynet_8d3f37bf",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】なみすけも♪ 阿佐谷七夕まつりの個性豊かな張りぼてを見てきました。",
+    "url": "https://suginami.goguynet.jp/2026/08/24/asagayatanabata2026-2/",
+    "summary": "8月2日の号外ネット杉並区でお伝えした「第70回 阿佐谷七夕まつり」。 【杉並区】夏の風物詩♪「第70回 阿佐谷七夕まつり」が2026年8月7日(金)から11日(火)までの5日間で開催されます！ 阿佐谷の夏の風物詩として [&#8230;]",
+    "published_at": "2026-08-23",
+    "fetched_at": "2026-08-24",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/08/IMG_7888-1024x767.jpeg",
+    "event_dates": [
+      "2026-08-02",
+      "2026-08-07"
+    ]
+  },
+  {
     "id": "mypl_8de5f4b3",
     "source": "まいぷれ杉並区",
     "source_key": "mypl",
@@ -7100,20 +7117,6 @@
     "source_url": "https://www.city.suginami.tokyo.jp/",
     "title": "南北バスすぎ丸あり方検討部会",
     "url": "https://www.city.suginami.tokyo.jp/s092/event/27268.html",
-    "summary": "",
-    "published_at": "2026-06-29",
-    "fetched_at": "2026-06-29",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_2eae4055",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "まちづくり景観審議会景観専門部会",
-    "url": "https://www.city.suginami.tokyo.jp/s094/event/27053.html",
     "summary": "",
     "published_at": "2026-06-29",
     "fetched_at": "2026-06-29",
