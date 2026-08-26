@@ -1,5 +1,21 @@
 [
   {
+    "id": "goguynet_41446fec",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】ミストシャワーにかき氷、阿波おどりも♪「セシオン納涼夏マルシェ2026 With 阿波おどり」が8月29日(土)と30日(日)に開催されます！",
+    "url": "https://suginami.goguynet.jp/2026/08/26/sesion-nouryounatsu-marche2026/",
+    "summary": "丸ノ内線東高円寺駅から歩いて5分ほどのセシオン杉並では「セシオン納涼夏マルシェ2026 With 阿波おどり」が2026年8月29日(土)と30日(日)で開催されます！ View this post on Instagr [&#8230;]",
+    "published_at": "2026-08-25",
+    "fetched_at": "2026-08-26",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/07/IMG_7128-1.jpeg",
+    "event_dates": [
+      "2026-08-29"
+    ]
+  },
+  {
     "id": "mypl_f0cdb68c",
     "source": "まいぷれ杉並区",
     "source_key": "mypl",
@@ -1424,6 +1440,20 @@
     "fetched_at": "2026-08-14",
     "category": "イベント",
     "image": "https://img2.mypl.net/image.php?id=358123&p=bti&s=500_730&op=",
+    "event_dates": []
+  },
+  {
+    "id": "suginami_city_a92b9027",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "【中止】建築審査会",
+    "url": "https://www.city.suginami.tokyo.jp/s092/event/27078.html",
+    "summary": "",
+    "published_at": "2026-08-13",
+    "fetched_at": "2026-08-26",
+    "category": "イベント",
+    "image": "",
     "event_dates": []
   },
   {
@@ -7092,34 +7122,6 @@
     "source_url": "https://www.city.suginami.tokyo.jp/",
     "title": "第8回杉並区NPO等活動推進協議会",
     "url": "https://www.city.suginami.tokyo.jp/s019/event/27350.html",
-    "summary": "",
-    "published_at": "2026-06-29",
-    "fetched_at": "2026-06-29",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_6b779bc0",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "農業委員会総会",
-    "url": "https://www.city.suginami.tokyo.jp/s121/event/27435.html",
-    "summary": "",
-    "published_at": "2026-06-29",
-    "fetched_at": "2026-06-29",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_fdd4c03f",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "農業委員会総会",
-    "url": "https://www.city.suginami.tokyo.jp/s121/event/27437.html",
     "summary": "",
     "published_at": "2026-06-29",
     "fetched_at": "2026-06-29",
