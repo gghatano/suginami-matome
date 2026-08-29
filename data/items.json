@@ -1,5 +1,19 @@
 [
   {
+    "id": "suginami_city_905d4fc9",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "女子美術大学 アート・デザイン表現学科 公開講座",
+    "url": "https://www.city.suginami.tokyo.jp/s113/event/28008.html",
+    "summary": "",
+    "published_at": "2026-08-29",
+    "fetched_at": "2026-08-29",
+    "category": "イベント",
+    "image": "",
+    "event_dates": []
+  },
+  {
     "id": "goguynet_91877e90",
     "source": "号外NET杉並区",
     "source_key": "goguynet",
@@ -7116,20 +7130,6 @@
     "fetched_at": "2026-06-30",
     "category": "イベント",
     "image": "https://www.city.suginami.tokyo.jp/images/26545/fuwafuwa1.png",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_f752138f",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "生き物しらべ大作戦　川調べと生き物缶バッジ作り（善福寺公園）",
-    "url": "https://www.city.suginami.tokyo.jp/s113/event/26434.html",
-    "summary": "",
-    "published_at": "2026-06-30",
-    "fetched_at": "2026-06-30",
-    "category": "イベント",
-    "image": "",
     "event_dates": []
   }
 ]
