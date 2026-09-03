@@ -1,5 +1,64 @@
 [
   {
+    "id": "goguynet_9252b8b7",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】7日ごろまで大雨が続く可能性。あなたの家の浸水リスク、知っていますか？",
+    "url": "https://suginami.goguynet.jp/2026/09/03/mamorioh-heavyrain/",
+    "summary": "台風24号と秋雨前線の影響で、各地で雨が強まっています。 今回の台風は動きが遅く、雨の影響が長引く可能性があります。これからの雨の降り方が気になるところです。 7日ごろまで大雨が続く可能性も 【週明けにかけて前線や台風の [&#8230;]",
+    "published_at": "2026-09-03",
+    "fetched_at": "2026-09-03",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/09/image-1024x767.jpg",
+    "event_dates": []
+  },
+  {
+    "id": "suginami_city_3043ede9",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "がん患者と家族のための2日間プログラム「がんを知って歩む」（杉並区医師会館）",
+    "url": "https://www.city.suginami.tokyo.jp/s041/event/22000.html",
+    "summary": "グループでの話し合いや情報提供を通してがんとの付き合い方を見つめ、これからの生活のあり方を考えるプログラムです。",
+    "published_at": "2026-09-03",
+    "fetched_at": "2026-09-03",
+    "category": "イベント",
+    "image": "",
+    "event_dates": []
+  },
+  {
+    "id": "mypl_20ad881e",
+    "source": "まいぷれ杉並区",
+    "source_key": "mypl",
+    "source_url": "https://suginami.mypl.net/",
+    "title": "バブルアイスクリームバー＆キャンディーバスボム作り",
+    "url": "https://suginami.mypl.net/event/00000476646/",
+    "summary": "スクール、体験 バブルアイスクリームバー＆キャンディーバスボム作り",
+    "published_at": "2026-09-03",
+    "fetched_at": "2026-09-03",
+    "category": "イベント",
+    "image": "https://img2.mypl.net/image.php?id=359424&p=bti&s=500_730&op=",
+    "event_dates": []
+  },
+  {
+    "id": "goguynet_5e3e172e",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】阿佐ヶ谷に新業態のクレープ店「DolceCrepeGattoCalico（ドルチェクレープガットカリコ）」が9月4日(金)にオープン♪4日間はクレープが半額に！",
+    "url": "https://suginami.goguynet.jp/2026/09/03/dolcecrepe-gattocalico/",
+    "summary": "阿佐ヶ谷北口に2025年にオープンしたイタリアン「GattoCalico(ガットカリコ)」。 【杉並区】阿佐ヶ谷にイタリアンを楽しめる「Gatto Calico(ガットカリコ)」が2/26にオープンしました！ 阿佐ヶ谷駅 [&#8230;]",
+    "published_at": "2026-09-02",
+    "fetched_at": "2026-09-03",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/08/IMG_8368-1024x767.jpeg",
+    "event_dates": [
+      "2026-09-04",
+      "2027-02-26"
+    ]
+  },
+  {
     "id": "goguynet_1ffbf363",
     "source": "号外NET杉並区",
     "source_key": "goguynet",
@@ -7059,62 +7118,6 @@
     "fetched_at": "2026-07-14",
     "category": "イベント",
     "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_76ae881e",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "第11回杉並区地域公共交通活性化協議会",
-    "url": "https://www.city.suginami.tokyo.jp/s092/event/26628.html",
-    "summary": "",
-    "published_at": "2026-07-14",
-    "fetched_at": "2026-07-14",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_9a1c63fd",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "第9回杉並区AIオンデマンド交通検討部会",
-    "url": "https://www.city.suginami.tokyo.jp/s092/event/26705.html",
-    "summary": "",
-    "published_at": "2026-07-14",
-    "fetched_at": "2026-07-14",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_9b7f58d7",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "空き家無料相談会（高南自治会館）",
-    "url": "https://www.city.suginami.tokyo.jp/s093/event/26993.html",
-    "summary": "",
-    "published_at": "2026-07-14",
-    "fetched_at": "2026-07-14",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_077ad1c5",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "荻外荘（てきがいそう）夏休み たてもの探検",
-    "url": "https://www.city.suginami.tokyo.jp/s100/event/26859.html",
-    "summary": "",
-    "published_at": "2026-07-14",
-    "fetched_at": "2026-07-14",
-    "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/26859/tekigaiso_drawingroom.jpg",
     "event_dates": []
   }
 ]
