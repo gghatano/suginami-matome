@@ -1,5 +1,77 @@
 [
   {
+    "id": "suginami_city_2484e4d4",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "モビリティウィーク（杉並区役所）",
+    "url": "https://www.city.suginami.tokyo.jp/s092/event/27644.html",
+    "summary": "モビリティウィークとは、過度な自動車依存を見直し、公共交通や徒歩をかしこく使う暮らしを考えるために、世界の約3,000都市が参加し実施している国際的な啓発週間です。杉並区は、今年で3回目の開催になります。",
+    "published_at": "2026-09-08",
+    "fetched_at": "2026-09-08",
+    "category": "イベント",
+    "image": "",
+    "event_dates": []
+  },
+  {
+    "id": "sesion_548a1030",
+    "source": "セシオン杉並",
+    "source_key": "sesion",
+    "source_url": "https://www.sesion-suginami.jp/",
+    "title": "第73回杉並区総合文化祭吟剣詩舞道大会",
+    "url": "https://www.sesion-suginami.jp/event/hall/7785",
+    "summary": "",
+    "published_at": "2026-09-08",
+    "fetched_at": "2026-09-08",
+    "category": "イベント",
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/09/20260908142759.jpg",
+    "event_dates": []
+  },
+  {
+    "id": "sesion_145275f4",
+    "source": "セシオン杉並",
+    "source_key": "sesion",
+    "source_url": "https://www.sesion-suginami.jp/",
+    "title": "第73回杉並区総合文化祭民謡舞踊大会",
+    "url": "https://www.sesion-suginami.jp/event/hall/7788",
+    "summary": "",
+    "published_at": "2026-09-08",
+    "fetched_at": "2026-09-08",
+    "category": "イベント",
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/09/20260908145215.jpg",
+    "event_dates": []
+  },
+  {
+    "id": "mypl_ef05cfbb",
+    "source": "まいぷれ杉並区",
+    "source_key": "mypl",
+    "source_url": "https://suginami.mypl.net/",
+    "title": "使いこなそう！スマホ教室 / 杉並カメラ",
+    "url": "https://suginami.mypl.net/event/00000476858/",
+    "summary": "スクール、体験 使いこなそう！スマホ教室 / 杉並カメラ",
+    "published_at": "2026-09-08",
+    "fetched_at": "2026-09-08",
+    "category": "イベント",
+    "image": "https://img2.mypl.net/image.php?id=359681&p=bti&s=500_730&op=",
+    "event_dates": []
+  },
+  {
+    "id": "goguynet_88d70321",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】大田黒公園が一夜限りの野外映画館に！9月26日(土)に「月下のつどい」が開催されますよ♪",
+    "url": "https://suginami.goguynet.jp/2026/09/08/gekkanotsudoi/",
+    "summary": "荻窪にある大田黒公園と荻外荘公園で、2026年9月26日(土)に屋外イベント「月下のつどい」が開催されます！ 秋の夜長を彩る恒例イベントとして親しまれている「月下のつどい」。会場となる大田黒公園では、普段は立ち入ることの [&#8230;]",
+    "published_at": "2026-09-07",
+    "fetched_at": "2026-09-08",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/08/IMG_8268-955x767.jpeg",
+    "event_dates": [
+      "2026-09-26"
+    ]
+  },
+  {
     "id": "goguynet_e0bf88f4",
     "source": "号外NET杉並区",
     "source_key": "goguynet",
@@ -793,7 +865,7 @@
     "published_at": "2026-09-01",
     "fetched_at": "2026-09-01",
     "category": "イベント",
-    "image": "",
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/08/9_30ライブ「パンドラの匣」フライヤー.jpg",
     "event_dates": []
   },
   {
@@ -1763,7 +1835,7 @@
     "published_at": "2026-08-31",
     "fetched_at": "2026-08-31",
     "category": "イベント",
-    "image": "",
+    "image": "https://www.city.suginami.tokyo.jp/images/27603/omote.png",
     "event_dates": []
   },
   {
@@ -7054,76 +7126,6 @@
     "fetched_at": "2026-07-14",
     "category": "イベント",
     "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_242ab984",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "ポンダンス体験教室『ポンポンを使って健康ダンスを踊ってみよう』（杉並障害者福祉会館）",
-    "url": "https://www.city.suginami.tokyo.jp/s037/event/26935.html",
-    "summary": "",
-    "published_at": "2026-07-14",
-    "fetched_at": "2026-07-14",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_68ecb26e",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "終活セミナー（ゆうゆう高井戸東館）",
-    "url": "https://www.city.suginami.tokyo.jp/s038/event/26768.html",
-    "summary": "",
-    "published_at": "2026-07-14",
-    "fetched_at": "2026-07-14",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_427b0dee",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "東京都スマホ教室（ゆうゆう大宮堀ノ内館）",
-    "url": "https://www.city.suginami.tokyo.jp/s038/event/26769.html",
-    "summary": "",
-    "published_at": "2026-07-14",
-    "fetched_at": "2026-07-14",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_9a359049",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "もっと知りたい杉並「中島飛行機東京工場から桃井原っぱ公園への変遷」（ゆうゆう上荻窪館）",
-    "url": "https://www.city.suginami.tokyo.jp/s038/event/26909.html",
-    "summary": "",
-    "published_at": "2026-07-14",
-    "fetched_at": "2026-07-14",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_7bb8f14c",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "杉並のこま犬たちと十二支の神使（ゆうゆう善福寺館）",
-    "url": "https://www.city.suginami.tokyo.jp/s038/event/26915.html",
-    "summary": "",
-    "published_at": "2026-07-14",
-    "fetched_at": "2026-07-14",
-    "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/26915/kojima.jpg",
     "event_dates": []
   }
 ]
