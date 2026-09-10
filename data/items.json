@@ -1,5 +1,63 @@
 [
   {
+    "id": "suginami_city_ba07f266",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "マンション管理無料相談（令和8年10月）",
+    "url": "https://www.city.suginami.tokyo.jp/s093/event/28175.html",
+    "summary": "管理組合の運営や大規模修繕など分譲マンションの管理に関する問題について、マンション管理士が区役所1階ロビーにて月1回（第2木曜日）相談に応じます。（祝日は除く）",
+    "published_at": "2026-09-10",
+    "fetched_at": "2026-09-10",
+    "category": "イベント",
+    "image": "",
+    "event_dates": []
+  },
+  {
+    "id": "suginami_city_c0cf8de5",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "すぎなみコレクション「令和8年度　博物館実習生企画展示　キモノとコドモ」（郷土博物館）",
+    "url": "https://www.city.suginami.tokyo.jp/s113/event/28459.html",
+    "summary": "",
+    "published_at": "2026-09-10",
+    "fetched_at": "2026-09-10",
+    "category": "イベント",
+    "image": "https://www.city.suginami.tokyo.jp/images/28459/sugikore-tennji.jpg",
+    "event_dates": []
+  },
+  {
+    "id": "mypl_bdb1628a",
+    "source": "まいぷれ杉並区",
+    "source_key": "mypl",
+    "source_url": "https://suginami.mypl.net/",
+    "title": "女子美スピリッツ2026　柳千代子展",
+    "url": "https://suginami.mypl.net/event/00000476928/",
+    "summary": "展覧会 女子美スピリッツ2026 柳千代子展",
+    "published_at": "2026-09-10",
+    "fetched_at": "2026-09-10",
+    "category": "イベント",
+    "image": "https://img2.mypl.net/image.php?id=359783&p=bti&s=500_730&op=",
+    "event_dates": []
+  },
+  {
+    "id": "goguynet_3f5d8423",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】神輿パレードに縁起餅まきも♪阿佐ヶ谷神明宮で例大祭が9月12日(土)・13(日)の2日間で開催されます！",
+    "url": "https://suginami.goguynet.jp/2026/09/10/asagayashinmeiguu-reitaisai2026/",
+    "summary": "日本唯一の「八難除祈祷」で有名な阿佐ヶ谷神明宮で毎年恒例の「例大祭(れいたいさい)」が2026年9月12日(土)と13日(日)の2日間で開催されます！ 9月12日（土） ・10:00～13:30（随時） 阿佐ヶ谷囃子 ・ [&#8230;]",
+    "published_at": "2026-09-09",
+    "fetched_at": "2026-09-10",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/09/IMG_8381-1024x767.jpeg",
+    "event_dates": [
+      "2026-09-12"
+    ]
+  },
+  {
     "id": "suginami_city_fd9c27e4",
     "source": "杉並区公式",
     "source_key": "suginami_city",
@@ -7072,62 +7130,6 @@
     "fetched_at": "2026-07-14",
     "category": "イベント",
     "image": "https://www.city.suginami.tokyo.jp/images/26970/shinei50th_poster.jpeg",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_db030bf7",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "令和8年度男女雇用平等セミナー　【企業向け】女性活躍推進法に基づく一般事業主行動計画の策定支援セミナー（杉並区役所）",
-    "url": "https://www.city.suginami.tokyo.jp/s121/event/26699.html",
-    "summary": "",
-    "published_at": "2026-07-14",
-    "fetched_at": "2026-07-14",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_563cd1e8",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "就労支援センターの上手な活用法（施設説明会）（ウェルファーム杉並）",
-    "url": "https://www.city.suginami.tokyo.jp/s121/event/26846.html",
-    "summary": "",
-    "published_at": "2026-07-14",
-    "fetched_at": "2026-07-14",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_892f5daa",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "求職者のためのパソコンセミナー（1）エクセル応用（関数・データベース）（2）パワーポイント基礎（ウェルファーム杉並）",
-    "url": "https://www.city.suginami.tokyo.jp/s121/event/26848.html",
-    "summary": "",
-    "published_at": "2026-07-14",
-    "fetched_at": "2026-07-14",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_630e19b7",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "ハローワーク職員が解説する「求人票の見方」（ウェルファーム杉並）",
-    "url": "https://www.city.suginami.tokyo.jp/s121/event/26850.html",
-    "summary": "",
-    "published_at": "2026-07-14",
-    "fetched_at": "2026-07-14",
-    "category": "イベント",
-    "image": "",
     "event_dates": []
   }
 ]
