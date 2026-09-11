@@ -1,5 +1,63 @@
 [
   {
+    "id": "sesion_85173720",
+    "source": "セシオン杉並",
+    "source_key": "sesion",
+    "source_url": "https://www.sesion-suginami.jp/",
+    "title": "福島県北塩原村×杉並区ご地層ティラミスづくり",
+    "url": "https://www.sesion-suginami.jp/event/cook/7615",
+    "summary": "",
+    "published_at": "2026-09-11",
+    "fetched_at": "2026-09-11",
+    "category": "イベント",
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/08/tirasi.jpg",
+    "event_dates": []
+  },
+  {
+    "id": "sesion_acb2c29d",
+    "source": "セシオン杉並",
+    "source_key": "sesion",
+    "source_url": "https://www.sesion-suginami.jp/",
+    "title": "第73回杉並区総合文化祭囲碁大会",
+    "url": "https://www.sesion-suginami.jp/event/meeting/7810",
+    "summary": "",
+    "published_at": "2026-09-11",
+    "fetched_at": "2026-09-11",
+    "category": "イベント",
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/09/20260908142759.jpg",
+    "event_dates": []
+  },
+  {
+    "id": "sesion_ff9fcb2c",
+    "source": "セシオン杉並",
+    "source_key": "sesion",
+    "source_url": "https://www.sesion-suginami.jp/",
+    "title": "『最近なんだか気力が出ない…』はフレイルのサイン？ こころを元気に保つ秘訣",
+    "url": "https://www.sesion-suginami.jp/event/lecture/7819",
+    "summary": "",
+    "published_at": "2026-09-11",
+    "fetched_at": "2026-09-11",
+    "category": "イベント",
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/09/kouennkaitirasi_ページ_1.jpg",
+    "event_dates": []
+  },
+  {
+    "id": "goguynet_efaf584f",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】露店や高井戸囃子も♪「上高井戸第六天神社 例大祭」が9月12日(土)・13日(日)に開催されます！",
+    "url": "https://suginami.goguynet.jp/2026/09/11/dairokutenjinja-reitaisai2026/",
+    "summary": "京王井の頭線高井戸駅から徒歩約10分の中央自動車道のそばにある「上高井戸第六天神社」で、2026年9月12日(土)・13日(日)の2日間で「例大祭」が開催されます！ 「上高井戸第六天神社」は、鎌倉時代の創建と伝わる歴史あ [&#8230;]",
+    "published_at": "2026-09-10",
+    "fetched_at": "2026-09-11",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/09/IMG_8713.jpeg",
+    "event_dates": [
+      "2026-09-12"
+    ]
+  },
+  {
     "id": "suginami_city_ba07f266",
     "source": "杉並区公式",
     "source_key": "suginami_city",
@@ -7074,62 +7132,6 @@
     "fetched_at": "2026-07-14",
     "category": "イベント",
     "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_f4ea784c",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "すぎなみスポーツアカデミー ジュニアスポーツ支援講座「子どもの運動習慣づくりのヒント」（産業商工会館）",
-    "url": "https://www.city.suginami.tokyo.jp/s032/event/26975.html",
-    "summary": "",
-    "published_at": "2026-07-14",
-    "fetched_at": "2026-07-14",
-    "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/26975/megumi_saito.jpg",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_c7576c3a",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "きらきらサッカー教室（永福体育館）",
-    "url": "https://www.city.suginami.tokyo.jp/s032/event/26991.html",
-    "summary": "",
-    "published_at": "2026-07-14",
-    "fetched_at": "2026-07-14",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_0c1a6431",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "阿佐谷七夕まつり",
-    "url": "https://www.city.suginami.tokyo.jp/s033/event/26759.html",
-    "summary": "",
-    "published_at": "2026-07-14",
-    "fetched_at": "2026-07-14",
-    "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/26759/asagayatanabata.jpg",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_06c22a5e",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "杉並アニメーションミュージアム第74回企画展 「シンエイ動画50周年」展",
-    "url": "https://www.city.suginami.tokyo.jp/s033/event/26970.html",
-    "summary": "",
-    "published_at": "2026-07-14",
-    "fetched_at": "2026-07-14",
-    "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/26970/shinei50th_poster.jpeg",
     "event_dates": []
   }
 ]
