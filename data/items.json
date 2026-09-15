@@ -1,5 +1,49 @@
 [
   {
+    "id": "sesion_55422a4d",
+    "source": "セシオン杉並",
+    "source_key": "sesion",
+    "source_url": "https://www.sesion-suginami.jp/",
+    "title": "【毎月第2土曜日】衣類の拠点回収",
+    "url": "https://www.sesion-suginami.jp/event/terrace/6979",
+    "summary": "",
+    "published_at": "2026-09-15",
+    "fetched_at": "2026-09-15",
+    "category": "イベント",
+    "image": "",
+    "event_dates": []
+  },
+  {
+    "id": "mypl_97738de0",
+    "source": "まいぷれ杉並区",
+    "source_key": "mypl",
+    "source_url": "https://suginami.mypl.net/",
+    "title": "懐かし、新し 多彩なアニメが大集合！ シンエイ動画50周年展",
+    "url": "https://suginami.mypl.net/event/00000473689/",
+    "summary": "映画、映像 懐かし、新し 多彩なアニメが大集合！ シンエイ動画50周年展",
+    "published_at": "2026-09-15",
+    "fetched_at": "2026-09-15",
+    "category": "イベント",
+    "image": "https://img2.mypl.net/image.php?id=355917&p=bti&s=375_250&op=",
+    "event_dates": []
+  },
+  {
+    "id": "goguynet_5b3bac2d",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】荻窪駅前にミスド復活！「ミスタードーナツ 荻窪西口ショップ」が11月6日(金)オープン予定です。",
+    "url": "https://suginami.goguynet.jp/2026/09/15/misterdonut-ogikubo/",
+    "summary": "読者様から情報提供をいただきました！ 荻窪駅西口を出てすぐの場所にあった「ミスタードーナツ 荻窪ショップ」。2020年1月に閉店しましたが、このたび「ミスタードーナツ 荻窪西口ショップ」として2026年11月6日(金)に [&#8230;]",
+    "published_at": "2026-09-14",
+    "fetched_at": "2026-09-15",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/09/IMG_8729.jpeg",
+    "event_dates": [
+      "2026-11-06"
+    ]
+  },
+  {
     "id": "suginami_city_e4c99990",
     "source": "杉並区公式",
     "source_key": "suginami_city",
@@ -1166,7 +1210,7 @@
     "published_at": "2026-09-14",
     "fetched_at": "2026-09-14",
     "category": "イベント",
-    "image": "",
+    "image": "https://www.city.suginami.tokyo.jp/images/27924/cord.png",
     "event_dates": []
   },
   {
@@ -1194,7 +1238,7 @@
     "published_at": "2026-09-14",
     "fetched_at": "2026-09-14",
     "category": "イベント",
-    "image": "",
+    "image": "https://www.city.suginami.tokyo.jp/images/27274/kari_artwalk_mainpic.png",
     "event_dates": []
   },
   {
@@ -1236,7 +1280,7 @@
     "published_at": "2026-09-14",
     "fetched_at": "2026-09-14",
     "category": "イベント",
-    "image": "",
+    "image": "https://www.city.suginami.tokyo.jp/images/27879/otaguro_ginkgo.jpg",
     "event_dates": []
   },
   {
@@ -1250,7 +1294,7 @@
     "published_at": "2026-09-14",
     "fetched_at": "2026-09-14",
     "category": "イベント",
-    "image": "",
+    "image": "https://www.city.suginami.tokyo.jp/images/27973/publicityphoto.jpg",
     "event_dates": []
   },
   {
@@ -1264,7 +1308,7 @@
     "published_at": "2026-09-14",
     "fetched_at": "2026-09-14",
     "category": "イベント",
-    "image": "",
+    "image": "https://www.city.suginami.tokyo.jp/images/27984/tekigaisoyoga.jpg",
     "event_dates": []
   },
   {
@@ -1278,7 +1322,7 @@
     "published_at": "2026-09-14",
     "fetched_at": "2026-09-14",
     "category": "イベント",
-    "image": "",
+    "image": "https://www.city.suginami.tokyo.jp/images/27989/byosoku5_poster.jpg",
     "event_dates": []
   },
   {
@@ -7061,48 +7105,6 @@
     "fetched_at": "2026-07-31",
     "category": "イベント",
     "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_3b5b32b6",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "パソコンサロン　初心者向けパソコン教室（ゆうゆう桃井館）",
-    "url": "https://www.city.suginami.tokyo.jp/s038/event/27126.html",
-    "summary": "",
-    "published_at": "2026-07-31",
-    "fetched_at": "2026-07-31",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_f4b60a71",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "【敬老の日】薬膳流かんたん健康ごはん　ひと工夫で「噛む」と「飲む」をサポート（高齢者活動支援センター）",
-    "url": "https://www.city.suginami.tokyo.jp/s038/event/27141.html",
-    "summary": "",
-    "published_at": "2026-07-31",
-    "fetched_at": "2026-07-31",
-    "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/27141/siruba-sannkusu.png",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_7d0b162e",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "【敬老の日】だれにもできるタッチケア　自分も家族もリラックス（高齢者活動支援センター）",
-    "url": "https://www.city.suginami.tokyo.jp/s038/event/27147.html",
-    "summary": "",
-    "published_at": "2026-07-31",
-    "fetched_at": "2026-07-31",
-    "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/27147/siruba-sannkusu.png",
     "event_dates": []
   }
 ]
