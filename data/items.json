@@ -1,5 +1,35 @@
 [
   {
+    "id": "suginami_city_5587567f",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "9月21日（月曜・祝日）特別展関連イベント　台風接近に伴う開催可否について（鼎談「晶子・寛と啄木の魅力を語る」）",
+    "url": "https://www.city.suginami.tokyo.jp/s113/event/27138.html",
+    "summary": "",
+    "published_at": "2026-09-18",
+    "fetched_at": "2026-09-18",
+    "category": "イベント",
+    "image": "",
+    "event_dates": [
+      "2026-09-21"
+    ]
+  },
+  {
+    "id": "goguynet_7fc547e0",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】世界一健康的なたいやき店とは！？阿佐ヶ谷パールセンター商店街に「TOKYO TAIYAKI MANIA Asagaya Lab(トーキョータイヤキマニアアサガヤラボ)」がオープンしました！",
+    "url": "https://suginami.goguynet.jp/2026/09/18/tokyo-taiyaki-mania-asagaya-lab/",
+    "summary": "読者様から情報提供いただきました！ 阿佐ヶ谷パールセンター商店街のパスタ店「松下雄二屋」のすぐ近くに、たい焼き店「TOKYO TAIYAKI MANIA Asagaya Lab(トーキョータイヤキマニアアサガヤラボ)」が [&#8230;]",
+    "published_at": "2026-09-17",
+    "fetched_at": "2026-09-18",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/09/IMG_8779-1024x767.jpeg",
+    "event_dates": []
+  },
+  {
     "id": "suginami_city_31545681",
     "source": "杉並区公式",
     "source_key": "suginami_city",
@@ -7079,34 +7109,6 @@
     "source_url": "https://www.city.suginami.tokyo.jp/",
     "title": "親子で参加可　家庭も仕事も“わたし”も大切にする復帰準備セミナー（ウェルファーム杉並）",
     "url": "https://www.city.suginami.tokyo.jp/s121/event/27166.html",
-    "summary": "",
-    "published_at": "2026-07-31",
-    "fetched_at": "2026-07-31",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_3cdf93cc",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "ボランティア講座「発見！身近な地域ではじめるボランティア（2）」（ゆうゆう四宮館）",
-    "url": "https://www.city.suginami.tokyo.jp/s034/event/27148.html",
-    "summary": "",
-    "published_at": "2026-07-31",
-    "fetched_at": "2026-07-31",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_25da494a",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "誰一人取り残さない視覚障害者のIT講習会（セシオン杉並）",
-    "url": "https://www.city.suginami.tokyo.jp/s036/event/26794.html",
     "summary": "",
     "published_at": "2026-07-31",
     "fetched_at": "2026-07-31",
