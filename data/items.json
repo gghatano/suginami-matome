@@ -1,5 +1,35 @@
 [
   {
+    "id": "mypl_700238c0",
+    "source": "まいぷれ杉並区",
+    "source_key": "mypl",
+    "source_url": "https://suginami.mypl.net/",
+    "title": "荻窪ことぶき通り商店街「なないろ市だヨ！ 全員集合」",
+    "url": "https://suginami.mypl.net/event/00000476719/",
+    "summary": "季節のイベント、行事 荻窪ことぶき通り商店街「なないろ市だヨ！ 全員集合」",
+    "published_at": "2026-09-24",
+    "fetched_at": "2026-09-24",
+    "category": "イベント",
+    "image": "https://img2.mypl.net/image.php?id=359516&p=bti&s=375_250&op=",
+    "event_dates": []
+  },
+  {
+    "id": "goguynet_2f5cd03e",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】荻窪駅西口「ポイントサンビリ」と「カラオケBanBan」が同時閉店へ。同じ7階の2店舗が11月1日(日)朝6時をもって営業終了することがわかりました…。",
+    "url": "https://suginami.goguynet.jp/2026/09/24/pointsunbilli-banban-ogikubowest/",
+    "summary": "荻窪駅西口から徒歩3分ほどの場所にある「ユアビルI」。 その7階に入っている「ポイントサンビリ荻窪西口店」が、2026年11月1日(日)朝6時をもって閉店することがわかりました。 公式サイトのお知らせによると、入居してい [&#8230;]",
+    "published_at": "2026-09-23",
+    "fetched_at": "2026-09-24",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/09/IMG_8674-1024x767.jpeg",
+    "event_dates": [
+      "2026-11-01"
+    ]
+  },
+  {
     "id": "mypl_7127b81e",
     "source": "まいぷれ杉並区",
     "source_key": "mypl",
@@ -7088,34 +7118,6 @@
     "source_url": "https://www.city.suginami.tokyo.jp/",
     "title": "子ども体操教室（荻窪体育館）",
     "url": "https://www.city.suginami.tokyo.jp/s032/event/27175.html",
-    "summary": "",
-    "published_at": "2026-07-31",
-    "fetched_at": "2026-07-31",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_98355f42",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "涼み処スペシャル「涼しい屋内公園」無料開放デー（高円寺みんなの体育館）",
-    "url": "https://www.city.suginami.tokyo.jp/s032/event/27176.html",
-    "summary": "",
-    "published_at": "2026-07-31",
-    "fetched_at": "2026-07-31",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_f81cc400",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "ユニバーサルタイムサポーター養成講座（杉並区役所ほか）",
-    "url": "https://www.city.suginami.tokyo.jp/s032/event/27200.html",
     "summary": "",
     "published_at": "2026-07-31",
     "fetched_at": "2026-07-31",
