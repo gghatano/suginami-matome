@@ -1,5 +1,22 @@
 [
   {
+    "id": "goguynet_75158944",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】入場無料で芸術の秋を満喫♪「第73回杉並区総合文化祭」が開催されます。",
+    "url": "https://suginami.goguynet.jp/2026/09/27/suginamisougou2026/",
+    "summary": "杉並区内でさまざまな文化や芸術に触れられる「第73回杉並区総合文化祭」が、2026年9月26日(土)から10月27日(火)までセシオン杉並で開催されています！ 期間中はさまざまな催しを開催 ホールで開催される舞台発表は入 [&#8230;]",
+    "published_at": "2026-09-26",
+    "fetched_at": "2026-09-27",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/09/IMG_8439-1024x767.jpeg",
+    "event_dates": [
+      "2026-09-26",
+      "2026-10-27"
+    ]
+  },
+  {
     "id": "goguynet_28ea6e84",
     "source": "号外NET杉並区",
     "source_key": "goguynet",
@@ -369,6 +386,34 @@
     "fetched_at": "2026-09-15",
     "category": "イベント",
     "image": "https://img2.mypl.net/image.php?id=355917&p=bti&s=375_250&op=",
+    "event_dates": []
+  },
+  {
+    "id": "suginami_city_12b9dede",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "東京女子大学秋季特別講座",
+    "url": "https://www.city.suginami.tokyo.jp/s113/event/27873.html",
+    "summary": "",
+    "published_at": "2026-09-14",
+    "fetched_at": "2026-09-27",
+    "category": "イベント",
+    "image": "",
+    "event_dates": []
+  },
+  {
+    "id": "suginami_city_506b65ca",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "東京女子大学　杉並区内大学公開講座「見えにくい・見えない世界から考える」",
+    "url": "https://www.city.suginami.tokyo.jp/s113/event/27874.html",
+    "summary": "",
+    "published_at": "2026-09-14",
+    "fetched_at": "2026-09-27",
+    "category": "イベント",
+    "image": "",
     "event_dates": []
   },
   {
@@ -7086,47 +7131,5 @@
     "event_dates": [
       "2026-08-19"
     ]
-  },
-  {
-    "id": "suginami_city_8a6df5dd",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "杉並区×小千谷市　お米づくり体験【秋　稲刈り】",
-    "url": "https://www.city.suginami.tokyo.jp/s030/event/27361.html",
-    "summary": "",
-    "published_at": "2026-07-31",
-    "fetched_at": "2026-07-31",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_57f0271f",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "杉並書を楽しむ会　色紙展「日常を楽しむ書」（杉並区役所）",
-    "url": "https://www.city.suginami.tokyo.jp/s030/event/25110.html",
-    "summary": "",
-    "published_at": "2026-07-31",
-    "fetched_at": "2026-07-31",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_5e39bf3e",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "弓道・アーチェリー認定講習会（TAC杉並区上井草スポーツセンター）",
-    "url": "https://www.city.suginami.tokyo.jp/s032/event/27172.html",
-    "summary": "",
-    "published_at": "2026-07-31",
-    "fetched_at": "2026-07-31",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
   }
 ]
