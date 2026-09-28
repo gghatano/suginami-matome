@@ -1,5 +1,19 @@
 [
   {
+    "id": "goguynet_164bd88c",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】本格博多ちゃんぽんを高円寺で！「フリーダム」で具だくさんの一杯を味わってきました。",
+    "url": "https://suginami.goguynet.jp/2026/09/28/freedom-koenji/",
+    "summary": "高円寺北口のあづま通り商店街にある「cafe&#38;bar フリーダム」。2026年4月にオープンしたお店です。 2025年までは西新宿で営業されていたそうで、現在は高円寺に場所を移し、昼はカフェ、夜はバーとして1年間 [&#8230;]",
+    "published_at": "2026-09-27",
+    "fetched_at": "2026-09-28",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/08/IMG_8165-1024x767.jpeg",
+    "event_dates": []
+  },
+  {
     "id": "goguynet_75158944",
     "source": "号外NET杉並区",
     "source_key": "goguynet",
@@ -7115,21 +7129,5 @@
     "category": "イベント",
     "image": "",
     "event_dates": []
-  },
-  {
-    "id": "suginami_city_ce357440",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "【8月19日開催】山梨県忍野村物産展（杉並区役所）",
-    "url": "https://www.city.suginami.tokyo.jp/s030/event/27194.html",
-    "summary": "",
-    "published_at": "2026-07-31",
-    "fetched_at": "2026-07-31",
-    "category": "イベント",
-    "image": "https://www.city.suginami.tokyo.jp/images/27194/corn1.jpg",
-    "event_dates": [
-      "2026-08-19"
-    ]
   }
 ]
