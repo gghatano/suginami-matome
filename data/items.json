@@ -1,5 +1,63 @@
 [
   {
+    "id": "sesion_528035ae",
+    "source": "セシオン杉並",
+    "source_key": "sesion",
+    "source_url": "https://www.sesion-suginami.jp/",
+    "title": "相続・不動産・空き家無料相談会",
+    "url": "https://www.sesion-suginami.jp/event/meeting/7886",
+    "summary": "",
+    "published_at": "2026-10-02",
+    "fetched_at": "2026-10-02",
+    "category": "イベント",
+    "image": "",
+    "event_dates": []
+  },
+  {
+    "id": "sesion_75cea4fa",
+    "source": "セシオン杉並",
+    "source_key": "sesion",
+    "source_url": "https://www.sesion-suginami.jp/",
+    "title": "「私たち」で考える　PTAのこれから",
+    "url": "https://www.sesion-suginami.jp/event/lecture/7885",
+    "summary": "",
+    "published_at": "2026-10-02",
+    "fetched_at": "2026-10-02",
+    "category": "イベント",
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/09/kyouikutyouhogowaitirasi.jpg",
+    "event_dates": []
+  },
+  {
+    "id": "goguynet_1f433d87",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】9月18日(金)夜に高円寺で火災。九州酒場「てと。」が臨時休業しています。",
+    "url": "https://suginami.goguynet.jp/2026/10/02/teto-koenji/",
+    "summary": "2026年9月18日(金)23時ごろ、高円寺駅に降り立つと駅前ロータリーには多くの消防車が集まっていました。 北口の純情商店街入口付近には規制線が張られており、近くにいた警察の方に伺ったところ、火災が発生したのは中華料理 [&#8230;]",
+    "published_at": "2026-10-01",
+    "fetched_at": "2026-10-02",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/09/IMG_8841.jpeg",
+    "event_dates": [
+      "2026-09-18"
+    ]
+  },
+  {
+    "id": "goguynet_bcfbe8c2",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】大阪発の人気ラーメン店「どうとんぼり神座」がルミネ荻窪にこの秋オープンします！",
+    "url": "https://suginami.goguynet.jp/2026/10/02/doutonbori-kamukura/",
+    "summary": "ラーメン好きな方に朗報です！ ルミネ荻窪5Fのレストランフロアに「どうとんぼり神座(かむくら)」がこの秋オープンすることがわかりました！ 【杉並区】ラーメン好きに朗報！！ルミネ荻窪の5階に『鯛塩そば 灯花』がオープンしま [&#8230;]",
+    "published_at": "2026-10-01",
+    "fetched_at": "2026-10-02",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/09/IMG_8691-1024x767.jpeg",
+    "event_dates": []
+  },
+  {
     "id": "suginami_city_ac0c4b94",
     "source": "杉並区公式",
     "source_key": "suginami_city",
@@ -7038,63 +7096,5 @@
     "event_dates": [
       "2026-08-10"
     ]
-  },
-  {
-    "id": "suginami_city_46f2887c",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "【参加事業者募集中】暮らしを支えるおしごと就職相談・面接会【医療・介護・保育】（杉並区役所）",
-    "url": "https://www.city.suginami.tokyo.jp/s121/event/28462.html",
-    "summary": "",
-    "published_at": "2026-08-20",
-    "fetched_at": "2026-08-21",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_8eded1a4",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "令和8年9月の専門家による空き家の総合無料相談（杉並区役所ほか）",
-    "url": "https://www.city.suginami.tokyo.jp/s093/event/27527.html",
-    "summary": "空き家の維持管理や税金、相続に関すること。空き家の賃貸、リフォームや建替え、売却に関する悩み。また空き家になったら何から始めたらいいのかなど、空き家に関するさまざまな悩みを複数の専門家（弁護士、司法書士、建築士、税理士および宅建士）に同時に相談・質問することができます。なお、希望者はオンライン相談も可能です。",
-    "published_at": "2026-08-20",
-    "fetched_at": "2026-08-21",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "goguynet_97e8e5a3",
-    "source": "号外NET杉並区",
-    "source_key": "goguynet",
-    "source_url": "https://suginami.goguynet.jp/",
-    "title": "【杉並区】「せたが屋」の新ブランド！阿佐ヶ谷に「元祖油うどん こん家」が8月20日(木)にオープンします。",
-    "url": "https://suginami.goguynet.jp/2026/08/20/konya-asagaya/",
-    "summary": "阿佐ヶ谷駅南口から歩いて3分ほどのパールセンター商店街の中に「元祖油うどん こん家 阿佐ヶ谷店」が本日2026年8月20日(木)午前11時よりオープンします！ 三井住友銀行の隣といえば、2025年1月に閉店された、以前は [&#8230;]",
-    "published_at": "2026-08-19",
-    "fetched_at": "2026-08-20",
-    "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/08/IMG_8034-1024x767.jpeg",
-    "event_dates": [
-      "2026-08-20"
-    ]
-  },
-  {
-    "id": "suginami_city_597d9386",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "令和8年度　こども発達センター　第2回　療育講座「手先が不器用なお子さんへのアプローチ」",
-    "url": "https://www.city.suginami.tokyo.jp/s036/event/28344.html",
-    "summary": "",
-    "published_at": "2026-08-19",
-    "fetched_at": "2026-08-20",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
   }
 ]
