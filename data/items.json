@@ -1,5 +1,21 @@
 [
   {
+    "id": "goguynet_b5fef6ce",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】今年で20回目！「高円寺フェス2026」が10月24日(土)と25日(日)の2日間で開催されます！",
+    "url": "https://suginami.goguynet.jp/2026/10/03/koenji-fes-2026/",
+    "summary": "高円寺のまちがひときわ賑わう秋の恒例イベント「第20回 高円寺フェス2026」が、2026年10月24日（土）・25日（日）の2日間で開催されます！ 【開催日】10 月 24 日(土)・25 日(日)※ぐるカップは 10 [&#8230;]",
+    "published_at": "2026-10-02",
+    "fetched_at": "2026-10-03",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/09/IMG_8850-1024x767.png",
+    "event_dates": [
+      "2026-10-24"
+    ]
+  },
+  {
     "id": "sesion_528035ae",
     "source": "セシオン杉並",
     "source_key": "sesion",
@@ -7080,21 +7096,5 @@
     "category": "イベント",
     "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/08/IMG_8060-1024x767.jpeg",
     "event_dates": []
-  },
-  {
-    "id": "goguynet_ca204c63",
-    "source": "号外NET杉並区",
-    "source_key": "goguynet",
-    "source_url": "https://suginami.goguynet.jp/",
-    "title": "【杉並区】新高円寺駅近くに「煮込み屋 長介」が8月10日(月)グランドオープン！もつ煮込みを味わう定食屋さんです。",
-    "url": "https://suginami.goguynet.jp/2026/08/21/nikomiyachousuke/",
-    "summary": "新高円寺駅近くのルック商店街に「煮込み屋 長介」が2026年8月10日(月)にグランドオープンしていました！ お店の場所は、セブンイレブンの隣。以前、読者様より「からり商店が閉店しています」と情報をいただいておりましたが [&#8230;]",
-    "published_at": "2026-08-20",
-    "fetched_at": "2026-08-21",
-    "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/08/IMG_7856-1024x767.jpeg",
-    "event_dates": [
-      "2026-08-10"
-    ]
   }
 ]
