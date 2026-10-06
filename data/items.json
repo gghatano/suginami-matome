@@ -1,5 +1,19 @@
 [
   {
+    "id": "goguynet_95dda325",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】80年続く西荻窪の果物店「中村屋」を27歳のお孫さんが引き継ぐ！「果寮中村屋」が2026年12月オープン予定です。",
+    "url": "https://suginami.goguynet.jp/2026/10/06/nakamuraya-nishiogikubo/",
+    "summary": "西荻窪駅南口の線路沿いにある果物店「中村屋」。1945年創業、80年以上にわたって地域で親しまれてきた老舗果物店です。このたび、27歳のお孫さんが店を引き継ぎ、新ブランド「果寮中村屋（KARYO NAKAMURAYA）」 [&#8230;]",
+    "published_at": "2026-10-05",
+    "fetched_at": "2026-10-06",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/08/IMG_8239-1012x767.jpeg",
+    "event_dates": []
+  },
+  {
     "id": "suginami_city_d9ea1ccc",
     "source": "杉並区公式",
     "source_key": "suginami_city",
@@ -7071,20 +7085,6 @@
     "fetched_at": "2026-08-27",
     "category": "イベント",
     "image": "https://img2.mypl.net/image.php?id=357542&p=bti&s=500_730&op=",
-    "event_dates": []
-  },
-  {
-    "id": "mypl_4869ed53",
-    "source": "まいぷれ杉並区",
-    "source_key": "mypl",
-    "source_url": "https://suginami.mypl.net/",
-    "title": "額縁づくりワークショップ",
-    "url": "https://suginami.mypl.net/event/00000476136/",
-    "summary": "スクール、体験 額縁づくりワークショップ",
-    "published_at": "2026-08-27",
-    "fetched_at": "2026-08-27",
-    "category": "イベント",
-    "image": "https://img2.mypl.net/image.php?id=358842&p=bti&s=375_250&op=",
     "event_dates": []
   }
 ]
