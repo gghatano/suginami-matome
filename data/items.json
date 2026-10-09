@@ -1,5 +1,35 @@
 [
   {
+    "id": "mypl_541d8eb4",
+    "source": "まいぷれ杉並区",
+    "source_key": "mypl",
+    "source_url": "https://suginami.mypl.net/",
+    "title": "しぜんやさんウェルネスマーケット",
+    "url": "https://suginami.mypl.net/event/00000478708/",
+    "summary": "スクール、体験 しぜんやさんウェルネスマーケット",
+    "published_at": "2026-10-09",
+    "fetched_at": "2026-10-09",
+    "category": "イベント",
+    "image": "https://img2.mypl.net/image.php?id=362073&p=bti&s=500_730&op=",
+    "event_dates": []
+  },
+  {
+    "id": "goguynet_118f31c4",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】笑顔と熱気あふれる演舞に感動♪ 「第67回東京高円寺阿波おどり」に行ってきました。",
+    "url": "https://suginami.goguynet.jp/2026/10/09/awaodori-koenji-2026/",
+    "summary": "号外ネット杉並区でも取り上げた「第67回東京高円寺阿波おどり」。 【杉並区】今年で67回目！「東京高円寺阿波おどり」が8月29日(土)・30日(日)に開催されます！ 高円寺の夏の風物詩「第67回東京高円寺阿波おどり」が2 [&#8230;]",
+    "published_at": "2026-10-08",
+    "fetched_at": "2026-10-09",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/10/IMG_8444-1024x767.jpeg",
+    "event_dates": [
+      "2026-08-29"
+    ]
+  },
+  {
     "id": "suginami_city_91983182",
     "source": "杉並区公式",
     "source_key": "suginami_city",
@@ -7051,34 +7081,6 @@
     "source_url": "https://www.city.suginami.tokyo.jp/",
     "title": "健康づくり推進協議会",
     "url": "https://www.city.suginami.tokyo.jp/s045/event/28443.html",
-    "summary": "",
-    "published_at": "2026-08-30",
-    "fetched_at": "2026-08-30",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_d5cf2370",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "まちづくり景観審議会景観専門部会",
-    "url": "https://www.city.suginami.tokyo.jp/s094/event/28324.html",
-    "summary": "",
-    "published_at": "2026-08-30",
-    "fetched_at": "2026-08-30",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_1b612a90",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "教育委員会",
-    "url": "https://www.city.suginami.tokyo.jp/s107/event/28611.html",
     "summary": "",
     "published_at": "2026-08-30",
     "fetched_at": "2026-08-30",
