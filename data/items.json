@@ -1,5 +1,35 @@
 [
   {
+    "id": "sesion_496281f3",
+    "source": "セシオン杉並",
+    "source_key": "sesion",
+    "source_url": "https://www.sesion-suginami.jp/",
+    "title": "みなとシティバレエ団クリスマス公演！！",
+    "url": "https://www.sesion-suginami.jp/event/hall/7972",
+    "summary": "",
+    "published_at": "2026-10-11",
+    "fetched_at": "2026-10-11",
+    "category": "イベント",
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/10/20261011121945-0001.jpg",
+    "event_dates": []
+  },
+  {
+    "id": "goguynet_b0260189",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】残念・・・PERFECT BEER KITCHEN 西荻窪店(パーフェクト ビアキッチン)が10月31日(土)をもって閉店することがわかりました。",
+    "url": "https://suginami.goguynet.jp/2026/10/11/perfect-beer-kitchen-nishiogikubo/",
+    "summary": "西荻窪駅南口の神明通り沿いにある「PERFECT BEER KITCHEN（パーフェクト ビアキッチン）西荻窪店」が、2026年10月31日（土）をもって閉店することが分かりました・・・。 View this post [&#8230;]",
+    "published_at": "2026-10-10",
+    "fetched_at": "2026-10-11",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/10/IMG_9751-1024x767.jpeg",
+    "event_dates": [
+      "2026-10-31"
+    ]
+  },
+  {
     "id": "goguynet_76b84a24",
     "source": "号外NET杉並区",
     "source_key": "goguynet",
@@ -7061,33 +7091,5 @@
     "event_dates": [
       "2026-08-23"
     ]
-  },
-  {
-    "id": "suginami_city_3baeb06b",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "令和8年度産業振興審議会　第1回産業振興計画改定検討部会",
-    "url": "https://www.city.suginami.tokyo.jp/s033/event/28641.html",
-    "summary": "",
-    "published_at": "2026-08-30",
-    "fetched_at": "2026-08-30",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_9764369f",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "農業委員会総会",
-    "url": "https://www.city.suginami.tokyo.jp/s121/event/28626.html",
-    "summary": "",
-    "published_at": "2026-08-30",
-    "fetched_at": "2026-08-30",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
   }
 ]
