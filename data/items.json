@@ -1,5 +1,21 @@
 [
   {
+    "id": "goguynet_ea133917",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】ごはんのおともを食べ比べ♪ 南阿佐ヶ谷に「ON THE RICE 食堂 ごはんとおとも」が9月6日（日）に新しくオープンしました！",
+    "url": "https://suginami.goguynet.jp/2026/10/12/gohan-to-otomo/",
+    "summary": "南阿佐ヶ谷駅近くのすずらん通りに「ON THE RICE 食堂 ごはんとおとも」が2026年9月6日(日)に新しくオープンしました！ 「ON THE RICE 食堂 ごはんとおとも」は、串カツ店「エベス」をランチタイムに [&#8230;]",
+    "published_at": "2026-10-11",
+    "fetched_at": "2026-10-12",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/10/IMG_9680-1024x767.png",
+    "event_dates": [
+      "2026-09-06"
+    ]
+  },
+  {
     "id": "sesion_496281f3",
     "source": "セシオン杉並",
     "source_key": "sesion",
@@ -7075,21 +7091,5 @@
     "category": "イベント",
     "image": "",
     "event_dates": []
-  },
-  {
-    "id": "goguynet_d984b676",
-    "source": "号外NET杉並区",
-    "source_key": "goguynet",
-    "source_url": "https://suginami.goguynet.jp/",
-    "title": "【杉並区】残念・・・荻窪の豚ステーキ専門店「虎八(とらはち)」が8月23日(日)をもって閉店していました。",
-    "url": "https://suginami.goguynet.jp/2026/08/31/torahachi-ogikubo/",
-    "summary": "&#160; 荻窪のオメガ東京１Fにある豚ステーキのお店「虎八(とらはち)」。公式インスタグラムによると2026年8月23日(日)をもって営業を終了されたそうです・・・。 View this post on Instag [&#8230;]",
-    "published_at": "2026-08-30",
-    "fetched_at": "2026-08-31",
-    "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/08/IMG_1800-1024x767.jpeg",
-    "event_dates": [
-      "2026-08-23"
-    ]
   }
 ]
