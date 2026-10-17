@@ -1,5 +1,35 @@
 [
   {
+    "id": "sesion_21f7f11b",
+    "source": "セシオン杉並",
+    "source_key": "sesion",
+    "source_url": "https://www.sesion-suginami.jp/",
+    "title": "ウォーキング基礎講座",
+    "url": "https://www.sesion-suginami.jp/event/%eventcat%/7993",
+    "summary": "",
+    "published_at": "2026-10-17",
+    "fetched_at": "2026-10-17",
+    "category": "イベント",
+    "image": "",
+    "event_dates": []
+  },
+  {
+    "id": "goguynet_0aaaa6d7",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】荻窪の「オーディオ・ノバ」では10月31日(土)までの「秋の補聴器相談会」が開催されています！",
+    "url": "https://suginami.goguynet.jp/2026/10/17/audionova-ogikubo/",
+    "summary": "JR荻窪駅北口から徒歩約2分の青梅街道沿いにある補聴器専門店「オーディオ・ノバ荻窪店」で、「秋の補聴器相談会」が10月31日(土)まで開催されています！ 「オーディオ・ノバ」は、聞こえの相談や補聴器の販売・調整などを行う [&#8230;]",
+    "published_at": "2026-10-16",
+    "fetched_at": "2026-10-17",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/09/IMG_9450-1024x767.jpeg",
+    "event_dates": [
+      "2026-10-31"
+    ]
+  },
+  {
     "id": "goguynet_a5cc28ac",
     "source": "号外NET杉並区",
     "source_key": "goguynet",
@@ -7070,34 +7100,6 @@
     "fetched_at": "2026-09-01",
     "category": "イベント",
     "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "sesion_694dde65",
-    "source": "セシオン杉並",
-    "source_key": "sesion",
-    "source_url": "https://www.sesion-suginami.jp/",
-    "title": "菓人結人さん～ねりきり教室～",
-    "url": "https://www.sesion-suginami.jp/event/cook/7598",
-    "summary": "",
-    "published_at": "2026-09-01",
-    "fetched_at": "2026-09-01",
-    "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/08/20260812091945.jpg",
-    "event_dates": []
-  },
-  {
-    "id": "sesion_afa633a8",
-    "source": "セシオン杉並",
-    "source_key": "sesion",
-    "source_url": "https://www.sesion-suginami.jp/",
-    "title": "苔玉教室",
-    "url": "https://www.sesion-suginami.jp/event/craft/7526",
-    "summary": "",
-    "published_at": "2026-09-01",
-    "fetched_at": "2026-09-01",
-    "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/07/名称_未_設定-2026年7月02日-16.22.25-5-scaled.jpg",
     "event_dates": []
   }
 ]
