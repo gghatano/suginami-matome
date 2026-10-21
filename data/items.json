@@ -1,5 +1,47 @@
 [
   {
+    "id": "suginami_city_b9bb9068",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "令和8年度 第1回杉並区児童福祉審議会",
+    "url": "https://www.city.suginami.tokyo.jp/s053/event/28384.html",
+    "summary": "",
+    "published_at": "2026-10-21",
+    "fetched_at": "2026-10-21",
+    "category": "イベント",
+    "image": "",
+    "event_dates": []
+  },
+  {
+    "id": "sesion_18eedb0f",
+    "source": "セシオン杉並",
+    "source_key": "sesion",
+    "source_url": "https://www.sesion-suginami.jp/",
+    "title": "ウォーキング基礎講座",
+    "url": "https://www.sesion-suginami.jp/event/meeting/7993",
+    "summary": "",
+    "published_at": "2026-10-21",
+    "fetched_at": "2026-10-21",
+    "category": "イベント",
+    "image": "",
+    "event_dates": []
+  },
+  {
+    "id": "sesion_d19c5a2b",
+    "source": "セシオン杉並",
+    "source_key": "sesion",
+    "source_url": "https://www.sesion-suginami.jp/",
+    "title": "ホクロとタレ目と出っ歯",
+    "url": "https://www.sesion-suginami.jp/event/hall/8034",
+    "summary": "",
+    "published_at": "2026-10-21",
+    "fetched_at": "2026-10-21",
+    "category": "イベント",
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/10/20261021142407-0001.jpg",
+    "event_dates": []
+  },
+  {
     "id": "goguynet_00e07b34",
     "source": "号外NET杉並区",
     "source_key": "goguynet",
@@ -7065,48 +7107,6 @@
     "fetched_at": "2026-09-01",
     "category": "イベント",
     "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/07/20260710091117_ページ_2.jpg",
-    "event_dates": []
-  },
-  {
-    "id": "sesion_a3c212f5",
-    "source": "セシオン杉並",
-    "source_key": "sesion",
-    "source_url": "https://www.sesion-suginami.jp/",
-    "title": "青柳いづみこと仲間たちピアノ＆トーク～セシオン杉並まつり「午後の部」～",
-    "url": "https://www.sesion-suginami.jp/event/hall/7455",
-    "summary": "",
-    "published_at": "2026-09-01",
-    "fetched_at": "2026-09-01",
-    "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/07/20260710091117_ページ_1.jpg",
-    "event_dates": []
-  },
-  {
-    "id": "sesion_4a406878",
-    "source": "セシオン杉並",
-    "source_key": "sesion",
-    "source_url": "https://www.sesion-suginami.jp/",
-    "title": "テノヒラマルシェセシオン杉並まつり2026",
-    "url": "https://www.sesion-suginami.jp/event/lecture/7644",
-    "summary": "",
-    "published_at": "2026-09-01",
-    "fetched_at": "2026-09-01",
-    "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/08/20260820161338.jpg",
-    "event_dates": []
-  },
-  {
-    "id": "sesion_5af7a4af",
-    "source": "セシオン杉並",
-    "source_key": "sesion",
-    "source_url": "https://www.sesion-suginami.jp/",
-    "title": "寝る前にからだをほぐすリラックス アロマヨガ＜2026年７月～９月＞",
-    "url": "https://www.sesion-suginami.jp/event/exhibition/7286",
-    "summary": "",
-    "published_at": "2026-09-01",
-    "fetched_at": "2026-09-01",
-    "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/06/アロマヨガチラシ-７月-９月-scaled.jpg",
     "event_dates": []
   }
 ]
