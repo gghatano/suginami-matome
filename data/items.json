@@ -1,5 +1,22 @@
 [
   {
+    "id": "goguynet_78126fd5",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】「オリンピック 高井戸店」が「MEGAドン・キホーテ」に！現地の様子を見てきました。",
+    "url": "https://suginami.goguynet.jp/2026/10/22/mega-donki-takaido/",
+    "summary": "2026年8月の号外NET杉並区で、9月6日に営業終了したことをお伝えした「オリンピック 高井戸店」。記事のコメント欄に「2026年12月1日にMEGAドン・キホーテ高井戸店としてオープン」という情報をいただきました！そ [&#8230;]",
+    "published_at": "2026-10-21",
+    "fetched_at": "2026-10-22",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/10/IMG_9737-1024x767.jpeg",
+    "event_dates": [
+      "2026-09-06",
+      "2026-12-01"
+    ]
+  },
+  {
     "id": "suginami_city_b9bb9068",
     "source": "杉並区公式",
     "source_key": "suginami_city",
@@ -40,6 +57,22 @@
     "category": "イベント",
     "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/10/20261021142407-0001.jpg",
     "event_dates": []
+  },
+  {
+    "id": "goguynet_3b2b7ac8",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】クラフトビールに古本市も♪「セシオンビアフェス2026」が10月24日(土)・25日(日)に開催されます！",
+    "url": "https://suginami.goguynet.jp/2026/10/21/sesion-beerfes2026/",
+    "summary": "高円寺エリアのさまざまな会場で、多彩なイベントが開催される「第20回 高円寺フェス2026」。 【杉並区】今年で20回目！「高円寺フェス2026」が10月24日(土)と25日(日)の2日間で開催されます！ 高円寺のまちが [&#8230;]",
+    "published_at": "2026-10-20",
+    "fetched_at": "2026-10-22",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/06/IMG_5799-1024x767.jpeg",
+    "event_dates": [
+      "2026-10-24"
+    ]
   },
   {
     "id": "goguynet_00e07b34",
@@ -7079,34 +7112,6 @@
     "fetched_at": "2026-09-01",
     "category": "イベント",
     "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/07/20260720090724_ページ_1.jpg",
-    "event_dates": []
-  },
-  {
-    "id": "sesion_65fe7f26",
-    "source": "セシオン杉並",
-    "source_key": "sesion",
-    "source_url": "https://www.sesion-suginami.jp/",
-    "title": "セシオン杉並まつり2026",
-    "url": "https://www.sesion-suginami.jp/event/terrace/7490",
-    "summary": "",
-    "published_at": "2026-09-01",
-    "fetched_at": "2026-09-01",
-    "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/07/2026090510033801_2-scaled.png",
-    "event_dates": []
-  },
-  {
-    "id": "sesion_70172641",
-    "source": "セシオン杉並",
-    "source_key": "sesion",
-    "source_url": "https://www.sesion-suginami.jp/",
-    "title": "街角ピアノ＠セシオン杉並まつり「午前の部」～青柳いずみこさんに聴いてもらおう～",
-    "url": "https://www.sesion-suginami.jp/event/hall/7462",
-    "summary": "",
-    "published_at": "2026-09-01",
-    "fetched_at": "2026-09-01",
-    "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/07/20260710091117_ページ_2.jpg",
     "event_dates": []
   }
 ]
