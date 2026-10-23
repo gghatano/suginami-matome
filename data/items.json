@@ -1,5 +1,49 @@
 [
   {
+    "id": "mypl_ce8e3e99",
+    "source": "まいぷれ杉並区",
+    "source_key": "mypl",
+    "source_url": "https://suginami.mypl.net/",
+    "title": "インド古典舞踊×落語 コラボ公演「語る舞ふ」",
+    "url": "https://suginami.mypl.net/event/00000475935/",
+    "summary": "演劇、ダンス インド古典舞踊×落語 コラボ公演「語る舞ふ」",
+    "published_at": "2026-10-23",
+    "fetched_at": "2026-10-23",
+    "category": "イベント",
+    "image": "https://img2.mypl.net/image.php?id=358586&p=bti&s=375_250&op=",
+    "event_dates": []
+  },
+  {
+    "id": "mypl_16b67dab",
+    "source": "まいぷれ杉並区",
+    "source_key": "mypl",
+    "source_url": "https://suginami.mypl.net/",
+    "title": "民踊舞踊大会",
+    "url": "https://suginami.mypl.net/event/00000478579/",
+    "summary": "季節のイベント、行事 民踊舞踊大会",
+    "published_at": "2026-10-23",
+    "fetched_at": "2026-10-23",
+    "category": "イベント",
+    "image": "https://img2.mypl.net/image.php?id=361895&p=bti&s=375_250&op=",
+    "event_dates": []
+  },
+  {
+    "id": "goguynet_f8ac2ca3",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】なみすけがビールに！？ 誕生20周年を記念したボトルビール「SUGINAMI ＆ BEER」が10月24日(土)から先行販売されることがわかりました！",
+    "url": "https://suginami.goguynet.jp/2026/10/23/suginami-beer-namisuke/",
+    "summary": "JR高円寺駅と阿佐ヶ谷駅のちょうど間にある「高円寺アパートメント」に本社と店舗を構える「アンドビール」さんから情報提供をいただきました。 杉並区公式アニメキャラクター「なみすけ」の誕生20周年をお祝いして、なみすけデザイ [&#8230;]",
+    "published_at": "2026-10-22",
+    "fetched_at": "2026-10-23",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/10/IMG_0238-1024x767.jpeg",
+    "event_dates": [
+      "2026-10-24"
+    ]
+  },
+  {
     "id": "goguynet_78126fd5",
     "source": "号外NET杉並区",
     "source_key": "goguynet",
@@ -7070,48 +7114,6 @@
     "fetched_at": "2026-09-01",
     "category": "イベント",
     "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/03/【確定版】デジタルなんでも相談窓口周知用チラシ表面）.jpg",
-    "event_dates": []
-  },
-  {
-    "id": "sesion_99b4a74c",
-    "source": "セシオン杉並",
-    "source_key": "sesion",
-    "source_url": "https://www.sesion-suginami.jp/",
-    "title": "2026年9月 ランチタイム販売石窯パンふじみ",
-    "url": "https://www.sesion-suginami.jp/event/danwa/7690",
-    "summary": "",
-    "published_at": "2026-09-01",
-    "fetched_at": "2026-09-01",
-    "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/08/26年9月ランチタイム販売-圧縮.jpg",
-    "event_dates": []
-  },
-  {
-    "id": "sesion_88a7be92",
-    "source": "セシオン杉並",
-    "source_key": "sesion",
-    "source_url": "https://www.sesion-suginami.jp/",
-    "title": "和菓子作り体験会（セシオン杉並まつり）",
-    "url": "https://www.sesion-suginami.jp/event/cook/7542",
-    "summary": "",
-    "published_at": "2026-09-01",
-    "fetched_at": "2026-09-01",
-    "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/07/20260731095854.jpg",
-    "event_dates": []
-  },
-  {
-    "id": "sesion_004874f8",
-    "source": "セシオン杉並",
-    "source_key": "sesion",
-    "source_url": "https://www.sesion-suginami.jp/",
-    "title": "セシオン杉並まつり2026アートな縁日",
-    "url": "https://www.sesion-suginami.jp/event/exhibition/7514",
-    "summary": "",
-    "published_at": "2026-09-01",
-    "fetched_at": "2026-09-01",
-    "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/07/20260720090724_ページ_1.jpg",
     "event_dates": []
   }
 ]
