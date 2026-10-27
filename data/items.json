@@ -1,5 +1,33 @@
 [
   {
+    "id": "suginami_city_3d9b5861",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "保育⼠バンク！就職・転職フェスタ（新宿エルタワー）",
+    "url": "https://www.city.suginami.tokyo.jp/s010/event/29780.html",
+    "summary": "保育士・保育学生に特化した就活イベントのお知らせです。",
+    "published_at": "2026-10-27",
+    "fetched_at": "2026-10-27",
+    "category": "イベント",
+    "image": "https://www.city.suginami.tokyo.jp/images/29780/hoikusi.jpeg",
+    "event_dates": []
+  },
+  {
+    "id": "goguynet_7a1cb7cd",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】ビーンズ阿佐ヶ谷にぱっかーんと開く “ふわとろオムライス”のお店がオープンすることがわかりました！",
+    "url": "https://suginami.goguynet.jp/2026/10/27/yellow-asagaya/",
+    "summary": "読者様より情報提供いただきました！ 阿佐ヶ谷にある「PIZZA FORNO CAFE ビーンズ阿佐ヶ谷店」の跡地に、オムライスのお店「Yellow 阿佐ヶ谷」の求人情報が出ていたとのことです。 掲載されていた住所が同じと [&#8230;]",
+    "published_at": "2026-10-26",
+    "fetched_at": "2026-10-27",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/10/IMG_0100-1024x767.jpeg",
+    "event_dates": []
+  },
+  {
     "id": "goguynet_365d6268",
     "source": "号外NET杉並区",
     "source_key": "goguynet",
@@ -7093,33 +7121,5 @@
     "event_dates": [
       "2026-09-10"
     ]
-  },
-  {
-    "id": "sesion_fc1c8e00",
-    "source": "セシオン杉並",
-    "source_key": "sesion",
-    "source_url": "https://www.sesion-suginami.jp/",
-    "title": "2026年9月 ランチタイム販売AGAIN",
-    "url": "https://www.sesion-suginami.jp/event/danwa/7687",
-    "summary": "",
-    "published_at": "2026-09-01",
-    "fetched_at": "2026-09-01",
-    "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/08/26年9月ランチタイム販売-圧縮.jpg",
-    "event_dates": []
-  },
-  {
-    "id": "sesion_12736d9f",
-    "source": "セシオン杉並",
-    "source_key": "sesion",
-    "source_url": "https://www.sesion-suginami.jp/",
-    "title": "2026年9月 ランチタイム販売SUNNY",
-    "url": "https://www.sesion-suginami.jp/event/terrace/7686",
-    "summary": "",
-    "published_at": "2026-09-01",
-    "fetched_at": "2026-09-01",
-    "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/08/26年9月ランチタイム販売-圧縮.jpg",
-    "event_dates": []
   }
 ]
