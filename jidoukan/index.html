@@ -21,6 +21,8 @@
   --bg:#f6f8fb;--paper:#ffffff;--ink:#1d2733;--muted:#5c6876;--line:#dbe2ea;
   --kids:#1f63b5;--kids-soft:#e4eefb;--baby:#2f8a4e;--baby-soft:#e3f3e8;
   --open:#d9480f;--open-soft:#fff0e6;--on-open:#ffffff;--closed:#7b8591;--closed-soft:#eef1f4;--today:#f2b705;
+  /* 施設ごとの色（sources.json の並び順に割り当てる） */
+  --f1:#0f766e;--f1s:#dcf3ef;--f2:#6d28d9;--f2s:#eee7fc;--f3:#be185d;--f3s:#fce6ef;--f4:#4d7c0f;--f4s:#eaf4d9;--f5:#1d4ed8;--f5s:#e2eafc;--f6:#8a5a2b;--f6s:#f5ece2;
   --f-display:"Zen Maru Gothic","Hiragino Maru Gothic ProN","BIZ UDPGothic",sans-serif;
   --f-body:"BIZ UDPGothic","Hiragino Sans","Noto Sans JP",sans-serif;
   color-scheme:light;
@@ -28,11 +30,11 @@
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#12171d;--paper:#1a2129;--ink:#e6ebf0;--muted:#9aa6b3;--line:#2c3641;
   --kids:#7fb0f0;--kids-soft:#1c2c42;--baby:#6fcf90;--baby-soft:#183126;
-  --open:#ff8a4c;--open-soft:#3a2216;--on-open:#1a1008;--closed:#8590a0;--closed-soft:#222a33;--today:#f2c94c;color-scheme:dark}}
+  --open:#ff8a4c;--open-soft:#3a2216;--on-open:#1a1008;--closed:#8590a0;--closed-soft:#222a33;--today:#f2c94c;--f1:#5eead4;--f1s:#12302d;--f2:#c4b5fd;--f2s:#271f3d;--f3:#f9a8d4;--f3s:#3a1a2a;--f4:#bef264;--f4s:#232e17;--f5:#93b4f8;--f5s:#1b2642;--f6:#e6b98a;--f6s:#33271b;color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#12171d;--paper:#1a2129;--ink:#e6ebf0;--muted:#9aa6b3;--line:#2c3641;
   --kids:#7fb0f0;--kids-soft:#1c2c42;--baby:#6fcf90;--baby-soft:#183126;
-  --open:#ff8a4c;--open-soft:#3a2216;--on-open:#1a1008;--closed:#8590a0;--closed-soft:#222a33;--today:#f2c94c;color-scheme:dark}
+  --open:#ff8a4c;--open-soft:#3a2216;--on-open:#1a1008;--closed:#8590a0;--closed-soft:#222a33;--today:#f2c94c;--f1:#5eead4;--f1s:#12302d;--f2:#c4b5fd;--f2s:#271f3d;--f3:#f9a8d4;--f3s:#3a1a2a;--f4:#bef264;--f4s:#232e17;--f5:#93b4f8;--f5s:#1b2642;--f6:#e6b98a;--f6s:#33271b;color-scheme:dark}
 
 *{box-sizing:border-box}
 [hidden]{display:none!important}
@@ -105,14 +107,18 @@ select{font:inherit;font-size:.85rem;padding:4px 8px;border-radius:8px;border:1p
 .chip{font:inherit;font-size:.74rem;line-height:1.35;border-radius:5px;padding:3px 6px;border:0;border-left:3px solid;min-width:0;overflow-wrap:anywhere;cursor:pointer;text-align:left;color:var(--ink);width:100%;background:transparent}
 .chip:focus-visible{outline:2px solid var(--today);outline-offset:1px}
 .chip .t{font-variant-numeric:tabular-nums;color:var(--muted);display:block;font-size:.7rem}
-.chip.kids{background:var(--kids-soft);border-color:var(--kids)}
-.chip.baby,.chip.all{background:var(--baby-soft);border-color:var(--baby)}
+/* 色は施設、対象（小学生以上・乳幼児）は時刻の横に文字で出す */
+.chip.ev{background:var(--fs);border-color:var(--fc)}
 .chip.reg{background:transparent;border-left-width:2px}
 .chip .must{font-weight:700;color:var(--open)}
 .chip .cn{color:var(--muted)}
-.chip.start{background:var(--open);color:var(--on-open);border-color:var(--open);font-weight:700}
+.chip.start{background:var(--open);color:var(--on-open);border-color:var(--fc,var(--open));border-left-width:4px;font-weight:700}
 .chip.start .t,.chip.start .cn{color:var(--on-open);opacity:.9}
-.chip.end{background:var(--open-soft);color:var(--open);border-color:var(--open);border-left-style:dashed}
+.chip.end{background:var(--open-soft);color:var(--open);border-color:var(--fc,var(--open));border-left-style:dashed}
+.ctr.fc{border-color:var(--fc);color:var(--fc);font-weight:700}
+.ctrs .btn[aria-pressed="true"].fc{background:var(--fc);border-color:var(--fc);color:var(--paper)}
+.ctrs .btn .dot,.legend .dot{width:10px;height:10px;border-radius:50%;display:inline-block;background:var(--fc);margin-right:6px;vertical-align:-1px}
+.ctrs .btn[aria-pressed="true"] .dot{background:var(--paper)}
 
 .agenda{display:none;gap:10px}
 .aday{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:10px 12px;display:grid;grid-template-columns:3.2rem 1fr;gap:10px}
@@ -169,10 +175,9 @@ footer{font-size:.8rem;color:var(--muted);display:grid;gap:6px}
       <label class="chk"><input type="checkbox" id="showReg"> 毎日・毎週のプログラムも表示</label>
     </div>
     <div class="legend">
+      <span id="legendCenters" style="display:contents"></span>
       <span><i class="sw" style="background:var(--open)"></i>申込の受付開始日</span>
-      <span><i class="sw" style="background:var(--kids-soft);border:1px solid var(--kids)"></i>小学生以上の行事</span>
-      <span><i class="sw" style="background:var(--baby-soft);border:1px solid var(--baby)"></i>乳幼児親子の行事</span>
-      <span><i class="sw" style="border:1px solid var(--muted)"></i>毎週のプログラム</span>
+      <span><i class="sw" style="border:1px solid var(--muted)"></i>毎日・毎週のプログラム（枠なし）</span>
       <span><i class="sw" style="background:var(--closed-soft);border:1px solid var(--line)"></i>休館日</span>
     </div>
     <div class="cal" id="cal">
@@ -242,7 +247,7 @@ function renderApply() {
     return `<article class="apply${s.urgent ? " is-urgent" : ""}">
       <span class="status ${s.cls}">${s.txt}</span>
       <h3>${esc(e.title)}</h3>
-      <div class="tags"><span class="aud aud-${e.audience}">${audLabel(e.audience)}</span><span class="ctr">${esc(CENTERS[e.center]?.name)}</span></div>
+      <div class="tags"><span class="aud aud-${e.audience}">${audLabel(e.audience)}</span><span class="ctr fc" style="${fcVar(e.center)}">${esc(CENTERS[e.center]?.name)}</span></div>
       <dl>
         <dt>開催</dt><dd class="num">${esc(ses)}</dd>
         <dt>受付開始</dt><dd class="num">${e.application_start ? `<b>${md(e.application_start)}</b>${e.application_end ? ` 〜 ${md(e.application_end)}` : " 〜 定員まで"}` : "—"}</dd>
@@ -274,16 +279,21 @@ function itemsFor(d) {
   return out.sort((a, b) => a.sort.localeCompare(b.sort));
 }
 const multi = () => sel().size > 1;
+// 施設の色（sources.json の並び順で6色を順に使う）
+const fcVar = k => { const i = DB.centers.findIndex(c => c.key === k) % 6 + 1; return `--fc:var(--f${i});--fs:var(--f${i}s)`; };
+const audShort = a => a === "kids" ? "小学生〜" : a === "baby" ? "乳幼児" : "どなたでも";
 const shortName = k => CENTERS[k]?.short || (CENTERS[k]?.name || "").replace("児童館", "");
 function chip(it) {
   const e = it.e, cn = multi() ? `<span class="cn">［${esc(shortName(e.center))}］</span>` : "";
-  if (it.k === "start") return `<button type="button" class="chip start" data-id="${e.id}"><span class="t">申込受付開始</span>${cn}${esc(e.title)}</button>`;
-  if (it.k === "end") return `<button type="button" class="chip end" data-id="${e.id}"><span class="t">申込締切</span>${cn}${esc(e.title)}</button>`;
-  return `<button type="button" class="chip ${e.audience}${e.regular ? " reg" : ""}" data-id="${e.id}"><span class="t">${tm(it.s) || "時間は原本で確認"}</span>${cn}${e.requires_application ? '<span class="must">申込制 </span>' : ""}${esc(e.title)}</button>`;
+  if (it.k === "start") return `<button type="button" class="chip start" style="${fcVar(e.center)}" data-id="${e.id}"><span class="t">申込受付開始</span>${cn}${esc(e.title)}</button>`;
+  if (it.k === "end") return `<button type="button" class="chip end" style="${fcVar(e.center)}" data-id="${e.id}"><span class="t">申込締切</span>${cn}${esc(e.title)}</button>`;
+  return `<button type="button" class="chip ev ${e.audience}${e.regular ? " reg" : ""}" style="${fcVar(e.center)}" data-id="${e.id}"><span class="t">${tm(it.s) || "時間は原本で確認"} ・${audShort(e.audience)}</span>${cn}${e.requires_application ? '<span class="must">申込制 </span>' : ""}${esc(e.title)}</button>`;
 }
 
 function renderCal() {
   document.getElementById("cal-h").textContent = `${curY}年${curM}月`;
+  document.getElementById("legendCenters").innerHTML = DB.centers.filter(c => isSel(c.key)).map(c =>
+    `<span style="${fcVar(c.key)}"><i class="dot"></i>${esc(shortName(c.key))}</span>`).join("");
   const first = new Date(curY, curM - 1, 1).getDay(), last = new Date(curY, curM, 0).getDate();
   let h = "", ag = "";
   for (let i = 0; i < first; i++) h += `<div class="cell blank"></div>`;
@@ -321,7 +331,7 @@ function renderDetails() {
   document.getElementById("details").innerHTML = evs.map(e => {
     const days = e.sessions.filter(s => s.date.startsWith(pre)).map(s => `${+s.date.slice(8)}日（${WD[new Date(s.date + "T00:00:00").getDay()]}）${tm(s)}`);
     return `<article class="det" id="det-${e.id}">
-      <div class="tags"><span class="aud aud-${e.audience}">${audLabel(e.audience)}</span><span class="ctr">${esc(CENTERS[e.center]?.name)}</span>${e.regular ? '<span class="small muted">毎週のプログラム</span>' : ""}${e.requires_application ? '<span class="small" style="color:var(--open);font-weight:700">申込制</span>' : ""}</div>
+      <div class="tags"><span class="aud aud-${e.audience}">${audLabel(e.audience)}</span><span class="ctr fc" style="${fcVar(e.center)}">${esc(CENTERS[e.center]?.name)}</span>${e.regular ? '<span class="small muted">毎週のプログラム</span>' : ""}${e.requires_application ? '<span class="small" style="color:var(--open);font-weight:700">申込制</span>' : ""}</div>
       <h3>${esc(e.title)}</h3>${e.subtitle ? `<p class="small muted">${esc(e.subtitle)}</p>` : ""}
       <p class="small num">${esc(days.join("、"))}</p>
       <ul>${e.place ? `<li>場所：${esc(e.place)}</li>` : ""}${e.target ? `<li>対象：${esc(e.target)}</li>` : ""}${e.capacity ? `<li>${esc(e.capacity)}</li>` : ""}${e.requires_application ? `<li><b>申込：${e.application_start ? md(e.application_start) + "から" : "受付日は原本で確認"}${e.application_end ? md(e.application_end) + "まで" : ""}${e.application_method ? `（${esc(e.application_method)}）` : ""}</b></li>` : ""}${(e.notes || []).map(n => `<li>${esc(n)}</li>`).join("")}</ul>
@@ -430,7 +440,7 @@ document.getElementById("showReg").addEventListener("change", ev => {
 });
 function renderPicker() {
   document.getElementById("ctrs").innerHTML = DB.centers.map(c =>
-    `<button type="button" class="btn" data-c="${esc(c.key)}" aria-pressed="${isSel(c.key)}">${esc(c.name)}</button>`).join("");
+    `<button type="button" class="btn fc" style="${fcVar(c.key)}" data-c="${esc(c.key)}" aria-pressed="${isSel(c.key)}"><i class="dot"></i>${esc(c.name)}</button>`).join("");
 }
 function saveSel() {
   try { localStorage.setItem("jdk-off", JSON.stringify([...deselected])); } catch (_) {}
