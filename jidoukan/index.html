@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>杉並区 児童館カレンダー</title>
+<meta name="description" content="杉並区の児童館のおたより（PDF）から、行事の日程と申込の受付開始日をカレンダーにまとめています。毎週更新。">
+<script>
+  // まとめサイトと同じテーマ設定（localStorage "theme"）を共有する
+  try {
+    var t = localStorage.getItem("theme");
+    if (t === "dark" || t === "light") document.documentElement.dataset.theme = t;
+  } catch (e) {}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=BIZ+UDPGothic:wght@400;700&display=swap">
+<style>
+/* 申込が必要な行事（いま動くべきもの）を先頭に、下に月のマス目。スマホではマス目を日ごとの一覧に切り替える */
+:root{
+  --bg:#f6f8fb;--paper:#ffffff;--ink:#1d2733;--muted:#5c6876;--line:#dbe2ea;
+  --kids:#1f63b5;--kids-soft:#e4eefb;--baby:#2f8a4e;--baby-soft:#e3f3e8;
+  --open:#d9480f;--open-soft:#fff0e6;--on-open:#ffffff;--closed:#7b8591;--closed-soft:#eef1f4;--today:#f2b705;
+  --f-display:"Zen Maru Gothic","Hiragino Maru Gothic ProN","BIZ UDPGothic",sans-serif;
+  --f-body:"BIZ UDPGothic","Hiragino Sans","Noto Sans JP",sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#12171d;--paper:#1a2129;--ink:#e6ebf0;--muted:#9aa6b3;--line:#2c3641;
+  --kids:#7fb0f0;--kids-soft:#1c2c42;--baby:#6fcf90;--baby-soft:#183126;
+  --open:#ff8a4c;--open-soft:#3a2216;--on-open:#1a1008;--closed:#8590a0;--closed-soft:#222a33;--today:#f2c94c;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#12171d;--paper:#1a2129;--ink:#e6ebf0;--muted:#9aa6b3;--line:#2c3641;
+  --kids:#7fb0f0;--kids-soft:#1c2c42;--baby:#6fcf90;--baby-soft:#183126;
+  --open:#ff8a4c;--open-soft:#3a2216;--on-open:#1a1008;--closed:#8590a0;--closed-soft:#222a33;--today:#f2c94c;color-scheme:dark}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.6}
+.wrap{max-width:1120px;margin:0 auto;padding-block:28px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:32px}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0;line-height:1.3}
+h1{font-size:clamp(1.6rem,4vw,2.2rem);font-weight:900}
+h2{font-size:1.3rem;font-weight:700}
+h3{font-size:1.05rem;font-weight:700}
+p{margin:0}
+a{color:var(--kids)}
+.muted{color:var(--muted)} .small{font-size:.82rem} .num{font-variant-numeric:tabular-nums}
+header{display:grid;gap:8px}
+.topnav{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:.85rem}
+.src{font-size:.85rem;color:var(--muted)}
+.sec{display:grid;gap:14px}
+
+.apply-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.apply{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:16px;display:grid;gap:8px;align-content:start;min-width:0}
+.apply.is-urgent{border-color:var(--open);box-shadow:0 0 0 1px var(--open) inset}
+.status{justify-self:start;font-size:.78rem;font-weight:700;padding:2px 10px;border-radius:999px;letter-spacing:.04em}
+.st-before{background:var(--open);color:var(--on-open)}
+.st-open{background:var(--open-soft);color:var(--open);border:1px solid var(--open)}
+.st-closed{background:var(--closed-soft);color:var(--closed)}
+.apply dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:2px 10px;font-size:.88rem}
+.apply dt{color:var(--muted)} .apply dd{margin:0}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.aud{font-size:.75rem;font-weight:700;padding:1px 8px;border-radius:4px}
+.aud-kids{background:var(--kids-soft);color:var(--kids)}
+.aud-baby,.aud-all{background:var(--baby-soft);color:var(--baby)}
+.ctr{font-size:.75rem;padding:1px 8px;border-radius:4px;border:1px solid var(--line);color:var(--muted)}
+.note{background:var(--paper);border:1px dashed var(--line);border-radius:10px;padding:12px 16px;font-size:.88rem}
+.empty{color:var(--muted);font-size:.9rem}
+
+.bar{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center}
+.monthnav{display:flex;align-items:center;gap:8px}
+.monthnav h2{min-width:8.5em;text-align:center}
+.btn{font:inherit;font-size:.85rem;border:1px solid var(--line);background:var(--paper);color:var(--ink);padding:5px 12px;border-radius:999px;cursor:pointer}
+.btn:disabled{opacity:.4;cursor:default}
+.seg{display:flex;flex-wrap:wrap;gap:6px}
+.seg .btn[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.btn:focus-visible,.chk input:focus-visible,select:focus-visible{outline:2px solid var(--today);outline-offset:2px}
+select{font:inherit;font-size:.85rem;padding:4px 8px;border-radius:8px;border:1px solid var(--line);background:var(--paper);color:var(--ink)}
+.chk{display:flex;gap:6px;align-items:center;font-size:.85rem}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.8rem;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:5px}
+.sw{width:12px;height:12px;border-radius:3px;display:inline-block}
+
+.cal{background:var(--paper);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.cal-head,.cal-body{display:grid;grid-template-columns:repeat(7,minmax(0,1fr))}
+.cal-head div{font-size:.8rem;font-weight:700;text-align:center;padding:6px 0;background:var(--closed-soft);color:var(--muted)}
+.cal-head .sun{color:var(--open)} .cal-head .sat{color:var(--kids)}
+.cell{border-top:1px solid var(--line);border-left:1px solid var(--line);min-height:120px;padding:6px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.cell:nth-child(7n+1){border-left:0}
+.cell.blank{background:var(--bg)}
+.cell.off{background:var(--closed-soft)}
+.cell.today{box-shadow:inset 0 0 0 2px var(--today)}
+.dnum{font-family:var(--f-display);font-weight:700;font-size:.95rem;display:flex;justify-content:space-between;gap:4px;align-items:baseline}
+.dnum .hol{font-family:var(--f-body);font-weight:400;font-size:.7rem;color:var(--closed);text-align:right}
+.sun-n{color:var(--open)} .sat-n{color:var(--kids)}
+
+.chip{font:inherit;font-size:.74rem;line-height:1.35;border-radius:5px;padding:3px 6px;border:0;border-left:3px solid;min-width:0;overflow-wrap:anywhere;cursor:pointer;text-align:left;color:var(--ink);width:100%;background:transparent}
+.chip:focus-visible{outline:2px solid var(--today);outline-offset:1px}
+.chip .t{font-variant-numeric:tabular-nums;color:var(--muted);display:block;font-size:.7rem}
+.chip.kids{background:var(--kids-soft);border-color:var(--kids)}
+.chip.baby,.chip.all{background:var(--baby-soft);border-color:var(--baby)}
+.chip.reg{background:transparent;border-left-width:2px}
+.chip .must{font-weight:700;color:var(--open)}
+.chip .cn{color:var(--muted)}
+.chip.start{background:var(--open);color:var(--on-open);border-color:var(--open);font-weight:700}
+.chip.start .t,.chip.start .cn{color:var(--on-open);opacity:.9}
+.chip.end{background:var(--open-soft);color:var(--open);border-color:var(--open);border-left-style:dashed}
+
+.agenda{display:none;gap:10px}
+.aday{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:10px 12px;display:grid;grid-template-columns:3.2rem 1fr;gap:10px}
+.aday.today{box-shadow:inset 0 0 0 2px var(--today)}
+.aday .d{font-family:var(--f-display);font-weight:700;font-size:1.25rem;line-height:1.1}
+.aday .d small{display:block;font-size:.75rem;font-weight:500;color:var(--muted)}
+.aday .list{display:grid;gap:5px;min-width:0}
+@media (max-width:760px){.cal{display:none}.agenda{display:grid}}
+
+.details{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.det{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:grid;gap:6px;align-content:start;min-width:0;scroll-margin-top:16px}
+.det.flash{box-shadow:0 0 0 3px var(--today)}
+.det ul{margin:0;padding-left:1.1em;font-size:.88rem}
+footer{font-size:.8rem;color:var(--muted);display:grid;gap:6px}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="topnav"><a href="../">← 杉並区イベントまとめ</a><span class="muted" id="updated"></span></div>
+    <h1>杉並区 児童館カレンダー</h1>
+    <p class="src">児童館のおたより（PDF）を毎週読み取って、行事の日程と申込の受付開始日をまとめています。PDFからの自動読み取りのため、誤りがあるかもしれません。申し込む前に、各行事の「おたより」リンクから原本を確認してください。</p>
+  </header>
+
+  <section class="sec" aria-labelledby="apply-h">
+    <h2 id="apply-h">これから申し込める行事</h2>
+    <div class="apply-grid" id="applyGrid"><p class="empty">読み込み中…</p></div>
+    <p class="note">小学生以上の行事は、多くの児童館で<b>参加する子ども本人が受付で申し込む</b>決まりです。乳幼児親子の行事は窓口か電話で受け付けることが多いので、各カードの申込方法を見てください。</p>
+  </section>
+
+  <section class="sec" aria-labelledby="cal-h">
+    <div class="bar">
+      <div class="monthnav">
+        <button type="button" class="btn" id="prevM" aria-label="前の月">‹</button>
+        <h2 id="cal-h">—</h2>
+        <button type="button" class="btn" id="nextM" aria-label="次の月">›</button>
+      </div>
+      <label class="chk" id="centerWrap" hidden>児童館 <select id="centerSel"><option value="all">すべて</option></select></label>
+      <div class="seg" role="group" aria-label="対象で絞り込む">
+        <button type="button" class="btn" id="f-all" data-f="all" aria-pressed="true">すべて</button>
+        <button type="button" class="btn" id="f-kids" data-f="kids" aria-pressed="false">小学生以上</button>
+        <button type="button" class="btn" id="f-baby" data-f="baby" aria-pressed="false">乳幼児親子</button>
+      </div>
+      <label class="chk"><input type="checkbox" id="showReg" checked> 毎週のプログラムも表示</label>
+    </div>
+    <div class="legend">
+      <span><i class="sw" style="background:var(--open)"></i>申込の受付開始日</span>
+      <span><i class="sw" style="background:var(--kids-soft);border:1px solid var(--kids)"></i>小学生以上の行事</span>
+      <span><i class="sw" style="background:var(--baby-soft);border:1px solid var(--baby)"></i>乳幼児親子の行事</span>
+      <span><i class="sw" style="border:1px solid var(--muted)"></i>毎週のプログラム</span>
+      <span><i class="sw" style="background:var(--closed-soft);border:1px solid var(--line)"></i>休館日</span>
+    </div>
+    <div class="cal" id="cal">
+      <div class="cal-head"><div class="sun">日</div><div>月</div><div>火</div><div>水</div><div>木</div><div>金</div><div class="sat">土</div></div>
+      <div class="cal-body" id="calBody"></div>
+    </div>
+    <div class="agenda" id="agenda"></div>
+    <p class="small muted" id="monthSrc"></p>
+  </section>
+
+  <section class="sec" aria-labelledby="det-h">
+    <h2 id="det-h">この月の行事の詳細</h2>
+    <div class="details" id="details"></div>
+  </section>
+
+  <footer id="foot"></footer>
+</div>
+
+<script>
+const WD = "日月火水木金土";
+const pad = n => String(n).padStart(2, "0");
+const now = new Date();
+const TODAY = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}`;
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const md = s => { const [, m, d] = s.split("-").map(Number); return `${m}/${d}（${WD[new Date(s + "T00:00:00").getDay()]}）`; };
+const daysBetween = (a, b) => Math.round((new Date(b + "T00:00:00") - new Date(a + "T00:00:00")) / 864e5);
+const tm = s => s.start ? `${s.start}${s.end ? "–" + s.end : ""}` : "";
+const audLabel = a => a === "kids" ? "小学生以上" : a === "baby" ? "乳幼児親子" : "どなたでも";
+
+let DB = null, CENTERS = {}, curY, curM, filt = "all", center = "all", showReg = true;
+try {
+  filt = localStorage.getItem("jdk-filt") || "all";
+  showReg = localStorage.getItem("jdk-reg") !== "0";
+  center = localStorage.getItem("jdk-center") || "all";
+} catch (_) {}
+
+function visible(e) {
+  if (center !== "all" && e.center !== center) return false;
+  if (filt !== "all" && !(e.audience === filt || e.audience === "all")) return false;
+  return true;
+}
+function lastDate(e) { return e.sessions[e.sessions.length - 1].date; }
+
+function status(e) {
+  if (TODAY > lastDate(e)) return { cls: "st-closed", txt: "開催済み", rank: 3 };
+  if (!e.application_start) return { cls: "st-open", txt: "受付日は原本で確認", rank: 2 };
+  if (TODAY < e.application_start) {
+    const n = daysBetween(TODAY, e.application_start);
+    return { cls: "st-before", txt: n === 1 ? "明日から受付" : `あと${n}日で受付開始`, urgent: n <= 2, rank: 0 };
+  }
+  if (e.application_end && TODAY > e.application_end) return { cls: "st-closed", txt: "受付終了", rank: 3 };
+  return { cls: "st-open", txt: e.application_end ? `受付中（${md(e.application_end)}まで）` : "受付中（先着順）", urgent: true, rank: 1 };
+}
+
+function renderApply() {
+  const list = DB.events.filter(e => e.requires_application && visible(e) && lastDate(e) >= TODAY)
+    .map(e => ({ e, s: status(e) }))
+    .filter(x => x.s.cls !== "st-closed")
+    .sort((a, b) => a.s.rank - b.s.rank || (a.e.application_start || "").localeCompare(b.e.application_start || "") || a.e.sessions[0].date.localeCompare(b.e.sessions[0].date));
+  const g = document.getElementById("applyGrid");
+  if (!list.length) { g.innerHTML = `<p class="empty">いま申し込める行事・これから受付が始まる行事はありません。</p>`; return; }
+  g.innerHTML = list.map(({ e, s }) => {
+    const ses = e.sessions.map(x => `${md(x.date)} ${tm(x)}`).join("、");
+    return `<article class="apply${s.urgent ? " is-urgent" : ""}">
+      <span class="status ${s.cls}">${s.txt}</span>
+      <h3>${esc(e.title)}</h3>
+      <div class="tags"><span class="aud aud-${e.audience}">${audLabel(e.audience)}</span><span class="ctr">${esc(CENTERS[e.center]?.name)}</span></div>
+      <dl>
+        <dt>開催</dt><dd class="num">${esc(ses)}</dd>
+        <dt>受付開始</dt><dd class="num">${e.application_start ? `<b>${md(e.application_start)}</b>${e.application_end ? ` 〜 ${md(e.application_end)}` : " 〜 定員まで"}` : "—"}</dd>
+        ${e.capacity ? `<dt>定員</dt><dd>${esc(e.capacity)}</dd>` : ""}
+        <dt>対象</dt><dd>${esc(e.target)}</dd>
+        ${e.application_method ? `<dt>申込方法</dt><dd>${esc(e.application_method)}</dd>` : ""}
+        ${CENTERS[e.center]?.tel ? `<dt>電話</dt><dd class="num">${esc(CENTERS[e.center].tel)}</dd>` : ""}
+      </dl>
+      <a class="small" href="${esc(e.pdf_url)}" target="_blank" rel="noopener">おたより（原本PDF）</a>
+    </article>`;
+  }).join("");
+}
+
+function closedOn(d) {
+  return DB.months.filter(m => center === "all" || m.center === center)
+    .flatMap(m => m.closed_days.filter(c => c.date === d).map(c => ({ ...c, center: m.center })));
+}
+function itemsFor(d) {
+  const out = [];
+  for (const e of DB.events) {
+    if (!visible(e)) continue;
+    if (e.requires_application) {
+      if (e.application_start === d) out.push({ k: "start", e, sort: "00" });
+      if (e.application_end === d) out.push({ k: "end", e, sort: "01" });
+    }
+    if (e.regular && !showReg) continue;
+    for (const s of e.sessions) if (s.date === d) out.push({ k: "ev", e, s, sort: s.start || "99" });
+  }
+  return out.sort((a, b) => a.sort.localeCompare(b.sort));
+}
+const multi = () => center === "all" && Object.keys(CENTERS).length > 1;
+function chip(it) {
+  const e = it.e, cn = multi() ? `<span class="cn">［${esc(CENTERS[e.center]?.name.replace("児童館", ""))}］</span>` : "";
+  if (it.k === "start") return `<button type="button" class="chip start" data-id="${e.id}"><span class="t">申込受付開始</span>${cn}${esc(e.title)}</button>`;
+  if (it.k === "end") return `<button type="button" class="chip end" data-id="${e.id}"><span class="t">申込締切</span>${cn}${esc(e.title)}</button>`;
+  return `<button type="button" class="chip ${e.audience}${e.regular ? " reg" : ""}" data-id="${e.id}"><span class="t">${tm(it.s) || "時間は原本で確認"}</span>${cn}${e.requires_application ? '<span class="must">申込制 </span>' : ""}${esc(e.title)}</button>`;
+}
+
+function renderCal() {
+  document.getElementById("cal-h").textContent = `${curY}年${curM}月`;
+  const first = new Date(curY, curM - 1, 1).getDay(), last = new Date(curY, curM, 0).getDate();
+  let h = "", ag = "";
+  for (let i = 0; i < first; i++) h += `<div class="cell blank"></div>`;
+  for (let d = 1; d <= last; d++) {
+    const ds = `${curY}-${pad(curM)}-${pad(d)}`, w = (first + d - 1) % 7;
+    const off = closedOn(ds), items = itemsFor(ds), isToday = ds === TODAY;
+    const allOff = off.length && (center !== "all" || off.length >= Object.keys(CENTERS).length);
+    const offTxt = off.map(o => (multi() ? CENTERS[o.center]?.name.replace("児童館", "") + "・" : "") + o.reason + "・休館").join(" / ");
+    const nc = w === 0 ? "sun-n" : w === 6 ? "sat-n" : "";
+    h += `<div class="cell${allOff ? " off" : ""}${isToday ? " today" : ""}"><div class="dnum"><span class="${nc}">${d}</span>${offTxt ? `<span class="hol">${esc(offTxt)}</span>` : isToday ? '<span class="hol">今日</span>' : ""}</div>${items.map(chip).join("")}</div>`;
+    if (items.length || off.length) ag += `<div class="aday${isToday ? " today" : ""}"><div class="d ${nc}">${d}<small>${WD[w]}曜${isToday ? "・今日" : ""}</small></div><div class="list">${offTxt ? `<span class="small muted">${esc(offTxt)}</span>` : ""}${items.map(chip).join("")}</div></div>`;
+  }
+  const rest = (7 - (first + last) % 7) % 7;
+  for (let i = 0; i < rest; i++) h += `<div class="cell blank"></div>`;
+  document.getElementById("calBody").innerHTML = h;
+  document.getElementById("agenda").innerHTML = ag || `<p class="empty">この月の行事はまだありません。</p>`;
+
+  const ms = DB.months.filter(m => m.year === curY && m.month === curM && (center === "all" || m.center === center));
+  document.getElementById("monthSrc").innerHTML = ms.length
+    ? "出典：" + ms.map(m => `<a href="${esc(m.pdf_url)}" target="_blank" rel="noopener">${esc(CENTERS[m.center]?.name)} ${m.month}月号</a>`).join("、") + "。時刻は24時間表記です（おたよりの「4:00」は16:00）。"
+    : "この月のおたよりはまだ出ていないか、読み取れていません。";
+  const ym = curY * 12 + curM, yms = monthsAvail();
+  document.getElementById("prevM").disabled = !yms.some(x => x < ym);
+  document.getElementById("nextM").disabled = !yms.some(x => x > ym);
+  renderDetails();
+}
+
+function renderDetails() {
+  const pre = `${curY}-${pad(curM)}-`;
+  const evs = DB.events.filter(e => visible(e) && e.sessions.some(s => s.date.startsWith(pre)))
+    .sort((a, b) => (a.regular - b.regular) || a.sessions[0].date.localeCompare(b.sessions[0].date));
+  document.getElementById("details").innerHTML = evs.map(e => {
+    const days = e.sessions.filter(s => s.date.startsWith(pre)).map(s => `${+s.date.slice(8)}日（${WD[new Date(s.date + "T00:00:00").getDay()]}）${tm(s)}`);
+    return `<article class="det" id="det-${e.id}">
+      <div class="tags"><span class="aud aud-${e.audience}">${audLabel(e.audience)}</span><span class="ctr">${esc(CENTERS[e.center]?.name)}</span>${e.regular ? '<span class="small muted">毎週のプログラム</span>' : ""}${e.requires_application ? '<span class="small" style="color:var(--open);font-weight:700">申込制</span>' : ""}</div>
+      <h3>${esc(e.title)}</h3>${e.subtitle ? `<p class="small muted">${esc(e.subtitle)}</p>` : ""}
+      <p class="small num">${esc(days.join("、"))}</p>
+      <ul>${e.place ? `<li>場所：${esc(e.place)}</li>` : ""}${e.target ? `<li>対象：${esc(e.target)}</li>` : ""}${e.capacity ? `<li>${esc(e.capacity)}</li>` : ""}${e.requires_application ? `<li><b>申込：${e.application_start ? md(e.application_start) + "から" : "受付日は原本で確認"}${e.application_end ? md(e.application_end) + "まで" : ""}${e.application_method ? `（${esc(e.application_method)}）` : ""}</b></li>` : ""}${(e.notes || []).map(n => `<li>${esc(n)}</li>`).join("")}</ul>
+    </article>`;
+  }).join("") || `<p class="empty">この月の行事はありません。</p>`;
+}
+
+function monthsAvail() {
+  return [...new Set(DB.months.filter(m => center === "all" || m.center === center).map(m => m.year * 12 + m.month))].sort((a, b) => a - b);
+}
+function renderAll() { renderApply(); renderCal(); }
+
+function setMonthFromHash() {
+  const m = /^#m(\d{4})(\d{2})$/.exec(location.hash);
+  if (m) { curY = +m[1]; curM = +m[2]; return true; }
+  return false;
+}
+function go(delta) {
+  const yms = monthsAvail(), ym = curY * 12 + curM;
+  const next = delta < 0 ? yms.filter(x => x < ym).pop() : yms.find(x => x > ym);
+  if (next == null) return;
+  curY = Math.floor((next - 1) / 12); curM = next - curY * 12;
+  history.replaceState(null, "", `#m${curY}${pad(curM)}`);
+  renderCal();
+}
+
+async function init() {
+  try {
+    const res = await fetch("../data/jidoukan/events.json", { cache: "no-store" });
+    DB = await res.json();
+  } catch (err) {
+    document.getElementById("applyGrid").innerHTML = `<p class="empty">データを読み込めませんでした。時間をおいて再読み込みしてください。</p>`;
+    return;
+  }
+  DB.centers.forEach(c => CENTERS[c.key] = c);
+  if (!CENTERS[center]) center = "all";
+  if (DB.centers.length > 1) {
+    const sel = document.getElementById("centerSel");
+    sel.innerHTML += DB.centers.map(c => `<option value="${esc(c.key)}">${esc(c.name)}</option>`).join("");
+    sel.value = center;
+    document.getElementById("centerWrap").hidden = false;
+  }
+  document.querySelectorAll(".seg .btn").forEach(x => x.setAttribute("aria-pressed", x.dataset.f === filt));
+  document.getElementById("showReg").checked = showReg;
+
+  if (!setMonthFromHash()) {
+    const yms = monthsAvail(), ym = now.getFullYear() * 12 + now.getMonth() + 1;
+    const pick = yms.includes(ym) ? ym : (yms.filter(x => x <= ym).pop() ?? yms[0] ?? ym);
+    curY = Math.floor((pick - 1) / 12); curM = pick - curY * 12;
+  }
+  const g = new Date(DB.generated_at);
+  document.getElementById("updated").textContent = `データ更新：${g.getFullYear()}/${g.getMonth() + 1}/${g.getDate()}`;
+  document.getElementById("foot").innerHTML = DB.centers.map(c =>
+    `<p>${esc(c.name)}：${esc(c.address || "")} ・ TEL ${esc(c.tel || "")} ・ <a href="${esc(c.page_url)}" target="_blank" rel="noopener">区のページ</a></p>`).join("") +
+    `<p>開館日時・休館日は各児童館のおたよりで確認してください。</p>`;
+  renderAll();
+}
+
+document.querySelectorAll(".seg .btn").forEach(b => b.addEventListener("click", () => {
+  filt = b.dataset.f;
+  document.querySelectorAll(".seg .btn").forEach(x => x.setAttribute("aria-pressed", x === b));
+  try { localStorage.setItem("jdk-filt", filt); } catch (_) {}
+  renderAll();
+}));
+document.getElementById("showReg").addEventListener("change", ev => {
+  showReg = ev.target.checked;
+  try { localStorage.setItem("jdk-reg", showReg ? "1" : "0"); } catch (_) {}
+  renderCal();
+});
+document.getElementById("centerSel").addEventListener("change", ev => {
+  center = ev.target.value;
+  try { localStorage.setItem("jdk-center", center); } catch (_) {}
+  renderAll();
+});
+document.getElementById("prevM").addEventListener("click", () => go(-1));
+document.getElementById("nextM").addEventListener("click", () => go(1));
+window.addEventListener("hashchange", () => { if (DB && setMonthFromHash()) renderCal(); });
+document.addEventListener("click", ev => {
+  const c = ev.target.closest(".chip"); if (!c) return;
+  const t = document.getElementById("det-" + c.dataset.id);
+  if (!t) {
+    // 申込開始チップが別の月の行事を指している場合は、その月へ移動する
+    const e = DB.events.find(x => x.id === c.dataset.id); if (!e) return;
+    const [y, m] = e.sessions[0].date.split("-").map(Number);
+    curY = y; curM = m; history.replaceState(null, "", `#m${y}${pad(m)}`); renderCal();
+    return document.getElementById("det-" + e.id)?.scrollIntoView({ block: "center" });
+  }
+  t.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "center" });
+  t.classList.add("flash"); setTimeout(() => t.classList.remove("flash"), 1600);
+});
+init();
+</script>
+</body>
+</html>

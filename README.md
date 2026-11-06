@@ -45,6 +45,27 @@ python -m http.server 8000
 # → http://localhost:8000/ を開く
 ```
 
+## 児童館カレンダー（`/jidoukan/`）
+
+イベントまとめとは別のページとして、児童館のおたより（PDF）から行事と申込の受付開始日をまとめたカレンダーを [`jidoukan/index.html`](jidoukan/index.html) で配信しています（本番では `https://<ドメイン>/jidoukan/`）。
+
+| 項目 | 内容 |
+|---|---|
+| 対象の児童館 | [`data/jidoukan/sources.json`](data/jidoukan/sources.json) に1館1行で追加する（`key` / `name` / `page_url` / `address` / `tel`） |
+| 取得 | 区の児童館ページからPDFリンクを拾い、PDFを Claude API（`claude-opus-5-5`）で読み取ってJSON化 |
+| キャッシュ | `data/jidoukan/extracted/{key}/{PDF名}.json`。PDFの sha256 が変わらない限り再読み取りしない（APIを呼ぶのは新しい号だけ）。誤読はこのJSONを手で直せば、PDFが差し替わるまで残る |
+| 出力 | `data/jidoukan/events.json`（フロントが読む）。日付の形式、対象月の外の日付、休館日との重なりを検証し、`warnings` に残す |
+| 更新 | GitHub Actions [`jidoukan.yml`](.github/workflows/jidoukan.yml) が毎週月曜 8:17 JST に実行し、`main` にコミット |
+| 必要な設定 | リポジトリのシークレット `ANTHROPIC_API_KEY` |
+
+PDFは漢字のふりがな（ルビ）が本文に混ざり、`pdftotext` などでは日付と時刻が崩れるため、テキスト抽出ではなくPDFをそのままモデルに渡しています。
+
+```bash
+pip install requests beautifulsoup4 lxml anthropic
+ANTHROPIC_API_KEY=... python scrapers/jidoukan/fetch.py   # 取得・読み取り・出力
+python scrapers/jidoukan/fetch.py --no-fetch              # キャッシュから events.json だけ作り直す
+```
+
 ## クロール対象サイト
 
 | source_key | サイト | 取得方法 |

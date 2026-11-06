@@ -1,0 +1,679 @@
+{
+  "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3517/40honan2611.pdf",
+  "pdf_label": "方南児童館のおたより11月号（PDF：836KB）",
+  "sha256": "7976554d0f001c15491c2d18ec0370e6d9251bdec0920ceb56b3499637c2b627",
+  "extracted_at": "2026-11-06T13:00:00+00:00",
+  "method": "manual",
+  "data": {
+    "year": 2026,
+    "month": 11,
+    "events": [
+      {
+        "title": "長さを競え！紙びりびり！",
+        "subtitle": "杉並区児童館第1ブロック チャレンジプログラム",
+        "audience": "kids",
+        "regular": false,
+        "sessions": [
+          {
+            "date": "2026-11-10",
+            "start": "16:00",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-11-11",
+            "start": "16:00",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-11-12",
+            "start": "16:00",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-11-13",
+            "start": "16:00",
+            "end": "17:45"
+          }
+        ],
+        "place": "1階 図工室",
+        "target": "小学生",
+        "capacity": "申込不要（1人1日1回）",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "紙をやぶいてつなげ、途中で切れないように長さを競う"
+        ]
+      },
+      {
+        "title": "あつまれ3〜6年生！スポーツではっちゃけよう",
+        "subtitle": "",
+        "audience": "kids",
+        "regular": false,
+        "sessions": [
+          {
+            "date": "2026-11-21",
+            "start": "13:15",
+            "end": "14:15"
+          }
+        ],
+        "place": "遊戯室",
+        "target": "3〜6年生",
+        "capacity": "先着20人",
+        "requires_application": true,
+        "application_start": "2026-11-07",
+        "application_end": "",
+        "application_method": "本人が児童館受付で",
+        "notes": [
+          "何をやるかはアンケートで決定（アンケートは10/20〜10/31に児童館受付で実施）"
+        ]
+      },
+      {
+        "title": "けん玉講習会",
+        "subtitle": "",
+        "audience": "kids",
+        "regular": false,
+        "sessions": [
+          {
+            "date": "2026-11-19",
+            "start": "15:45",
+            "end": "16:45"
+          }
+        ],
+        "place": "遊戯室",
+        "target": "1年生〜",
+        "capacity": "先着25人",
+        "requires_application": true,
+        "application_start": "2026-11-05",
+        "application_end": "",
+        "application_method": "本人が児童館受付で",
+        "notes": [
+          "講師：吉村 泰 先生",
+          "けん玉名人が技の指導や披露をしてくれる"
+        ]
+      },
+      {
+        "title": "つくってみよう「キラキラBOX」",
+        "subtitle": "",
+        "audience": "kids",
+        "regular": false,
+        "sessions": [
+          {
+            "date": "2026-11-17",
+            "start": "16:00",
+            "end": "17:00"
+          },
+          {
+            "date": "2026-11-25",
+            "start": "16:00",
+            "end": "17:00"
+          }
+        ],
+        "place": "図工室",
+        "target": "1年生〜",
+        "capacity": "申込不要・15分交代（各回12人）",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": []
+      },
+      {
+        "title": "出前児童館",
+        "subtitle": "",
+        "audience": "kids",
+        "regular": false,
+        "sessions": [
+          {
+            "date": "2026-11-24",
+            "start": "15:00",
+            "end": "16:00"
+          }
+        ],
+        "place": "方南小 たけの子くらぶのへや",
+        "target": "たけの子くらぶ",
+        "capacity": "",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "たけの子くらぶで「キラキラBOX」をつくる"
+        ]
+      },
+      {
+        "title": "今月のあそぶんジャー「けん玉」",
+        "subtitle": "",
+        "audience": "kids",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-11-04",
+            "start": "14:00",
+            "end": "14:30"
+          },
+          {
+            "date": "2026-11-11",
+            "start": "14:00",
+            "end": "14:30"
+          },
+          {
+            "date": "2026-11-18",
+            "start": "15:15",
+            "end": "15:45"
+          }
+        ],
+        "place": "遊戯室",
+        "target": "1年生〜",
+        "capacity": "申込不要",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": []
+      },
+      {
+        "title": "4面ドッジボール",
+        "subtitle": "スペシャルゲームタイム",
+        "audience": "kids",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-11-05",
+            "start": "16:00",
+            "end": "16:40"
+          },
+          {
+            "date": "2026-11-12",
+            "start": "16:00",
+            "end": "16:40"
+          },
+          {
+            "date": "2026-11-26",
+            "start": "16:00",
+            "end": "16:40"
+          }
+        ],
+        "place": "遊戯室",
+        "target": "1年生〜",
+        "capacity": "申込不要",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "4チームに分かれてドッジボール"
+        ]
+      },
+      {
+        "title": "ぽけっとのへや",
+        "subtitle": "",
+        "audience": "kids",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-11-10",
+            "start": "16:00",
+            "end": "16:30"
+          },
+          {
+            "date": "2026-11-24",
+            "start": "16:00",
+            "end": "16:30"
+          }
+        ],
+        "place": "2階 学童クラブ室",
+        "target": "1年生〜",
+        "capacity": "申込不要",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "ボランティアの先生による絵本や紙芝居の読み聞かせ"
+        ]
+      },
+      {
+        "title": "いちりんしゃタイム",
+        "subtitle": "",
+        "audience": "kids",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-11-06",
+            "start": "15:45",
+            "end": "16:30"
+          },
+          {
+            "date": "2026-11-13",
+            "start": "15:45",
+            "end": "16:30"
+          },
+          {
+            "date": "2026-11-20",
+            "start": "15:45",
+            "end": "16:30"
+          },
+          {
+            "date": "2026-11-27",
+            "start": "15:45",
+            "end": "16:30"
+          },
+          {
+            "date": "2026-11-07",
+            "start": "11:15",
+            "end": "11:45"
+          },
+          {
+            "date": "2026-11-21",
+            "start": "11:15",
+            "end": "11:45"
+          },
+          {
+            "date": "2026-11-28",
+            "start": "11:15",
+            "end": "11:45"
+          }
+        ],
+        "place": "遊戯室",
+        "target": "1年生〜",
+        "capacity": "申込不要（金曜は15分交代）",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "持ち物：うわばき"
+        ]
+      },
+      {
+        "title": "高学年・中高生タイム",
+        "subtitle": "",
+        "audience": "kids",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-11-10",
+            "start": "17:30",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-11-17",
+            "start": "17:30",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-11-24",
+            "start": "17:30",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-11-05",
+            "start": "17:30",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-11-12",
+            "start": "17:30",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-11-19",
+            "start": "17:30",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-11-26",
+            "start": "17:30",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-11-04",
+            "start": "17:15",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-11-11",
+            "start": "17:15",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-11-18",
+            "start": "17:15",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-11-25",
+            "start": "17:15",
+            "end": "17:45"
+          }
+        ],
+        "place": "遊戯室",
+        "target": "5年生〜（木曜のみ4年生も可）",
+        "capacity": "申込不要",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": []
+      },
+      {
+        "title": "秋のわくわくコンサート",
+        "subtitle": "杉並区児童館第1ブロック ほっとエッセンス事業",
+        "audience": "baby",
+        "regular": false,
+        "sessions": [
+          {
+            "date": "2026-11-12",
+            "start": "11:00",
+            "end": "11:45"
+          }
+        ],
+        "place": "方南児童館 遊戯室",
+        "target": "乳幼児親子",
+        "capacity": "先着25組",
+        "requires_application": true,
+        "application_start": "2026-10-22",
+        "application_end": "2026-11-05",
+        "application_method": "窓口または電話",
+        "notes": [
+          "講師：カラフル音楽家★まゆ先生",
+          "歌や演奏に合わせて歌ったり体を動かしたり"
+        ]
+      },
+      {
+        "title": "ひよこのえんにち 2026",
+        "subtitle": "地域子育てネットワーク事業",
+        "audience": "baby",
+        "regular": false,
+        "sessions": [
+          {
+            "date": "2026-11-18",
+            "start": "11:00",
+            "end": "12:00"
+          }
+        ],
+        "place": "遊戯室",
+        "target": "0〜3歳児の親子",
+        "capacity": "先着25組（定員になり次第締切）",
+        "requires_application": true,
+        "application_start": "2026-10-28",
+        "application_end": "",
+        "application_method": "窓口または電話",
+        "notes": [
+          "方南図書館の読み聞かせ・わらべうた",
+          "ひととき保育方南／むさしの保育園方南分園の人気のおもちゃ体験",
+          "保健センター・子どもセンター職員との交流、育児相談"
+        ]
+      },
+      {
+        "title": "のりものタイム",
+        "subtitle": "",
+        "audience": "baby",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-11-02",
+            "start": "10:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-11-09",
+            "start": "10:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-11-16",
+            "start": "10:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-11-30",
+            "start": "10:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-11-07",
+            "start": "11:45",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-11-21",
+            "start": "11:45",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-11-28",
+            "start": "11:45",
+            "end": "13:00"
+          }
+        ],
+        "place": "遊戯室",
+        "target": "乳幼児親子",
+        "capacity": "",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "コンビカーなどの乗り物で遊べる"
+        ]
+      },
+      {
+        "title": "プレイランド",
+        "subtitle": "",
+        "audience": "baby",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-11-04",
+            "start": "10:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-11-05",
+            "start": "10:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-11-11",
+            "start": "10:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-11-19",
+            "start": "10:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-11-25",
+            "start": "10:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-11-26",
+            "start": "10:00",
+            "end": "13:00"
+          }
+        ],
+        "place": "遊戯室",
+        "target": "乳幼児親子",
+        "capacity": "",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "ボール・トンネル・ジャングルジムなどの遊具で遊べる"
+        ]
+      },
+      {
+        "title": "ぴょんぴょんタイム",
+        "subtitle": "",
+        "audience": "baby",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-11-10",
+            "start": "11:00",
+            "end": "11:30"
+          },
+          {
+            "date": "2026-11-17",
+            "start": "11:00",
+            "end": "11:30"
+          },
+          {
+            "date": "2026-11-24",
+            "start": "11:00",
+            "end": "11:30"
+          }
+        ],
+        "place": "",
+        "target": "よちよち歩きを始めたら",
+        "capacity": "",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "体操、季節の工作、絵本の読み聞かせ"
+        ]
+      },
+      {
+        "title": "たまごタイム",
+        "subtitle": "ゆうキッズスタート事業",
+        "audience": "baby",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-11-06",
+            "start": "11:00",
+            "end": "11:30"
+          },
+          {
+            "date": "2026-11-13",
+            "start": "11:00",
+            "end": "11:30"
+          },
+          {
+            "date": "2026-11-20",
+            "start": "11:00",
+            "end": "11:30"
+          },
+          {
+            "date": "2026-11-27",
+            "start": "11:00",
+            "end": "11:30"
+          }
+        ],
+        "place": "",
+        "target": "ねんねの赤ちゃん（妊娠中の方とパートナーも）",
+        "capacity": "",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "保護者同士の交流やふれあい遊び"
+        ]
+      },
+      {
+        "title": "ぴよぴよタイム",
+        "subtitle": "",
+        "audience": "baby",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-11-06",
+            "start": "11:00",
+            "end": "11:30"
+          },
+          {
+            "date": "2026-11-13",
+            "start": "11:00",
+            "end": "11:30"
+          },
+          {
+            "date": "2026-11-20",
+            "start": "11:00",
+            "end": "11:30"
+          },
+          {
+            "date": "2026-11-27",
+            "start": "11:00",
+            "end": "11:30"
+          }
+        ],
+        "place": "",
+        "target": "ハイハイを始めたら",
+        "capacity": "",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "手遊び、工作、ママトーク。不定期で足型も"
+        ]
+      },
+      {
+        "title": "サンカード利用の日",
+        "subtitle": "",
+        "audience": "baby",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-11-01",
+            "start": "09:00",
+            "end": "17:00"
+          },
+          {
+            "date": "2026-11-08",
+            "start": "09:00",
+            "end": "17:00"
+          },
+          {
+            "date": "2026-11-15",
+            "start": "09:00",
+            "end": "17:00"
+          },
+          {
+            "date": "2026-11-22",
+            "start": "09:00",
+            "end": "17:00"
+          },
+          {
+            "date": "2026-11-29",
+            "start": "09:00",
+            "end": "17:00"
+          }
+        ],
+        "place": "",
+        "target": "親子・団体（要サンカード）",
+        "capacity": "",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "小学生以上も保護者の付き添いが必要"
+        ]
+      }
+    ],
+    "closed_days": [
+      {
+        "date": "2026-11-03",
+        "reason": "文化の日"
+      },
+      {
+        "date": "2026-11-14",
+        "reason": "館内整理日"
+      },
+      {
+        "date": "2026-11-23",
+        "reason": "勤労感謝の日"
+      }
+    ]
+  }
+}
