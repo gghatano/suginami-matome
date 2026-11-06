@@ -53,8 +53,8 @@ header{display:grid;gap:8px}
 .sec{display:grid;gap:14px}
 
 /* 申込カードは横1列。件数が増えても高さは1枚分のまま、横にスクロールする */
-.apply-grid{display:grid;grid-auto-flow:column;grid-auto-columns:260px;gap:12px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x proximity;padding-bottom:6px}
-/* 件数（0件・読み込み中を含む）で高さが変わらないよう、カード1枚分の高さを常に確保する */
+.apply-grid{display:grid;grid-auto-flow:column;grid-auto-columns:260px;gap:12px;overflow-x:scroll;scrollbar-width:thin;scrollbar-color:var(--line) transparent;overscroll-behavior-x:contain;scroll-snap-type:x proximity;padding-bottom:6px}
+/* 件数（0件・読み込み中を含む）や横スクロールの有無で高さが変わらないよう、カード1枚分の高さとスクロールバーの場所を常に確保する（overflow-x:scroll） */
 .apply-grid{min-height:17.8rem}
 .apply-grid.is-empty{display:flex}
 .apply-grid > .empty{flex:1;margin:0;display:flex;align-items:center;justify-content:center;text-align:center;border:1px dashed var(--line);border-radius:10px;background:var(--paper);padding:16px}
