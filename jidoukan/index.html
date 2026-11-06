@@ -274,8 +274,9 @@ function itemsFor(d) {
   return out.sort((a, b) => a.sort.localeCompare(b.sort));
 }
 const multi = () => sel().size > 1;
+const shortName = k => CENTERS[k]?.short || (CENTERS[k]?.name || "").replace("児童館", "");
 function chip(it) {
-  const e = it.e, cn = multi() ? `<span class="cn">［${esc(CENTERS[e.center]?.name.replace("児童館", ""))}］</span>` : "";
+  const e = it.e, cn = multi() ? `<span class="cn">［${esc(shortName(e.center))}］</span>` : "";
   if (it.k === "start") return `<button type="button" class="chip start" data-id="${e.id}"><span class="t">申込受付開始</span>${cn}${esc(e.title)}</button>`;
   if (it.k === "end") return `<button type="button" class="chip end" data-id="${e.id}"><span class="t">申込締切</span>${cn}${esc(e.title)}</button>`;
   return `<button type="button" class="chip ${e.audience}${e.regular ? " reg" : ""}" data-id="${e.id}"><span class="t">${tm(it.s) || "時間は原本で確認"}</span>${cn}${e.requires_application ? '<span class="must">申込制 </span>' : ""}${esc(e.title)}</button>`;
@@ -293,7 +294,7 @@ function renderCal() {
     // 選んだ全館が同じ理由で休みなら館名を省く
     const sameReason = allOff && new Set(off.map(o => o.reason)).size === 1;
     const offTxt = sameReason ? off[0].reason + "・休館"
-      : off.map(o => (multi() ? CENTERS[o.center]?.name.replace("児童館", "") + "・" : "") + o.reason + "・休館").join(" / ");
+      : off.map(o => (multi() ? shortName(o.center) + "・" : "") + o.reason + "・休館").join(" / ");
     const nc = w === 0 ? "sun-n" : w === 6 ? "sat-n" : "";
     h += `<div class="cell${allOff ? " off" : ""}${isToday ? " today" : ""}"><div class="dnum"><span class="${nc}">${d}</span>${offTxt ? `<span class="hol">${esc(offTxt)}</span>` : isToday ? '<span class="hol">今日</span>' : ""}</div>${items.map(chip).join("")}</div>`;
     if (items.length || off.length) ag += `<div class="aday${isToday ? " today" : ""}"><div class="d ${nc}">${d}<small>${WD[w]}曜${isToday ? "・今日" : ""}</small></div><div class="list">${offTxt ? `<span class="small muted">${esc(offTxt)}</span>` : ""}${items.map(chip).join("")}</div></div>`;
@@ -306,7 +307,7 @@ function renderCal() {
   const ms = DB.months.filter(m => m.year === curY && m.month === curM && isSel(m.center));
   document.getElementById("monthSrc").innerHTML = ms.length
     ? "出典：" + ms.map(m => `<a href="${esc(m.pdf_url)}" target="_blank" rel="noopener">${esc(CENTERS[m.center]?.name)} ${m.month}月号</a>`).join("、") + "。時刻は24時間表記です（おたよりの「4:00」は16:00）。"
-    : "この月のおたよりはまだ出ていないか、読み取れていません。";
+    : "この月のおたよりはまだ出ていないか、読み取れていません。前の月のおたよりで予告された行事だけを表示しています。";
   const ym = curY * 12 + curM, yms = monthsAvail();
   document.getElementById("prevM").disabled = !yms.some(x => x < ym);
   document.getElementById("nextM").disabled = !yms.some(x => x > ym);
@@ -329,7 +330,14 @@ function renderDetails() {
 }
 
 function monthsAvail() {
-  return [...new Set(DB.months.filter(m => isSel(m.center)).map(m => m.year * 12 + m.month))].sort((a, b) => a - b);
+  // おたよりの号がある月に加え、予告された行事や申込開始日がある月（翌月の予告など）にも移動できるようにする
+  const ym = s => { const [y, m] = s.split("-").map(Number); return y * 12 + m; };
+  const set = new Set(DB.months.filter(m => isSel(m.center)).map(m => m.year * 12 + m.month));
+  DB.events.filter(e => isSel(e.center)).forEach(e => {
+    e.sessions.forEach(x => set.add(ym(x.date)));
+    if (e.application_start) set.add(ym(e.application_start));
+  });
+  return [...set].sort((a, b) => a - b);
 }
 function renderAll() { renderApply(); renderCal(); }
 

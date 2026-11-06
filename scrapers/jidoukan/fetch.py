@@ -123,7 +123,7 @@ def normalize(data: dict) -> tuple[dict, list[str]]:
                 warnings.append(f"「{ev.get('title')}」の日付が不正: {d}")
                 continue
             if prefix and not d.startswith(prefix):
-                warnings.append(f"「{ev.get('title')}」の開催日 {d} が対象月の外です（残します）")
+                warnings.append(f"「{ev.get('title')}」の開催日 {d} が対象月の外です（翌月の予告なら正常。残します）")
             if d in closed_dates:
                 warnings.append(f"「{ev.get('title')}」の開催日 {d} が休館日と重なっています（落とします）")
                 continue
