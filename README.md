@@ -57,6 +57,17 @@ python -m http.server 8000
 | 出力 | `data/jidoukan/events.json`（フロントが読む）。日付の形式、対象月の外の日付、休館日との重なりを検証し、`warnings` に残す |
 | 更新 | 毎週月曜の朝に Claude のスケジュールしたタスクが実行し、`main` に直接 push する。API経由で読み取る場合は [`jidoukan.yml`](.github/workflows/jidoukan.yml) を手動実行（シークレット `ANTHROPIC_API_KEY` が必要） |
 
+URLパラメータで表示を指定できます（画面で選択を変えるとアドレス欄のURLも変わるので、そのまま共有できます）。パラメータが1つでもあれば、ブラウザに保存した選択より優先し、書かれていない項目は初期値になります。
+
+| パラメータ | 値 | 例 |
+|---|---|---|
+| `center` | 児童館の `key`（`sources.json`）。複数はカンマ区切り。省略時は全館 | `center=honan` |
+| `target` | `kids`（小学生以上）／`baby`（乳幼児親子）。省略時はすべて | `target=baby` |
+| `regular` | `1` で毎日・毎週のプログラムも表示 | `regular=1` |
+| `month` | 表示する月 | `month=2026-11` |
+
+例：方南児童館の乳幼児向けだけ → `/jidoukan/?center=honan&target=baby`
+
 PDFは漢字のふりがな（ルビ）が本文に混ざり、`pdftotext` などでは日付と時刻が崩れるため、テキスト抽出ではなくPDFをそのままモデルに渡しています。
 
 ```bash

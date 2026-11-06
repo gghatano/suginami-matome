@@ -326,17 +326,49 @@ function monthsAvail() {
 }
 function renderAll() { renderApply(); renderCal(); }
 
-function setMonthFromHash() {
-  const m = /^#m(\d{4})(\d{2})$/.exec(location.hash);
-  if (m) { curY = +m[1]; curM = +m[2]; return true; }
+// ---- URLパラメータ（共有用）
+// ?center=honan,horinouchi_higashi  表示する児童館（省略時は全館）
+// ?target=kids|baby                 対象（省略時はすべて）
+// ?regular=1                        毎日・毎週のプログラムも表示
+// ?month=2026-11                    表示する月（旧形式 #m202611 も読む）
+// パラメータがあればURLだけで表示を決める（ブラウザに保存した選択は使わない）。画面で選択を変えるとURLも書き換わる。
+let monthPinned = false;
+function applyParams() {
+  const q = new URLSearchParams(location.search);
+  // パラメータが1つでもあれば、共有した人と同じ画面になるよう、書かれていない項目は初期値にする
+  if (["center", "target", "regular", "month"].some(k => q.has(k))) {
+    deselected = new Set(); filt = "all"; showReg = false;
+  }
+  if (q.has("center")) {
+    const want = new Set(q.get("center").split(",").map(x => x.trim()).filter(k => CENTERS[k]));
+    if (want.size) deselected = new Set(DB.centers.map(c => c.key).filter(k => !want.has(k)));
+  }
+  if (q.has("target")) {
+    const t = q.get("target");
+    filt = ["kids", "baby"].includes(t) ? t : "all";
+  }
+  if (q.has("regular")) showReg = q.get("regular") === "1";
+  const m = /^(\d{4})-(\d{1,2})$/.exec(q.get("month") || "") || /^#m(\d{4})(\d{2})$/.exec(location.hash);
+  if (m && +m[2] >= 1 && +m[2] <= 12) { curY = +m[1]; curM = +m[2]; monthPinned = true; return true; }
   return false;
+}
+function syncURL() {
+  const q = new URLSearchParams();
+  const s = sel();
+  if (s.size && s.size < DB.centers.length) q.set("center", [...s].join(","));
+  if (filt !== "all") q.set("target", filt);
+  if (showReg) q.set("regular", "1");
+  if (monthPinned) q.set("month", `${curY}-${pad(curM)}`);
+  const qs = q.toString().replace(/%2C/g, ",");
+  history.replaceState(null, "", location.pathname + (qs ? "?" + qs : ""));
 }
 function go(delta) {
   const yms = monthsAvail(), ym = curY * 12 + curM;
   const next = delta < 0 ? yms.filter(x => x < ym).pop() : yms.find(x => x > ym);
   if (next == null) return;
   curY = Math.floor((next - 1) / 12); curM = next - curY * 12;
-  history.replaceState(null, "", `#m${curY}${pad(curM)}`);
+  monthPinned = true;
+  syncURL();
   renderCal();
 }
 
@@ -349,11 +381,12 @@ async function init() {
     return;
   }
   DB.centers.forEach(c => CENTERS[c.key] = c);
+  const fromURL = applyParams();
   renderPicker();
   document.querySelectorAll("#audSeg .btn").forEach(x => x.setAttribute("aria-pressed", x.dataset.f === filt));
   document.getElementById("showReg").checked = showReg;
 
-  if (!setMonthFromHash()) {
+  if (!fromURL) {
     const yms = monthsAvail(), ym = now.getFullYear() * 12 + now.getMonth() + 1;
     const pick = yms.includes(ym) ? ym : (yms.filter(x => x <= ym).pop() ?? yms[0] ?? ym);
     curY = Math.floor((pick - 1) / 12); curM = pick - curY * 12;
@@ -363,6 +396,7 @@ async function init() {
   document.getElementById("foot").innerHTML = DB.centers.map(c =>
     `<p>${esc(c.name)}：${esc(c.address || "")} ・ TEL ${esc(c.tel || "")} ・ <a href="${esc(c.page_url)}" target="_blank" rel="noopener">区のページ</a></p>`).join("") +
     `<p>開館日時・休館日は各児童館のおたよりで確認してください。</p>`;
+  syncURL();
   renderAll();
 }
 
@@ -370,11 +404,13 @@ document.querySelectorAll("#audSeg .btn").forEach(b => b.addEventListener("click
   filt = b.dataset.f;
   document.querySelectorAll("#audSeg .btn").forEach(x => x.setAttribute("aria-pressed", x === b));
   try { localStorage.setItem("jdk-filt", filt); } catch (_) {}
+  syncURL();
   renderAll();
 }));
 document.getElementById("showReg").addEventListener("change", ev => {
   showReg = ev.target.checked;
   try { localStorage.setItem("jdk-reg", showReg ? "1" : "0"); } catch (_) {}
+  syncURL();
   renderCal();
 });
 function renderPicker() {
@@ -383,6 +419,7 @@ function renderPicker() {
 }
 function saveSel() {
   try { localStorage.setItem("jdk-off", JSON.stringify([...deselected])); } catch (_) {}
+  syncURL();
   renderPicker();
   renderAll();
 }
@@ -396,7 +433,6 @@ document.getElementById("selAll").addEventListener("click", () => { deselected =
 document.getElementById("selNone").addEventListener("click", () => { deselected = new Set(DB.centers.map(c => c.key)); saveSel(); });
 document.getElementById("prevM").addEventListener("click", () => go(-1));
 document.getElementById("nextM").addEventListener("click", () => go(1));
-window.addEventListener("hashchange", () => { if (DB && setMonthFromHash()) renderCal(); });
 document.addEventListener("click", ev => {
   const c = ev.target.closest(".chip"); if (!c) return;
   const t = document.getElementById("det-" + c.dataset.id);
@@ -404,7 +440,7 @@ document.addEventListener("click", ev => {
     // 申込開始チップが別の月の行事を指している場合は、その月へ移動する
     const e = DB.events.find(x => x.id === c.dataset.id); if (!e) return;
     const [y, m] = e.sessions[0].date.split("-").map(Number);
-    curY = y; curM = m; history.replaceState(null, "", `#m${y}${pad(m)}`); renderCal();
+    curY = y; curM = m; monthPinned = true; syncURL(); renderCal();
     return document.getElementById("det-" + e.id)?.scrollIntoView({ block: "center" });
   }
   t.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "center" });
