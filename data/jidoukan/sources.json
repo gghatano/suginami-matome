@@ -22,5 +22,16 @@
     "page_url": "https://www.city.suginami.tokyo.jp/s120/3539.html",
     "address": "杉並区堀ノ内1-9-26",
     "tel": "03-3316-5090"
+  },
+  {
+    "key": "plaza_izumi",
+    "name": "子ども・子育てプラザ和泉",
+    "short": "プラザ和泉",
+    "page_url": "https://www.city.suginami.tokyo.jp/s086/3531.html",
+    "address": "杉並区和泉2-36-14",
+    "tel": "03-3328-6550",
+    "pdf_label_keyword": [
+      "ニュース"
+    ]
   }
 ]

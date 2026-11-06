@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T13:02:25+00:00",
+  "generated_at": "2026-11-06T13:30:56+00:00",
   "centers": [
     {
       "key": "honan",
@@ -24,6 +24,17 @@
       "page_url": "https://www.city.suginami.tokyo.jp/s120/3539.html",
       "address": "杉並区堀ノ内1-9-26",
       "tel": "03-3316-5090"
+    },
+    {
+      "key": "plaza_izumi",
+      "name": "子ども・子育てプラザ和泉",
+      "short": "プラザ和泉",
+      "page_url": "https://www.city.suginami.tokyo.jp/s086/3531.html",
+      "address": "杉並区和泉2-36-14",
+      "tel": "03-3328-6550",
+      "pdf_label_keyword": [
+        "ニュース"
+      ]
     }
   ],
   "months": [
@@ -89,6 +100,33 @@
         {
           "date": "2026-11-16",
           "reason": "小学校休校日"
+        },
+        {
+          "date": "2026-11-23",
+          "reason": "勤労感謝の日"
+        }
+      ]
+    },
+    {
+      "center": "plaza_izumi",
+      "year": 2026,
+      "month": 11,
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2611.pdf",
+      "pdf_label": "子ども・子育てプラザ和泉のニュース11月号（PDF：4,642KB）",
+      "method": "manual",
+      "extracted_at": "2026-11-06T16:00:00+00:00",
+      "closed_days": [
+        {
+          "date": "2026-11-01",
+          "reason": "休業日（第1日曜）"
+        },
+        {
+          "date": "2026-11-02",
+          "reason": "エアコン入れ替え工事"
+        },
+        {
+          "date": "2026-11-03",
+          "reason": "文化の日"
         },
         {
           "date": "2026-11-23",
@@ -2074,6 +2112,787 @@
       "id": "horinouchi_minami-202611-06",
       "center": "horinouchi_minami",
       "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3539/19horinouchiminami2611.pdf"
+    },
+    {
+      "title": "パパと一緒に親子ヨガ！",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-11-08",
+          "start": "15:00",
+          "end": "15:30"
+        }
+      ],
+      "place": "",
+      "target": "パパと乳幼児（首すわり〜歩き始め前）",
+      "capacity": "8組",
+      "requires_application": true,
+      "application_start": "2026-10-17",
+      "application_end": "",
+      "application_method": "窓口または電話",
+      "notes": [
+        "講師：松平 麻美さん",
+        "上のお子さん・ママの入室はできません"
+      ],
+      "id": "plaza_izumi-202611-00",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2611.pdf"
+    },
+    {
+      "title": "産前産後ボール＆フィットネス",
+      "subtitle": "杉並区児童館第1ブロック ほっとエッセンス事業",
+      "audience": "baby",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-11-09",
+          "start": "10:30",
+          "end": "11:45"
+        }
+      ],
+      "place": "",
+      "target": "①妊娠20週以降〜臨月の運動制限のない妊婦さん ②2026年5〜9月生まれの赤ちゃんとママ",
+      "capacity": "①5名 ②5組",
+      "requires_application": true,
+      "application_start": "2026-10-19",
+      "application_end": "",
+      "application_method": "窓口（9:00〜）または電話（10:00〜）",
+      "notes": [
+        "講師：産前産後ケアインストラクター 白石 あすかさん",
+        "11/4（水）までに①②のどちらかが定員に達しなかった場合、もう一方のキャンセル待ちの方が入れます",
+        "上のお子さん・パパの入室はできません"
+      ],
+      "id": "plaza_izumi-202611-01",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2611.pdf"
+    },
+    {
+      "title": "プラザ講演会 卒乳・断乳講座",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-11-13",
+          "start": "10:15",
+          "end": "11:45"
+        }
+      ],
+      "place": "",
+      "target": "乳幼児親子",
+      "capacity": "20組程度",
+      "requires_application": true,
+      "application_start": "2026-10-30",
+      "application_end": "",
+      "application_method": "窓口",
+      "notes": [
+        "10:15〜11:00 講演会／11:00〜11:45 個別相談会",
+        "講師：助産師 内田 綾子さん"
+      ],
+      "id": "plaza_izumi-202611-02",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2611.pdf"
+    },
+    {
+      "title": "パレットさんの親子リトミック",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-11-22",
+          "start": "10:00",
+          "end": "10:35"
+        },
+        {
+          "date": "2026-11-22",
+          "start": "11:00",
+          "end": "11:35"
+        }
+      ],
+      "place": "",
+      "target": "0〜3歳親子",
+      "capacity": "各回20組",
+      "requires_application": true,
+      "application_start": "2026-11-08",
+      "application_end": "",
+      "application_method": "窓口",
+      "notes": [
+        "①10:00〜10:35 ②11:00〜11:35（内容は同じなので、どちらかを選ぶ）",
+        "講師：パレットさん"
+      ],
+      "id": "plaza_izumi-202611-03",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2611.pdf"
+    },
+    {
+      "title": "クラフトタイムSP「シャカシャカオーナメントをつくろう！」",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-11-24",
+          "start": "14:30",
+          "end": "14:50"
+        },
+        {
+          "date": "2026-11-24",
+          "start": "15:00",
+          "end": "15:20"
+        }
+      ],
+      "place": "",
+      "target": "3歳以上の幼児親子",
+      "capacity": "各回6組",
+      "requires_application": true,
+      "application_start": "2026-11-10",
+      "application_end": "",
+      "application_method": "窓口または電話",
+      "notes": [
+        "①14:30〜14:50 ②15:00〜15:20",
+        "講師：ハンドメイド作家 杉本 絵里子さん"
+      ],
+      "id": "plaza_izumi-202611-04",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2611.pdf"
+    },
+    {
+      "title": "赤ちゃんのためのスキンケア講座",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-11-26",
+          "start": "11:05",
+          "end": "11:50"
+        }
+      ],
+      "place": "",
+      "target": "プレママ・プレパパ／おおよそ0歳児の親子",
+      "capacity": "プレママ・プレパパ3組、0歳児の親子12組",
+      "requires_application": true,
+      "application_start": "2026-11-12",
+      "application_end": "",
+      "application_method": "窓口（9:00〜）または電話（10:00〜）",
+      "notes": [
+        "講師：小児科看護師・小児アレルギーエデュケーター 泉名 諒さん"
+      ],
+      "id": "plaza_izumi-202611-05",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2611.pdf"
+    },
+    {
+      "title": "長さを競え！紙びりびり！",
+      "subtitle": "杉並区児童館第1ブロック チャレンジプログラム",
+      "audience": "kids",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-11-10",
+          "start": "",
+          "end": "17:00"
+        },
+        {
+          "date": "2026-11-11",
+          "start": "",
+          "end": "17:00"
+        },
+        {
+          "date": "2026-11-12",
+          "start": "",
+          "end": "17:00"
+        },
+        {
+          "date": "2026-11-13",
+          "start": "",
+          "end": "17:00"
+        }
+      ],
+      "place": "",
+      "target": "小学生",
+      "capacity": "申込不要（1人1日1回）",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "各日17:00まで"
+      ],
+      "id": "plaza_izumi-202611-06",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2611.pdf"
+    },
+    {
+      "title": "おもちゃ病院",
+      "subtitle": "",
+      "audience": "all",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-11-05",
+          "start": "13:00",
+          "end": "15:00"
+        }
+      ],
+      "place": "",
+      "target": "乳幼児親子・小学生親子",
+      "capacity": "申込不要（1家庭1点まで）",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "受付：10/31（土）9:00〜当日14:00、引き取りは当日18:00まで",
+        "必ず保護者の方がお持ちください。精密機器（電子ゲーム、トイカメラなど）は修理不可",
+        "協力：杉並おもちゃドクターズ"
+      ],
+      "id": "plaza_izumi-202611-07",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2611.pdf"
+    },
+    {
+      "title": "身長体重測定",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-11-11",
+          "start": "11:20",
+          "end": "11:50"
+        }
+      ],
+      "place": "",
+      "target": "乳幼児親子",
+      "capacity": "申込不要",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "協力：民生児童委員・主任児童委員"
+      ],
+      "id": "plaza_izumi-202611-08",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2611.pdf"
+    },
+    {
+      "title": "つーちゃんのわらべうた",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-11-12",
+          "start": "11:10",
+          "end": "11:30"
+        }
+      ],
+      "place": "",
+      "target": "プレパパ・プレママ、おおよそ0〜1歳親子",
+      "capacity": "申込不要",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "講師：塚原 道子さん"
+      ],
+      "id": "plaza_izumi-202611-09",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2611.pdf"
+    },
+    {
+      "title": "絵本ライブ",
+      "subtitle": "",
+      "audience": "all",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-11-18",
+          "start": "14:45",
+          "end": "15:15"
+        }
+      ],
+      "place": "",
+      "target": "乳幼児親子・小学生",
+      "capacity": "申込不要",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "「対話式」絵本の読み語り",
+        "協力：こどもの成長を護る杉並ネットワーク 代表 井原 太一さん"
+      ],
+      "id": "plaza_izumi-202611-10",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2611.pdf"
+    },
+    {
+      "title": "手形・足形タイム",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-11-27",
+          "start": "10:30",
+          "end": "11:00"
+        }
+      ],
+      "place": "",
+      "target": "乳幼児親子",
+      "capacity": "申込不要",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "汚れても良い服装で。持ち物：ウェットティッシュ"
+      ],
+      "id": "plaza_izumi-202611-11",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2611.pdf"
+    },
+    {
+      "title": "いっしょにあそぼ！プラス",
+      "subtitle": "小学生のリクエスト企画",
+      "audience": "all",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-11-11",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-11-25",
+          "start": "15:30",
+          "end": "15:40"
+        }
+      ],
+      "place": "",
+      "target": "小学生・0〜1歳児親子",
+      "capacity": "申込不要（小学生は当日15:15までに受付で申込）",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "ベビータイム内で、小学生が絵本の読み聞かせや手遊びをする",
+        "小学生の参加がない場合は通常のベビータイム"
+      ],
+      "id": "plaza_izumi-202611-12",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2611.pdf"
+    },
+    {
+      "title": "いちごタイム",
+      "subtitle": "年齢別プログラム",
+      "audience": "baby",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-11-04",
+          "start": "11:10",
+          "end": "11:40"
+        },
+        {
+          "date": "2026-11-11",
+          "start": "11:10",
+          "end": "11:40"
+        },
+        {
+          "date": "2026-11-18",
+          "start": "11:10",
+          "end": "11:40"
+        },
+        {
+          "date": "2026-11-25",
+          "start": "11:10",
+          "end": "11:40"
+        }
+      ],
+      "place": "",
+      "target": "0〜7か月の乳幼児親子",
+      "capacity": "当日申込（開始時間までに受付で）",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [],
+      "id": "plaza_izumi-202611-13",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2611.pdf"
+    },
+    {
+      "title": "みかんタイム",
+      "subtitle": "年齢別プログラム",
+      "audience": "baby",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-11-05",
+          "start": "10:30",
+          "end": "11:00"
+        },
+        {
+          "date": "2026-11-12",
+          "start": "10:30",
+          "end": "11:00"
+        },
+        {
+          "date": "2026-11-19",
+          "start": "10:30",
+          "end": "11:00"
+        },
+        {
+          "date": "2026-11-26",
+          "start": "10:30",
+          "end": "11:00"
+        }
+      ],
+      "place": "",
+      "target": "8か月〜1歳0か月の乳幼児親子",
+      "capacity": "当日申込（開始時間までに受付で）",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [],
+      "id": "plaza_izumi-202611-14",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2611.pdf"
+    },
+    {
+      "title": "りんごタイム",
+      "subtitle": "年齢別プログラム",
+      "audience": "baby",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-11-11",
+          "start": "10:30",
+          "end": "11:00"
+        },
+        {
+          "date": "2026-11-18",
+          "start": "10:30",
+          "end": "11:00"
+        },
+        {
+          "date": "2026-11-25",
+          "start": "10:30",
+          "end": "11:00"
+        }
+      ],
+      "place": "",
+      "target": "1歳1か月〜1歳7か月の乳幼児親子",
+      "capacity": "当日申込（開始時間までに受付で）",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "4日はエアコン工事の関係でお休み"
+      ],
+      "id": "plaza_izumi-202611-15",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2611.pdf"
+    },
+    {
+      "title": "ぶどうタイム",
+      "subtitle": "年齢別プログラム",
+      "audience": "baby",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-11-10",
+          "start": "10:30",
+          "end": "11:00"
+        },
+        {
+          "date": "2026-11-17",
+          "start": "10:30",
+          "end": "11:00"
+        },
+        {
+          "date": "2026-11-24",
+          "start": "10:30",
+          "end": "11:00"
+        }
+      ],
+      "place": "",
+      "target": "1歳8か月〜3歳の乳幼児親子",
+      "capacity": "当日申込（開始時間までに受付で）",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [],
+      "id": "plaza_izumi-202611-16",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2611.pdf"
+    },
+    {
+      "title": "でんしゃランド",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-11-07",
+          "start": "10:00",
+          "end": "11:30"
+        },
+        {
+          "date": "2026-11-14",
+          "start": "10:00",
+          "end": "11:30"
+        },
+        {
+          "date": "2026-11-21",
+          "start": "10:00",
+          "end": "11:30"
+        },
+        {
+          "date": "2026-11-28",
+          "start": "10:00",
+          "end": "11:30"
+        }
+      ],
+      "place": "",
+      "target": "乳幼児親子",
+      "capacity": "申込不要",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "この時間だけの特別な電車で遊ぶ。オリジナルの線路も作れる"
+      ],
+      "id": "plaza_izumi-202611-17",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2611.pdf"
+    },
+    {
+      "title": "ベビータイム",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-11-04",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-11-05",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-11-06",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-11-08",
+          "start": "14:30",
+          "end": "14:40"
+        },
+        {
+          "date": "2026-11-09",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-11-10",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-11-11",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-11-12",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-11-13",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-11-15",
+          "start": "14:30",
+          "end": "14:40"
+        },
+        {
+          "date": "2026-11-16",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-11-17",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-11-18",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-11-19",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-11-20",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-11-22",
+          "start": "14:30",
+          "end": "14:40"
+        },
+        {
+          "date": "2026-11-24",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-11-25",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-11-26",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-11-27",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-11-29",
+          "start": "14:30",
+          "end": "14:40"
+        },
+        {
+          "date": "2026-11-30",
+          "start": "15:30",
+          "end": "15:40"
+        }
+      ],
+      "place": "",
+      "target": "0〜1歳児親子",
+      "capacity": "申込不要",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "絵本やふれあい遊び",
+        "11日・25日は小学生も一緒に参加（いっしょにあそぼ！プラス）"
+      ],
+      "id": "plaza_izumi-202611-18",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2611.pdf"
+    },
+    {
+      "title": "いっしょにあそぼ！",
+      "subtitle": "",
+      "audience": "all",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-11-05",
+          "start": "16:30",
+          "end": "16:45"
+        },
+        {
+          "date": "2026-11-12",
+          "start": "16:30",
+          "end": "16:45"
+        },
+        {
+          "date": "2026-11-19",
+          "start": "16:30",
+          "end": "16:45"
+        },
+        {
+          "date": "2026-11-26",
+          "start": "16:30",
+          "end": "16:45"
+        }
+      ],
+      "place": "",
+      "target": "3歳以上の親子・小学生",
+      "capacity": "申込不要",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "小学生と一緒に身体を動かしたりゲームをしたりする"
+      ],
+      "id": "plaza_izumi-202611-19",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2611.pdf"
+    },
+    {
+      "title": "小学生タイム",
+      "subtitle": "",
+      "audience": "kids",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-11-05",
+          "start": "16:45",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-11-12",
+          "start": "16:45",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-11-19",
+          "start": "16:45",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-11-26",
+          "start": "16:45",
+          "end": "17:45"
+        }
+      ],
+      "place": "ホール",
+      "target": "小学生",
+      "capacity": "申込不要",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "小学生がホールを占有して遊べる"
+      ],
+      "id": "plaza_izumi-202611-20",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2611.pdf"
     }
   ],
   "warnings": [

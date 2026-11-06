@@ -53,8 +53,8 @@ def http_get(url: str) -> requests.Response:
     return resp
 
 
-def find_pdf_links(page_url: str, keyword: str = "おたより") -> list[dict]:
-    """児童館ページから、リンク文字列に keyword を含む PDF リンクを拾う。
+def find_pdf_links(page_url: str, keyword: "str | list[str]" = "おたより") -> list[dict]:
+    """児童館ページから、リンク文字列に keyword（複数ならどれか）を含む PDF リンクを拾う。
 
     同じページに中高生向けチラシなど、おたより以外のPDFが置かれていることがあるため、
     リンク文字列で絞る。ファイル名は号と一致しないことがある（11月号が ...2610.pdf 等）ので使わない。
@@ -66,7 +66,8 @@ def find_pdf_links(page_url: str, keyword: str = "おたより") -> list[dict]:
     for a in soup.select('a[href$=".pdf"], a[href$=".PDF"]'):
         url = urljoin(page_url, a["href"])
         label = a.get_text(" ", strip=True)
-        if url in seen or (keyword and keyword not in label):
+        keywords = [keyword] if isinstance(keyword, str) else list(keyword)
+        if url in seen or (keywords and not any(k in label for k in keywords if k)):
             continue
         seen.add(url)
         out.append({"url": url, "label": label})
