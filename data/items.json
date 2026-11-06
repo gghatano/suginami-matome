@@ -1,5 +1,35 @@
 [
   {
+    "id": "sesion_1656de3b",
+    "source": "セシオン杉並",
+    "source_key": "sesion",
+    "source_url": "https://www.sesion-suginami.jp/",
+    "title": "すぎなみ大人塾総合コースラーニングデザイン・ラボ",
+    "url": "https://www.sesion-suginami.jp/event/meeting/7474",
+    "summary": "",
+    "published_at": "2026-11-06",
+    "fetched_at": "2026-11-06",
+    "category": "イベント",
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/07/jibunrabo2026_ページ_1.jpg",
+    "event_dates": []
+  },
+  {
+    "id": "goguynet_ea1d34f7",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】ワニの手足にカンガルー肉も！？ 高円寺に食肉問屋直売所「肉のKOGIYA(コギヤ)」が11月6日(金)にグランドオープンします！",
+    "url": "https://suginami.goguynet.jp/2026/11/06/niku-no-kogiya/",
+    "summary": "高円寺駅北口の庚申通り商店街に新店情報です！ みずほ銀行の向かいに、食肉問屋直売所「肉のKOGIYA(コギヤ)」が2026年11月6日(金)午前10時にグランドオープンすることがわかりました！ お店の前に貼られていたチラ [&#8230;]",
+    "published_at": "2026-11-05",
+    "fetched_at": "2026-11-06",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/11/IMG_0534-1024x767.jpeg",
+    "event_dates": [
+      "2026-11-06"
+    ]
+  },
+  {
     "id": "suginami_city_d2d918d1",
     "source": "杉並区公式",
     "source_key": "suginami_city",
@@ -7045,34 +7075,6 @@
     "source_url": "https://www.city.suginami.tokyo.jp/",
     "title": "環境講演会「人もペットも快適な省エネ住まい」（杉並区役所）",
     "url": "https://www.city.suginami.tokyo.jp/s103/event/28235.html",
-    "summary": "",
-    "published_at": "2026-09-30",
-    "fetched_at": "2026-09-30",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_fac6eee9",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "荻窪地域史まち歩き（荻窪地域区民センターほか）",
-    "url": "https://www.city.suginami.tokyo.jp/s113/event/27835.html",
-    "summary": "",
-    "published_at": "2026-09-30",
-    "fetched_at": "2026-09-30",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_01210e4c",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "荻窪三庭園アカデミー講座「杉並に暮らした音楽家たち」（阿佐谷地域区民センター）",
-    "url": "https://www.city.suginami.tokyo.jp/s113/event/27913.html",
     "summary": "",
     "published_at": "2026-09-30",
     "fetched_at": "2026-09-30",
