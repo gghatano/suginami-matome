@@ -53,18 +53,23 @@ def http_get(url: str) -> requests.Response:
     return resp
 
 
-def find_pdf_links(page_url: str) -> list[dict]:
-    """児童館ページから PDF リンク（URL とリンク文字列）を拾う。"""
+def find_pdf_links(page_url: str, keyword: str = "おたより") -> list[dict]:
+    """児童館ページから、リンク文字列に keyword を含む PDF リンクを拾う。
+
+    同じページに中高生向けチラシなど、おたより以外のPDFが置かれていることがあるため、
+    リンク文字列で絞る。ファイル名は号と一致しないことがある（11月号が ...2610.pdf 等）ので使わない。
+    """
     resp = http_get(page_url)
     resp.encoding = resp.apparent_encoding if resp.encoding in (None, "ISO-8859-1") else resp.encoding
     soup = BeautifulSoup(resp.text, "lxml")
     seen, out = set(), []
     for a in soup.select('a[href$=".pdf"], a[href$=".PDF"]'):
         url = urljoin(page_url, a["href"])
-        if url in seen:
+        label = a.get_text(" ", strip=True)
+        if url in seen or (keyword and keyword not in label):
             continue
         seen.add(url)
-        out.append({"url": url, "label": a.get_text(" ", strip=True)})
+        out.append({"url": url, "label": label})
     return out
 
 
@@ -151,7 +156,7 @@ def process_center(center: dict, client) -> tuple[int, int]:
     key = center["key"]
     extracted = failed = 0
     try:
-        links = find_pdf_links(center["page_url"])
+        links = find_pdf_links(center["page_url"], center.get("pdf_label_keyword", "おたより"))
     except Exception as e:  # noqa: BLE001
         logger.error("[%s] ページ取得失敗: %s", key, e)
         return 0, 1

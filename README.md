@@ -51,7 +51,7 @@ python -m http.server 8000
 
 | 項目 | 内容 |
 |---|---|
-| 対象の児童館 | [`data/jidoukan/sources.json`](data/jidoukan/sources.json) に1館1行で追加する（`key` / `name` / `page_url` / `address` / `tel`） |
+| 対象の児童館 | [`data/jidoukan/sources.json`](data/jidoukan/sources.json) に1館ずつ追加する（`key` / `name` / `page_url` / `address` / `tel`）。ページ上のPDFのうち、リンク文字列に「おたより」を含むものだけを読む（チラシ等を除外。`pdf_label_keyword` で変更可） |
 | 取得 | 区の児童館ページからPDFリンクを拾い、PDFを Claude API（`claude-opus-5-5`）で読み取ってJSON化 |
 | キャッシュ | `data/jidoukan/extracted/{key}/{PDF名}.json`。PDFの sha256 が変わらない限り再読み取りしない（APIを呼ぶのは新しい号だけ）。誤読はこのJSONを手で直せば、PDFが差し替わるまで残る |
 | 出力 | `data/jidoukan/events.json`（フロントが読む）。日付の形式、対象月の外の日付、休館日との重なりを検証し、`warnings` に残す |
