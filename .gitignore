@@ -10,3 +10,4 @@ venv/
 !.dev.vars.example
 .env*
 !.env.example
+.jidoukan_pdfs/

@@ -51,18 +51,19 @@ python -m http.server 8000
 
 | 項目 | 内容 |
 |---|---|
-| 対象の児童館 | [`data/jidoukan/sources.json`](data/jidoukan/sources.json) に1館1行で追加する（`key` / `name` / `page_url` / `address` / `tel`） |
-| 取得 | 区の児童館ページからPDFリンクを拾い、PDFを Claude API（`claude-opus-5-5`）で読み取ってJSON化 |
+| 対象の児童館 | [`data/jidoukan/sources.json`](data/jidoukan/sources.json) に1館ずつ追加する（`key` / `name` / `page_url` / `address` / `tel`）。ページ上のPDFのうち、リンク文字列に「おたより」を含むものだけを読む（チラシ等を除外。`pdf_label_keyword` で変更可） |
+| 取得 | 区の児童館ページからPDFリンクを拾い、新しい号だけを読み取ってJSON化する。週次の読み取りは Claude のスケジュールしたタスクが行う（手順は [`scrapers/jidoukan/SESSION.md`](scrapers/jidoukan/SESSION.md)、APIキー不要）。Claude API（`claude-opus-5-5`）で読み取る手動実行用の経路も残している |
 | キャッシュ | `data/jidoukan/extracted/{key}/{PDF名}.json`。PDFの sha256 が変わらない限り再読み取りしない（APIを呼ぶのは新しい号だけ）。誤読はこのJSONを手で直せば、PDFが差し替わるまで残る |
 | 出力 | `data/jidoukan/events.json`（フロントが読む）。日付の形式、対象月の外の日付、休館日との重なりを検証し、`warnings` に残す |
-| 更新 | GitHub Actions [`jidoukan.yml`](.github/workflows/jidoukan.yml) が毎週月曜 8:17 JST に実行し、`main` にコミット |
-| 必要な設定 | リポジトリのシークレット `ANTHROPIC_API_KEY` |
+| 更新 | 毎週月曜の朝に Claude のスケジュールしたタスクが実行し、`main` に直接 push する。API経由で読み取る場合は [`jidoukan.yml`](.github/workflows/jidoukan.yml) を手動実行（シークレット `ANTHROPIC_API_KEY` が必要） |
 
 PDFは漢字のふりがな（ルビ）が本文に混ざり、`pdftotext` などでは日付と時刻が崩れるため、テキスト抽出ではなくPDFをそのままモデルに渡しています。
 
 ```bash
 pip install requests beautifulsoup4 lxml anthropic
-ANTHROPIC_API_KEY=... python scrapers/jidoukan/fetch.py   # 取得・読み取り・出力
+python scrapers/jidoukan/fetch.py --list-new .jidoukan_pdfs  # 未読の号をダウンロードして一覧表示
+python scrapers/jidoukan/register.py <center> <url> <sha256> data.json  # 読み取り結果を登録
+ANTHROPIC_API_KEY=... python scrapers/jidoukan/fetch.py   # APIで取得・読み取り・出力
 python scrapers/jidoukan/fetch.py --no-fetch              # キャッシュから events.json だけ作り直す
 ```
 
