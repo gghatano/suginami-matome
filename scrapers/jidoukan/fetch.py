@@ -241,8 +241,50 @@ def build_output(centers: list[dict]) -> dict:
     }
 
 
+def list_new(centers: list[dict], pdf_dir: Path) -> list[dict]:
+    """まだ読み取っていない（または差し替わった）PDFをダウンロードし、一覧を返す。
+
+    Claude のスケジュール実行（APIキーなし）で使う。読み取りはセッション側が行い、
+    結果は register.py でキャッシュに登録する。
+    """
+    pdf_dir.mkdir(parents=True, exist_ok=True)
+    todo = []
+    for center in centers:
+        key = center["key"]
+        try:
+            links = find_pdf_links(center["page_url"], center.get("pdf_label_keyword", "おたより"))
+        except Exception as e:  # noqa: BLE001
+            logger.error("[%s] ページ取得失敗: %s", key, e)
+            todo.append({"center": key, "error": f"ページ取得失敗: {e}"})
+            continue
+        for link in links:
+            time.sleep(SLEEP)
+            try:
+                pdf = http_get(link["url"]).content
+            except Exception as e:  # noqa: BLE001
+                todo.append({"center": key, "url": link["url"], "error": f"PDF取得失敗: {e}"})
+                continue
+            sha = hashlib.sha256(pdf).hexdigest()
+            path = cache_path(key, link["url"])
+            if path.exists() and json.loads(path.read_text(encoding="utf-8")).get("sha256") == sha:
+                continue
+            local = pdf_dir / f"{key}__{Path(link['url']).name}"
+            local.write_bytes(pdf)
+            todo.append({
+                "center": key, "center_name": center["name"], "url": link["url"], "label": link["label"],
+                "sha256": sha, "pdf_path": str(local), "cache_path": str(path.relative_to(ROOT)),
+                "replaces_existing": path.exists(),
+            })
+    return todo
+
+
 def main() -> int:
     centers = json.loads(SOURCES_PATH.read_text(encoding="utf-8"))
+    if "--list-new" in sys.argv:
+        i = sys.argv.index("--list-new")
+        pdf_dir = Path(sys.argv[i + 1]) if len(sys.argv) > i + 1 else ROOT / ".jidoukan_pdfs"
+        print(json.dumps(list_new(centers, pdf_dir), ensure_ascii=False, indent=2))
+        return 0
     client = None
     if os.environ.get("ANTHROPIC_API_KEY"):
         import anthropic

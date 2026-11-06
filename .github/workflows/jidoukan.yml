@@ -1,12 +1,11 @@
 name: Fetch Jidoukan Newsletters
 
-# 児童館のおたより（PDF）を週1回取得し、児童館カレンダー（/jidoukan/）のデータを更新する。
-# 読み取り済みのPDFは sha256 でキャッシュしているので、APIを呼ぶのは新しい号・差し替わった号だけ。
+# 児童館のおたより（PDF）を Claude API で読み取り、児童館カレンダー（/jidoukan/）のデータを更新する。
+# 通常の週次更新は Claude のスケジュールしたタスクが行う（scrapers/jidoukan/SESSION.md、APIキー不要）。
+# このワークフローは API で読み取りたいときの手動実行用。
 # 必要なシークレット: ANTHROPIC_API_KEY（Settings → Secrets and variables → Actions）
 
 on:
-  schedule:
-    - cron: "17 23 * * 0"   # UTC 日曜 23:17 = JST 月曜 8:17
   workflow_dispatch:
 
 concurrency:
