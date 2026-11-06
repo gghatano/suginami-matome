@@ -4,13 +4,23 @@
     "name": "方南児童館",
     "page_url": "https://www.city.suginami.tokyo.jp/s076/3517.html",
     "address": "杉並区方南1-51-7",
-    "tel": "03-3323-6105"
+    "tel": "03-3323-6105",
+    "short": "方南"
   },
   {
     "key": "horinouchi_higashi",
     "name": "堀ノ内東児童館",
     "page_url": "https://www.city.suginami.tokyo.jp/s077/3516.html",
     "address": "杉並区堀ノ内3-49-19-101",
-    "tel": "03-3315-7923"
+    "tel": "03-3315-7923",
+    "short": "堀ノ内東"
+  },
+  {
+    "key": "horinouchi_minami",
+    "name": "ゆうキッズほりみなみ（堀ノ内南学童クラブ）",
+    "short": "ほりみなみ",
+    "page_url": "https://www.city.suginami.tokyo.jp/s120/3539.html",
+    "address": "杉並区堀ノ内1-9-26",
+    "tel": "03-3316-5090"
   }
 ]

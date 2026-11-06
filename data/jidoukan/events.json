@@ -1,19 +1,29 @@
 {
-  "generated_at": "2026-11-06T12:47:47+00:00",
+  "generated_at": "2026-11-06T13:02:25+00:00",
   "centers": [
     {
       "key": "honan",
       "name": "方南児童館",
       "page_url": "https://www.city.suginami.tokyo.jp/s076/3517.html",
       "address": "杉並区方南1-51-7",
-      "tel": "03-3323-6105"
+      "tel": "03-3323-6105",
+      "short": "方南"
     },
     {
       "key": "horinouchi_higashi",
       "name": "堀ノ内東児童館",
       "page_url": "https://www.city.suginami.tokyo.jp/s077/3516.html",
       "address": "杉並区堀ノ内3-49-19-101",
-      "tel": "03-3315-7923"
+      "tel": "03-3315-7923",
+      "short": "堀ノ内東"
+    },
+    {
+      "key": "horinouchi_minami",
+      "name": "ゆうキッズほりみなみ（堀ノ内南学童クラブ）",
+      "short": "ほりみなみ",
+      "page_url": "https://www.city.suginami.tokyo.jp/s120/3539.html",
+      "address": "杉並区堀ノ内1-9-26",
+      "tel": "03-3316-5090"
     }
   ],
   "months": [
@@ -56,6 +66,29 @@
         {
           "date": "2026-11-14",
           "reason": "館内整理日"
+        },
+        {
+          "date": "2026-11-23",
+          "reason": "勤労感謝の日"
+        }
+      ]
+    },
+    {
+      "center": "horinouchi_minami",
+      "year": 2026,
+      "month": 11,
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3539/19horinouchiminami2611.pdf",
+      "pdf_label": "ゆうキッズのおたより（ゆうキッズほりみなみ11月号）（PDF：867KB）",
+      "method": "manual",
+      "extracted_at": "2026-11-06T15:00:00+00:00",
+      "closed_days": [
+        {
+          "date": "2026-11-03",
+          "reason": "文化の日"
+        },
+        {
+          "date": "2026-11-16",
+          "reason": "小学校休校日"
         },
         {
           "date": "2026-11-23",
@@ -1752,10 +1785,301 @@
       "id": "horinouchi_higashi-202611-17",
       "center": "horinouchi_higashi",
       "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3516/13horinouchihigahsi2610.pdf"
+    },
+    {
+      "title": "親子エクササイズ",
+      "subtitle": "杉並区児童館第1ブロック ほっとエッセンス事業",
+      "audience": "baby",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-11-05",
+          "start": "11:00",
+          "end": "11:45"
+        }
+      ],
+      "place": "遊戯室",
+      "target": "乳幼児親子",
+      "capacity": "15組程度（先着順）",
+      "requires_application": true,
+      "application_start": "2026-10-19",
+      "application_end": "2026-11-04",
+      "application_method": "直接または電話",
+      "notes": [
+        "講師：工藤 純子 先生",
+        "子どもと一緒にリズムに合わせて体を動かす"
+      ],
+      "id": "horinouchi_minami-202611-00",
+      "center": "horinouchi_minami",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3539/19horinouchiminami2611.pdf"
+    },
+    {
+      "title": "リサイクルバザー",
+      "subtitle": "こまどり母親クラブ・堀ノ内南学童クラブ共催",
+      "audience": "all",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-11-14",
+          "start": "13:30",
+          "end": "15:00"
+        }
+      ],
+      "place": "堀ノ内南学童クラブ 遊戯室",
+      "target": "どなたでも",
+      "capacity": "購入は申込不要（直接会場へ）",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "子ども〜大人向けの服・文具・児童書・おもちゃ大型玩具・家庭用品・手作り品・小物雑貨・食品など",
+        "出品申込：11/2（月）〜11/12（木）10:00〜13:00、学童クラブ窓口で申込書を配布・受付",
+        "出品の問い合わせ：11/2（月）〜11/7（土）10:00〜12:50"
+      ],
+      "id": "horinouchi_minami-202611-01",
+      "center": "horinouchi_minami",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3539/19horinouchiminami2611.pdf"
+    },
+    {
+      "title": "ねんねタイム",
+      "subtitle": "ゆうキッズスタート事業",
+      "audience": "baby",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-11-10",
+          "start": "11:00",
+          "end": "11:30"
+        },
+        {
+          "date": "2026-11-17",
+          "start": "11:00",
+          "end": "11:30"
+        },
+        {
+          "date": "2026-11-24",
+          "start": "11:00",
+          "end": "11:30"
+        }
+      ],
+      "place": "遊戯室",
+      "target": "おおむね6か月までのねんねの赤ちゃん",
+      "capacity": "",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "ふれあい遊びやおしゃべり"
+      ],
+      "id": "horinouchi_minami-202611-02",
+      "center": "horinouchi_minami",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3539/19horinouchiminami2611.pdf"
+    },
+    {
+      "title": "すくすくタイム",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-11-12",
+          "start": "11:00",
+          "end": "11:30"
+        },
+        {
+          "date": "2026-11-19",
+          "start": "11:00",
+          "end": "11:30"
+        },
+        {
+          "date": "2026-11-26",
+          "start": "11:00",
+          "end": "11:30"
+        }
+      ],
+      "place": "遊戯室",
+      "target": "おおむね6か月以上の子",
+      "capacity": "",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "ふれあい遊び、絵本の読み聞かせ、工作"
+      ],
+      "id": "horinouchi_minami-202611-03",
+      "center": "horinouchi_minami",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3539/19horinouchiminami2611.pdf"
+    },
+    {
+      "title": "ゆうキッズ（遊戯室の利用）",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-11-02",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-11-04",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-11-06",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-11-09",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-11-10",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-11-11",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-11-12",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-11-13",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-11-17",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-11-18",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-11-19",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-11-20",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-11-24",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-11-25",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-11-26",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-11-27",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-11-30",
+          "start": "10:00",
+          "end": "13:00"
+        }
+      ],
+      "place": "堀ノ内南学童クラブ 遊戯室",
+      "target": "0歳からの未就学児と保護者",
+      "capacity": "",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "月〜金 10:00〜小学生の下校時刻まで（11月は13:00まで）",
+        "土日祝と小学校が休みの日は利用不可",
+        "昼食は12:00〜13:00に遊戯室で可"
+      ],
+      "id": "horinouchi_minami-202611-04",
+      "center": "horinouchi_minami",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3539/19horinouchiminami2611.pdf"
+    },
+    {
+      "title": "親子で楽しもう♪クラリネットとパネルシアター",
+      "subtitle": "杉並区児童館第1ブロック ほっとエッセンス事業（12月の予告）",
+      "audience": "baby",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-12-03",
+          "start": "11:00",
+          "end": "11:30"
+        }
+      ],
+      "place": "",
+      "target": "乳幼児親子",
+      "capacity": "申込不要（直接会場へ）",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "講師：こまどり母親クラブ",
+        "パネルシアター（クリスマスケーキ／おもちゃのチャチャ）、バスに乗って！、クラリネット演奏3曲"
+      ],
+      "id": "horinouchi_minami-202611-05",
+      "center": "horinouchi_minami",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3539/19horinouchiminami2611.pdf"
+    },
+    {
+      "title": "わくわくクリスマスコンサート",
+      "subtitle": "12月の予告",
+      "audience": "baby",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-12-01",
+          "start": "11:00",
+          "end": "11:45"
+        }
+      ],
+      "place": "",
+      "target": "乳幼児親子",
+      "capacity": "25組程度（先着順）",
+      "requires_application": true,
+      "application_start": "2026-11-16",
+      "application_end": "",
+      "application_method": "直接または電話",
+      "notes": [
+        "講師：まゆ先生（下村真有美さん）、エリ先生（大橋恵理さん）",
+        "楽器の演奏や歌、リズムに合わせた手遊び"
+      ],
+      "id": "horinouchi_minami-202611-06",
+      "center": "horinouchi_minami",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3539/19horinouchiminami2611.pdf"
     }
   ],
   "warnings": [
-    "堀ノ内東児童館 13horinouchihigahsi2610: 「チアダンス練習会」の開催日 2026-12-01 が対象月の外です（残します）",
-    "堀ノ内東児童館 13horinouchihigahsi2610: 「チアダンス練習会」の開催日 2026-12-08 が対象月の外です（残します）"
+    "堀ノ内東児童館 13horinouchihigahsi2610: 「チアダンス練習会」の開催日 2026-12-01 が対象月の外です（翌月の予告なら正常。残します）",
+    "堀ノ内東児童館 13horinouchihigahsi2610: 「チアダンス練習会」の開催日 2026-12-08 が対象月の外です（翌月の予告なら正常。残します）",
+    "ゆうキッズほりみなみ（堀ノ内南学童クラブ） 19horinouchiminami2611: 「親子で楽しもう♪クラリネットとパネルシアター」の開催日 2026-12-03 が対象月の外です（翌月の予告なら正常。残します）",
+    "ゆうキッズほりみなみ（堀ノ内南学童クラブ） 19horinouchiminami2611: 「わくわくクリスマスコンサート」の開催日 2026-12-01 が対象月の外です（翌月の予告なら正常。残します）"
   ]
 }
