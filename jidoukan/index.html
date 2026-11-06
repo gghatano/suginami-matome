@@ -107,7 +107,7 @@ select{font:inherit;font-size:.85rem;padding:4px 8px;border-radius:8px;border:1p
 .chip{font:inherit;font-size:.74rem;line-height:1.35;border-radius:5px;padding:3px 6px;border:0;border-left:3px solid;min-width:0;overflow-wrap:anywhere;cursor:pointer;text-align:left;color:var(--ink);width:100%;background:transparent}
 .chip:focus-visible{outline:2px solid var(--today);outline-offset:1px}
 .chip .t{font-variant-numeric:tabular-nums;color:var(--muted);display:block;font-size:.7rem}
-/* 色は施設、対象（小学生以上・乳幼児）は時刻の横に文字で出す */
+/* チップの色は施設を表す（対象は上の絞り込みで切り替える） */
 .chip.ev{background:var(--fs);border-color:var(--fc)}
 .chip.reg{background:transparent;border-left-width:2px}
 .chip .must{font-weight:700;color:var(--open)}
@@ -281,13 +281,12 @@ function itemsFor(d) {
 const multi = () => sel().size > 1;
 // 施設の色（sources.json の並び順で6色を順に使う）
 const fcVar = k => { const i = DB.centers.findIndex(c => c.key === k) % 6 + 1; return `--fc:var(--f${i});--fs:var(--f${i}s)`; };
-const audShort = a => a === "kids" ? "小学生〜" : a === "baby" ? "乳幼児" : "どなたでも";
 const shortName = k => CENTERS[k]?.short || (CENTERS[k]?.name || "").replace("児童館", "");
 function chip(it) {
   const e = it.e, cn = multi() ? `<span class="cn">［${esc(shortName(e.center))}］</span>` : "";
   if (it.k === "start") return `<button type="button" class="chip start" style="${fcVar(e.center)}" data-id="${e.id}"><span class="t">申込受付開始</span>${cn}${esc(e.title)}</button>`;
   if (it.k === "end") return `<button type="button" class="chip end" style="${fcVar(e.center)}" data-id="${e.id}"><span class="t">申込締切</span>${cn}${esc(e.title)}</button>`;
-  return `<button type="button" class="chip ev ${e.audience}${e.regular ? " reg" : ""}" style="${fcVar(e.center)}" data-id="${e.id}"><span class="t">${tm(it.s) || "時間は原本で確認"} ・${audShort(e.audience)}</span>${cn}${e.requires_application ? '<span class="must">申込制 </span>' : ""}${esc(e.title)}</button>`;
+  return `<button type="button" class="chip ev ${e.audience}${e.regular ? " reg" : ""}" style="${fcVar(e.center)}" data-id="${e.id}"><span class="t">${tm(it.s) || "時間は原本で確認"}</span>${cn}${e.requires_application ? '<span class="must">申込制 </span>' : ""}${esc(e.title)}</button>`;
 }
 
 function renderCal() {
@@ -304,7 +303,11 @@ function renderCal() {
     // 選んだ全館が同じ理由で休みなら館名を省く
     const sameReason = allOff && new Set(off.map(o => o.reason)).size === 1;
     const offTxt = sameReason ? off[0].reason + "・休館"
-      : off.map(o => (multi() ? shortName(o.center) + "・" : "") + o.reason + "・休館").join(" / ");
+      : [...new Set(off.map(o => o.reason))].map(r => {
+          // 同じ理由で休みの館はまとめて「方南・堀ノ内東：館内整理日・休館」と出す
+          const names = off.filter(o => o.reason === r).map(o => shortName(o.center)).join("・");
+          return (multi() ? names + "：" : "") + r + "・休館";
+        }).join(" / ");
     const nc = w === 0 ? "sun-n" : w === 6 ? "sat-n" : "";
     h += `<div class="cell${allOff ? " off" : ""}${isToday ? " today" : ""}"><div class="dnum"><span class="${nc}">${d}</span>${offTxt ? `<span class="hol">${esc(offTxt)}</span>` : isToday ? '<span class="hol">今日</span>' : ""}</div>${items.map(chip).join("")}</div>`;
     if (items.length || off.length) ag += `<div class="aday${isToday ? " today" : ""}"><div class="d ${nc}">${d}<small>${WD[w]}曜${isToday ? "・今日" : ""}</small></div><div class="list">${offTxt ? `<span class="small muted">${esc(offTxt)}</span>` : ""}${items.map(chip).join("")}</div></div>`;
