@@ -1,5 +1,33 @@
 [
   {
+    "id": "suginami_city_f5721f25",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "令和8年度特別展「与謝野晶子の杉並時代」（郷土博物館）",
+    "url": "https://www.city.suginami.tokyo.jp/s113/event/27137.html",
+    "summary": "",
+    "published_at": "2026-11-08",
+    "fetched_at": "2026-11-08",
+    "category": "イベント",
+    "image": "https://www.city.suginami.tokyo.jp/images/27137/yosano-home2.jpg",
+    "event_dates": []
+  },
+  {
+    "id": "goguynet_f21cb0dd",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】中野富士見町駅近くに大型スーパー「オーケー」がオープンすることがわかりました！",
+    "url": "https://suginami.goguynet.jp/2026/11/08/ok-suginamiwada/",
+    "summary": "丸ノ内線の中野富士見町駅に、ディスカウント・スーパーマーケット「オーケー」の大型店舗が誕生することがわかりました！ オーケーの公式サイトに求人情報が掲載されていました。新たにオープンするのは「オーケー杉並和田店(仮称)」 [&#8230;]",
+    "published_at": "2026-11-07",
+    "fetched_at": "2026-11-08",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/11/IMG_0524-1024x767.jpeg",
+    "event_dates": []
+  },
+  {
     "id": "goguynet_8b166860",
     "source": "号外NET杉並区",
     "source_key": "goguynet",
@@ -1075,7 +1103,7 @@
     "published_at": "2026-11-01",
     "fetched_at": "2026-11-01",
     "category": "イベント",
-    "image": "",
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/11/2kaimekouza.jpg",
     "event_dates": []
   },
   {
@@ -7049,34 +7077,6 @@
     "source_url": "https://www.city.suginami.tokyo.jp/",
     "title": "バスで行く！檜原都民の森　秋の森林トレッキングとカエデ",
     "url": "https://www.city.suginami.tokyo.jp/s103/event/28218.html",
-    "summary": "",
-    "published_at": "2026-09-30",
-    "fetched_at": "2026-09-30",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_3c526311",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "布ぞうり作り（環境活動推進センター）",
-    "url": "https://www.city.suginami.tokyo.jp/s103/event/28219.html",
-    "summary": "",
-    "published_at": "2026-09-30",
-    "fetched_at": "2026-09-30",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "suginami_city_12008017",
-    "source": "杉並区公式",
-    "source_key": "suginami_city",
-    "source_url": "https://www.city.suginami.tokyo.jp/",
-    "title": "石けん作り体験（環境活動推進センター）",
-    "url": "https://www.city.suginami.tokyo.jp/s103/event/28220.html",
     "summary": "",
     "published_at": "2026-09-30",
     "fetched_at": "2026-09-30",
