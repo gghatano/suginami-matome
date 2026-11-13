@@ -65,6 +65,7 @@ URLパラメータで表示を指定できます（画面で選択を変える�
 | `target` | `kids`（小学生以上）／`baby`（乳幼児親子）。省略時はすべて | `target=baby` |
 | `regular` | `1` で毎日・毎週のプログラムも表示 | `regular=1` |
 | `month` | 表示する月 | `month=2026-11` |
+| `view` | `month` でスマホでもカレンダー（横7曜日のマス目）表示にする。省略時は日ごとの一覧（PCは常にマス目） | `view=month` |
 
 例：方南児童館の乳幼児向けだけ → `/jidoukan/?center=honan&target=baby`
 

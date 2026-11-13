@@ -159,6 +159,30 @@ select{font:inherit;font-size:.85rem;padding:4px 8px;border-radius:8px;border:1p
 .aday .d small{display:block;font-size:.75rem;font-weight:500;color:var(--muted)}
 .aday .list{display:grid;gap:5px;min-width:0}
 @media (max-width:760px){.cal{display:none}.agenda{display:grid}}
+/* スマホの表示切り替え：一覧（日ごとに縦に積む）／カレンダー（横7曜日のマス目） */
+.viewseg{display:none}
+.mini{display:none}
+.daypanel{display:none}
+@media (max-width:760px){
+  .viewseg{display:flex}
+  body.view-month .cal{display:block}
+  body.view-month .agenda{display:none}
+  body.view-month .daypanel{display:grid}
+  /* マス目では行事名を出さず、施設の色の点・受付開始・休館だけを出す */
+  body.view-month .cell{min-height:64px;padding:3px 2px;gap:2px;cursor:pointer}
+  body.view-month .cell .chip,body.view-month .cell .hol{display:none}
+  body.view-month .cell .mini{display:flex}
+  body.view-month .cell.selday{box-shadow:inset 0 0 0 2px var(--ink)}
+  body.view-month .cell.today.selday{box-shadow:inset 0 0 0 2px var(--ink),inset 0 0 0 4px var(--today)}
+  body.view-month .dnum{font-size:.85rem;justify-content:center}
+}
+.mini{flex-wrap:wrap;gap:2px;justify-content:center;align-content:flex-start}
+.mini .d{width:8px;height:8px;border-radius:50%;background:var(--fc)}
+.mini .st{font-size:.6rem;font-weight:700;line-height:1;padding:2px 3px;border-radius:3px;background:var(--open);color:var(--on-open)}
+.mini .off{font-size:.62rem;font-weight:700;line-height:1;padding:2px 3px;border-radius:3px;border:1px solid var(--fc,var(--closed));color:var(--fc,var(--closed));background:var(--paper)}
+.mini .off.all{border-color:var(--closed);color:var(--closed);background:transparent}
+.daypanel{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:10px 12px;gap:6px}
+.daypanel h3{font-size:1rem}
 
 .details{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
 .det{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:grid;gap:6px;align-content:start;min-width:0;scroll-margin-top:16px}
@@ -206,6 +230,10 @@ footer{font-size:.8rem;color:var(--muted);display:grid;gap:6px}
         <h2 id="cal-h">—</h2>
         <button type="button" class="btn" id="nextM" aria-label="次の月">›</button>
       </div>
+      <div class="seg viewseg" id="viewSeg" role="group" aria-label="スマホでの表示">
+        <button type="button" class="btn" data-v="list" aria-pressed="true">一覧</button>
+        <button type="button" class="btn" data-v="month" aria-pressed="false">カレンダー</button>
+      </div>
     </div>
     <div class="legend">
       <span id="legendCenters" style="display:contents"></span>
@@ -219,6 +247,7 @@ footer{font-size:.8rem;color:var(--muted);display:grid;gap:6px}
       <div class="cal-body" id="calBody"></div>
     </div>
     <div class="agenda" id="agenda"></div>
+    <div class="daypanel" id="dayPanel" aria-live="polite"></div>
     <p class="small muted" id="monthSrc"></p>
   </section>
 
@@ -358,12 +387,20 @@ function renderCal() {
           return (multi() ? names + "：" : "") + r + "・休館";
         }).join(" / ");
     const nc = w === 0 ? "sun-n" : w === 6 ? "sat-n" : "";
-    h += `<div class="cell${allOff ? " off" : ""}${isToday ? " today" : ""}"><div class="dnum"><span class="${nc}">${d}</span>${offTxt ? `<span class="hol">${esc(offTxt)}</span>` : isToday ? '<span class="hol">今日</span>' : ""}</div>${items.map(chip).join("")}</div>`;
+    // スマホのカレンダー表示用：休館（全館なら「休」、一部なら休む館の色の「休」）、受付開始、行事のある館の色の点
+    const evCenters = [...new Set(items.filter(it => it.k === "ev").map(it => it.e.center))];
+    const mini = (allOff ? `<span class="off all">休</span>` : off.map(o => `<span class="off" style="${fcVar(o.center)}" title="${esc(shortName(o.center))}休館">休</span>`).join(""))
+      + (items.some(it => it.k === "start") ? `<span class="st">申</span>` : "")
+      + evCenters.map(k => `<i class="d" style="${fcVar(k)}"></i>`).join("");
+    h += `<div class="cell${allOff ? " off" : ""}${isToday ? " today" : ""}${ds === selDay ? " selday" : ""}" data-day="${ds}"><div class="dnum"><span class="${nc}">${d}</span>${offTxt ? `<span class="hol">${esc(offTxt)}</span>` : isToday ? '<span class="hol">今日</span>' : ""}</div><div class="mini">${mini}</div>${items.map(chip).join("")}</div>`;
     if (items.length || off.length) ag += `<div class="aday${isToday ? " today" : ""}"><div class="d ${nc}">${d}<small>${WD[w]}曜${isToday ? "・今日" : ""}</small></div><div class="list">${offTxt ? `<span class="small muted">${esc(offTxt)}</span>` : ""}${items.map(chip).join("")}</div></div>`;
   }
   const rest = (7 - (first + last) % 7) % 7;
   for (let i = 0; i < rest; i++) h += `<div class="cell blank"></div>`;
   document.getElementById("calBody").innerHTML = h;
+  renderDayPanel();
+  document.body.classList.toggle("view-month", view === "month");
+  document.querySelectorAll("#viewSeg .btn").forEach(b => b.setAttribute("aria-pressed", b.dataset.v === view));
   document.getElementById("agenda").innerHTML = ag || `<p class="empty">この月の行事はまだありません。</p>`;
 
   const ms = DB.months.filter(m => m.year === curY && m.month === curM && isSel(m.center));
@@ -374,6 +411,21 @@ function renderCal() {
   document.getElementById("prevM").disabled = !yms.some(x => x < ym);
   document.getElementById("nextM").disabled = !yms.some(x => x > ym);
   renderDetails();
+}
+
+// カレンダー表示（スマホ）で選んだ日の行事と休館を、マス目の下に出す
+function renderDayPanel() {
+  const pre = `${curY}-${pad(curM)}-`;
+  if (!selDay || !selDay.startsWith(pre)) selDay = TODAY.startsWith(pre) ? TODAY : pre + "01";
+  document.querySelectorAll("#calBody .cell").forEach(c => c.classList.toggle("selday", c.dataset.day === selDay));
+  const d = new Date(selDay + "T00:00:00"), off = closedOn(selDay), items = itemsFor(selDay);
+  const offTxt = [...new Set(off.map(o => o.reason))].map(r =>
+    off.filter(o => o.reason === r).map(o => shortName(o.center)).join("・") + "：" + r + "・休館").join(" / ");
+  document.getElementById("dayPanel").innerHTML =
+    `<h3>${d.getMonth() + 1}月${d.getDate()}日（${WD[d.getDay()]}）${selDay === TODAY ? "・今日" : ""}</h3>`
+    + (offTxt ? `<p class="small muted">${esc(offTxt)}</p>` : "")
+    + (items.length ? items.map(chip).join("") : `<p class="small muted">この日の行事はありません。</p>`)
+    + `<p class="small muted">マス目の日付をタップすると、その日の行事をここに表示します。</p>`;
 }
 
 function renderDetails() {
@@ -410,12 +462,16 @@ function renderAll() { renderApply(); renderCal(); }
 // ?month=2026-11                    表示する月（旧形式 #m202611 も読む）
 // パラメータがあればURLだけで表示を決める（ブラウザに保存した選択は使わない）。画面で選択を変えるとURLも書き換わる。
 let monthPinned = false;
+// スマホでの表示（list=一覧／month=カレンダー）と、カレンダー表示で選んでいる日
+let view = "list", selDay = null;
+try { if (localStorage.getItem("jdk-view") === "month") view = "month"; } catch (_) {}
 function applyParams() {
   const q = new URLSearchParams(location.search);
   // パラメータが1つでもあれば、共有した人と同じ画面になるよう、書かれていない項目は初期値にする
-  if (["center", "target", "regular", "month"].some(k => q.has(k))) {
-    deselected = new Set(); filt = "all"; showReg = false;
+  if (["center", "target", "regular", "month", "view"].some(k => q.has(k))) {
+    deselected = new Set(); filt = "all"; showReg = false; view = "list";
   }
+  if (q.get("view") === "month") view = "month";
   if (q.has("center")) {
     const want = new Set(q.get("center").split(",").map(x => x.trim()).filter(k => CENTERS[k]));
     if (want.size) deselected = new Set(DB.centers.map(c => c.key).filter(k => !want.has(k)));
@@ -436,6 +492,7 @@ function syncURL() {
   if (filt !== "all") q.set("target", filt);
   if (showReg) q.set("regular", "1");
   if (monthPinned) q.set("month", `${curY}-${pad(curM)}`);
+  if (view === "month") q.set("view", "month");
   const qs = q.toString().replace(/%2C/g, ",");
   history.replaceState(null, "", location.pathname + (qs ? "?" + qs : ""));
 }
@@ -508,6 +565,18 @@ document.getElementById("ctrs").addEventListener("click", ev => {
 });
 document.getElementById("selAll").addEventListener("click", () => { deselected = new Set(); saveSel(); });
 document.getElementById("selNone").addEventListener("click", () => { deselected = new Set(DB.centers.map(c => c.key)); saveSel(); });
+document.querySelectorAll("#viewSeg .btn").forEach(b => b.addEventListener("click", () => {
+  view = b.dataset.v;
+  try { localStorage.setItem("jdk-view", view); } catch (_) {}
+  syncURL();
+  renderCal();
+}));
+document.getElementById("calBody").addEventListener("click", ev => {
+  if (view !== "month" || !matchMedia("(max-width:760px)").matches) return;
+  const c = ev.target.closest(".cell[data-day]"); if (!c) return;
+  selDay = c.dataset.day;
+  renderDayPanel();
+});
 document.getElementById("prevM").addEventListener("click", () => go(-1));
 document.getElementById("nextM").addEventListener("click", () => go(1));
 document.addEventListener("click", ev => {
