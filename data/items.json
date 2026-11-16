@@ -1,5 +1,77 @@
 [
   {
+    "id": "goguynet_4d95a9ca",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】荻窪エリアに初出店♪「スギ薬局 荻窪八幡通店」が12月上旬オープン予定であることがわかりました！",
+    "url": "https://suginami.goguynet.jp/2026/11/17/sugi-drugstore-ogikubo/",
+    "summary": "荻窪駅から歩いて5分ほど、青梅街道沿いにある天沼八幡通りの入口に位置する「荻窪SYビル」。 この建物の1階に「スギ薬局 新店OPEN予定 薬剤師・医療事務・店舗スタッフ募集」と書かれた貼り紙が掲示されていました。 調べを [&#8230;]",
+    "published_at": "2026-11-16",
+    "fetched_at": "2026-11-16",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/11/IMG_0646-1024x767.jpeg",
+    "event_dates": []
+  },
+  {
+    "id": "sesion_e1a05180",
+    "source": "セシオン杉並",
+    "source_key": "sesion",
+    "source_url": "https://www.sesion-suginami.jp/",
+    "title": "寝る前にからだをほぐすリラックス アロマヨガ＜2026年10月～12月＞",
+    "url": "https://www.sesion-suginami.jp/event/exhibition/7721",
+    "summary": "",
+    "published_at": "2026-11-16",
+    "fetched_at": "2026-11-16",
+    "category": "イベント",
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/09/名称_未_設定-2026年7月27日-20.11.17-1-1-scaled.jpg",
+    "event_dates": []
+  },
+  {
+    "id": "sesion_7ab99c91",
+    "source": "セシオン杉並",
+    "source_key": "sesion",
+    "source_url": "https://www.sesion-suginami.jp/",
+    "title": "ほっと一息しませんか？福祉 なんでも相談会《8月～11月》",
+    "url": "https://www.sesion-suginami.jp/event/danwa/7500",
+    "summary": "",
+    "published_at": "2026-11-16",
+    "fetched_at": "2026-11-16",
+    "category": "イベント",
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/07/チラシ（8月～11月）.png",
+    "event_dates": []
+  },
+  {
+    "id": "mypl_da1c67d9",
+    "source": "まいぷれ杉並区",
+    "source_key": "mypl",
+    "source_url": "https://suginami.mypl.net/",
+    "title": "NEMUI Petiti Fashionshow",
+    "url": "https://suginami.mypl.net/event/00000480818/",
+    "summary": "季節のイベント、行事 NEMUI Petiti Fashionshow",
+    "published_at": "2026-11-16",
+    "fetched_at": "2026-11-16",
+    "category": "イベント",
+    "image": "https://img2.mypl.net/image.php?id=364823&p=bti&s=375_250&op=",
+    "event_dates": []
+  },
+  {
+    "id": "goguynet_a2b6f82f",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】新高円寺に肉料理が自慢のビストロ「肉魂 Soul＆Meat（ソウルミート）」がオープンしていました！",
+    "url": "https://suginami.goguynet.jp/2026/11/16/soul-meat/",
+    "summary": "丸ノ内線・新高円寺駅から徒歩6分ほど、青梅街道沿いに「肉魂 Soul＆Meat（ソウルミート)」が2026年10月1日(木)に新しくオープンしていました！ こちらの場所には、以前、号外ネット杉並区でもお伝えした「麺昇 神 [&#8230;]",
+    "published_at": "2026-11-15",
+    "fetched_at": "2026-11-16",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/11/IMG_0408-1024x767.jpeg",
+    "event_dates": [
+      "2026-10-01"
+    ]
+  },
+  {
     "id": "suginami_city_0f9462a8",
     "source": "杉並区公式",
     "source_key": "suginami_city",
@@ -1344,7 +1416,7 @@
     "published_at": "2026-11-14",
     "fetched_at": "2026-11-14",
     "category": "イベント",
-    "image": "",
+    "image": "https://www.city.suginami.tokyo.jp/images/29202/1212_1.jpg",
     "event_dates": []
   },
   {
@@ -1358,7 +1430,7 @@
     "published_at": "2026-11-14",
     "fetched_at": "2026-11-14",
     "category": "イベント",
-    "image": "",
+    "image": "https://www.city.suginami.tokyo.jp/images/28905/yokazo.jpg",
     "event_dates": []
   },
   {
@@ -1372,7 +1444,7 @@
     "published_at": "2026-11-14",
     "fetched_at": "2026-11-14",
     "category": "イベント",
-    "image": "",
+    "image": "https://www.city.suginami.tokyo.jp/images/28906/watanabe-jyotarou.jpg",
     "event_dates": []
   },
   {
@@ -7025,76 +7097,6 @@
     "fetched_at": "2026-10-01",
     "category": "イベント",
     "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/09/20260904192255.jpg",
-    "event_dates": []
-  },
-  {
-    "id": "sesion_d2a436eb",
-    "source": "セシオン杉並",
-    "source_key": "sesion",
-    "source_url": "https://www.sesion-suginami.jp/",
-    "title": "第73回杉並区総合文化祭将棋大会",
-    "url": "https://www.sesion-suginami.jp/event/meeting/7812",
-    "summary": "",
-    "published_at": "2026-10-01",
-    "fetched_at": "2026-10-01",
-    "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/09/20260908142759.jpg",
-    "event_dates": []
-  },
-  {
-    "id": "sesion_a5c9d037",
-    "source": "セシオン杉並",
-    "source_key": "sesion",
-    "source_url": "https://www.sesion-suginami.jp/",
-    "title": "お笑い芸人と育む自己言語化力ラフサクブン",
-    "url": "https://www.sesion-suginami.jp/event/meeting/7752",
-    "summary": "",
-    "published_at": "2026-10-01",
-    "fetched_at": "2026-10-01",
-    "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/09/20260904150307_ページ_1.jpg",
-    "event_dates": []
-  },
-  {
-    "id": "sesion_28d623a0",
-    "source": "セシオン杉並",
-    "source_key": "sesion",
-    "source_url": "https://www.sesion-suginami.jp/",
-    "title": "アイシングクッキー教室2026～ハッピーハロウィン！～",
-    "url": "https://www.sesion-suginami.jp/event/cook/7678",
-    "summary": "",
-    "published_at": "2026-10-01",
-    "fetched_at": "2026-10-01",
-    "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/08/261004アイシングハロウィン.jpg",
-    "event_dates": []
-  },
-  {
-    "id": "sesion_d98b38f3",
-    "source": "セシオン杉並",
-    "source_key": "sesion",
-    "source_url": "https://www.sesion-suginami.jp/",
-    "title": "親子でバレエリトミック《杉並子育て応援券対象》",
-    "url": "https://www.sesion-suginami.jp/event/recreation/7652",
-    "summary": "",
-    "published_at": "2026-10-01",
-    "fetched_at": "2026-10-01",
-    "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/08/名称_未_設定-2026年7月20日-09.58.55-6-1-1-scaled.jpg",
-    "event_dates": []
-  },
-  {
-    "id": "sesion_191e091b",
-    "source": "セシオン杉並",
-    "source_key": "sesion",
-    "source_url": "https://www.sesion-suginami.jp/",
-    "title": "アークス吹奏楽団　第７回定期演奏会",
-    "url": "https://www.sesion-suginami.jp/event/hall/7572",
-    "summary": "",
-    "published_at": "2026-10-01",
-    "fetched_at": "2026-10-01",
-    "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/08/20260803143821.jpg",
     "event_dates": []
   }
 ]
