@@ -1,5 +1,77 @@
 [
   {
+    "id": "suginami_city_32a608c4",
+    "source": "杉並区公式",
+    "source_key": "suginami_city",
+    "source_url": "https://www.city.suginami.tokyo.jp/",
+    "title": "文化・芸術振興審議会",
+    "url": "https://www.city.suginami.tokyo.jp/s030/event/30080.html",
+    "summary": "",
+    "published_at": "2026-11-17",
+    "fetched_at": "2026-11-17",
+    "category": "イベント",
+    "image": "",
+    "event_dates": []
+  },
+  {
+    "id": "sesion_d98b38f3",
+    "source": "セシオン杉並",
+    "source_key": "sesion",
+    "source_url": "https://www.sesion-suginami.jp/",
+    "title": "親子でバレエリトミック《杉並子育て応援券対象》",
+    "url": "https://www.sesion-suginami.jp/event/recreation/7652",
+    "summary": "",
+    "published_at": "2026-11-17",
+    "fetched_at": "2026-11-17",
+    "category": "イベント",
+    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/08/名称_未_設定-2026年7月20日-09.58.55-6-1-1-scaled.jpg",
+    "event_dates": []
+  },
+  {
+    "id": "sesion_1d482961",
+    "source": "セシオン杉並",
+    "source_key": "sesion",
+    "source_url": "https://www.sesion-suginami.jp/",
+    "title": "こども伝統芸能わくわく体験日本の芸・技・あそび<昔あそび体験>",
+    "url": "https://www.sesion-suginami.jp/event/hall/8003",
+    "summary": "",
+    "published_at": "2026-11-17",
+    "fetched_at": "2026-11-17",
+    "category": "イベント",
+    "image": "",
+    "event_dates": []
+  },
+  {
+    "id": "sesion_9cb0c85f",
+    "source": "セシオン杉並",
+    "source_key": "sesion",
+    "source_url": "https://www.sesion-suginami.jp/",
+    "title": "こども伝統芸能わくわく体験日本の芸・技・あそび子ども向け落語ワークショップ",
+    "url": "https://www.sesion-suginami.jp/event/hall/8010",
+    "summary": "",
+    "published_at": "2026-11-17",
+    "fetched_at": "2026-11-17",
+    "category": "イベント",
+    "image": "",
+    "event_dates": []
+  },
+  {
+    "id": "mypl_a8850a6a",
+    "source": "まいぷれ杉並区",
+    "source_key": "mypl",
+    "source_url": "https://suginami.mypl.net/",
+    "title": "【無料で血管年齢測定・予約不要】11/21（土）9～13時 まごころ薬局久我山店",
+    "url": "https://suginami.mypl.net/event/00000480877/",
+    "summary": "スクール、体験 【無料で血管年齢測定・予約不要】11/21（土）9～13時 まごころ薬局久我山店",
+    "published_at": "2026-11-17",
+    "fetched_at": "2026-11-17",
+    "category": "イベント",
+    "image": "https://img2.mypl.net/image.php?id=364904&p=bti&s=500_730&op=",
+    "event_dates": [
+      "2026-11-21"
+    ]
+  },
+  {
     "id": "goguynet_4d95a9ca",
     "source": "号外NET杉並区",
     "source_key": "goguynet",
@@ -1458,7 +1530,7 @@
     "published_at": "2026-11-14",
     "fetched_at": "2026-11-14",
     "category": "イベント",
-    "image": "",
+    "image": "https://www.city.suginami.tokyo.jp/images/28909/mayudango.jpg",
     "event_dates": []
   },
   {
@@ -7027,76 +7099,6 @@
     "fetched_at": "2026-10-01",
     "category": "イベント",
     "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/10/26年10月ランチタイム販売.jpg",
-    "event_dates": []
-  },
-  {
-    "id": "sesion_e87ef6ea",
-    "source": "セシオン杉並",
-    "source_key": "sesion",
-    "source_url": "https://www.sesion-suginami.jp/",
-    "title": "2026年10月 ランチタイム販売Seasonal Café",
-    "url": "https://www.sesion-suginami.jp/event/terrace/7892",
-    "summary": "",
-    "published_at": "2026-10-01",
-    "fetched_at": "2026-10-01",
-    "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/10/26年10月ランチタイム販売.jpg",
-    "event_dates": []
-  },
-  {
-    "id": "sesion_36538042",
-    "source": "セシオン杉並",
-    "source_key": "sesion",
-    "source_url": "https://www.sesion-suginami.jp/",
-    "title": "第73回杉並区総合文化祭絵手紙展",
-    "url": "https://www.sesion-suginami.jp/event/exhibition/7807",
-    "summary": "",
-    "published_at": "2026-10-01",
-    "fetched_at": "2026-10-01",
-    "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/09/20260908142759.jpg",
-    "event_dates": []
-  },
-  {
-    "id": "sesion_3ccb458e",
-    "source": "セシオン杉並",
-    "source_key": "sesion",
-    "source_url": "https://www.sesion-suginami.jp/",
-    "title": "2026年10月 ランチタイム販売成宗シフォン",
-    "url": "https://www.sesion-suginami.jp/event/danwa/7895",
-    "summary": "",
-    "published_at": "2026-10-01",
-    "fetched_at": "2026-10-01",
-    "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/10/26年10月ランチタイム販売.jpg",
-    "event_dates": []
-  },
-  {
-    "id": "sesion_69a74489",
-    "source": "セシオン杉並",
-    "source_key": "sesion",
-    "source_url": "https://www.sesion-suginami.jp/",
-    "title": "2026年10月 ランチタイム販売工房 ラルゴ",
-    "url": "https://www.sesion-suginami.jp/event/danwa/7894",
-    "summary": "",
-    "published_at": "2026-10-01",
-    "fetched_at": "2026-10-01",
-    "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/10/26年10月ランチタイム販売.jpg",
-    "event_dates": []
-  },
-  {
-    "id": "sesion_35b652b9",
-    "source": "セシオン杉並",
-    "source_key": "sesion",
-    "source_url": "https://www.sesion-suginami.jp/",
-    "title": "第73回杉並区総合文化祭杉並舞踊会",
-    "url": "https://www.sesion-suginami.jp/event/hall/7758",
-    "summary": "",
-    "published_at": "2026-10-01",
-    "fetched_at": "2026-10-01",
-    "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/09/20260904192255.jpg",
     "event_dates": []
   }
 ]
