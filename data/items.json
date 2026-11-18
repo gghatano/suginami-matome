@@ -1,5 +1,47 @@
 [
   {
+    "id": "mypl_cd631a3c",
+    "source": "まいぷれ杉並区",
+    "source_key": "mypl",
+    "source_url": "https://suginami.mypl.net/",
+    "title": "三味線発表会",
+    "url": "https://suginami.mypl.net/event/00000480938/",
+    "summary": "季節のイベント、行事 三味線発表会",
+    "published_at": "2026-11-18",
+    "fetched_at": "2026-11-18",
+    "category": "イベント",
+    "image": "https://img2.mypl.net/image.php?id=364985&p=bti&s=375_250&op=",
+    "event_dates": []
+  },
+  {
+    "id": "mypl_953047ea",
+    "source": "まいぷれ杉並区",
+    "source_key": "mypl",
+    "source_url": "https://suginami.mypl.net/",
+    "title": "チアダンスジャズダンス体験会",
+    "url": "https://suginami.mypl.net/event/00000480027/",
+    "summary": "スクール、体験 チアダンスジャズダンス体験会",
+    "published_at": "2026-11-18",
+    "fetched_at": "2026-11-18",
+    "category": "イベント",
+    "image": "https://img2.mypl.net/image.php?id=363782&p=bti&s=500_730&op=",
+    "event_dates": []
+  },
+  {
+    "id": "goguynet_4316eb4b",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】お買い物途中にちょっと一杯♪ 高円寺の「高円寺麦酒工房」に行ってきました。",
+    "url": "https://suginami.goguynet.jp/2026/11/18/koenji-beerkobo/",
+    "summary": "高円寺駅北口から徒歩5分ほどの路地裏にある「高円寺麦酒工房（こうえんじビールこうぼう）」。 今回は、買い物の途中に立ち寄り、休憩がてらクラフトビールを一杯いただいてきました！ この日のラインナップは全部で10種類。レジで [&#8230;]",
+    "published_at": "2026-11-17",
+    "fetched_at": "2026-11-18",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/11/IMG_0427-1024x767.jpeg",
+    "event_dates": []
+  },
+  {
     "id": "suginami_city_32a608c4",
     "source": "杉並区公式",
     "source_key": "suginami_city",
@@ -7057,48 +7099,6 @@
     "fetched_at": "2026-10-01",
     "category": "イベント",
     "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "sesion_bac49ed7",
-    "source": "セシオン杉並",
-    "source_key": "sesion",
-    "source_url": "https://www.sesion-suginami.jp/",
-    "title": "2026年10月 ランチタイム販売石窯パンふじみ",
-    "url": "https://www.sesion-suginami.jp/event/danwa/7891",
-    "summary": "",
-    "published_at": "2026-10-01",
-    "fetched_at": "2026-10-01",
-    "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/10/26年10月ランチタイム販売.jpg",
-    "event_dates": []
-  },
-  {
-    "id": "sesion_956912af",
-    "source": "セシオン杉並",
-    "source_key": "sesion",
-    "source_url": "https://www.sesion-suginami.jp/",
-    "title": "2026年10月 ランチタイム販売Flying  Mush",
-    "url": "https://www.sesion-suginami.jp/event/danwa/7897",
-    "summary": "",
-    "published_at": "2026-10-01",
-    "fetched_at": "2026-10-01",
-    "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/10/26年10月ランチタイム販売.jpg",
-    "event_dates": []
-  },
-  {
-    "id": "sesion_6cab0d9a",
-    "source": "セシオン杉並",
-    "source_key": "sesion",
-    "source_url": "https://www.sesion-suginami.jp/",
-    "title": "2026年10月 ランチタイム販売N’s kitchen",
-    "url": "https://www.sesion-suginami.jp/event/terrace/7893",
-    "summary": "",
-    "published_at": "2026-10-01",
-    "fetched_at": "2026-10-01",
-    "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/10/26年10月ランチタイム販売.jpg",
     "event_dates": []
   }
 ]
