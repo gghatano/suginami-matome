@@ -132,6 +132,9 @@ select{font:inherit;font-size:.85rem;padding:4px 8px;border-radius:8px;border:1p
 .cell.blank{background:var(--bg)}
 .cell.off{background:var(--closed-soft)}
 .cell.today{box-shadow:inset 0 0 0 2px var(--today)}
+/* 終わった週（その週の土曜が今日より前）は薄く表示する */
+.cell.past > *,.aday.past{opacity:.4}
+.cell.past:hover > *{opacity:.85}
 .dnum{font-family:var(--f-display);font-weight:700;font-size:.95rem;display:flex;justify-content:space-between;gap:4px;align-items:baseline}
 .dnum .hol{font-family:var(--f-body);font-weight:400;font-size:.7rem;color:var(--closed);text-align:right}
 .sun-n{color:var(--open)} .sat-n{color:var(--kids)}
@@ -373,7 +376,9 @@ function renderCal() {
     `<span style="${fcVar(c.key)}"><i class="dot"></i>${esc(shortName(c.key))}</span>`).join("");
   const first = new Date(curY, curM - 1, 1).getDay(), last = new Date(curY, curM, 0).getDate();
   let h = "", ag = "";
-  for (let i = 0; i < first; i++) h += `<div class="cell blank"></div>`;
+  // その日を含む週の土曜が今日より前なら「終わった週」
+  const weekPast = d => { const sat = new Date(curY, curM - 1, d + (6 - (first + d - 1) % 7)); return `${sat.getFullYear()}-${pad(sat.getMonth() + 1)}-${pad(sat.getDate())}` < TODAY; };
+  for (let i = 0; i < first; i++) h += `<div class="cell blank${weekPast(1) ? " past" : ""}"></div>`;
   for (let d = 1; d <= last; d++) {
     const ds = `${curY}-${pad(curM)}-${pad(d)}`, w = (first + d - 1) % 7;
     const off = closedOn(ds), items = itemsFor(ds), isToday = ds === TODAY;
@@ -392,11 +397,12 @@ function renderCal() {
     const mini = (allOff ? `<span class="off all">休</span>` : off.map(o => `<span class="off" style="${fcVar(o.center)}" title="${esc(shortName(o.center))}休館">休</span>`).join(""))
       + (items.some(it => it.k === "start") ? `<span class="st">申</span>` : "")
       + evCenters.map(k => `<i class="d" style="${fcVar(k)}"></i>`).join("");
-    h += `<div class="cell${allOff ? " off" : ""}${isToday ? " today" : ""}${ds === selDay ? " selday" : ""}" data-day="${ds}"><div class="dnum"><span class="${nc}">${d}</span>${offTxt ? `<span class="hol">${esc(offTxt)}</span>` : isToday ? '<span class="hol">今日</span>' : ""}</div><div class="mini">${mini}</div>${items.map(chip).join("")}</div>`;
-    if (items.length || off.length) ag += `<div class="aday${isToday ? " today" : ""}"><div class="d ${nc}">${d}<small>${WD[w]}曜${isToday ? "・今日" : ""}</small></div><div class="list">${offTxt ? `<span class="small muted">${esc(offTxt)}</span>` : ""}${items.map(chip).join("")}</div></div>`;
+    const past = weekPast(d);
+    h += `<div class="cell${allOff ? " off" : ""}${isToday ? " today" : ""}${past ? " past" : ""}${ds === selDay ? " selday" : ""}" data-day="${ds}"><div class="dnum"><span class="${nc}">${d}</span>${offTxt ? `<span class="hol">${esc(offTxt)}</span>` : isToday ? '<span class="hol">今日</span>' : ""}</div><div class="mini">${mini}</div>${items.map(chip).join("")}</div>`;
+    if (items.length || off.length) ag += `<div class="aday${isToday ? " today" : ""}${past ? " past" : ""}"><div class="d ${nc}">${d}<small>${WD[w]}曜${isToday ? "・今日" : ""}</small></div><div class="list">${offTxt ? `<span class="small muted">${esc(offTxt)}</span>` : ""}${items.map(chip).join("")}</div></div>`;
   }
   const rest = (7 - (first + last) % 7) % 7;
-  for (let i = 0; i < rest; i++) h += `<div class="cell blank"></div>`;
+  for (let i = 0; i < rest; i++) h += `<div class="cell blank${weekPast(last) ? " past" : ""}"></div>`;
   document.getElementById("calBody").innerHTML = h;
   renderDayPanel();
   document.body.classList.toggle("view-month", view === "month");
@@ -430,17 +436,19 @@ function renderDayPanel() {
 
 function renderDetails() {
   const pre = `${curY}-${pad(curM)}-`;
-  const evs = DB.events.filter(e => visible(e) && e.sessions.some(s => s.date.startsWith(pre)))
+  // 終わった行事は出さない。複数日ある行事は、今日以降の日だけを出す
+  const upcoming = e => e.sessions.filter(s => s.date.startsWith(pre) && s.date >= TODAY);
+  const evs = DB.events.filter(e => visible(e) && upcoming(e).length)
     .sort((a, b) => (a.regular - b.regular) || a.sessions[0].date.localeCompare(b.sessions[0].date));
   document.getElementById("details").innerHTML = evs.map(e => {
-    const days = e.sessions.filter(s => s.date.startsWith(pre)).map(s => `${+s.date.slice(8)}日（${WD[new Date(s.date + "T00:00:00").getDay()]}）${tm(s)}`);
+    const days = upcoming(e).map(s => `${+s.date.slice(8)}日（${WD[new Date(s.date + "T00:00:00").getDay()]}）${tm(s)}`);
     return `<article class="det" id="det-${e.id}">
       <div class="tags"><span class="aud aud-${e.audience}">${audLabel(e.audience)}</span><span class="ctr fc" style="${fcVar(e.center)}">${esc(CENTERS[e.center]?.name)}</span>${e.regular ? '<span class="small muted">毎週のプログラム</span>' : ""}${e.requires_application ? '<span class="small" style="color:var(--open);font-weight:700">申込制</span>' : ""}</div>
       <h3>${esc(e.title)}</h3>${e.subtitle ? `<p class="small muted">${esc(e.subtitle)}</p>` : ""}
       <p class="small num">${esc(days.join("、"))}</p>
       <ul>${e.place ? `<li>場所：${esc(e.place)}</li>` : ""}${e.target ? `<li>対象：${esc(e.target)}</li>` : ""}${e.capacity ? `<li>${esc(e.capacity)}</li>` : ""}${e.requires_application ? `<li><b>申込：${e.application_start ? md(e.application_start) + "から" : "受付日は原本で確認"}${e.application_end ? md(e.application_end) + "まで" : ""}${e.application_method ? `（${esc(e.application_method)}）` : ""}</b></li>` : ""}${(e.notes || []).map(n => `<li>${esc(n)}</li>`).join("")}</ul>
     </article>`;
-  }).join("") || `<p class="empty">この月の行事はありません。</p>`;
+  }).join("") || `<p class="empty">${DB.events.some(e => visible(e) && e.sessions.some(s => s.date.startsWith(pre))) ? "この月の行事は、すべて終わりました。" : "この月の行事はありません。"}</p>`;
 }
 
 function monthsAvail() {
