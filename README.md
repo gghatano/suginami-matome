@@ -4,7 +4,8 @@
 
 - ホスティング:
   - **本番**: Cloudflare Workers（`main` ブランチを自動デプロイ、[`wrangler.jsonc`](wrangler.jsonc)）
-  - **テスト**: GitHub Pages（`develop` ブランチを配信、[`.github/workflows/pages.yml`](.github/workflows/pages.yml)）
+  - **GitHub Pages**: `main` ブランチの写しを配信（[`.github/workflows/pages.yml`](.github/workflows/pages.yml)）
+  - **変更の事前確認**: PR ごとに Cloudflare が作るプレビュー URL
 - データ蓄積: [`data/items.json`](data/items.json)（URL重複排除・追記式）
 - 更新: GitHub Actions cron（毎日 09:00 JST）
 
@@ -15,18 +16,18 @@
 | 環境 | ホスティング | ブランチ | デプロイ契機 |
 |---|---|---|---|
 | 本番 | Cloudflare Workers | `main` | `main` への push で自動（日次データ更新のコミット含む） |
-| テスト | GitHub Pages | `develop` | `develop` への push、または手動実行 |
+| 写し | GitHub Pages | `main` | `main` への push、日次のイベント更新・児童館おたより更新のワークフロー完了、または手動実行 |
+| プレビュー | Cloudflare Workers | PR のブランチ | PR への push で自動（PR にプレビュー URL がコメントされる） |
 
 開発フロー:
 
-1. 変更は `develop` ブランチで行い、GitHub Pages（テスト）で表示を確認する。
-2. 問題なければ `develop` を `main` にマージし、Cloudflare Workers（本番）へ反映する。
-3. 日次のデータ更新（`data/items.json`）は `main` に直接コミットされ、本番へ自動反映される。
-   テスト環境で最新データを確認したい場合は `main` を `develop` にマージする。
+1. 変更はブランチで行い、PR を作る。PR に付くプレビュー URL で表示を確認する。
+2. 問題なければ PR を `main` にマージし、本番（Cloudflare Workers）と GitHub Pages へ反映する。
+3. 日次のデータ更新（`data/items.json`）と児童館カレンダーの週次更新（`data/jidoukan/`）は `main` に直接コミットされ、本番と GitHub Pages に自動反映される。
 
-> **セットアップ**: `develop` ブランチが未作成の場合は `git switch -c develop main && git push -u origin develop` で作成する。
-> GitHub の `github-pages` 環境で `develop` からのデプロイが許可されていない場合は、
-> リポジトリの Settings → Environments → github-pages の Deployment branches に `develop` を追加する。
+> 以前は GitHub Pages を `develop` ブランチのテスト環境にしていたが、`develop` が無くなって更新が止まったため、`main` の写しに変更した。
+> GitHub の `github-pages` 環境で `main` からのデプロイが許可されていない場合は、
+> リポジトリの Settings → Environments → github-pages の Deployment branches に `main` を追加する。
 
 ## ローカルでの実行
 

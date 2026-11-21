@@ -1,12 +1,18 @@
-name: Deploy to GitHub Pages (test)
+name: Deploy to GitHub Pages
 
-# GitHub Pages は「テスト環境」として develop ブランチを配信する。
-# 本番環境は Cloudflare Workers（main ブランチを自動デプロイ）が担当する。
+# GitHub Pages は main ブランチの写し（本番の Cloudflare Workers と同じ内容）を配信する。
+# 変更の事前確認は、PR ごとに Cloudflare が作るプレビュー URL で行う。
+# （以前は develop ブランチを配信するテスト環境だったが、develop が無くなり更新が止まっていた）
 
 on:
-  # develop へのプッシュでテスト環境を更新
+  # PR のマージや、児童館カレンダーの週次更新など、main への push で更新
   push:
-    branches: [develop]
+    branches: [main]
+  # 毎日のイベント更新は GitHub Actions 自身が push するため、上の push では起動しない。
+  # ワークフローの完了をきっかけに更新する。
+  workflow_run:
+    workflows: ["Fetch Events", "Fetch Jidoukan Newsletters"]
+    types: [completed]
   # 手動実行も可能
   workflow_dispatch:
 
@@ -28,7 +34,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: develop   # テスト用ブランチを配信
+          ref: main   # 本番と同じ main を配信（workflow_run のときも最新の main を取る）
       - uses: actions/configure-pages@v5
         with:
           # Pages を「GitHub Actions」ビルドタイプで自動有効化
