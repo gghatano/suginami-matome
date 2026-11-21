@@ -4,30 +4,32 @@
 
 - ホスティング:
   - **本番**: Cloudflare Workers（`main` ブランチを自動デプロイ、[`wrangler.jsonc`](wrangler.jsonc)）
-  - **GitHub Pages**: `main` ブランチの写しを配信（[`.github/workflows/pages.yml`](.github/workflows/pages.yml)）
-  - **変更の事前確認**: PR ごとに Cloudflare が作るプレビュー URL
+  - **開発用**: GitHub Pages（`develop` のコード + `main` のデータ + 開発者ドキュメント、[`.github/workflows/pages.yml`](.github/workflows/pages.yml)）
+  - **PR ごとの確認**: Cloudflare のプレビュー URL
 - データ蓄積: [`data/items.json`](data/items.json)（URL重複排除・追記式）
-- 更新: GitHub Actions cron（毎日 09:00 JST）
+- 更新: GitHub Actions cron（毎日 23:00 JST）。児童館カレンダーは月・木 8:17 JST
 
-詳細な仕様は [`spec.md`](spec.md) を参照してください。
+**開発者ドキュメント**：[`docs/`](docs/README.md)（ブラウザでは https://gghatano.github.io/suginami-matome/docs/ ）。Claude Code 向けの入口は [`CLAUDE.md`](CLAUDE.md)。
+最初の仕様書は [`spec.md`](spec.md) です（古い記述もあるので、食い違ったら `docs/` を正とします）。
 
 ## デプロイ（環境）
 
 | 環境 | ホスティング | ブランチ | デプロイ契機 |
 |---|---|---|---|
-| 本番 | Cloudflare Workers | `main` | `main` への push で自動（日次データ更新のコミット含む） |
-| 写し | GitHub Pages | `main` | `main` への push、日次のイベント更新・児童館おたより更新のワークフロー完了、または手動実行 |
+| 本番 | Cloudflare Workers | `main` | `main` への push で自動（データの定期更新を含む） |
+| 開発用 | GitHub Pages | `develop` のコード + `main` のデータ | `develop`・`main` への push、データ更新ワークフローの完了、手動実行 |
 | プレビュー | Cloudflare Workers | PR のブランチ | PR への push で自動（PR にプレビュー URL がコメントされる） |
 
 開発フロー:
 
-1. 変更はブランチで行い、PR を作る。PR に付くプレビュー URL で表示を確認する。
-2. 問題なければ PR を `main` にマージし、本番（Cloudflare Workers）と GitHub Pages へ反映する。
-3. 日次のデータ更新（`data/items.json`）と児童館カレンダーの週次更新（`data/jidoukan/`）は `main` に直接コミットされ、本番と GitHub Pages に自動反映される。
+1. `develop` から作業ブランチを切り、PR を `develop` に向ける。PR のプレビュー URL で表示を確認する。
+2. `develop` にマージすると GitHub Pages（開発用）が更新される。そこで確認する。
+3. 問題なければ `develop` → `main` の PR をマージし、本番に反映する。
+4. データ（`data/items.json`、`data/jidoukan/`）は定期更新が `main` に直接コミットする。Pages は `main` のデータを重ねて配信するので、`develop` 側のデータが古くても最新で見られる。
 
-> 以前は GitHub Pages を `develop` ブランチのテスト環境にしていたが、`develop` が無くなって更新が止まったため、`main` の写しに変更した。
-> GitHub の `github-pages` 環境で `main` からのデプロイが許可されていない場合は、
-> リポジトリの Settings → Environments → github-pages の Deployment branches に `main` を追加する。
+> `develop` は消さないこと（`develop` → `main` の PR のマージ時に「Delete branch」を押さない）。Settings → Rules で削除を禁止しておくと安全。
+> GitHub の `github-pages` 環境の Deployment branches で、`develop` と `main` の両方を許可しておく。
+> 開発者ドキュメント（`docs/`）と `CLAUDE.md` は `.assetsignore` で Cloudflare から外している。
 
 ## ローカルでの実行
 
