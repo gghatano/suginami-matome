@@ -1,5 +1,35 @@
 [
   {
+    "id": "mypl_f704c2de",
+    "source": "まいぷれ杉並区",
+    "source_key": "mypl",
+    "source_url": "https://suginami.mypl.net/",
+    "title": "NEMUI Petiti Fashionshow",
+    "url": "https://suginami.mypl.net/event/00000480812/",
+    "summary": "季節のイベント、行事 NEMUI Petiti Fashionshow",
+    "published_at": "2026-11-21",
+    "fetched_at": "2026-11-21",
+    "category": "イベント",
+    "image": "https://img2.mypl.net/image.php?id=364816&p=bti&s=375_250&op=",
+    "event_dates": []
+  },
+  {
+    "id": "goguynet_6402c7db",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】阿佐ヶ谷パールセンターに24時間営業のジム「エニタイムフィットネス阿佐谷店」が12月11日(金)にグランドオープンすることがわかりました！",
+    "url": "https://suginami.goguynet.jp/2026/11/21/anytimefitness-asagaya/",
+    "summary": "阿佐ヶ谷駅南口から徒歩4分ほどの場所にフィットネスジム「エニタイムフィットネス阿佐谷店」が2026年12月11日(金)にグランドオープンすることがわかりました！ 「エニタイムフィットネス」は、国内外に店舗を展開する24時 [&#8230;]",
+    "published_at": "2026-11-20",
+    "fetched_at": "2026-11-21",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/11/IMG_0698-1024x767.jpeg",
+    "event_dates": [
+      "2026-12-11"
+    ]
+  },
+  {
     "id": "goguynet_f3157e81",
     "source": "号外NET杉並区",
     "source_key": "goguynet",
@@ -7074,33 +7104,5 @@
     "event_dates": [
       "2026-10-24"
     ]
-  },
-  {
-    "id": "sesion_528035ae",
-    "source": "セシオン杉並",
-    "source_key": "sesion",
-    "source_url": "https://www.sesion-suginami.jp/",
-    "title": "相続・不動産・空き家無料相談会",
-    "url": "https://www.sesion-suginami.jp/event/meeting/7886",
-    "summary": "",
-    "published_at": "2026-10-02",
-    "fetched_at": "2026-10-02",
-    "category": "イベント",
-    "image": "",
-    "event_dates": []
-  },
-  {
-    "id": "sesion_75cea4fa",
-    "source": "セシオン杉並",
-    "source_key": "sesion",
-    "source_url": "https://www.sesion-suginami.jp/",
-    "title": "「私たち」で考える　PTAのこれから",
-    "url": "https://www.sesion-suginami.jp/event/lecture/7885",
-    "summary": "",
-    "published_at": "2026-10-02",
-    "fetched_at": "2026-10-02",
-    "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/09/kyouikutyouhogowaitirasi.jpg",
-    "event_dates": []
   }
 ]
