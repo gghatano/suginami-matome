@@ -1,0 +1,14 @@
+{
+  "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3539/19horinouchiminami2610.pdf",
+  "pdf_label": "ゆうキッズのおたより（ゆうキッズほりみなみ10月号）（PDF：4,257KB）",
+  "sha256": "c623de7ac853b6a6011124e462959b1c2ed9ea95eb128e619340fb2fda859c57",
+  "extracted_at": "2026-11-21T13:00:55+00:00",
+  "method": "skipped-past",
+  "skipped": "対象の月が終わっているため読み取りを省略",
+  "data": {
+    "year": 2026,
+    "month": 10,
+    "events": [],
+    "closed_days": []
+  }
+}

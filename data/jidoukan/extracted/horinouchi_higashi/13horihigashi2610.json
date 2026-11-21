@@ -1,0 +1,14 @@
+{
+  "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3516/13horihigashi2610.pdf",
+  "pdf_label": "堀ノ内東児童館のおたより10月号（PDF：615KB）",
+  "sha256": "1b3955e296b32aaaa884f4ecb008849b5e279403bea00bd74ab3d2f7ac22c018",
+  "extracted_at": "2026-11-21T13:00:55+00:00",
+  "method": "skipped-past",
+  "skipped": "対象の月が終わっているため読み取りを省略",
+  "data": {
+    "year": 2026,
+    "month": 10,
+    "events": [],
+    "closed_days": []
+  }
+}

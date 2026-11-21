@@ -1,0 +1,14 @@
+{
+  "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3517/40hounan2610.pdf",
+  "pdf_label": "方南児童館のおたより10月号（PDF：896KB）",
+  "sha256": "8751c40482e67daefa16251c0b8053dbfa3a943bd7236c89b2d455f10e8a2ab3",
+  "extracted_at": "2026-11-21T13:00:54+00:00",
+  "method": "skipped-past",
+  "skipped": "対象の月が終わっているため読み取りを省略",
+  "data": {
+    "year": 2026,
+    "month": 10,
+    "events": [],
+    "closed_days": []
+  }
+}

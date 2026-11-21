@@ -1,0 +1,14 @@
+{
+  "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2610.pdf",
+  "pdf_label": "子ども・子育てプラザ和泉のニュース10月号（PDF：4,601KB）",
+  "sha256": "122735a6bae1e195cf59611dfc25eac40bc58656a7926082fd6082af7790aaea",
+  "extracted_at": "2026-11-21T13:00:55+00:00",
+  "method": "skipped-past",
+  "skipped": "対象の月が終わっているため読み取りを省略",
+  "data": {
+    "year": 2026,
+    "month": 10,
+    "events": [],
+    "closed_days": []
+  }
+}

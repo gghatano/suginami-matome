@@ -18,7 +18,7 @@ import os
 import re
 import sys
 import time
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urljoin
 
@@ -180,6 +180,20 @@ def process_center(center: dict, client) -> tuple[int, int]:
                 continue
             logger.info("[%s] PDFが差し替わったので読み直します: %s", key, path.name)
 
+        hint = past_issue_hint(link["label"])
+        if hint["likely_past"]:
+            # 対象の月が終わった号は読み取らない（APIを呼ばない）。省略済みとして記録し、次回から出てこないようにする
+            y, m = (int(x) for x in hint["label_month"].split("-"))
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(json.dumps({
+                "pdf_url": link["url"], "pdf_label": link["label"], "sha256": sha,
+                "extracted_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                "method": "skipped-past", "skipped": "対象の月が終わっているため読み取りを省略",
+                "data": {"year": y, "month": m, "events": [], "closed_days": []},
+            }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            logger.info("[%s] 対象の月が終わった号なので省略: %s（%s）", key, link["label"], hint["label_month"])
+            continue
+
         if client is None:
             logger.error("[%s] ANTHROPIC_API_KEY がないため読み取れません: %s", key, link["url"])
             failed += 1
@@ -212,6 +226,9 @@ def build_output(centers: list[dict]) -> dict:
         key = center["key"]
         for path in sorted((CACHE_DIR / key).glob("*.json")):
             cached = json.loads(path.read_text(encoding="utf-8"))
+            if cached.get("skipped"):
+                # 対象の月が終わっていて読み取りを省略した号（未読として繰り返し出てこないよう記録だけ残している）
+                continue
             data, warnings = normalize(cached["data"])
             for w in warnings:
                 logger.warning("[%s/%s] %s", key, path.name, w)
@@ -240,6 +257,27 @@ def build_output(centers: list[dict]) -> dict:
         "events": out_events,
         "warnings": all_warnings,
     }
+
+
+JST = timezone(timedelta(hours=9))
+LABEL_MONTH_RE = re.compile(r"(\d{1,2})\s*月号")
+
+
+def past_issue_hint(label: str, today: date | None = None) -> dict:
+    """リンク文字列の「○月号」から、対象の月が終わった号かどうかの目安を返す。
+
+    リンク文字列は中身と一致しないこともあるので、あくまで目安。最終的な判断は表紙（1ページ目の見出し）で行う。
+    """
+    today = today or datetime.now(JST).date()
+    m = LABEL_MONTH_RE.search(label or "")
+    if not m or not 1 <= int(m.group(1)) <= 12:
+        return {"label_month": None, "likely_past": False}
+    month = int(m.group(1))
+    # 今月より1〜5か月前なら終わった号とみなす（12月に「1月号」が出る、などの年またぎを考慮）
+    back = (today.month - month) % 12
+    likely_past = 1 <= back <= 5
+    year = today.year if month <= today.month else today.year - 1
+    return {"label_month": f"{year}-{month:02d}" if likely_past else None, "likely_past": likely_past}
 
 
 def list_new(centers: list[dict], pdf_dir: Path) -> list[dict]:
@@ -275,6 +313,7 @@ def list_new(centers: list[dict], pdf_dir: Path) -> list[dict]:
                 "center": key, "center_name": center["name"], "url": link["url"], "label": link["label"],
                 "sha256": sha, "pdf_path": str(local), "cache_path": str(path.relative_to(ROOT)),
                 "replaces_existing": path.exists(),
+                **past_issue_hint(link["label"]),
             })
     return todo
 
