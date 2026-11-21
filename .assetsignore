@@ -1,0 +1,4 @@
+# Cloudflare Workers（wrangler.jsonc の assets）に配信しないファイル。
+# 開発者ドキュメントは GitHub Pages（develop）でだけ見られるようにする。
+docs
+CLAUDE.md

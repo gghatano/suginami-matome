@@ -1,14 +1,15 @@
 name: Deploy to GitHub Pages
 
-# GitHub Pages は main ブランチの写し（本番の Cloudflare Workers と同じ内容）を配信する。
-# 変更の事前確認は、PR ごとに Cloudflare が作るプレビュー URL で行う。
-# （以前は develop ブランチを配信するテスト環境だったが、develop が無くなり更新が止まっていた）
+# GitHub Pages は開発用の環境。develop のコードに main の最新データ（data/）を重ねて配信する。
+# 開発者ドキュメント（docs/）もここで見られる（Cloudflare の本番・プレビューには .assetsignore で出していない）。
+# データの定期更新は main にしか入らないため、develop 側のデータが古くても Pages は最新のデータで動く。
+# develop ブランチが無いときは main をそのまま配信する。
 
 on:
-  # PR のマージや、児童館カレンダーの週次更新など、main への push で更新
+  # develop への push（PR のマージ）と、main への push（リリースや児童館カレンダーの定期更新）
   push:
-    branches: [main]
-  # 毎日のイベント更新は GitHub Actions 自身が push するため、上の push では起動しない。
+    branches: [develop, main]
+  # 毎日のイベント更新などは GitHub Actions 自身が main に push するため、上の push では起動しない。
   # ワークフローの完了をきっかけに更新する。
   workflow_run:
     workflows: ["Fetch Events", "Fetch Jidoukan Newsletters"]
@@ -32,15 +33,43 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout main (data)
+        uses: actions/checkout@v4
         with:
-          ref: main   # 本番と同じ main を配信（workflow_run のときも最新の main を取る）
+          ref: main
+          path: main
+      - name: Check develop branch
+        id: dev
+        run: |
+          if git -C main ls-remote --exit-code --heads origin develop >/dev/null; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::develop ブランチが無いので main をそのまま配信します"
+          fi
+      - name: Checkout develop (code)
+        if: steps.dev.outputs.exists == 'true'
+        uses: actions/checkout@v4
+        with:
+          ref: develop
+          path: develop
+      - name: Assemble site
+        run: |
+          if [ "${{ steps.dev.outputs.exists }}" = "true" ]; then
+            cp -a develop site
+            rm -rf site/data
+            cp -a main/data site/data
+          else
+            cp -a main site
+          fi
+          rm -rf site/.git
+          echo "code: $(git -C ${{ steps.dev.outputs.exists == 'true' && 'develop' || 'main' }} rev-parse --short HEAD) / data: $(git -C main rev-parse --short HEAD)"
       - uses: actions/configure-pages@v5
         with:
           # Pages を「GitHub Actions」ビルドタイプで自動有効化
           enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: "."
+          path: site
       - uses: actions/deploy-pages@v4
         id: deployment
