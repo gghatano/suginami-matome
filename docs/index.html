@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>開発者ドキュメント｜杉並区イベントまとめ</title>
+<meta name="robots" content="noindex">
+<script>
+  // まとめサイト・児童館カレンダーと同じテーマ設定（localStorage "theme"）を共有する
+  try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<!-- Markdown の整形と図の描画。読み込めなくても、Markdown の原文をそのまま表示する -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js"></script>
+<style>
+/* 左に目次、右に本文。Markdown（docs/*.md）が正本で、このページはそれを表示するだけ */
+:root{
+  --bg:#f6f8fb;--paper:#ffffff;--ink:#1d2733;--muted:#5c6876;--line:#dbe2ea;--accent:#1f63b5;--accent-soft:#e4eefb;--code:#eef2f7;
+  --f-body:"BIZ UDPGothic","Hiragino Sans","Noto Sans JP",sans-serif;
+  --f-mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#12171d;--paper:#1a2129;--ink:#e6ebf0;--muted:#9aa6b3;--line:#2c3641;--accent:#7fb0f0;--accent-soft:#1c2c42;--code:#222a33;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#12171d;--paper:#1a2129;--ink:#e6ebf0;--muted:#9aa6b3;--line:#2c3641;--accent:#7fb0f0;--accent-soft:#1c2c42;--code:#222a33;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.75}
+a{color:var(--accent)}
+.wrap{max-width:1180px;margin:0 auto;padding-block:20px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;grid-template-columns:230px minmax(0,1fr);gap:28px;align-items:start}
+header.top{grid-column:1/-1;display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:10px}
+header.top b{font-size:1.1rem}
+header.top nav{display:flex;gap:14px;font-size:.85rem}
+nav.toc{position:sticky;top:16px;display:grid;gap:2px}
+nav.toc a{display:block;padding:6px 10px;border-radius:6px;text-decoration:none;color:var(--ink);font-size:.9rem}
+nav.toc a small{display:block;color:var(--muted);font-size:.75rem}
+nav.toc a[aria-current="page"]{background:var(--accent-soft);color:var(--accent);font-weight:700}
+nav.toc a:focus-visible{outline:2px solid var(--accent)}
+article{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:24px 32px;min-width:0}
+article h1{font-size:1.6rem;margin:.2em 0 .6em;line-height:1.35}
+article h2{font-size:1.25rem;margin:1.8em 0 .6em;padding-bottom:.25em;border-bottom:1px solid var(--line)}
+article h3{font-size:1.05rem;margin:1.4em 0 .4em}
+article p,article ul,article ol{margin:.6em 0}
+article li{margin:.2em 0}
+article code{font-family:var(--f-mono);font-size:.86em;background:var(--code);padding:.1em .35em;border-radius:4px}
+article pre{background:var(--code);padding:12px 14px;border-radius:8px;overflow-x:auto;line-height:1.5}
+article pre code{background:none;padding:0}
+article .tbl{overflow-x:auto;margin:.8em 0}
+article table{border-collapse:collapse;font-size:.9rem;min-width:100%}
+article th,article td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}
+article th{background:var(--code)}
+article blockquote{margin:.8em 0;padding:.2em 1em;border-left:3px solid var(--line);color:var(--muted)}
+article .mermaid{background:#fff;border-radius:8px;padding:8px;overflow-x:auto;text-align:center}
+.raw{white-space:pre-wrap;font-family:var(--f-mono);font-size:.85rem}
+.muted{color:var(--muted)}
+.src{font-size:.8rem;color:var(--muted);margin-top:24px;border-top:1px solid var(--line);padding-top:8px}
+@media (max-width:760px){
+  .wrap{grid-template-columns:1fr}
+  nav.toc{position:static;grid-auto-flow:column;grid-auto-columns:max-content;overflow-x:auto;gap:4px;padding-bottom:4px}
+  nav.toc a small{display:none}
+  article{padding:16px}
+  /* 表は最低限の幅を持たせ、はみ出す分は表だけを横にスクロールする */
+  article table{min-width:620px}
+  article th,article td{min-width:5.5em}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <b>開発者ドキュメント</b>
+    <nav><a href="../">杉並区イベントまとめ</a><a href="../jidoukan/">児童館カレンダー</a><a href="https://github.com/gghatano/suginami-matome" target="_blank" rel="noopener">GitHub</a></nav>
+  </header>
+  <nav class="toc" id="toc" aria-label="目次"></nav>
+  <article id="doc"><p class="muted">読み込み中…</p></article>
+</div>
+<script>
+// 目次。docs/ に Markdown を足したら、ここにも追加する（docs/README.md の表と揃える）
+const DOCS = [
+  { name: "README", title: "はじめに", desc: "ドキュメントの案内" },
+  { name: "architecture", title: "全体の構成", desc: "2つのサイトとデータの流れ" },
+  { name: "events-aggregator", title: "イベントまとめ", desc: "スクレイパーと items.json" },
+  { name: "jidoukan", title: "児童館カレンダー", desc: "おたよりの取得・読み取り・画面" },
+  { name: "operations", title: "運用", desc: "環境・開発の流れ・定期実行" },
+  { name: "ui-guidelines", title: "画面づくり", desc: "ずれない・色・幅・文言" },
+];
+const REPO = "https://github.com/gghatano/suginami-matome/blob/develop/";
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+function renderToc(cur) {
+  document.getElementById("toc").innerHTML = DOCS.map(d =>
+    `<a href="#${d.name}"${d.name === cur ? ' aria-current="page"' : ""}>${esc(d.title)}<small>${esc(d.desc)}</small></a>`).join("");
+}
+
+// Markdown 内のリンクを、このページで使える形に直す
+//  - 同じ docs/ の .md → #名前（このページ内で開く）
+//  - リポジトリの他のファイル（../xxx）→ GitHub のファイル表示
+function fixLinks(root) {
+  root.querySelectorAll("a[href]").forEach(a => {
+    const h = a.getAttribute("href");
+    if (/^(https?:|mailto:|#)/.test(h)) { if (/^https?:/.test(h)) { a.target = "_blank"; a.rel = "noopener"; } return; }
+    const m = /^([\w-]+)\.md(#.*)?$/.exec(h);
+    if (m && DOCS.some(d => d.name === m[1])) { a.setAttribute("href", "#" + m[1]); return; }
+    const path = h.replace(/^\.\.\//, "").replace(/^\.\//, "docs/");
+    a.setAttribute("href", REPO + path); a.target = "_blank"; a.rel = "noopener";
+  });
+}
+
+async function show() {
+  const name = (location.hash.slice(1) || "README");
+  const doc = DOCS.find(d => d.name === name) || DOCS[0];
+  renderToc(doc.name);
+  const el = document.getElementById("doc");
+  let md;
+  try {
+    const res = await fetch(`${doc.name}.md`, { cache: "no-store" });
+    if (!res.ok) throw new Error(res.status);
+    md = await res.text();
+  } catch (e) {
+    el.innerHTML = `<p>「${esc(doc.name)}.md」を読み込めませんでした。</p>`;
+    return;
+  }
+  if (window.marked) {
+    el.innerHTML = marked.parse(md);
+    el.querySelectorAll("table").forEach(t => { const w = document.createElement("div"); w.className = "tbl"; t.replaceWith(w); w.appendChild(t); });
+    fixLinks(el);
+    // ```mermaid のコードブロックを図にする
+    const blocks = el.querySelectorAll("pre code.language-mermaid");
+    if (window.mermaid && blocks.length) {
+      blocks.forEach(c => { const d = document.createElement("div"); d.className = "mermaid"; d.textContent = c.textContent; c.parentElement.replaceWith(d); });
+      try { mermaid.initialize({ startOnLoad: false, theme: "default" }); await mermaid.run({ nodes: el.querySelectorAll(".mermaid") }); } catch (e) { /* 図にできなければコードのまま */ }
+    }
+  } else {
+    el.innerHTML = `<p class="muted">整形用のライブラリを読み込めなかったため、Markdown の原文を表示しています。</p><div class="raw">${esc(md)}</div>`;
+  }
+  el.insertAdjacentHTML("beforeend", `<p class="src">原文：<a href="${REPO}docs/${doc.name}.md" target="_blank" rel="noopener">docs/${doc.name}.md</a>（編集はこの Markdown に対して行う）</p>`);
+  document.title = `${doc.title}｜開発者ドキュメント`;
+  window.scrollTo(0, 0);
+}
+addEventListener("hashchange", show);
+show();
+</script>
+</body>
+</html>
