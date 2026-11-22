@@ -10,6 +10,7 @@
 - 形式・コマンド・環境の一覧：[`docs/reference/`](docs/reference/)
 - 仕組みと理由：[`docs/explanation/`](docs/explanation/)（全体の構成、児童館カレンダーのしくみ、画面づくりの原則、これまでの判断と失敗）
 - 言葉の意味：[`docs/glossary.md`](docs/glossary.md)
+- ほかのリポジトリで同じドキュメントを作るとき：[`docs/kit/`](docs/kit/)（方針定義書と指示書。`docs/howto/write-docs.md` と同じ方針なので、変えたら両方直す）
 - 児童館カレンダーの定期更新の手順：[`scrapers/jidoukan/SESSION.md`](scrapers/jidoukan/SESSION.md)
 
 ## 守ること
