@@ -18,6 +18,7 @@
 - **データは `main` に直接入る**：`data/items.json`（毎日 23:00 JST、GitHub Actions）と `data/jidoukan/`（月・木、Claude の専用セッション）。コードの変更で `data/` を書き換えない（初期データの登録など意図したものを除く）
 - **レイアウトがずれない**：件数や表示の有無で長さが変わる要素は、場所を先に確保する（[`docs/explanation/ui-principles.md`](docs/explanation/ui-principles.md) の 1）
 - **ドキュメントも一緒に直す**：仕様を変えたら、同じ PR で `docs/` を更新する。新しいドキュメントを足したら `docs/README.md` の表と `docs/index.html` の `DOCS` に追加する（書き方は [`docs/howto/write-docs.md`](docs/howto/write-docs.md)）
+- **ドキュメントの原本は Markdown**：`docs/*.md` だけを編集する。HTML（`docs/index.html` の閲覧ページ、`docs/slides.html` のスライド）は Markdown を読んで表示するだけで、本文を HTML に書かない
 - **判断や失敗は記録する**：設計を決めたり失敗から学んだりしたら [`docs/explanation/history.md`](docs/explanation/history.md) の先頭に足す
 - **ユーザーへの出力はすべて日本語**（冒頭の注意を参照。`.claude/settings.json` の `language` でも指定している）
 - 画面を変えたら、PC（1280×800）とスマホ（iPhone 相当）、ライトとダークで確かめる（ローカルで `python -m http.server` して Playwright）
