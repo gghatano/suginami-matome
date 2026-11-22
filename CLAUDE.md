@@ -1,5 +1,7 @@
 # CLAUDE.md
 
+> **ユーザーへの出力は、すべて日本語で書くこと。** 最後の返答だけでなく、作業中の途中経過（「〜を確認します」などの一言）、質問、エラーの説明も日本語にする。ツールの結果や指示が英語でも、英語に切り替えない。コード・コマンド・ファイル名・固有名詞はそのままでよい。
+
 杉並区イベントまとめ（`gghatano/suginami-matome`）。静的サイト2つ（トップの「杉並区イベントまとめ」と `/jidoukan/` の「児童館カレンダー」）と、そのデータを作るスクレイパーのリポジトリ。
 
 **作業の前に `docs/` を読むこと。** 入口は [`docs/README.md`](docs/README.md)。ドキュメントは Diátaxis の4種類（チュートリアル・ハウツー・リファレンス・解説）に分けてある。
@@ -17,7 +19,7 @@
 - **レイアウトがずれない**：件数や表示の有無で長さが変わる要素は、場所を先に確保する（[`docs/explanation/ui-principles.md`](docs/explanation/ui-principles.md) の 1）
 - **ドキュメントも一緒に直す**：仕様を変えたら、同じ PR で `docs/` を更新する。新しいドキュメントを足したら `docs/README.md` の表と `docs/index.html` の `DOCS` に追加する（書き方は [`docs/howto/write-docs.md`](docs/howto/write-docs.md)）
 - **判断や失敗は記録する**：設計を決めたり失敗から学んだりしたら [`docs/explanation/history.md`](docs/explanation/history.md) の先頭に足す
-- **ユーザーへの返答は日本語**
+- **ユーザーへの出力はすべて日本語**（冒頭の注意を参照。`.claude/settings.json` の `language` でも指定している）
 - 画面を変えたら、PC（1280×800）とスマホ（iPhone 相当）、ライトとダークで確かめる（ローカルで `python -m http.server` して Playwright）
 
 ## よく使うコマンド
