@@ -32,6 +32,8 @@ header.top nav{display:flex;gap:14px;font-size:.85rem}
 nav.toc{position:sticky;top:16px;display:grid;gap:2px}
 nav.toc a{display:block;padding:6px 10px;border-radius:6px;text-decoration:none;color:var(--ink);font-size:.9rem}
 nav.toc a small{display:block;color:var(--muted);font-size:.75rem}
+nav.toc .grp{display:block;margin:12px 10px 2px;font-size:.72rem;font-weight:700;letter-spacing:.08em;color:var(--muted)}
+nav.toc .grp:first-child{margin-top:0}
 nav.toc a[aria-current="page"]{background:var(--accent-soft);color:var(--accent);font-weight:700}
 nav.toc a:focus-visible{outline:2px solid var(--accent)}
 article{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:24px 32px;min-width:0}
@@ -56,6 +58,7 @@ article .mermaid{background:#fff;border-radius:8px;padding:8px;overflow-x:auto;t
   .wrap{grid-template-columns:1fr}
   nav.toc{position:static;grid-auto-flow:column;grid-auto-columns:max-content;overflow-x:auto;gap:4px;padding-bottom:4px}
   nav.toc a small{display:none}
+  nav.toc .grp{display:none}
   article{padding:16px}
   /* 表は最低限の幅を持たせ、はみ出す分は表だけを横にスクロールする */
   article table{min-width:620px}
@@ -74,38 +77,61 @@ article .mermaid{background:#fff;border-radius:8px;padding:8px;overflow-x:auto;t
 </div>
 <script>
 // 目次。docs/ に Markdown を足したら、ここにも追加する（docs/README.md の表と揃える）
+// group は Diátaxis の4種類＋案内。name は docs/ からの相対パス（拡張子なし）
 const DOCS = [
-  { name: "README", title: "はじめに", desc: "ドキュメントの案内" },
-  { name: "architecture", title: "全体の構成", desc: "2つのサイトとデータの流れ" },
-  { name: "events-aggregator", title: "イベントまとめ", desc: "スクレイパーと items.json" },
-  { name: "jidoukan", title: "児童館カレンダー", desc: "おたよりの取得・読み取り・画面" },
-  { name: "operations", title: "運用", desc: "環境・開発の流れ・定期実行" },
-  { name: "ui-guidelines", title: "画面づくり", desc: "ずれない・色・幅・文言" },
+  { group: "案内", name: "README", title: "はじめに", desc: "読み方と全体の地図" },
+  { group: "案内", name: "glossary", title: "用語集", desc: "ブランチ・PR・マージなど" },
+  { group: "チュートリアル", name: "tutorial/first-change", title: "はじめての変更", desc: "手元で表示して本番に出すまで" },
+  { group: "ハウツー", name: "howto/add-jidoukan", title: "児童館を増やす", desc: "施設の追加とチェックリスト" },
+  { group: "ハウツー", name: "howto/add-event-source", title: "取得元を増やす", desc: "まとめサイトの情報源" },
+  { group: "ハウツー", name: "howto/change-screen", title: "画面を変える", desc: "確認表とずれの測り方" },
+  { group: "ハウツー", name: "howto/release", title: "本番に出す", desc: "develop → main" },
+  { group: "ハウツー", name: "howto/weekly-update", title: "定期更新を見る・直す", desc: "児童館カレンダーの自動更新" },
+  { group: "ハウツー", name: "howto/write-docs", title: "ドキュメントを書く", desc: "4種類の分け方と書き方" },
+  { group: "リファレンス", name: "reference/files", title: "ファイルとフォルダ", desc: "何がどこにあるか" },
+  { group: "リファレンス", name: "reference/commands", title: "コマンド", desc: "よく使うコマンド" },
+  { group: "リファレンス", name: "reference/data-items", title: "記事データ", desc: "items.json" },
+  { group: "リファレンス", name: "reference/data-jidoukan", title: "児童館のデータ", desc: "sources・キャッシュ・events" },
+  { group: "リファレンス", name: "reference/url-params", title: "URL と保存値", desc: "児童館カレンダー" },
+  { group: "リファレンス", name: "reference/environments", title: "環境と自動処理", desc: "公開先・定期実行・権限" },
+  { group: "解説", name: "explanation/architecture", title: "全体の構成", desc: "2つのサイトとデータの流れ" },
+  { group: "解説", name: "explanation/jidoukan-pipeline", title: "児童館カレンダーのしくみ", desc: "おたよりを読む流れと理由" },
+  { group: "解説", name: "explanation/ui-principles", title: "画面づくりの原則", desc: "ずれない・色・幅・文言" },
+  { group: "解説", name: "explanation/history", title: "これまでの判断と失敗", desc: "決めたことと理由の記録" },
 ];
 const REPO = "https://github.com/gghatano/suginami-matome/blob/develop/";
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
 function renderToc(cur) {
-  document.getElementById("toc").innerHTML = DOCS.map(d =>
-    `<a href="#${d.name}"${d.name === cur ? ' aria-current="page"' : ""}>${esc(d.title)}<small>${esc(d.desc)}</small></a>`).join("");
+  let html = "", g = "";
+  for (const d of DOCS) {
+    if (d.group !== g) { g = d.group; html += `<span class="grp">${esc(g)}</span>`; }
+    html += `<a href="#${d.name}"${d.name === cur ? ' aria-current="page"' : ""}>${esc(d.title)}<small>${esc(d.desc)}</small></a>`;
+  }
+  document.getElementById("toc").innerHTML = html;
 }
 
-// Markdown 内のリンクを、このページで使える形に直す
-//  - 同じ docs/ の .md → #名前（このページ内で開く）
-//  - リポジトリの他のファイル（../xxx）→ GitHub のファイル表示
-function fixLinks(root) {
+// Markdown 内のリンクを、このページで使える形に直す。相対パスは「いま表示している文書の場所」から解決する
+//  - docs/ の中の .md（目次にあるもの）→ #名前（このページ内で開く）
+//  - リポジトリのほかのファイル → GitHub のファイル表示
+function fixLinks(root, cur) {
+  const base = new URL("https://repo.invalid/docs/" + cur);   // 解決用の仮の URL
   root.querySelectorAll("a[href]").forEach(a => {
     const h = a.getAttribute("href");
-    if (/^(https?:|mailto:|#)/.test(h)) { if (/^https?:/.test(h)) { a.target = "_blank"; a.rel = "noopener"; } return; }
-    const m = /^([\w-]+)\.md(#.*)?$/.exec(h);
+    if (/^(https?:|mailto:)/.test(h)) { a.target = "_blank"; a.rel = "noopener"; return; }
+    if (h.startsWith("#")) return;
+    const u = new URL(h, base);
+    let path = decodeURIComponent(u.pathname.replace(/^\//, ""));      // 例：docs/howto/add-jidoukan.md
+    const m = /^docs\/(.+)\.md$/.exec(path);
     if (m && DOCS.some(d => d.name === m[1])) { a.setAttribute("href", "#" + m[1]); return; }
-    const path = h.replace(/^\.\.\//, "").replace(/^\.\//, "docs/");
+    if (path === "docs/index.html") { a.setAttribute("href", "#README"); return; }
     a.setAttribute("href", REPO + path); a.target = "_blank"; a.rel = "noopener";
   });
 }
 
+let mermaidReady = false;
 async function show() {
-  const name = (location.hash.slice(1) || "README");
+  const name = decodeURIComponent(location.hash.slice(1)) || "README";
   const doc = DOCS.find(d => d.name === name) || DOCS[0];
   renderToc(doc.name);
   const el = document.getElementById("doc");
@@ -121,12 +147,15 @@ async function show() {
   if (window.marked) {
     el.innerHTML = marked.parse(md);
     el.querySelectorAll("table").forEach(t => { const w = document.createElement("div"); w.className = "tbl"; t.replaceWith(w); w.appendChild(t); });
-    fixLinks(el);
+    fixLinks(el, doc.name);
     // ```mermaid のコードブロックを図にする
     const blocks = el.querySelectorAll("pre code.language-mermaid");
     if (window.mermaid && blocks.length) {
       blocks.forEach(c => { const d = document.createElement("div"); d.className = "mermaid"; d.textContent = c.textContent; c.parentElement.replaceWith(d); });
-      try { mermaid.initialize({ startOnLoad: false, theme: "default" }); await mermaid.run({ nodes: el.querySelectorAll(".mermaid") }); } catch (e) { /* 図にできなければコードのまま */ }
+      try {
+        if (!mermaidReady) { mermaid.initialize({ startOnLoad: false, theme: "default", flowchart: { useMaxWidth: true }, sequence: { useMaxWidth: true } }); mermaidReady = true; }
+        await mermaid.run({ nodes: el.querySelectorAll(".mermaid") });
+      } catch (e) { /* 図にできなければコードのまま */ }
     }
   } else {
     el.innerHTML = `<p class="muted">整形用のライブラリを読み込めなかったため、Markdown の原文を表示しています。</p><div class="raw">${esc(md)}</div>`;
