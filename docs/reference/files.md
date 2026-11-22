@@ -22,9 +22,10 @@
 | `.github/workflows/pages.yml` | GitHub Pages の公開 | 開発（PR）。早めに `main` へ |
 | `.github/workflows/jidoukan.yml` | 児童館の API 版の読み取り（手動のみ） | 開発（PR） |
 | `wrangler.jsonc` | Cloudflare Workers の設定（リポジトリ直下をそのまま配信） | 開発（PR） |
-| `.assetsignore` | Cloudflare に出さないファイル（`docs/`、`CLAUDE.md`） | 開発（PR） |
+| `.assetsignore` | Cloudflare に出さないファイル（`docs/`、`CLAUDE.md`、`.claude/`） | 開発（PR） |
 | `docs/` | このドキュメント（Markdown が正本）と閲覧ページ `docs/index.html` | 開発（PR） |
 | `CLAUDE.md` | Claude Code の入口 | 開発（PR） |
+| `.claude/settings.json` | Claude Code のプロジェクト設定（応答言語を日本語に固定） | 開発（PR） |
 | `README.md` | リポジトリの概要 | 開発（PR） |
 | `spec.md` | 最初の仕様書（古い記述あり） | 原則そのまま |
 | `requirements.txt` | Python の依存ライブラリ | 開発（PR） |

@@ -2,3 +2,4 @@
 # 開発者ドキュメントは GitHub Pages（develop）でだけ見られるようにする。
 docs
 CLAUDE.md
+.claude
