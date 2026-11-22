@@ -3,6 +3,7 @@
 杉並区イベントまとめ（`gghatano/suginami-matome`）の開発者向けドキュメントです。初めてこのリポジトリを触る人でも、迷わずに作業を始められることを目指しています。人と Claude の両方が読みます。
 
 - ブラウザで読む：https://gghatano.github.io/suginami-matome/docs/
+- 5分で要点だけ：[スライド](https://gghatano.github.io/suginami-matome/docs/slides.html)（原本は [`slides.md`](slides.md)）
 - 元の Markdown：リポジトリの `docs/` フォルダ（こちらが正本。HTML 版は同じ Markdown を整形して見せているだけ）
 
 ## このリポジトリでできていること
