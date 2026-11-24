@@ -1,5 +1,37 @@
 [
   {
+    "id": "goguynet_c31acaca",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】阿佐ヶ谷で異国のフィルム作品を♪「第5回クロアチア映画祭」が2026年11月26日(木)まで開催されています！",
+    "url": "https://suginami.goguynet.jp/2026/11/24/japancroatia-filmfestival2026/",
+    "summary": "日本クロアチア協会の広報担当の方からイベント情報をいただきました！ JR阿佐ヶ谷駅北口から歩いて3分ほどの場所にある映画館「Morc阿佐ヶ谷」で、「第5回クロアチア映画祭」が2026年11月26日（木）まで開催されている [&#8230;]",
+    "published_at": "2026-11-23",
+    "fetched_at": "2026-11-24",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/11/IMG_1069-1-1024x720.png",
+    "event_dates": [
+      "2026-11-26"
+    ]
+  },
+  {
+    "id": "goguynet_3dbb438a",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】福岡発のラーメンブランドが東京初進出♪「夢みてなんぼ 新高円寺店」が10月24日(土)にオープンしました！",
+    "url": "https://suginami.goguynet.jp/2026/11/23/yumemitenanbo-shinkoenji/",
+    "summary": "新高円寺駅から徒歩約5分の青梅街道沿いに「夢みてなんぼ 新高円寺店」が2026年10月24日(土)にオープンしました！この場所には以前、中華料理「成都」がありました。 11月上旬にお店の前を通りかかった際には、お昼どきを [&#8230;]",
+    "published_at": "2026-11-22",
+    "fetched_at": "2026-11-24",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/11/IMG_0864-1024x767.jpeg",
+    "event_dates": [
+      "2026-10-24"
+    ]
+  },
+  {
     "id": "goguynet_0a8068a0",
     "source": "号外NET杉並区",
     "source_key": "goguynet",
@@ -7073,34 +7105,6 @@
     "fetched_at": "2026-10-04",
     "category": "イベント",
     "image": "https://img2.mypl.net/image.php?id=361613&p=bti&s=500_730&op=",
-    "event_dates": []
-  },
-  {
-    "id": "mypl_770790c5",
-    "source": "まいぷれ杉並区",
-    "source_key": "mypl",
-    "source_url": "https://suginami.mypl.net/",
-    "title": "西荻よりみち落語  -春風亭 昇咲-",
-    "url": "https://suginami.mypl.net/event/00000478372/",
-    "summary": "伝統芸能、大衆芸能 西荻よりみち落語 -春風亭 昇咲-",
-    "published_at": "2026-10-04",
-    "fetched_at": "2026-10-04",
-    "category": "イベント",
-    "image": "https://img2.mypl.net/image.php?id=361611&p=bti&s=375_250&op=",
-    "event_dates": []
-  },
-  {
-    "id": "goguynet_93b989d1",
-    "source": "号外NET杉並区",
-    "source_key": "goguynet",
-    "source_url": "https://suginami.goguynet.jp/",
-    "title": "【杉並区】背脂たっぷりなのに意外と重くない！「背脂中華そば 福鳳(ふくほう) 高円寺」で背脂麻婆そばをいただきました。",
-    "url": "https://suginami.goguynet.jp/2026/10/04/fukuhou-koenji/",
-    "summary": "高円寺駅北口から徒歩4分ほど、あづま通り沿いにある「背脂中華そば 福鳳(ふくほう) 高円寺」を訪れました。 「背脂中華そば 福鳳（ふくほう）」は新潟・燕三条系の背脂中華そばを味わえるお店。看板メニューの背脂中華そばは、新 [&#8230;]",
-    "published_at": "2026-10-03",
-    "fetched_at": "2026-10-04",
-    "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/09/IMG_8577-1024x767.jpeg",
     "event_dates": []
   }
 ]
