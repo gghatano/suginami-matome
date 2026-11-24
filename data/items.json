@@ -1,5 +1,19 @@
 [
   {
+    "id": "goguynet_91f6db01",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】高円寺に「楊国福(ヨウゴフク)麻辣湯」がオープンします！プレオープンは20％オフになるそうですよ♪",
+    "url": "https://suginami.goguynet.jp/2026/11/25/yangguofu-koenji/",
+    "summary": "高円寺駅北口の純情商店街に、麻辣湯専門店「楊国福（ヨウゴフク）麻辣湯 高円寺店」がオープンすることがわかりました！ お店の場所は、ファミリーマートと買取専門店「こけしや」の間。ファインズ阿佐ヶ谷ビルの1階です。 こちらは [&#8230;]",
+    "published_at": "2026-11-24",
+    "fetched_at": "2026-11-24",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/11/IMG_1071-1024x767.jpeg",
+    "event_dates": []
+  },
+  {
     "id": "goguynet_c31acaca",
     "source": "号外NET杉並区",
     "source_key": "goguynet",
@@ -7092,19 +7106,5 @@
     "event_dates": [
       "2026-10-01"
     ]
-  },
-  {
-    "id": "mypl_8d616480",
-    "source": "まいぷれ杉並区",
-    "source_key": "mypl",
-    "source_url": "https://suginami.mypl.net/",
-    "title": "バブルアイスクリームバー＆キャンディーバスボム作り",
-    "url": "https://suginami.mypl.net/event/00000478373/",
-    "summary": "スクール、体験 バブルアイスクリームバー＆キャンディーバスボム作り",
-    "published_at": "2026-10-04",
-    "fetched_at": "2026-10-04",
-    "category": "イベント",
-    "image": "https://img2.mypl.net/image.php?id=361613&p=bti&s=500_730&op=",
-    "event_dates": []
   }
 ]
