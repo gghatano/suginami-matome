@@ -1,0 +1,222 @@
+{
+  "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3539/19horinouchiminami2612.pdf",
+  "pdf_label": "ゆうキッズのおたより（ゆうキッズほりみなみ12月号）（PDF：481KB）",
+  "sha256": "c681eba66e08726823ca6d1d10fd5e3bcd1e3fd6f82f3055040416da346d1ca7",
+  "extracted_at": "2026-11-25T23:23:34+00:00",
+  "method": "claude-scheduled-session",
+  "data": {
+    "year": 2026,
+    "month": 12,
+    "events": [
+      {
+        "title": "ねんねタイム",
+        "subtitle": "",
+        "audience": "baby",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-12-08",
+            "start": "11:00",
+            "end": "11:30"
+          }
+        ],
+        "place": "",
+        "target": "おおむね6か月までのねんねの赤ちゃん",
+        "capacity": "",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "ふれあい遊びやおしゃべり",
+          "ゆうキッズスタート事業"
+        ]
+      },
+      {
+        "title": "すくすくタイム",
+        "subtitle": "",
+        "audience": "baby",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-12-10",
+            "start": "11:00",
+            "end": "11:30"
+          }
+        ],
+        "place": "",
+        "target": "おおむね6か月以上の子",
+        "capacity": "",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "ふれあい遊び、絵本の読み聞かせ、工作"
+        ]
+      },
+      {
+        "title": "ゆうキッズ（遊戯室の利用）",
+        "subtitle": "",
+        "audience": "baby",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-12-02",
+            "start": "10:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-12-04",
+            "start": "10:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-12-08",
+            "start": "10:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-12-09",
+            "start": "10:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-12-10",
+            "start": "10:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-12-11",
+            "start": "10:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-12-14",
+            "start": "10:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-12-15",
+            "start": "10:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-12-16",
+            "start": "10:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-12-17",
+            "start": "10:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-12-18",
+            "start": "10:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-12-21",
+            "start": "10:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-12-22",
+            "start": "10:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-12-23",
+            "start": "10:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-12-24",
+            "start": "10:00",
+            "end": "13:00"
+          }
+        ],
+        "place": "",
+        "target": "0歳からの未就学児と保護者",
+        "capacity": "",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "月〜金 10:00〜小学生の下校時刻まで（12月は13:00まで）",
+          "1日・3日は行事のみ。土日祝と小学校が休みの日は利用不可",
+          "昼食は12:00〜13:00に遊戯室で可",
+          "1月は12日（火）から利用できる"
+        ]
+      }
+    ],
+    "closed_days": [
+      {
+        "date": "2026-12-07",
+        "reason": "小学校振替休校"
+      },
+      {
+        "date": "2026-12-25",
+        "reason": "小学校終業式"
+      },
+      {
+        "date": "2026-12-26",
+        "reason": "年末年始・小学校冬休み"
+      },
+      {
+        "date": "2026-12-27",
+        "reason": "年末年始・小学校冬休み"
+      },
+      {
+        "date": "2026-12-28",
+        "reason": "年末年始・小学校冬休み"
+      },
+      {
+        "date": "2026-12-29",
+        "reason": "年末年始・小学校冬休み"
+      },
+      {
+        "date": "2026-12-30",
+        "reason": "年末年始・小学校冬休み"
+      },
+      {
+        "date": "2026-12-31",
+        "reason": "年末年始・小学校冬休み"
+      },
+      {
+        "date": "2027-01-01",
+        "reason": "年末年始・小学校冬休み"
+      },
+      {
+        "date": "2027-01-02",
+        "reason": "年末年始・小学校冬休み"
+      },
+      {
+        "date": "2027-01-03",
+        "reason": "年末年始・小学校冬休み"
+      },
+      {
+        "date": "2027-01-04",
+        "reason": "年末年始・小学校冬休み"
+      },
+      {
+        "date": "2027-01-05",
+        "reason": "年末年始・小学校冬休み"
+      },
+      {
+        "date": "2027-01-06",
+        "reason": "年末年始・小学校冬休み"
+      },
+      {
+        "date": "2027-01-07",
+        "reason": "年末年始・小学校冬休み"
+      },
+      {
+        "date": "2027-01-08",
+        "reason": "年末年始・小学校冬休み"
+      }
+    ]
+  }
+}

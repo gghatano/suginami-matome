@@ -1,0 +1,773 @@
+{
+  "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2612.pdf",
+  "pdf_label": "子ども・子育てプラザ和泉のニュース12月号（PDF：4,652KB）",
+  "sha256": "db668da72e862f36b8ae3310a0280d6e4c82a40cf50fcd3374a13baad6e8dbd5",
+  "extracted_at": "2026-11-25T23:23:34+00:00",
+  "method": "claude-scheduled-session",
+  "data": {
+    "year": 2026,
+    "month": 12,
+    "events": [
+      {
+        "title": "クリスマスコンサート",
+        "subtitle": "",
+        "audience": "baby",
+        "regular": false,
+        "sessions": [
+          {
+            "date": "2026-12-24",
+            "start": "14:30",
+            "end": "15:00"
+          }
+        ],
+        "place": "",
+        "target": "乳幼児親子",
+        "capacity": "定員なし・申込不要",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "ヴィオラで子ども向けの曲やクリスマスソングを演奏",
+          "協力：有馬 桃子さん"
+        ]
+      },
+      {
+        "title": "パンプキンさんのおはなし会",
+        "subtitle": "",
+        "audience": "baby",
+        "regular": false,
+        "sessions": [
+          {
+            "date": "2026-12-17",
+            "start": "10:30",
+            "end": "10:50"
+          }
+        ],
+        "place": "",
+        "target": "0歳児親子",
+        "capacity": "15組",
+        "requires_application": true,
+        "application_start": "2026-12-03",
+        "application_end": "",
+        "application_method": "窓口",
+        "notes": [
+          "読み聞かせと、家庭でも楽しめる絵本の紹介",
+          "講師：おはなしパンプキンさん"
+        ]
+      },
+      {
+        "title": "ベビーマッサージ",
+        "subtitle": "杉並区児童館第1ブロック ほっとエッセンス事業",
+        "audience": "baby",
+        "regular": false,
+        "sessions": [
+          {
+            "date": "2026-12-07",
+            "start": "10:15",
+            "end": "10:45"
+          }
+        ],
+        "place": "",
+        "target": "首がすわっているねんねの赤ちゃん親子",
+        "capacity": "お子さん10名",
+        "requires_application": true,
+        "application_start": "2026-11-24",
+        "application_end": "",
+        "application_method": "窓口",
+        "notes": [
+          "ピュアオイルを使用",
+          "費用：90円（オイル代）。申込時に必ず現金で",
+          "48時間以内に予防接種を受けた方、ジュクジュク湿疹がある方は参加を控える",
+          "講師：桝田 智佳子さん"
+        ]
+      },
+      {
+        "title": "アンガーマネジメント講座〜がんばりすぎない子育て〜",
+        "subtitle": "杉並区児童館第1ブロック ほっとエッセンス事業",
+        "audience": "baby",
+        "regular": false,
+        "sessions": [
+          {
+            "date": "2026-12-16",
+            "start": "10:30",
+            "end": "11:30"
+          }
+        ],
+        "place": "",
+        "target": "乳幼児保護者",
+        "capacity": "20組程度",
+        "requires_application": true,
+        "application_start": "2026-12-02",
+        "application_end": "",
+        "application_method": "窓口",
+        "notes": [
+          "託児なし。子連れで参加できる",
+          "講師：大野 由美さん（日本アンガーマネジメント協会認定 アンガーマネジメントファシリテーター、主任児童委員）"
+        ]
+      },
+      {
+        "title": "ベビトレヨガ",
+        "subtitle": "",
+        "audience": "baby",
+        "regular": false,
+        "sessions": [
+          {
+            "date": "2026-12-11",
+            "start": "11:00",
+            "end": "11:45"
+          }
+        ],
+        "place": "",
+        "target": "ねんねの赤ちゃん〜歩き始め前の母子",
+        "capacity": "20組",
+        "requires_application": true,
+        "application_start": "2026-11-27",
+        "application_end": "",
+        "application_method": "窓口",
+        "notes": [
+          "産後のトレーニングをしながら、子どもの脳トレや身体遊び",
+          "上のお子さん・お父さんの入室はできません",
+          "講師：ベビトレヨガインストラクター 和田 麻菜美さん"
+        ]
+      },
+      {
+        "title": "マオ先生と英語でリトミック！",
+        "subtitle": "",
+        "audience": "baby",
+        "regular": false,
+        "sessions": [
+          {
+            "date": "2026-12-21",
+            "start": "10:30",
+            "end": "10:55"
+          },
+          {
+            "date": "2026-12-21",
+            "start": "11:05",
+            "end": "11:30"
+          }
+        ],
+        "place": "",
+        "target": "①1歳児親子（歩けるお子さん） ②2〜6歳児親子（未就学児）",
+        "capacity": "各回16組",
+        "requires_application": true,
+        "application_start": "2026-12-07",
+        "application_end": "",
+        "application_method": "窓口",
+        "notes": [
+          "①10:30〜10:55 ②11:05〜11:30",
+          "ネイティブスピーカーのマオ先生によるリトミック",
+          "きょうだいでの参加は申込時に相談",
+          "講師：マオ・マッキニーさん"
+        ]
+      },
+      {
+        "title": "おもちゃ病院",
+        "subtitle": "",
+        "audience": "all",
+        "regular": false,
+        "sessions": [
+          {
+            "date": "2026-12-03",
+            "start": "13:00",
+            "end": "15:00"
+          }
+        ],
+        "place": "",
+        "target": "乳幼児親子・小学生親子",
+        "capacity": "申込不要（1家庭1点まで）",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "受付：11/30（月）9:00〜当日14:00、引き取りは当日18:00まで",
+          "必ず保護者の方がお持ちください。精密機器（電子ゲーム、トイカメラなど）は修理不可",
+          "協力：杉並おもちゃドクターズ"
+        ]
+      },
+      {
+        "title": "身長体重測定",
+        "subtitle": "",
+        "audience": "baby",
+        "regular": false,
+        "sessions": [
+          {
+            "date": "2026-12-09",
+            "start": "11:20",
+            "end": "11:50"
+          }
+        ],
+        "place": "",
+        "target": "乳幼児親子",
+        "capacity": "申込不要",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "協力：民生児童委員・主任児童委員"
+        ]
+      },
+      {
+        "title": "つーちゃんのわらべうた",
+        "subtitle": "",
+        "audience": "baby",
+        "regular": false,
+        "sessions": [
+          {
+            "date": "2026-12-10",
+            "start": "11:10",
+            "end": "11:30"
+          }
+        ],
+        "place": "",
+        "target": "プレパパ・プレママ、おおよそ0〜1歳親子",
+        "capacity": "申込不要",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "講師：塚原 道子さん"
+        ]
+      },
+      {
+        "title": "手形・足形タイム",
+        "subtitle": "",
+        "audience": "baby",
+        "regular": false,
+        "sessions": [
+          {
+            "date": "2026-12-15",
+            "start": "10:30",
+            "end": "11:00"
+          }
+        ],
+        "place": "",
+        "target": "乳幼児親子",
+        "capacity": "申込不要",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "汚れても良い服装で。持ち物：ウェットティッシュ"
+        ]
+      },
+      {
+        "title": "いちごタイム",
+        "subtitle": "年齢別プログラム",
+        "audience": "baby",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-12-02",
+            "start": "11:10",
+            "end": "11:40"
+          },
+          {
+            "date": "2026-12-09",
+            "start": "11:10",
+            "end": "11:40"
+          }
+        ],
+        "place": "",
+        "target": "0〜7か月の乳幼児親子",
+        "capacity": "当日申込（開始時間までに受付で）",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": []
+      },
+      {
+        "title": "みかんタイム",
+        "subtitle": "年齢別プログラム",
+        "audience": "baby",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-12-03",
+            "start": "10:30",
+            "end": "11:00"
+          },
+          {
+            "date": "2026-12-10",
+            "start": "10:30",
+            "end": "11:00"
+          }
+        ],
+        "place": "",
+        "target": "8か月〜1歳0か月の乳幼児親子",
+        "capacity": "当日申込（開始時間までに受付で）",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": []
+      },
+      {
+        "title": "りんごタイム",
+        "subtitle": "年齢別プログラム",
+        "audience": "baby",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-12-02",
+            "start": "10:30",
+            "end": "11:00"
+          },
+          {
+            "date": "2026-12-09",
+            "start": "10:30",
+            "end": "11:00"
+          }
+        ],
+        "place": "",
+        "target": "1歳1か月〜1歳7か月の乳幼児親子",
+        "capacity": "当日申込（開始時間までに受付で）",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": []
+      },
+      {
+        "title": "ぶどうタイム",
+        "subtitle": "年齢別プログラム",
+        "audience": "baby",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-12-01",
+            "start": "10:30",
+            "end": "11:00"
+          },
+          {
+            "date": "2026-12-08",
+            "start": "10:30",
+            "end": "11:00"
+          }
+        ],
+        "place": "",
+        "target": "1歳8か月〜3歳の乳幼児親子",
+        "capacity": "当日申込（開始時間までに受付で）",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": []
+      },
+      {
+        "title": "でんしゃランド",
+        "subtitle": "",
+        "audience": "baby",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-12-05",
+            "start": "10:00",
+            "end": "11:30"
+          },
+          {
+            "date": "2026-12-12",
+            "start": "10:00",
+            "end": "11:30"
+          },
+          {
+            "date": "2026-12-19",
+            "start": "10:00",
+            "end": "11:30"
+          },
+          {
+            "date": "2026-12-26",
+            "start": "10:00",
+            "end": "11:30"
+          }
+        ],
+        "place": "",
+        "target": "乳幼児親子",
+        "capacity": "申込不要",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "この時間だけの特別な電車で遊ぶ。オリジナルの線路も作れる"
+        ]
+      },
+      {
+        "title": "ベビータイム",
+        "subtitle": "",
+        "audience": "baby",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-12-01",
+            "start": "15:30",
+            "end": "15:40"
+          },
+          {
+            "date": "2026-12-02",
+            "start": "15:30",
+            "end": "15:40"
+          },
+          {
+            "date": "2026-12-03",
+            "start": "15:30",
+            "end": "15:40"
+          },
+          {
+            "date": "2026-12-04",
+            "start": "15:30",
+            "end": "15:40"
+          },
+          {
+            "date": "2026-12-07",
+            "start": "15:30",
+            "end": "15:40"
+          },
+          {
+            "date": "2026-12-08",
+            "start": "15:30",
+            "end": "15:40"
+          },
+          {
+            "date": "2026-12-09",
+            "start": "15:30",
+            "end": "15:40"
+          },
+          {
+            "date": "2026-12-10",
+            "start": "15:30",
+            "end": "15:40"
+          },
+          {
+            "date": "2026-12-11",
+            "start": "15:30",
+            "end": "15:40"
+          },
+          {
+            "date": "2026-12-13",
+            "start": "14:30",
+            "end": "14:40"
+          },
+          {
+            "date": "2026-12-14",
+            "start": "15:30",
+            "end": "15:40"
+          },
+          {
+            "date": "2026-12-15",
+            "start": "15:30",
+            "end": "15:40"
+          },
+          {
+            "date": "2026-12-16",
+            "start": "15:30",
+            "end": "15:40"
+          },
+          {
+            "date": "2026-12-17",
+            "start": "15:30",
+            "end": "15:40"
+          },
+          {
+            "date": "2026-12-18",
+            "start": "15:30",
+            "end": "15:40"
+          },
+          {
+            "date": "2026-12-20",
+            "start": "14:30",
+            "end": "14:40"
+          },
+          {
+            "date": "2026-12-21",
+            "start": "15:30",
+            "end": "15:40"
+          },
+          {
+            "date": "2026-12-22",
+            "start": "15:30",
+            "end": "15:40"
+          },
+          {
+            "date": "2026-12-23",
+            "start": "15:30",
+            "end": "15:40"
+          },
+          {
+            "date": "2026-12-24",
+            "start": "15:30",
+            "end": "15:40"
+          },
+          {
+            "date": "2026-12-25",
+            "start": "15:30",
+            "end": "15:40"
+          },
+          {
+            "date": "2026-12-27",
+            "start": "14:30",
+            "end": "14:40"
+          },
+          {
+            "date": "2026-12-28",
+            "start": "15:30",
+            "end": "15:40"
+          }
+        ],
+        "place": "",
+        "target": "0〜1歳児親子",
+        "capacity": "申込不要",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "絵本やふれあい遊び",
+          "9日・23日は小学生も一緒に参加（ベビータイムプラス！）"
+        ]
+      },
+      {
+        "title": "ベビータイムプラス！",
+        "subtitle": "",
+        "audience": "all",
+        "regular": false,
+        "sessions": [
+          {
+            "date": "2026-12-09",
+            "start": "15:30",
+            "end": "15:40"
+          },
+          {
+            "date": "2026-12-23",
+            "start": "15:30",
+            "end": "15:40"
+          }
+        ],
+        "place": "",
+        "target": "小学生・0〜1歳児親子",
+        "capacity": "申込不要（小学生は当日15:15までに受付で申込）",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "毎月第2・第4水曜日。ベビータイム内で小学生が絵本の読み聞かせや手遊びをする",
+          "小学生の参加がない場合は通常のベビータイム"
+        ]
+      },
+      {
+        "title": "いっしょにあそぼ！",
+        "subtitle": "",
+        "audience": "all",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-12-03",
+            "start": "16:30",
+            "end": "16:45"
+          },
+          {
+            "date": "2026-12-10",
+            "start": "16:30",
+            "end": "16:45"
+          },
+          {
+            "date": "2026-12-17",
+            "start": "16:30",
+            "end": "16:45"
+          },
+          {
+            "date": "2026-12-24",
+            "start": "16:30",
+            "end": "16:45"
+          }
+        ],
+        "place": "",
+        "target": "3歳以上の親子・小学生",
+        "capacity": "申込不要",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "小学生と一緒に身体を動かしたりゲームをしたりする"
+        ]
+      },
+      {
+        "title": "小学生タイム",
+        "subtitle": "",
+        "audience": "kids",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-12-02",
+            "start": "14:30",
+            "end": "15:00"
+          },
+          {
+            "date": "2026-12-03",
+            "start": "16:45",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-12-09",
+            "start": "14:30",
+            "end": "15:00"
+          },
+          {
+            "date": "2026-12-10",
+            "start": "16:45",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-12-16",
+            "start": "14:30",
+            "end": "15:00"
+          },
+          {
+            "date": "2026-12-17",
+            "start": "16:45",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-12-23",
+            "start": "14:30",
+            "end": "15:00"
+          },
+          {
+            "date": "2026-12-24",
+            "start": "16:45",
+            "end": "17:45"
+          }
+        ],
+        "place": "",
+        "target": "小学生",
+        "capacity": "申込不要",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "小学生がホールを占有して遊べる",
+          "「杉並区子どもの居場所づくり基本方針」の策定に伴い、12月から小学生タイムを拡充"
+        ]
+      },
+      {
+        "title": "プチ小学生タイム",
+        "subtitle": "",
+        "audience": "kids",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-12-01",
+            "start": "16:30",
+            "end": "17:00"
+          },
+          {
+            "date": "2026-12-04",
+            "start": "16:30",
+            "end": "17:00"
+          },
+          {
+            "date": "2026-12-07",
+            "start": "16:30",
+            "end": "17:00"
+          },
+          {
+            "date": "2026-12-08",
+            "start": "16:30",
+            "end": "17:00"
+          },
+          {
+            "date": "2026-12-11",
+            "start": "16:30",
+            "end": "17:00"
+          },
+          {
+            "date": "2026-12-14",
+            "start": "16:30",
+            "end": "17:00"
+          },
+          {
+            "date": "2026-12-15",
+            "start": "16:30",
+            "end": "17:00"
+          },
+          {
+            "date": "2026-12-18",
+            "start": "16:30",
+            "end": "17:00"
+          },
+          {
+            "date": "2026-12-21",
+            "start": "16:30",
+            "end": "17:00"
+          },
+          {
+            "date": "2026-12-22",
+            "start": "16:30",
+            "end": "17:00"
+          },
+          {
+            "date": "2026-12-25",
+            "start": "16:30",
+            "end": "17:00"
+          },
+          {
+            "date": "2026-12-28",
+            "start": "16:30",
+            "end": "17:00"
+          }
+        ],
+        "place": "",
+        "target": "小学生",
+        "capacity": "申込不要",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "小学生が優先的にホールの半面（ボール遊びエリア）を使える",
+          "小学生の利用がない場合は乳幼児親子のスペース",
+          "「杉並区子どもの居場所づくり基本方針」の策定に伴い、12月から小学生タイムを拡充"
+        ]
+      }
+    ],
+    "closed_days": [
+      {
+        "date": "2026-12-06",
+        "reason": "休業日（第1日曜）"
+      },
+      {
+        "date": "2026-12-29",
+        "reason": "年末年始"
+      },
+      {
+        "date": "2026-12-30",
+        "reason": "年末年始"
+      },
+      {
+        "date": "2026-12-31",
+        "reason": "年末年始"
+      },
+      {
+        "date": "2027-01-01",
+        "reason": "年末年始"
+      },
+      {
+        "date": "2027-01-02",
+        "reason": "年末年始"
+      },
+      {
+        "date": "2027-01-03",
+        "reason": "年末年始"
+      }
+    ]
+  }
+}

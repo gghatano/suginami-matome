@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T13:30:56+00:00",
+  "generated_at": "2026-11-25T23:23:40+00:00",
   "centers": [
     {
       "key": "honan",
@@ -131,6 +131,222 @@
         {
           "date": "2026-11-23",
           "reason": "勤労感謝の日"
+        }
+      ]
+    },
+    {
+      "center": "honan",
+      "year": 2026,
+      "month": 12,
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3517/40honan2612.pdf",
+      "pdf_label": "方南児童館のおたより12月号（PDF：646KB）",
+      "method": "claude-scheduled-session",
+      "extracted_at": "2026-11-25T23:23:34+00:00",
+      "closed_days": [
+        {
+          "date": "2026-12-12",
+          "reason": "館内整理日"
+        },
+        {
+          "date": "2026-12-27",
+          "reason": "年末年始"
+        },
+        {
+          "date": "2026-12-28",
+          "reason": "年末年始"
+        },
+        {
+          "date": "2026-12-29",
+          "reason": "年末年始"
+        },
+        {
+          "date": "2026-12-30",
+          "reason": "年末年始"
+        },
+        {
+          "date": "2026-12-31",
+          "reason": "年末年始"
+        },
+        {
+          "date": "2027-01-01",
+          "reason": "年末年始"
+        },
+        {
+          "date": "2027-01-02",
+          "reason": "年末年始"
+        },
+        {
+          "date": "2027-01-03",
+          "reason": "年末年始"
+        },
+        {
+          "date": "2027-01-04",
+          "reason": "年末年始"
+        }
+      ]
+    },
+    {
+      "center": "horinouchi_higashi",
+      "year": 2026,
+      "month": 12,
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3516/13horinouchihigashi1.pdf",
+      "pdf_label": "堀ノ内東児童館のおたより12月号（PDF：582KB）",
+      "method": "claude-scheduled-session",
+      "extracted_at": "2026-11-25T23:23:34+00:00",
+      "closed_days": [
+        {
+          "date": "2026-12-12",
+          "reason": "館内整理日"
+        },
+        {
+          "date": "2026-12-27",
+          "reason": "年末年始"
+        },
+        {
+          "date": "2026-12-28",
+          "reason": "年末年始"
+        },
+        {
+          "date": "2026-12-29",
+          "reason": "年末年始"
+        },
+        {
+          "date": "2026-12-30",
+          "reason": "年末年始"
+        },
+        {
+          "date": "2026-12-31",
+          "reason": "年末年始"
+        },
+        {
+          "date": "2027-01-01",
+          "reason": "年末年始"
+        },
+        {
+          "date": "2027-01-02",
+          "reason": "年末年始"
+        },
+        {
+          "date": "2027-01-03",
+          "reason": "年末年始"
+        },
+        {
+          "date": "2027-01-04",
+          "reason": "年末年始"
+        }
+      ]
+    },
+    {
+      "center": "horinouchi_minami",
+      "year": 2026,
+      "month": 12,
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3539/19horinouchiminami2612.pdf",
+      "pdf_label": "ゆうキッズのおたより（ゆうキッズほりみなみ12月号）（PDF：481KB）",
+      "method": "claude-scheduled-session",
+      "extracted_at": "2026-11-25T23:23:34+00:00",
+      "closed_days": [
+        {
+          "date": "2026-12-07",
+          "reason": "小学校振替休校"
+        },
+        {
+          "date": "2026-12-25",
+          "reason": "小学校終業式"
+        },
+        {
+          "date": "2026-12-26",
+          "reason": "年末年始・小学校冬休み"
+        },
+        {
+          "date": "2026-12-27",
+          "reason": "年末年始・小学校冬休み"
+        },
+        {
+          "date": "2026-12-28",
+          "reason": "年末年始・小学校冬休み"
+        },
+        {
+          "date": "2026-12-29",
+          "reason": "年末年始・小学校冬休み"
+        },
+        {
+          "date": "2026-12-30",
+          "reason": "年末年始・小学校冬休み"
+        },
+        {
+          "date": "2026-12-31",
+          "reason": "年末年始・小学校冬休み"
+        },
+        {
+          "date": "2027-01-01",
+          "reason": "年末年始・小学校冬休み"
+        },
+        {
+          "date": "2027-01-02",
+          "reason": "年末年始・小学校冬休み"
+        },
+        {
+          "date": "2027-01-03",
+          "reason": "年末年始・小学校冬休み"
+        },
+        {
+          "date": "2027-01-04",
+          "reason": "年末年始・小学校冬休み"
+        },
+        {
+          "date": "2027-01-05",
+          "reason": "年末年始・小学校冬休み"
+        },
+        {
+          "date": "2027-01-06",
+          "reason": "年末年始・小学校冬休み"
+        },
+        {
+          "date": "2027-01-07",
+          "reason": "年末年始・小学校冬休み"
+        },
+        {
+          "date": "2027-01-08",
+          "reason": "年末年始・小学校冬休み"
+        }
+      ]
+    },
+    {
+      "center": "plaza_izumi",
+      "year": 2026,
+      "month": 12,
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2612.pdf",
+      "pdf_label": "子ども・子育てプラザ和泉のニュース12月号（PDF：4,652KB）",
+      "method": "claude-scheduled-session",
+      "extracted_at": "2026-11-25T23:23:34+00:00",
+      "closed_days": [
+        {
+          "date": "2026-12-06",
+          "reason": "休業日（第1日曜）"
+        },
+        {
+          "date": "2026-12-29",
+          "reason": "年末年始"
+        },
+        {
+          "date": "2026-12-30",
+          "reason": "年末年始"
+        },
+        {
+          "date": "2026-12-31",
+          "reason": "年末年始"
+        },
+        {
+          "date": "2027-01-01",
+          "reason": "年末年始"
+        },
+        {
+          "date": "2027-01-02",
+          "reason": "年末年始"
+        },
+        {
+          "date": "2027-01-03",
+          "reason": "年末年始"
         }
       ]
     }
@@ -841,6 +1057,591 @@
       "id": "honan-202611-17",
       "center": "honan",
       "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3517/40honan2611.pdf"
+    },
+    {
+      "title": "バナナ春巻をつくろう！",
+      "subtitle": "ぱくぱくクッキング",
+      "audience": "kids",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-12-19",
+          "start": "10:30",
+          "end": "12:00"
+        }
+      ],
+      "place": "2階 学童クラブ室",
+      "target": "1年生〜",
+      "capacity": "1年生先着8人、2年生以上先着12人",
+      "requires_application": true,
+      "application_start": "2026-12-07",
+      "application_end": "2026-12-16",
+      "application_method": "本人が児童館受付で（申込書）",
+      "notes": [
+        "申込書の配布：12/1（火）〜",
+        "7日（月）に定員を超えた場合は抽選",
+        "詳しくは申込書を確認"
+      ],
+      "id": "honan-202612-00",
+      "center": "honan",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3517/40honan2612.pdf"
+    },
+    {
+      "title": "伝承遊び検定",
+      "subtitle": "",
+      "audience": "kids",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-12-15",
+          "start": "15:15",
+          "end": "15:45"
+        },
+        {
+          "date": "2026-12-16",
+          "start": "15:15",
+          "end": "15:45"
+        },
+        {
+          "date": "2026-12-23",
+          "start": "14:00",
+          "end": "14:45"
+        },
+        {
+          "date": "2026-12-25",
+          "start": "15:15",
+          "end": "15:45"
+        }
+      ],
+      "place": "遊戯室",
+      "target": "1年生〜",
+      "capacity": "",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "2027年1月23日（土）実施予定の「伝承遊び市」に向けて、こま・けん玉・あやとり・おてだまのレベルアップを目指す"
+      ],
+      "id": "honan-202612-01",
+      "center": "honan",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3517/40honan2612.pdf"
+    },
+    {
+      "title": "出前児童館",
+      "subtitle": "",
+      "audience": "kids",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-12-10",
+          "start": "15:00",
+          "end": "16:00"
+        }
+      ],
+      "place": "方南小 たけの子くらぶのへや",
+      "target": "たけの子くらぶ",
+      "capacity": "",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "たけの子くらぶで「ぶんぶんごま」をつくる"
+      ],
+      "id": "honan-202612-02",
+      "center": "honan",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3517/40honan2612.pdf"
+    },
+    {
+      "title": "ワードバトル",
+      "subtitle": "スペシャルゲームタイム",
+      "audience": "kids",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-03",
+          "start": "16:00",
+          "end": "16:40"
+        },
+        {
+          "date": "2026-12-10",
+          "start": "16:00",
+          "end": "16:40"
+        },
+        {
+          "date": "2026-12-17",
+          "start": "16:00",
+          "end": "16:40"
+        },
+        {
+          "date": "2026-12-24",
+          "start": "16:00",
+          "end": "16:40"
+        }
+      ],
+      "place": "遊戯室",
+      "target": "1年生〜",
+      "capacity": "申込不要",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "文字カードを探して言葉を作る"
+      ],
+      "id": "honan-202612-03",
+      "center": "honan",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3517/40honan2612.pdf"
+    },
+    {
+      "title": "いちりんしゃタイム",
+      "subtitle": "",
+      "audience": "kids",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-04",
+          "start": "15:45",
+          "end": "16:30"
+        },
+        {
+          "date": "2026-12-05",
+          "start": "11:15",
+          "end": "11:45"
+        },
+        {
+          "date": "2026-12-11",
+          "start": "15:45",
+          "end": "16:30"
+        },
+        {
+          "date": "2026-12-18",
+          "start": "15:45",
+          "end": "16:30"
+        },
+        {
+          "date": "2026-12-19",
+          "start": "13:00",
+          "end": "13:30"
+        },
+        {
+          "date": "2026-12-25",
+          "start": "15:45",
+          "end": "16:30"
+        },
+        {
+          "date": "2026-12-26",
+          "start": "11:15",
+          "end": "11:45"
+        }
+      ],
+      "place": "遊戯室",
+      "target": "1年生〜",
+      "capacity": "申込不要（金曜は15分交代）",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "持ち物：うわばき",
+        "土曜は11:15〜11:45（19日のみ13:00〜13:30）"
+      ],
+      "id": "honan-202612-04",
+      "center": "honan",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3517/40honan2612.pdf"
+    },
+    {
+      "title": "高学年・中高生タイム",
+      "subtitle": "",
+      "audience": "kids",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-01",
+          "start": "17:30",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-02",
+          "start": "17:15",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-03",
+          "start": "17:30",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-08",
+          "start": "17:30",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-09",
+          "start": "17:15",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-10",
+          "start": "17:30",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-15",
+          "start": "17:30",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-16",
+          "start": "17:15",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-17",
+          "start": "17:30",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-22",
+          "start": "17:30",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-23",
+          "start": "17:15",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-24",
+          "start": "17:30",
+          "end": "17:45"
+        }
+      ],
+      "place": "遊戯室",
+      "target": "5年生〜（木曜のみ4年生も可）",
+      "capacity": "申込不要",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "火・木は17:30〜17:45、水は17:15〜17:45"
+      ],
+      "id": "honan-202612-05",
+      "center": "honan",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3517/40honan2612.pdf"
+    },
+    {
+      "title": "ぽけっとのへや",
+      "subtitle": "",
+      "audience": "kids",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-08",
+          "start": "16:00",
+          "end": "16:30"
+        },
+        {
+          "date": "2026-12-22",
+          "start": "16:00",
+          "end": "16:30"
+        }
+      ],
+      "place": "2階 学童クラブ室",
+      "target": "1年生〜",
+      "capacity": "申込不要",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "ボランティアの先生による絵本や紙芝居の読み聞かせ"
+      ],
+      "id": "honan-202612-06",
+      "center": "honan",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3517/40honan2612.pdf"
+    },
+    {
+      "title": "ゆうキッズクリスマス会",
+      "subtitle": "全タイム合同",
+      "audience": "baby",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-12-08",
+          "start": "11:00",
+          "end": "11:45"
+        }
+      ],
+      "place": "方南児童館 遊戯室",
+      "target": "乳幼児親子",
+      "capacity": "35組（定員になり次第締切）",
+      "requires_application": true,
+      "application_start": "2026-11-24",
+      "application_end": "2026-12-07",
+      "application_method": "児童館の受付または電話",
+      "notes": [
+        "みんなでリースの工作、定番クリスマスソングの合奏",
+        "赤い服を着たおじいさんがプレゼントを持って来てくれるかも",
+        "事前準備日：ぴょんぴょんタイム 12/1（火）、たまご・ぴよぴよタイム 12/4（金）。準備日に参加できなくてもクリスマス会には参加できる"
+      ],
+      "id": "honan-202612-07",
+      "center": "honan",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3517/40honan2612.pdf"
+    },
+    {
+      "title": "ぴょんぴょんタイム",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-01",
+          "start": "11:00",
+          "end": "11:30"
+        }
+      ],
+      "place": "",
+      "target": "一人歩きが安定したら",
+      "capacity": "",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "体操や体を動かした遊び、季節の工作、絵本の読み聞かせ",
+        "この日はクリスマス会の合奏で使うものを工作する"
+      ],
+      "id": "honan-202612-08",
+      "center": "honan",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3517/40honan2612.pdf"
+    },
+    {
+      "title": "たまごタイム",
+      "subtitle": "ゆうキッズスタート事業",
+      "audience": "baby",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-04",
+          "start": "11:00",
+          "end": "11:30"
+        }
+      ],
+      "place": "",
+      "target": "ねんねの赤ちゃん（妊娠中の方とパートナーも）",
+      "capacity": "",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "保護者同士の交流やふれあい遊び",
+        "この日はクリスマス会の合奏で使うものを工作する"
+      ],
+      "id": "honan-202612-09",
+      "center": "honan",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3517/40honan2612.pdf"
+    },
+    {
+      "title": "ぴよぴよタイム",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-04",
+          "start": "11:00",
+          "end": "11:30"
+        }
+      ],
+      "place": "",
+      "target": "ハイハイを始めたら",
+      "capacity": "",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "手遊び、ふれあい遊び、工作、ママトーク。不定期で足型も",
+        "この日はクリスマス会の合奏で使うものを工作する"
+      ],
+      "id": "honan-202612-10",
+      "center": "honan",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3517/40honan2612.pdf"
+    },
+    {
+      "title": "のりものタイム",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-05",
+          "start": "11:45",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-12-07",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-12-19",
+          "start": "11:45",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-12-21",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-12-26",
+          "start": "11:45",
+          "end": "13:00"
+        }
+      ],
+      "place": "遊戯室",
+      "target": "乳幼児親子",
+      "capacity": "",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "コンビカーなどの乗り物で遊べる",
+        "月曜 10:00〜13:00、土曜 11:45〜13:00"
+      ],
+      "id": "honan-202612-11",
+      "center": "honan",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3517/40honan2612.pdf"
+    },
+    {
+      "title": "プレイランド",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-02",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-12-03",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-12-09",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-12-10",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-12-11",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-12-15",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-12-16",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-12-17",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-12-18",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-12-22",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-12-23",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-12-24",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-12-25",
+          "start": "10:00",
+          "end": "13:00"
+        }
+      ],
+      "place": "遊戯室",
+      "target": "乳幼児親子",
+      "capacity": "",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "ボール・トンネル・ジャングルジム・コンビカーなどの遊具で遊べる",
+        "14日（月）は小学校の学校休業日のため、終日乳幼児室のみ利用可"
+      ],
+      "id": "honan-202612-12",
+      "center": "honan",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3517/40honan2612.pdf"
+    },
+    {
+      "title": "サンカード利用の日",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-06",
+          "start": "09:00",
+          "end": "17:00"
+        },
+        {
+          "date": "2026-12-13",
+          "start": "09:00",
+          "end": "17:00"
+        },
+        {
+          "date": "2026-12-20",
+          "start": "09:00",
+          "end": "17:00"
+        }
+      ],
+      "place": "",
+      "target": "親子・団体（要サンカード）",
+      "capacity": "",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "小学生以上も保護者の付き添いが必要",
+        "27日（日）はお休み"
+      ],
+      "id": "honan-202612-13",
+      "center": "honan",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3517/40honan2612.pdf"
     },
     {
       "title": "遊び会議",
@@ -1825,6 +2626,949 @@
       "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3516/13horinouchihigahsi2610.pdf"
     },
     {
+      "title": "中高生が教えてくれる卓球道場",
+      "subtitle": "堀ノ内東児童館 地域中・高校生委員会 自主企画事業",
+      "audience": "kids",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-12-16",
+          "start": "16:30",
+          "end": "17:30"
+        }
+      ],
+      "place": "",
+      "target": "小学3年生以上",
+      "capacity": "先着12名",
+      "requires_application": true,
+      "application_start": "2026-12-02",
+      "application_end": "2026-12-15",
+      "application_method": "",
+      "notes": [
+        "中高生が卓球を教えてくれる"
+      ],
+      "id": "horinouchi_higashi-202612-00",
+      "center": "horinouchi_higashi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3516/13horinouchihigashi1.pdf"
+    },
+    {
+      "title": "おりがみの時間",
+      "subtitle": "",
+      "audience": "kids",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-12-09",
+          "start": "15:30",
+          "end": ""
+        },
+        {
+          "date": "2026-12-09",
+          "start": "15:55",
+          "end": ""
+        }
+      ],
+      "place": "",
+      "target": "小学1年生以上",
+      "capacity": "各回先着5名",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "①15:30〜 ②15:55〜",
+        "ボランティアの先生と一緒におりがみを作る"
+      ],
+      "id": "horinouchi_higashi-202612-01",
+      "center": "horinouchi_higashi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3516/13horinouchihigashi1.pdf"
+    },
+    {
+      "title": "エルダーおはなしの会",
+      "subtitle": "",
+      "audience": "all",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-12-10",
+          "start": "15:30",
+          "end": "16:00"
+        }
+      ],
+      "place": "",
+      "target": "乳幼児親子〜小学生",
+      "capacity": "申込不要",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "ボランティアさんが楽しいおはなしをしてくれる"
+      ],
+      "id": "horinouchi_higashi-202612-02",
+      "center": "horinouchi_higashi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3516/13horinouchihigashi1.pdf"
+    },
+    {
+      "title": "1年生グループ",
+      "subtitle": "児童館グループ活動",
+      "audience": "kids",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-03",
+          "start": "15:15",
+          "end": "16:00"
+        }
+      ],
+      "place": "",
+      "target": "1年生",
+      "capacity": "登録制（申込は終了）",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "1年生のメンバーで活動する時間"
+      ],
+      "id": "horinouchi_higashi-202612-03",
+      "center": "horinouchi_higashi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3516/13horinouchihigashi1.pdf"
+    },
+    {
+      "title": "きらきらグループ",
+      "subtitle": "児童館グループ活動",
+      "audience": "kids",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-08",
+          "start": "16:20",
+          "end": "17:00"
+        }
+      ],
+      "place": "",
+      "target": "2〜6年生",
+      "capacity": "登録制（申込は終了）",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "障がいのある子もない子もみんなで一緒に活動する"
+      ],
+      "id": "horinouchi_higashi-202612-04",
+      "center": "horinouchi_higashi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3516/13horinouchihigashi1.pdf"
+    },
+    {
+      "title": "卓球グループ",
+      "subtitle": "児童館グループ活動",
+      "audience": "kids",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-01",
+          "start": "17:00",
+          "end": "17:40"
+        }
+      ],
+      "place": "",
+      "target": "3〜6年生",
+      "capacity": "登録制（申込は終了）",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "コーチに卓球のやり方を教えてもらう"
+      ],
+      "id": "horinouchi_higashi-202612-05",
+      "center": "horinouchi_higashi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3516/13horinouchihigashi1.pdf"
+    },
+    {
+      "title": "ドッジボール交流会",
+      "subtitle": "令和8年度 第15回 杉並区児童館 第2ブロック",
+      "audience": "kids",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2027-02-27",
+          "start": "13:55",
+          "end": "16:30"
+        }
+      ],
+      "place": "杉並第十小学校体育館",
+      "target": "低学年チーム（1・2年生）1チーム10人、高学年チーム（3〜6年生）1チーム10人",
+      "capacity": "",
+      "requires_application": true,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "1月のおたよりでお知らせ",
+      "notes": [
+        "6チームでの交流試合（堀ノ内東・和田中央・高円寺南・高円寺東児童館、杉並第三小学校・高円寺学園放課後等居場所事業）",
+        "会場のスペースに限りがあるため保護者の観戦はできない"
+      ],
+      "id": "horinouchi_higashi-202612-06",
+      "center": "horinouchi_higashi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3516/13horinouchihigashi1.pdf"
+    },
+    {
+      "title": "高学年タイム",
+      "subtitle": "",
+      "audience": "kids",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-04",
+          "start": "17:30",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-11",
+          "start": "17:30",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-18",
+          "start": "17:30",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-25",
+          "start": "17:30",
+          "end": "17:45"
+        }
+      ],
+      "place": "",
+      "target": "4〜6年生",
+      "capacity": "申込不要",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [],
+      "id": "horinouchi_higashi-202612-07",
+      "center": "horinouchi_higashi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3516/13horinouchihigashi1.pdf"
+    },
+    {
+      "title": "中高生タイム",
+      "subtitle": "",
+      "audience": "kids",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-02",
+          "start": "17:30",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-09",
+          "start": "17:30",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-16",
+          "start": "17:30",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-23",
+          "start": "17:30",
+          "end": "17:45"
+        }
+      ],
+      "place": "",
+      "target": "中・高校生",
+      "capacity": "申込不要",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [],
+      "id": "horinouchi_higashi-202612-08",
+      "center": "horinouchi_higashi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3516/13horinouchihigashi1.pdf"
+    },
+    {
+      "title": "卓球タイム",
+      "subtitle": "",
+      "audience": "kids",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-02",
+          "start": "17:00",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-03",
+          "start": "17:00",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-04",
+          "start": "17:00",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-05",
+          "start": "09:00",
+          "end": "11:45"
+        },
+        {
+          "date": "2026-12-05",
+          "start": "13:00",
+          "end": "16:25"
+        },
+        {
+          "date": "2026-12-07",
+          "start": "17:00",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-08",
+          "start": "17:00",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-09",
+          "start": "17:00",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-10",
+          "start": "17:00",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-11",
+          "start": "17:00",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-14",
+          "start": "17:00",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-15",
+          "start": "17:00",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-17",
+          "start": "17:00",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-18",
+          "start": "17:00",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-19",
+          "start": "09:00",
+          "end": "11:45"
+        },
+        {
+          "date": "2026-12-19",
+          "start": "13:00",
+          "end": "16:25"
+        },
+        {
+          "date": "2026-12-21",
+          "start": "17:00",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-22",
+          "start": "17:00",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-23",
+          "start": "17:00",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-24",
+          "start": "17:00",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-25",
+          "start": "17:00",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-26",
+          "start": "09:00",
+          "end": "11:45"
+        },
+        {
+          "date": "2026-12-26",
+          "start": "13:00",
+          "end": "16:25"
+        }
+      ],
+      "place": "",
+      "target": "3年生以上",
+      "capacity": "申込不要",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "1日（火）・16日（水）はお休み"
+      ],
+      "id": "horinouchi_higashi-202612-09",
+      "center": "horinouchi_higashi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3516/13horinouchihigashi1.pdf"
+    },
+    {
+      "title": "ドッジボールタイム",
+      "subtitle": "",
+      "audience": "kids",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-01",
+          "start": "16:10",
+          "end": "16:40"
+        },
+        {
+          "date": "2026-12-02",
+          "start": "16:10",
+          "end": "16:40"
+        },
+        {
+          "date": "2026-12-03",
+          "start": "16:10",
+          "end": "16:40"
+        },
+        {
+          "date": "2026-12-04",
+          "start": "16:10",
+          "end": "16:40"
+        },
+        {
+          "date": "2026-12-05",
+          "start": "16:25",
+          "end": "16:45"
+        },
+        {
+          "date": "2026-12-07",
+          "start": "16:10",
+          "end": "16:40"
+        },
+        {
+          "date": "2026-12-08",
+          "start": "16:10",
+          "end": "16:40"
+        },
+        {
+          "date": "2026-12-09",
+          "start": "16:10",
+          "end": "16:40"
+        },
+        {
+          "date": "2026-12-10",
+          "start": "16:10",
+          "end": "16:40"
+        },
+        {
+          "date": "2026-12-11",
+          "start": "16:10",
+          "end": "16:40"
+        },
+        {
+          "date": "2026-12-14",
+          "start": "16:10",
+          "end": "16:40"
+        },
+        {
+          "date": "2026-12-15",
+          "start": "16:10",
+          "end": "16:40"
+        },
+        {
+          "date": "2026-12-16",
+          "start": "16:10",
+          "end": "16:40"
+        },
+        {
+          "date": "2026-12-17",
+          "start": "16:10",
+          "end": "16:40"
+        },
+        {
+          "date": "2026-12-18",
+          "start": "16:10",
+          "end": "16:40"
+        },
+        {
+          "date": "2026-12-19",
+          "start": "16:25",
+          "end": "16:45"
+        },
+        {
+          "date": "2026-12-21",
+          "start": "16:10",
+          "end": "16:40"
+        },
+        {
+          "date": "2026-12-22",
+          "start": "16:10",
+          "end": "16:40"
+        },
+        {
+          "date": "2026-12-23",
+          "start": "16:10",
+          "end": "16:40"
+        },
+        {
+          "date": "2026-12-24",
+          "start": "16:10",
+          "end": "16:40"
+        },
+        {
+          "date": "2026-12-25",
+          "start": "16:10",
+          "end": "16:40"
+        },
+        {
+          "date": "2026-12-26",
+          "start": "16:25",
+          "end": "16:45"
+        }
+      ],
+      "place": "",
+      "target": "",
+      "capacity": "申込不要",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "平日：1・2年生 16:10〜16:25、3年生以上 16:25〜16:40",
+        "土曜：全学年 16:25〜16:45"
+      ],
+      "id": "horinouchi_higashi-202612-10",
+      "center": "horinouchi_higashi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3516/13horinouchihigashi1.pdf"
+    },
+    {
+      "title": "さんぽあてタイム",
+      "subtitle": "",
+      "audience": "kids",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-01",
+          "start": "17:05",
+          "end": "17:25"
+        },
+        {
+          "date": "2026-12-02",
+          "start": "17:05",
+          "end": "17:25"
+        },
+        {
+          "date": "2026-12-03",
+          "start": "17:05",
+          "end": "17:25"
+        },
+        {
+          "date": "2026-12-04",
+          "start": "17:05",
+          "end": "17:25"
+        },
+        {
+          "date": "2026-12-07",
+          "start": "17:05",
+          "end": "17:25"
+        },
+        {
+          "date": "2026-12-08",
+          "start": "17:05",
+          "end": "17:25"
+        },
+        {
+          "date": "2026-12-09",
+          "start": "17:05",
+          "end": "17:25"
+        },
+        {
+          "date": "2026-12-10",
+          "start": "17:05",
+          "end": "17:25"
+        },
+        {
+          "date": "2026-12-11",
+          "start": "17:05",
+          "end": "17:25"
+        },
+        {
+          "date": "2026-12-14",
+          "start": "17:05",
+          "end": "17:25"
+        },
+        {
+          "date": "2026-12-15",
+          "start": "17:05",
+          "end": "17:25"
+        },
+        {
+          "date": "2026-12-16",
+          "start": "17:05",
+          "end": "17:25"
+        },
+        {
+          "date": "2026-12-17",
+          "start": "17:05",
+          "end": "17:25"
+        },
+        {
+          "date": "2026-12-18",
+          "start": "17:05",
+          "end": "17:25"
+        },
+        {
+          "date": "2026-12-21",
+          "start": "17:05",
+          "end": "17:25"
+        },
+        {
+          "date": "2026-12-22",
+          "start": "17:05",
+          "end": "17:25"
+        },
+        {
+          "date": "2026-12-23",
+          "start": "17:05",
+          "end": "17:25"
+        },
+        {
+          "date": "2026-12-24",
+          "start": "17:05",
+          "end": "17:25"
+        },
+        {
+          "date": "2026-12-25",
+          "start": "17:05",
+          "end": "17:25"
+        }
+      ],
+      "place": "",
+      "target": "",
+      "capacity": "申込不要",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "3年生以上 17:05〜17:15、1・2年生 17:15〜17:25"
+      ],
+      "id": "horinouchi_higashi-202612-11",
+      "center": "horinouchi_higashi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3516/13horinouchihigashi1.pdf"
+    },
+    {
+      "title": "ちびっこ☆お楽しみ会",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-12-03",
+          "start": "10:30",
+          "end": "11:15"
+        }
+      ],
+      "place": "",
+      "target": "乳幼児親子",
+      "capacity": "",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "全タイム合同のお楽しみ会。工作や演奏をする",
+        "サンタさんがきてくれる",
+        "この日のミニプログラムはお休み"
+      ],
+      "id": "horinouchi_higashi-202612-12",
+      "center": "horinouchi_higashi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3516/13horinouchihigashi1.pdf"
+    },
+    {
+      "title": "パパも一緒に〜もちろんママもね〜",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-12-05",
+          "start": "11:00",
+          "end": "11:30"
+        }
+      ],
+      "place": "",
+      "target": "乳幼児親子",
+      "capacity": "",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "アスレチックや体操・触れ合い遊び。パパの子育てを応援するプログラム"
+      ],
+      "id": "horinouchi_higashi-202612-13",
+      "center": "horinouchi_higashi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3516/13horinouchihigashi1.pdf"
+    },
+    {
+      "title": "絵本の読みきかせ会",
+      "subtitle": "堀ノ内東児童館 地域中・高校生委員会 自主企画事業",
+      "audience": "baby",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-12-19",
+          "start": "14:30",
+          "end": "15:00"
+        }
+      ],
+      "place": "",
+      "target": "乳幼児親子",
+      "capacity": "",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "中・高校生委員会のメンバーが絵本や紙芝居を読んでくれる"
+      ],
+      "id": "horinouchi_higashi-202612-14",
+      "center": "horinouchi_higashi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3516/13horinouchihigashi1.pdf"
+    },
+    {
+      "title": "ぱんだタイム",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-01",
+          "start": "11:00",
+          "end": "11:30"
+        }
+      ],
+      "place": "",
+      "target": "ひとり歩きがはじまったら",
+      "capacity": "",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "体操・ふれあい遊び"
+      ],
+      "id": "horinouchi_higashi-202612-15",
+      "center": "horinouchi_higashi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3516/13horinouchihigashi1.pdf"
+    },
+    {
+      "title": "アスレチックタイム",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-02",
+          "start": "10:00",
+          "end": "11:30"
+        }
+      ],
+      "place": "",
+      "target": "乳幼児とその保護者",
+      "capacity": "",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "すべり台やトンネルで体を動かして遊ぶ"
+      ],
+      "id": "horinouchi_higashi-202612-16",
+      "center": "horinouchi_higashi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3516/13horinouchihigashi1.pdf"
+    },
+    {
+      "title": "コンビカータイム",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-01",
+          "start": "10:00",
+          "end": ""
+        },
+        {
+          "date": "2026-12-02",
+          "start": "10:00",
+          "end": ""
+        },
+        {
+          "date": "2026-12-03",
+          "start": "10:00",
+          "end": ""
+        },
+        {
+          "date": "2026-12-04",
+          "start": "10:00",
+          "end": ""
+        },
+        {
+          "date": "2026-12-05",
+          "start": "09:00",
+          "end": "16:00"
+        },
+        {
+          "date": "2026-12-08",
+          "start": "10:00",
+          "end": ""
+        },
+        {
+          "date": "2026-12-09",
+          "start": "10:00",
+          "end": ""
+        },
+        {
+          "date": "2026-12-10",
+          "start": "10:00",
+          "end": ""
+        },
+        {
+          "date": "2026-12-11",
+          "start": "10:00",
+          "end": ""
+        },
+        {
+          "date": "2026-12-14",
+          "start": "10:00",
+          "end": ""
+        },
+        {
+          "date": "2026-12-15",
+          "start": "10:00",
+          "end": ""
+        },
+        {
+          "date": "2026-12-16",
+          "start": "10:00",
+          "end": ""
+        },
+        {
+          "date": "2026-12-17",
+          "start": "10:00",
+          "end": ""
+        },
+        {
+          "date": "2026-12-18",
+          "start": "10:00",
+          "end": ""
+        },
+        {
+          "date": "2026-12-19",
+          "start": "09:00",
+          "end": "16:00"
+        },
+        {
+          "date": "2026-12-21",
+          "start": "10:00",
+          "end": ""
+        },
+        {
+          "date": "2026-12-22",
+          "start": "10:00",
+          "end": ""
+        },
+        {
+          "date": "2026-12-23",
+          "start": "10:00",
+          "end": ""
+        },
+        {
+          "date": "2026-12-24",
+          "start": "10:00",
+          "end": ""
+        },
+        {
+          "date": "2026-12-26",
+          "start": "09:00",
+          "end": "16:00"
+        }
+      ],
+      "place": "",
+      "target": "",
+      "capacity": "",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "平日は10:00〜小学生下校時間の15分前まで",
+        "プログラムの時間を除く。同時に3台まで",
+        "7日（月）・25日（金）はお休み"
+      ],
+      "id": "horinouchi_higashi-202612-17",
+      "center": "horinouchi_higashi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3516/13horinouchihigashi1.pdf"
+    },
+    {
+      "title": "サンカード利用の日",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-06",
+          "start": "09:00",
+          "end": "17:00"
+        },
+        {
+          "date": "2026-12-13",
+          "start": "09:00",
+          "end": "17:00"
+        },
+        {
+          "date": "2026-12-20",
+          "start": "09:00",
+          "end": "17:00"
+        }
+      ],
+      "place": "",
+      "target": "",
+      "capacity": "",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "小学生以上も保護者の付き添いが必要",
+        "12月27日・1月3日はお休み"
+      ],
+      "id": "horinouchi_higashi-202612-18",
+      "center": "horinouchi_higashi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3516/13horinouchihigashi1.pdf"
+    },
+    {
       "title": "親子エクササイズ",
       "subtitle": "杉並区児童館第1ブロック ほっとエッセンス事業",
       "audience": "baby",
@@ -2112,6 +3856,158 @@
       "id": "horinouchi_minami-202611-06",
       "center": "horinouchi_minami",
       "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3539/19horinouchiminami2611.pdf"
+    },
+    {
+      "title": "ねんねタイム",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-08",
+          "start": "11:00",
+          "end": "11:30"
+        }
+      ],
+      "place": "",
+      "target": "おおむね6か月までのねんねの赤ちゃん",
+      "capacity": "",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "ふれあい遊びやおしゃべり",
+        "ゆうキッズスタート事業"
+      ],
+      "id": "horinouchi_minami-202612-00",
+      "center": "horinouchi_minami",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3539/19horinouchiminami2612.pdf"
+    },
+    {
+      "title": "すくすくタイム",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-10",
+          "start": "11:00",
+          "end": "11:30"
+        }
+      ],
+      "place": "",
+      "target": "おおむね6か月以上の子",
+      "capacity": "",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "ふれあい遊び、絵本の読み聞かせ、工作"
+      ],
+      "id": "horinouchi_minami-202612-01",
+      "center": "horinouchi_minami",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3539/19horinouchiminami2612.pdf"
+    },
+    {
+      "title": "ゆうキッズ（遊戯室の利用）",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-02",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-12-04",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-12-08",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-12-09",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-12-10",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-12-11",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-12-14",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-12-15",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-12-16",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-12-17",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-12-18",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-12-21",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-12-22",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-12-23",
+          "start": "10:00",
+          "end": "13:00"
+        },
+        {
+          "date": "2026-12-24",
+          "start": "10:00",
+          "end": "13:00"
+        }
+      ],
+      "place": "",
+      "target": "0歳からの未就学児と保護者",
+      "capacity": "",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "月〜金 10:00〜小学生の下校時刻まで（12月は13:00まで）",
+        "1日・3日は行事のみ。土日祝と小学校が休みの日は利用不可",
+        "昼食は12:00〜13:00に遊戯室で可",
+        "1月は12日（火）から利用できる"
+      ],
+      "id": "horinouchi_minami-202612-02",
+      "center": "horinouchi_minami",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3539/19horinouchiminami2612.pdf"
     },
     {
       "title": "パパと一緒に親子ヨガ！",
@@ -2893,11 +4789,803 @@
       "id": "plaza_izumi-202611-20",
       "center": "plaza_izumi",
       "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2611.pdf"
+    },
+    {
+      "title": "クリスマスコンサート",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-12-24",
+          "start": "14:30",
+          "end": "15:00"
+        }
+      ],
+      "place": "",
+      "target": "乳幼児親子",
+      "capacity": "定員なし・申込不要",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "ヴィオラで子ども向けの曲やクリスマスソングを演奏",
+        "協力：有馬 桃子さん"
+      ],
+      "id": "plaza_izumi-202612-00",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2612.pdf"
+    },
+    {
+      "title": "パンプキンさんのおはなし会",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-12-17",
+          "start": "10:30",
+          "end": "10:50"
+        }
+      ],
+      "place": "",
+      "target": "0歳児親子",
+      "capacity": "15組",
+      "requires_application": true,
+      "application_start": "2026-12-03",
+      "application_end": "",
+      "application_method": "窓口",
+      "notes": [
+        "読み聞かせと、家庭でも楽しめる絵本の紹介",
+        "講師：おはなしパンプキンさん"
+      ],
+      "id": "plaza_izumi-202612-01",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2612.pdf"
+    },
+    {
+      "title": "ベビーマッサージ",
+      "subtitle": "杉並区児童館第1ブロック ほっとエッセンス事業",
+      "audience": "baby",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-12-07",
+          "start": "10:15",
+          "end": "10:45"
+        }
+      ],
+      "place": "",
+      "target": "首がすわっているねんねの赤ちゃん親子",
+      "capacity": "お子さん10名",
+      "requires_application": true,
+      "application_start": "2026-11-24",
+      "application_end": "",
+      "application_method": "窓口",
+      "notes": [
+        "ピュアオイルを使用",
+        "費用：90円（オイル代）。申込時に必ず現金で",
+        "48時間以内に予防接種を受けた方、ジュクジュク湿疹がある方は参加を控える",
+        "講師：桝田 智佳子さん"
+      ],
+      "id": "plaza_izumi-202612-02",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2612.pdf"
+    },
+    {
+      "title": "アンガーマネジメント講座〜がんばりすぎない子育て〜",
+      "subtitle": "杉並区児童館第1ブロック ほっとエッセンス事業",
+      "audience": "baby",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-12-16",
+          "start": "10:30",
+          "end": "11:30"
+        }
+      ],
+      "place": "",
+      "target": "乳幼児保護者",
+      "capacity": "20組程度",
+      "requires_application": true,
+      "application_start": "2026-12-02",
+      "application_end": "",
+      "application_method": "窓口",
+      "notes": [
+        "託児なし。子連れで参加できる",
+        "講師：大野 由美さん（日本アンガーマネジメント協会認定 アンガーマネジメントファシリテーター、主任児童委員）"
+      ],
+      "id": "plaza_izumi-202612-03",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2612.pdf"
+    },
+    {
+      "title": "ベビトレヨガ",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-12-11",
+          "start": "11:00",
+          "end": "11:45"
+        }
+      ],
+      "place": "",
+      "target": "ねんねの赤ちゃん〜歩き始め前の母子",
+      "capacity": "20組",
+      "requires_application": true,
+      "application_start": "2026-11-27",
+      "application_end": "",
+      "application_method": "窓口",
+      "notes": [
+        "産後のトレーニングをしながら、子どもの脳トレや身体遊び",
+        "上のお子さん・お父さんの入室はできません",
+        "講師：ベビトレヨガインストラクター 和田 麻菜美さん"
+      ],
+      "id": "plaza_izumi-202612-04",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2612.pdf"
+    },
+    {
+      "title": "マオ先生と英語でリトミック！",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-12-21",
+          "start": "10:30",
+          "end": "10:55"
+        },
+        {
+          "date": "2026-12-21",
+          "start": "11:05",
+          "end": "11:30"
+        }
+      ],
+      "place": "",
+      "target": "①1歳児親子（歩けるお子さん） ②2〜6歳児親子（未就学児）",
+      "capacity": "各回16組",
+      "requires_application": true,
+      "application_start": "2026-12-07",
+      "application_end": "",
+      "application_method": "窓口",
+      "notes": [
+        "①10:30〜10:55 ②11:05〜11:30",
+        "ネイティブスピーカーのマオ先生によるリトミック",
+        "きょうだいでの参加は申込時に相談",
+        "講師：マオ・マッキニーさん"
+      ],
+      "id": "plaza_izumi-202612-05",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2612.pdf"
+    },
+    {
+      "title": "おもちゃ病院",
+      "subtitle": "",
+      "audience": "all",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-12-03",
+          "start": "13:00",
+          "end": "15:00"
+        }
+      ],
+      "place": "",
+      "target": "乳幼児親子・小学生親子",
+      "capacity": "申込不要（1家庭1点まで）",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "受付：11/30（月）9:00〜当日14:00、引き取りは当日18:00まで",
+        "必ず保護者の方がお持ちください。精密機器（電子ゲーム、トイカメラなど）は修理不可",
+        "協力：杉並おもちゃドクターズ"
+      ],
+      "id": "plaza_izumi-202612-06",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2612.pdf"
+    },
+    {
+      "title": "身長体重測定",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-12-09",
+          "start": "11:20",
+          "end": "11:50"
+        }
+      ],
+      "place": "",
+      "target": "乳幼児親子",
+      "capacity": "申込不要",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "協力：民生児童委員・主任児童委員"
+      ],
+      "id": "plaza_izumi-202612-07",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2612.pdf"
+    },
+    {
+      "title": "つーちゃんのわらべうた",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-12-10",
+          "start": "11:10",
+          "end": "11:30"
+        }
+      ],
+      "place": "",
+      "target": "プレパパ・プレママ、おおよそ0〜1歳親子",
+      "capacity": "申込不要",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "講師：塚原 道子さん"
+      ],
+      "id": "plaza_izumi-202612-08",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2612.pdf"
+    },
+    {
+      "title": "手形・足形タイム",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-12-15",
+          "start": "10:30",
+          "end": "11:00"
+        }
+      ],
+      "place": "",
+      "target": "乳幼児親子",
+      "capacity": "申込不要",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "汚れても良い服装で。持ち物：ウェットティッシュ"
+      ],
+      "id": "plaza_izumi-202612-09",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2612.pdf"
+    },
+    {
+      "title": "いちごタイム",
+      "subtitle": "年齢別プログラム",
+      "audience": "baby",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-02",
+          "start": "11:10",
+          "end": "11:40"
+        },
+        {
+          "date": "2026-12-09",
+          "start": "11:10",
+          "end": "11:40"
+        }
+      ],
+      "place": "",
+      "target": "0〜7か月の乳幼児親子",
+      "capacity": "当日申込（開始時間までに受付で）",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [],
+      "id": "plaza_izumi-202612-10",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2612.pdf"
+    },
+    {
+      "title": "みかんタイム",
+      "subtitle": "年齢別プログラム",
+      "audience": "baby",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-03",
+          "start": "10:30",
+          "end": "11:00"
+        },
+        {
+          "date": "2026-12-10",
+          "start": "10:30",
+          "end": "11:00"
+        }
+      ],
+      "place": "",
+      "target": "8か月〜1歳0か月の乳幼児親子",
+      "capacity": "当日申込（開始時間までに受付で）",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [],
+      "id": "plaza_izumi-202612-11",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2612.pdf"
+    },
+    {
+      "title": "りんごタイム",
+      "subtitle": "年齢別プログラム",
+      "audience": "baby",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-02",
+          "start": "10:30",
+          "end": "11:00"
+        },
+        {
+          "date": "2026-12-09",
+          "start": "10:30",
+          "end": "11:00"
+        }
+      ],
+      "place": "",
+      "target": "1歳1か月〜1歳7か月の乳幼児親子",
+      "capacity": "当日申込（開始時間までに受付で）",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [],
+      "id": "plaza_izumi-202612-12",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2612.pdf"
+    },
+    {
+      "title": "ぶどうタイム",
+      "subtitle": "年齢別プログラム",
+      "audience": "baby",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-01",
+          "start": "10:30",
+          "end": "11:00"
+        },
+        {
+          "date": "2026-12-08",
+          "start": "10:30",
+          "end": "11:00"
+        }
+      ],
+      "place": "",
+      "target": "1歳8か月〜3歳の乳幼児親子",
+      "capacity": "当日申込（開始時間までに受付で）",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [],
+      "id": "plaza_izumi-202612-13",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2612.pdf"
+    },
+    {
+      "title": "でんしゃランド",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-05",
+          "start": "10:00",
+          "end": "11:30"
+        },
+        {
+          "date": "2026-12-12",
+          "start": "10:00",
+          "end": "11:30"
+        },
+        {
+          "date": "2026-12-19",
+          "start": "10:00",
+          "end": "11:30"
+        },
+        {
+          "date": "2026-12-26",
+          "start": "10:00",
+          "end": "11:30"
+        }
+      ],
+      "place": "",
+      "target": "乳幼児親子",
+      "capacity": "申込不要",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "この時間だけの特別な電車で遊ぶ。オリジナルの線路も作れる"
+      ],
+      "id": "plaza_izumi-202612-14",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2612.pdf"
+    },
+    {
+      "title": "ベビータイム",
+      "subtitle": "",
+      "audience": "baby",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-01",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-12-02",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-12-03",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-12-04",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-12-07",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-12-08",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-12-09",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-12-10",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-12-11",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-12-13",
+          "start": "14:30",
+          "end": "14:40"
+        },
+        {
+          "date": "2026-12-14",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-12-15",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-12-16",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-12-17",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-12-18",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-12-20",
+          "start": "14:30",
+          "end": "14:40"
+        },
+        {
+          "date": "2026-12-21",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-12-22",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-12-23",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-12-24",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-12-25",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-12-27",
+          "start": "14:30",
+          "end": "14:40"
+        },
+        {
+          "date": "2026-12-28",
+          "start": "15:30",
+          "end": "15:40"
+        }
+      ],
+      "place": "",
+      "target": "0〜1歳児親子",
+      "capacity": "申込不要",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "絵本やふれあい遊び",
+        "9日・23日は小学生も一緒に参加（ベビータイムプラス！）"
+      ],
+      "id": "plaza_izumi-202612-15",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2612.pdf"
+    },
+    {
+      "title": "ベビータイムプラス！",
+      "subtitle": "",
+      "audience": "all",
+      "regular": false,
+      "sessions": [
+        {
+          "date": "2026-12-09",
+          "start": "15:30",
+          "end": "15:40"
+        },
+        {
+          "date": "2026-12-23",
+          "start": "15:30",
+          "end": "15:40"
+        }
+      ],
+      "place": "",
+      "target": "小学生・0〜1歳児親子",
+      "capacity": "申込不要（小学生は当日15:15までに受付で申込）",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "毎月第2・第4水曜日。ベビータイム内で小学生が絵本の読み聞かせや手遊びをする",
+        "小学生の参加がない場合は通常のベビータイム"
+      ],
+      "id": "plaza_izumi-202612-16",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2612.pdf"
+    },
+    {
+      "title": "いっしょにあそぼ！",
+      "subtitle": "",
+      "audience": "all",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-03",
+          "start": "16:30",
+          "end": "16:45"
+        },
+        {
+          "date": "2026-12-10",
+          "start": "16:30",
+          "end": "16:45"
+        },
+        {
+          "date": "2026-12-17",
+          "start": "16:30",
+          "end": "16:45"
+        },
+        {
+          "date": "2026-12-24",
+          "start": "16:30",
+          "end": "16:45"
+        }
+      ],
+      "place": "",
+      "target": "3歳以上の親子・小学生",
+      "capacity": "申込不要",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "小学生と一緒に身体を動かしたりゲームをしたりする"
+      ],
+      "id": "plaza_izumi-202612-17",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2612.pdf"
+    },
+    {
+      "title": "小学生タイム",
+      "subtitle": "",
+      "audience": "kids",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-02",
+          "start": "14:30",
+          "end": "15:00"
+        },
+        {
+          "date": "2026-12-03",
+          "start": "16:45",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-09",
+          "start": "14:30",
+          "end": "15:00"
+        },
+        {
+          "date": "2026-12-10",
+          "start": "16:45",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-16",
+          "start": "14:30",
+          "end": "15:00"
+        },
+        {
+          "date": "2026-12-17",
+          "start": "16:45",
+          "end": "17:45"
+        },
+        {
+          "date": "2026-12-23",
+          "start": "14:30",
+          "end": "15:00"
+        },
+        {
+          "date": "2026-12-24",
+          "start": "16:45",
+          "end": "17:45"
+        }
+      ],
+      "place": "",
+      "target": "小学生",
+      "capacity": "申込不要",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "小学生がホールを占有して遊べる",
+        "「杉並区子どもの居場所づくり基本方針」の策定に伴い、12月から小学生タイムを拡充"
+      ],
+      "id": "plaza_izumi-202612-18",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2612.pdf"
+    },
+    {
+      "title": "プチ小学生タイム",
+      "subtitle": "",
+      "audience": "kids",
+      "regular": true,
+      "sessions": [
+        {
+          "date": "2026-12-01",
+          "start": "16:30",
+          "end": "17:00"
+        },
+        {
+          "date": "2026-12-04",
+          "start": "16:30",
+          "end": "17:00"
+        },
+        {
+          "date": "2026-12-07",
+          "start": "16:30",
+          "end": "17:00"
+        },
+        {
+          "date": "2026-12-08",
+          "start": "16:30",
+          "end": "17:00"
+        },
+        {
+          "date": "2026-12-11",
+          "start": "16:30",
+          "end": "17:00"
+        },
+        {
+          "date": "2026-12-14",
+          "start": "16:30",
+          "end": "17:00"
+        },
+        {
+          "date": "2026-12-15",
+          "start": "16:30",
+          "end": "17:00"
+        },
+        {
+          "date": "2026-12-18",
+          "start": "16:30",
+          "end": "17:00"
+        },
+        {
+          "date": "2026-12-21",
+          "start": "16:30",
+          "end": "17:00"
+        },
+        {
+          "date": "2026-12-22",
+          "start": "16:30",
+          "end": "17:00"
+        },
+        {
+          "date": "2026-12-25",
+          "start": "16:30",
+          "end": "17:00"
+        },
+        {
+          "date": "2026-12-28",
+          "start": "16:30",
+          "end": "17:00"
+        }
+      ],
+      "place": "",
+      "target": "小学生",
+      "capacity": "申込不要",
+      "requires_application": false,
+      "application_start": "",
+      "application_end": "",
+      "application_method": "",
+      "notes": [
+        "小学生が優先的にホールの半面（ボール遊びエリア）を使える",
+        "小学生の利用がない場合は乳幼児親子のスペース",
+        "「杉並区子どもの居場所づくり基本方針」の策定に伴い、12月から小学生タイムを拡充"
+      ],
+      "id": "plaza_izumi-202612-19",
+      "center": "plaza_izumi",
+      "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3531/32izumi2612.pdf"
     }
   ],
   "warnings": [
     "堀ノ内東児童館 13horinouchihigahsi2610: 「チアダンス練習会」の開催日 2026-12-01 が対象月の外です（翌月の予告なら正常。残します）",
     "堀ノ内東児童館 13horinouchihigahsi2610: 「チアダンス練習会」の開催日 2026-12-08 が対象月の外です（翌月の予告なら正常。残します）",
+    "堀ノ内東児童館 13horinouchihigashi1: 「ドッジボール交流会」の開催日 2027-02-27 が対象月の外です（翌月の予告なら正常。残します）",
+    "堀ノ内東児童館 13horinouchihigashi1: 「ドッジボール交流会」は申込制ですが受付開始日が読み取れていません",
     "ゆうキッズほりみなみ（堀ノ内南学童クラブ） 19horinouchiminami2611: 「親子で楽しもう♪クラリネットとパネルシアター」の開催日 2026-12-03 が対象月の外です（翌月の予告なら正常。残します）",
     "ゆうキッズほりみなみ（堀ノ内南学童クラブ） 19horinouchiminami2611: 「わくわくクリスマスコンサート」の開催日 2026-12-01 が対象月の外です（翌月の予告なら正常。残します）"
   ]

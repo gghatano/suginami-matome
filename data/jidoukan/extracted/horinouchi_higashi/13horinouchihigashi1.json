@@ -1,0 +1,941 @@
+{
+  "pdf_url": "https://www.city.suginami.tokyo.jp/documents/3516/13horinouchihigashi1.pdf",
+  "pdf_label": "堀ノ内東児童館のおたより12月号（PDF：582KB）",
+  "sha256": "8b6bc3d61f10ac904305f4e87641f3bdf2a52dcb60df66da980847f8bbebeb6e",
+  "extracted_at": "2026-11-25T23:23:34+00:00",
+  "method": "claude-scheduled-session",
+  "data": {
+    "year": 2026,
+    "month": 12,
+    "events": [
+      {
+        "title": "中高生が教えてくれる卓球道場",
+        "subtitle": "堀ノ内東児童館 地域中・高校生委員会 自主企画事業",
+        "audience": "kids",
+        "regular": false,
+        "sessions": [
+          {
+            "date": "2026-12-16",
+            "start": "16:30",
+            "end": "17:30"
+          }
+        ],
+        "place": "",
+        "target": "小学3年生以上",
+        "capacity": "先着12名",
+        "requires_application": true,
+        "application_start": "2026-12-02",
+        "application_end": "2026-12-15",
+        "application_method": "",
+        "notes": [
+          "中高生が卓球を教えてくれる"
+        ]
+      },
+      {
+        "title": "おりがみの時間",
+        "subtitle": "",
+        "audience": "kids",
+        "regular": false,
+        "sessions": [
+          {
+            "date": "2026-12-09",
+            "start": "15:30",
+            "end": ""
+          },
+          {
+            "date": "2026-12-09",
+            "start": "15:55",
+            "end": ""
+          }
+        ],
+        "place": "",
+        "target": "小学1年生以上",
+        "capacity": "各回先着5名",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "①15:30〜 ②15:55〜",
+          "ボランティアの先生と一緒におりがみを作る"
+        ]
+      },
+      {
+        "title": "エルダーおはなしの会",
+        "subtitle": "",
+        "audience": "all",
+        "regular": false,
+        "sessions": [
+          {
+            "date": "2026-12-10",
+            "start": "15:30",
+            "end": "16:00"
+          }
+        ],
+        "place": "",
+        "target": "乳幼児親子〜小学生",
+        "capacity": "申込不要",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "ボランティアさんが楽しいおはなしをしてくれる"
+        ]
+      },
+      {
+        "title": "1年生グループ",
+        "subtitle": "児童館グループ活動",
+        "audience": "kids",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-12-03",
+            "start": "15:15",
+            "end": "16:00"
+          }
+        ],
+        "place": "",
+        "target": "1年生",
+        "capacity": "登録制（申込は終了）",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "1年生のメンバーで活動する時間"
+        ]
+      },
+      {
+        "title": "きらきらグループ",
+        "subtitle": "児童館グループ活動",
+        "audience": "kids",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-12-08",
+            "start": "16:20",
+            "end": "17:00"
+          }
+        ],
+        "place": "",
+        "target": "2〜6年生",
+        "capacity": "登録制（申込は終了）",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "障がいのある子もない子もみんなで一緒に活動する"
+        ]
+      },
+      {
+        "title": "卓球グループ",
+        "subtitle": "児童館グループ活動",
+        "audience": "kids",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-12-01",
+            "start": "17:00",
+            "end": "17:40"
+          }
+        ],
+        "place": "",
+        "target": "3〜6年生",
+        "capacity": "登録制（申込は終了）",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "コーチに卓球のやり方を教えてもらう"
+        ]
+      },
+      {
+        "title": "ドッジボール交流会",
+        "subtitle": "令和8年度 第15回 杉並区児童館 第2ブロック",
+        "audience": "kids",
+        "regular": false,
+        "sessions": [
+          {
+            "date": "2027-02-27",
+            "start": "13:55",
+            "end": "16:30"
+          }
+        ],
+        "place": "杉並第十小学校体育館",
+        "target": "低学年チーム（1・2年生）1チーム10人、高学年チーム（3〜6年生）1チーム10人",
+        "capacity": "",
+        "requires_application": true,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "1月のおたよりでお知らせ",
+        "notes": [
+          "6チームでの交流試合（堀ノ内東・和田中央・高円寺南・高円寺東児童館、杉並第三小学校・高円寺学園放課後等居場所事業）",
+          "会場のスペースに限りがあるため保護者の観戦はできない"
+        ]
+      },
+      {
+        "title": "高学年タイム",
+        "subtitle": "",
+        "audience": "kids",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-12-04",
+            "start": "17:30",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-12-11",
+            "start": "17:30",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-12-18",
+            "start": "17:30",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-12-25",
+            "start": "17:30",
+            "end": "17:45"
+          }
+        ],
+        "place": "",
+        "target": "4〜6年生",
+        "capacity": "申込不要",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": []
+      },
+      {
+        "title": "中高生タイム",
+        "subtitle": "",
+        "audience": "kids",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-12-02",
+            "start": "17:30",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-12-09",
+            "start": "17:30",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-12-16",
+            "start": "17:30",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-12-23",
+            "start": "17:30",
+            "end": "17:45"
+          }
+        ],
+        "place": "",
+        "target": "中・高校生",
+        "capacity": "申込不要",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": []
+      },
+      {
+        "title": "卓球タイム",
+        "subtitle": "",
+        "audience": "kids",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-12-02",
+            "start": "17:00",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-12-03",
+            "start": "17:00",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-12-04",
+            "start": "17:00",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-12-05",
+            "start": "09:00",
+            "end": "11:45"
+          },
+          {
+            "date": "2026-12-05",
+            "start": "13:00",
+            "end": "16:25"
+          },
+          {
+            "date": "2026-12-07",
+            "start": "17:00",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-12-08",
+            "start": "17:00",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-12-09",
+            "start": "17:00",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-12-10",
+            "start": "17:00",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-12-11",
+            "start": "17:00",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-12-14",
+            "start": "17:00",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-12-15",
+            "start": "17:00",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-12-17",
+            "start": "17:00",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-12-18",
+            "start": "17:00",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-12-19",
+            "start": "09:00",
+            "end": "11:45"
+          },
+          {
+            "date": "2026-12-19",
+            "start": "13:00",
+            "end": "16:25"
+          },
+          {
+            "date": "2026-12-21",
+            "start": "17:00",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-12-22",
+            "start": "17:00",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-12-23",
+            "start": "17:00",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-12-24",
+            "start": "17:00",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-12-25",
+            "start": "17:00",
+            "end": "17:45"
+          },
+          {
+            "date": "2026-12-26",
+            "start": "09:00",
+            "end": "11:45"
+          },
+          {
+            "date": "2026-12-26",
+            "start": "13:00",
+            "end": "16:25"
+          }
+        ],
+        "place": "",
+        "target": "3年生以上",
+        "capacity": "申込不要",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "1日（火）・16日（水）はお休み"
+        ]
+      },
+      {
+        "title": "ドッジボールタイム",
+        "subtitle": "",
+        "audience": "kids",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-12-01",
+            "start": "16:10",
+            "end": "16:40"
+          },
+          {
+            "date": "2026-12-02",
+            "start": "16:10",
+            "end": "16:40"
+          },
+          {
+            "date": "2026-12-03",
+            "start": "16:10",
+            "end": "16:40"
+          },
+          {
+            "date": "2026-12-04",
+            "start": "16:10",
+            "end": "16:40"
+          },
+          {
+            "date": "2026-12-05",
+            "start": "16:25",
+            "end": "16:45"
+          },
+          {
+            "date": "2026-12-07",
+            "start": "16:10",
+            "end": "16:40"
+          },
+          {
+            "date": "2026-12-08",
+            "start": "16:10",
+            "end": "16:40"
+          },
+          {
+            "date": "2026-12-09",
+            "start": "16:10",
+            "end": "16:40"
+          },
+          {
+            "date": "2026-12-10",
+            "start": "16:10",
+            "end": "16:40"
+          },
+          {
+            "date": "2026-12-11",
+            "start": "16:10",
+            "end": "16:40"
+          },
+          {
+            "date": "2026-12-14",
+            "start": "16:10",
+            "end": "16:40"
+          },
+          {
+            "date": "2026-12-15",
+            "start": "16:10",
+            "end": "16:40"
+          },
+          {
+            "date": "2026-12-16",
+            "start": "16:10",
+            "end": "16:40"
+          },
+          {
+            "date": "2026-12-17",
+            "start": "16:10",
+            "end": "16:40"
+          },
+          {
+            "date": "2026-12-18",
+            "start": "16:10",
+            "end": "16:40"
+          },
+          {
+            "date": "2026-12-19",
+            "start": "16:25",
+            "end": "16:45"
+          },
+          {
+            "date": "2026-12-21",
+            "start": "16:10",
+            "end": "16:40"
+          },
+          {
+            "date": "2026-12-22",
+            "start": "16:10",
+            "end": "16:40"
+          },
+          {
+            "date": "2026-12-23",
+            "start": "16:10",
+            "end": "16:40"
+          },
+          {
+            "date": "2026-12-24",
+            "start": "16:10",
+            "end": "16:40"
+          },
+          {
+            "date": "2026-12-25",
+            "start": "16:10",
+            "end": "16:40"
+          },
+          {
+            "date": "2026-12-26",
+            "start": "16:25",
+            "end": "16:45"
+          }
+        ],
+        "place": "",
+        "target": "",
+        "capacity": "申込不要",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "平日：1・2年生 16:10〜16:25、3年生以上 16:25〜16:40",
+          "土曜：全学年 16:25〜16:45"
+        ]
+      },
+      {
+        "title": "さんぽあてタイム",
+        "subtitle": "",
+        "audience": "kids",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-12-01",
+            "start": "17:05",
+            "end": "17:25"
+          },
+          {
+            "date": "2026-12-02",
+            "start": "17:05",
+            "end": "17:25"
+          },
+          {
+            "date": "2026-12-03",
+            "start": "17:05",
+            "end": "17:25"
+          },
+          {
+            "date": "2026-12-04",
+            "start": "17:05",
+            "end": "17:25"
+          },
+          {
+            "date": "2026-12-07",
+            "start": "17:05",
+            "end": "17:25"
+          },
+          {
+            "date": "2026-12-08",
+            "start": "17:05",
+            "end": "17:25"
+          },
+          {
+            "date": "2026-12-09",
+            "start": "17:05",
+            "end": "17:25"
+          },
+          {
+            "date": "2026-12-10",
+            "start": "17:05",
+            "end": "17:25"
+          },
+          {
+            "date": "2026-12-11",
+            "start": "17:05",
+            "end": "17:25"
+          },
+          {
+            "date": "2026-12-14",
+            "start": "17:05",
+            "end": "17:25"
+          },
+          {
+            "date": "2026-12-15",
+            "start": "17:05",
+            "end": "17:25"
+          },
+          {
+            "date": "2026-12-16",
+            "start": "17:05",
+            "end": "17:25"
+          },
+          {
+            "date": "2026-12-17",
+            "start": "17:05",
+            "end": "17:25"
+          },
+          {
+            "date": "2026-12-18",
+            "start": "17:05",
+            "end": "17:25"
+          },
+          {
+            "date": "2026-12-21",
+            "start": "17:05",
+            "end": "17:25"
+          },
+          {
+            "date": "2026-12-22",
+            "start": "17:05",
+            "end": "17:25"
+          },
+          {
+            "date": "2026-12-23",
+            "start": "17:05",
+            "end": "17:25"
+          },
+          {
+            "date": "2026-12-24",
+            "start": "17:05",
+            "end": "17:25"
+          },
+          {
+            "date": "2026-12-25",
+            "start": "17:05",
+            "end": "17:25"
+          }
+        ],
+        "place": "",
+        "target": "",
+        "capacity": "申込不要",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "3年生以上 17:05〜17:15、1・2年生 17:15〜17:25"
+        ]
+      },
+      {
+        "title": "ちびっこ☆お楽しみ会",
+        "subtitle": "",
+        "audience": "baby",
+        "regular": false,
+        "sessions": [
+          {
+            "date": "2026-12-03",
+            "start": "10:30",
+            "end": "11:15"
+          }
+        ],
+        "place": "",
+        "target": "乳幼児親子",
+        "capacity": "",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "全タイム合同のお楽しみ会。工作や演奏をする",
+          "サンタさんがきてくれる",
+          "この日のミニプログラムはお休み"
+        ]
+      },
+      {
+        "title": "パパも一緒に〜もちろんママもね〜",
+        "subtitle": "",
+        "audience": "baby",
+        "regular": false,
+        "sessions": [
+          {
+            "date": "2026-12-05",
+            "start": "11:00",
+            "end": "11:30"
+          }
+        ],
+        "place": "",
+        "target": "乳幼児親子",
+        "capacity": "",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "アスレチックや体操・触れ合い遊び。パパの子育てを応援するプログラム"
+        ]
+      },
+      {
+        "title": "絵本の読みきかせ会",
+        "subtitle": "堀ノ内東児童館 地域中・高校生委員会 自主企画事業",
+        "audience": "baby",
+        "regular": false,
+        "sessions": [
+          {
+            "date": "2026-12-19",
+            "start": "14:30",
+            "end": "15:00"
+          }
+        ],
+        "place": "",
+        "target": "乳幼児親子",
+        "capacity": "",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "中・高校生委員会のメンバーが絵本や紙芝居を読んでくれる"
+        ]
+      },
+      {
+        "title": "ぱんだタイム",
+        "subtitle": "",
+        "audience": "baby",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-12-01",
+            "start": "11:00",
+            "end": "11:30"
+          }
+        ],
+        "place": "",
+        "target": "ひとり歩きがはじまったら",
+        "capacity": "",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "体操・ふれあい遊び"
+        ]
+      },
+      {
+        "title": "アスレチックタイム",
+        "subtitle": "",
+        "audience": "baby",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-12-02",
+            "start": "10:00",
+            "end": "11:30"
+          }
+        ],
+        "place": "",
+        "target": "乳幼児とその保護者",
+        "capacity": "",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "すべり台やトンネルで体を動かして遊ぶ"
+        ]
+      },
+      {
+        "title": "コンビカータイム",
+        "subtitle": "",
+        "audience": "baby",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-12-01",
+            "start": "10:00",
+            "end": ""
+          },
+          {
+            "date": "2026-12-02",
+            "start": "10:00",
+            "end": ""
+          },
+          {
+            "date": "2026-12-03",
+            "start": "10:00",
+            "end": ""
+          },
+          {
+            "date": "2026-12-04",
+            "start": "10:00",
+            "end": ""
+          },
+          {
+            "date": "2026-12-05",
+            "start": "09:00",
+            "end": "16:00"
+          },
+          {
+            "date": "2026-12-08",
+            "start": "10:00",
+            "end": ""
+          },
+          {
+            "date": "2026-12-09",
+            "start": "10:00",
+            "end": ""
+          },
+          {
+            "date": "2026-12-10",
+            "start": "10:00",
+            "end": ""
+          },
+          {
+            "date": "2026-12-11",
+            "start": "10:00",
+            "end": ""
+          },
+          {
+            "date": "2026-12-14",
+            "start": "10:00",
+            "end": ""
+          },
+          {
+            "date": "2026-12-15",
+            "start": "10:00",
+            "end": ""
+          },
+          {
+            "date": "2026-12-16",
+            "start": "10:00",
+            "end": ""
+          },
+          {
+            "date": "2026-12-17",
+            "start": "10:00",
+            "end": ""
+          },
+          {
+            "date": "2026-12-18",
+            "start": "10:00",
+            "end": ""
+          },
+          {
+            "date": "2026-12-19",
+            "start": "09:00",
+            "end": "16:00"
+          },
+          {
+            "date": "2026-12-21",
+            "start": "10:00",
+            "end": ""
+          },
+          {
+            "date": "2026-12-22",
+            "start": "10:00",
+            "end": ""
+          },
+          {
+            "date": "2026-12-23",
+            "start": "10:00",
+            "end": ""
+          },
+          {
+            "date": "2026-12-24",
+            "start": "10:00",
+            "end": ""
+          },
+          {
+            "date": "2026-12-26",
+            "start": "09:00",
+            "end": "16:00"
+          }
+        ],
+        "place": "",
+        "target": "",
+        "capacity": "",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "平日は10:00〜小学生下校時間の15分前まで",
+          "プログラムの時間を除く。同時に3台まで",
+          "7日（月）・25日（金）はお休み"
+        ]
+      },
+      {
+        "title": "サンカード利用の日",
+        "subtitle": "",
+        "audience": "baby",
+        "regular": true,
+        "sessions": [
+          {
+            "date": "2026-12-06",
+            "start": "09:00",
+            "end": "17:00"
+          },
+          {
+            "date": "2026-12-13",
+            "start": "09:00",
+            "end": "17:00"
+          },
+          {
+            "date": "2026-12-20",
+            "start": "09:00",
+            "end": "17:00"
+          }
+        ],
+        "place": "",
+        "target": "",
+        "capacity": "",
+        "requires_application": false,
+        "application_start": "",
+        "application_end": "",
+        "application_method": "",
+        "notes": [
+          "小学生以上も保護者の付き添いが必要",
+          "12月27日・1月3日はお休み"
+        ]
+      }
+    ],
+    "closed_days": [
+      {
+        "date": "2026-12-12",
+        "reason": "館内整理日"
+      },
+      {
+        "date": "2026-12-27",
+        "reason": "年末年始"
+      },
+      {
+        "date": "2026-12-28",
+        "reason": "年末年始"
+      },
+      {
+        "date": "2026-12-29",
+        "reason": "年末年始"
+      },
+      {
+        "date": "2026-12-30",
+        "reason": "年末年始"
+      },
+      {
+        "date": "2026-12-31",
+        "reason": "年末年始"
+      },
+      {
+        "date": "2027-01-01",
+        "reason": "年末年始"
+      },
+      {
+        "date": "2027-01-02",
+        "reason": "年末年始"
+      },
+      {
+        "date": "2027-01-03",
+        "reason": "年末年始"
+      },
+      {
+        "date": "2027-01-04",
+        "reason": "年末年始"
+      }
+    ]
+  }
+}
