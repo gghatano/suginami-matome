@@ -1,5 +1,49 @@
 [
   {
+    "id": "goguynet_eb60ede8",
+    "source": "号外NET杉並区",
+    "source_key": "goguynet",
+    "source_url": "https://suginami.goguynet.jp/",
+    "title": "【杉並区】紅葉と灯りの幻想的な景色を♪「今川紅とうろ in 観泉寺 2026」が11月28日(土)・29日(日)に開催されます！",
+    "url": "https://suginami.goguynet.jp/2026/11/26/imagawakurenaitouro2026/",
+    "summary": "西武新宿線上井草駅から歩いて12分ほどのところにある「観泉寺」で、夜間ライトアップイベント「今川紅とうろ(いまがわくれないとうろ) in 観泉寺 2026」が2026年11月28日(土)・29日(日)の2日間で開催されま [&#8230;]",
+    "published_at": "2026-11-25",
+    "fetched_at": "2026-11-25",
+    "category": "イベント",
+    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/11/IMG_1104-1024x767.jpeg",
+    "event_dates": [
+      "2026-11-28"
+    ]
+  },
+  {
+    "id": "mypl_2a56b298",
+    "source": "まいぷれ杉並区",
+    "source_key": "mypl",
+    "source_url": "https://suginami.mypl.net/",
+    "title": "RE:3 MARKET ― Book & Coffee Festival",
+    "url": "https://suginami.mypl.net/event/00000480785/",
+    "summary": "市、フリーマーケット RE:3 MARKET ― Book & Coffee Festival",
+    "published_at": "2026-11-25",
+    "fetched_at": "2026-11-25",
+    "category": "イベント",
+    "image": "https://img2.mypl.net/image.php?id=364782&p=bti&s=375_250&op=",
+    "event_dates": []
+  },
+  {
+    "id": "mypl_801238e0",
+    "source": "まいぷれ杉並区",
+    "source_key": "mypl",
+    "source_url": "https://suginami.mypl.net/",
+    "title": "ヨーデル北川桜とエーデルワイスムジカンテン アルプスのクリスマス☆ファミリーコンサート",
+    "url": "https://suginami.mypl.net/event/00000481131/",
+    "summary": "音楽イベント、コンサート、ライブ ヨーデル北川桜とエーデルワイスムジカンテン アルプスのクリスマス☆ファミリーコンサート",
+    "published_at": "2026-11-25",
+    "fetched_at": "2026-11-25",
+    "category": "イベント",
+    "image": "https://img2.mypl.net/image.php?id=365229&p=bti&s=500_730&op=",
+    "event_dates": []
+  },
+  {
     "id": "goguynet_91f6db01",
     "source": "号外NET杉並区",
     "source_key": "goguynet",
@@ -7062,49 +7106,5 @@
     "category": "イベント",
     "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/10/26年10月ランチタイム販売.jpg",
     "event_dates": []
-  },
-  {
-    "id": "sesion_dbff4ccd",
-    "source": "セシオン杉並",
-    "source_key": "sesion",
-    "source_url": "https://www.sesion-suginami.jp/",
-    "title": "2026年10月 ランチタイム販売どんまい福祉工房",
-    "url": "https://www.sesion-suginami.jp/event/danwa/7931",
-    "summary": "",
-    "published_at": "2026-10-05",
-    "fetched_at": "2026-10-05",
-    "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/10/26年10月ランチタイム販売.jpg",
-    "event_dates": []
-  },
-  {
-    "id": "sesion_705a5b96",
-    "source": "セシオン杉並",
-    "source_key": "sesion",
-    "source_url": "https://www.sesion-suginami.jp/",
-    "title": "2026年10月 ランチタイム販売SUNNY",
-    "url": "https://www.sesion-suginami.jp/event/terrace/7934",
-    "summary": "",
-    "published_at": "2026-10-05",
-    "fetched_at": "2026-10-05",
-    "category": "イベント",
-    "image": "https://www.sesion-suginami.jp/cms/wp-content/uploads/2026/10/26年10月ランチタイム販売.jpg",
-    "event_dates": []
-  },
-  {
-    "id": "goguynet_54d183ad",
-    "source": "号外NET杉並区",
-    "source_key": "goguynet",
-    "source_url": "https://suginami.goguynet.jp/",
-    "title": "【杉並区】リトナード八幡山に「なんくるないさー八幡山」が10月1日(木)にオープンしました！海ぶどうや沖縄そばがお得になるキャンペーンも♪",
-    "url": "https://suginami.goguynet.jp/2026/10/05/nankurunaisa-hachimanyama/",
-    "summary": "八幡山駅直結の商業施設「リトナード八幡山」に沖縄料理店「なんくるないさー八幡山」が2026年10月1日（木）にオープンしました！以前は、四国料理「凧、凧 八幡山店」だった場所です。 「なんくるないさー」ってどんなお店？ [&#8230;]",
-    "published_at": "2026-10-04",
-    "fetched_at": "2026-10-05",
-    "category": "イベント",
-    "image": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/10/IMG_9654-1024x616.jpeg",
-    "event_dates": [
-      "2026-10-01"
-    ]
   }
 ]
